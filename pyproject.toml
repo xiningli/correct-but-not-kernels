@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=78"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cuda-gemma4-llm"
+version = "0.1.0"
+description = "K1–K4: verifiable RL for Gemma 4 CUDA kernel engineering"
+requires-python = ">=3.12"
+dependencies = ["pyyaml==6.0.3"]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+# K1–K4: inherited glomergence pins; C0 must validate on the actual node.
+gpu = [
+    "vllm==0.30.0", "transformers==5.17.0", "torch==2.13.0", "trl==1.14.0", "peft==0.21.0",
+    "modelscope==1.40.1", "modelscope-hub==0.4.5", "safetensors>=0.8", "ninja>=1.11",
+    # K1–K4/C0: matching precompiled cubins avoid a first-boot artifact download.
+    "flashinfer-python==0.6.18.post1",
+    "flashinfer-cubin==0.6.18.post1",
+]
+[tool.setuptools.packages.find]
+include = ["env*", "train*", "eval*", "tools*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["cuda: trusted CUDA reference smoke, never a generated candidate"]

@@ -1,0 +1,9 @@
+{
+  "pid": 1753,
+  "utc": "2026-10-19T18:05:42.964965+00:00",
+  "bundle_sha256": "05e5281c7e59b84915d5950425a8ef4bdda008b46b1c1d7cf8b589647264a8e5",
+  "project": "/root/autodl-tmp/repair-v8-pilot-20261019",
+  "log": "/root/autodl-tmp/repair-v8-pilot-20261019/launch.log",
+  "entry": "bash scripts/repair_v8_pilot_autodl.sh run",
+  "power_off_on_complete_or_blocked": true
+}

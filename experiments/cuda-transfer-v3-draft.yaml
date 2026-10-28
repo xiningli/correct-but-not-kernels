@@ -1,0 +1,109 @@
+# K1/K3/K4: authorized 2026-10-13 follow-up. Outcomes are hypotheses, not requirements.
+id: cuda-transfer-v3
+status: development_not_frozen
+generation_enabled: false
+training_enabled: false
+development_generation:
+  enabled: true
+  scope: six_development_graphs_only_no_test_candidate_outputs
+  policies: [base, C-20261021, SFT-20261021]
+  samples_per_graph_per_condition: 1
+  purpose: integration_and_cost_estimation_not_confirmatory_effect_estimation
+question: Does single-operator post-training transfer to strict kernel generation and real CUDA bug repair, and how does interface support and execution feedback change that transfer?
+success_objective: competitive_original_research_for_official_Kaggle_award_and_Google_event_selection
+prior_study:
+  directory: runs/replication-v1.1
+  frozen_sha256: 79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e
+  preserve_scores_and_source: true
+  new_namespace: research/reliability_v2
+  no_new_training: true
+policies:
+  model: gemma-4-12B-it
+  primary_arms: [base, C, SFT]
+  secondary_arms: [S]
+  training_seeds: [20261021, 20261022, 20261023]
+  checkpoint_rule: all_existing_final_checkpoints_no_best_seed_selection
+  shared_base: one_policy_not_three_training_replicates
+  stopped_policy: S-20261021_step15_retained_with_exposure_disclosed
+hypotheses:
+  T1: Correctness gains persist on new operator graphs with a runtime-checked custom-kernel contract.
+  T2: Post-training improves hidden-test repair success at equal generation and test budgets on independently sourced real defects.
+  T3: Interface support and execution feedback moderate the post-training effect; randomized prompt/feedback interventions test these explanations.
+strict_generation:
+  target_test_graphs: 48
+  development_graphs: separate_not_shape_variants_of_test_graphs
+  samples_per_graph: 8
+  conditions: [minimal_contract, api_scaffold]
+  primary_condition: api_scaffold
+  implementations: [custom_CUDA, custom_Triton]
+  allowed_host_work: allocation_metadata_and_noncomputational_views
+  prohibited: high_level_tensor_arithmetic_vendor_library_compute_reference_replay
+  correctness: fresh_inputs_multiple_shapes_layouts_dtypes_with_declared_domains
+  provenance_claim: new_to_this_study_not_proven_absent_from_pretraining
+repair:
+  target_test_defects: 24
+  target_development_defects: 6
+  target_independent_repositories: 3
+  primary_origin: verified_upstream_bug_and_fix
+  adaptations: preserve_faulty_kernel_and_fix_hunks_record_every_wrapper_change
+  reduced_reproductions: separate_stratum_not_full_repository_issue_resolution
+  injected_defects: diagnostic_only_not_pooled_with_real_defects
+  eligibility: same_environment_original_fails_independent_regression_fixed_passes_visible_and_hidden_tests
+  selection: source_and_feasibility_before_any_policy_outcomes
+  deduplication: one_upstream_defect_family_per_cluster_across_backports_and_variants
+  test_visibility: only_visible_feedback_may_reach_policy_or_select_final_patch
+  modes: [test_feedback, independent_attempts]
+  prompt_conditions: [api_scaffold]
+  max_attempts: 3
+  max_new_tokens_per_attempt: 4096
+  max_total_new_tokens: 12288
+  max_visible_test_calls: 3
+  independent_attempts: restart_from_identical_initial_issue_without_previous_patch_or_feedback
+  submission_rule: highest_visible_tests_passed_then_earliest_attempt
+  hidden_tests: score_selected_patch_at_each_budget_prefix_never_select_or_stop
+  cost: report_generated_tokens_prompt_tokens_tool_calls_and_wall_time_separately
+  repeated_attempts: not_independent_tasks
+mechanism:
+  API_intervention: identical_task_agnostic_interface_scaffold_for_every_policy
+  feedback_intervention: visible_execution_feedback_vs_budget_matched_independent_attempts
+  estimand: difference_in_posttraining_gain_across_intervention_conditions
+  categories: prelabel_defects_before_policy_outcomes_and_analyze_all_attempts
+  claim_limit: behavioral_intervention_evidence_not_internal_neural_mechanism_or_full_causal_mediation
+sampling:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 64
+  max_tokens: 4096
+seeds:
+  task_selection: 2026101301
+  generation_namespace: 2026101302
+  visible_inputs: 2026101303
+  hidden_inputs: 2026101304
+  analysis: 2026101305
+analysis:
+  primary_comparisons: [[C, base], [SFT, base], [C, SFT]]
+  primary_endpoints: [strict_generation_correct_and_compliant, real_repair_hidden_success_at_three_attempts]
+  primary_family: all_six_endpoint_comparison_pairs
+  familywise_alpha: 0.05
+  method: paired_task_cluster_bootstrap_with_Bonferroni_intervals
+  bootstrap_samples: 10000
+  seed_reporting: every_training_seed_and_range_no_three_seed_population_precision_claim
+  secondary: [budget_curves, feedback_interactions, scaffold_interactions, failure_categories, common_correct_kernel_speed]
+  nonsignificance: never_equivalence
+  small_repair_sample: estimate_interval_width_on_development_before_freeze
+freeze_requirements:
+  - original_v1_1_source_seal_verified
+  - strict_observer_positive_and_adversarial_GPU_controls_pass
+  - reviewed_new_graph_and_disjoint_development_test_manifests
+  - upstream_bug_parent_fix_license_hashes_and_independent_regressions
+  - original_fail_fixed_pass_GPU_receipts_for_every_repair_task
+  - no_hidden_feedback_or_oracle_candidate_selection_controls_pass
+  - checkpoint_prompt_evaluator_and_analysis_hashes_bound
+  - development_cost_and_interval_width_report
+  - report_verified_backup_and_terminal_shutdown_controller
+decisions:
+  - Record_all_outcomes_including_absent_transfer_and_no_RL_advantage.
+  - New_GPU_policy_evaluation_requires_a_new_seal_not_this_draft.
+  - Do_not_rename_reduced_or_injected_cases_as_real_repository_repairs.
+  - If_gains_disappear_do_not_change_test_selection_or_choose_winning_seeds.
+  - Award_competitiveness_is_not_established_by_completing_the_pipeline.

@@ -1,0 +1,79 @@
+{
+  "scope": "bounded_title_keyword_screen_not_exhaustive_repository_census",
+  "queries": [
+    {
+      "repo": "linkedin/Liger-Kernel",
+      "query": "repo:linkedin/Liger-Kernel is:pr is:merged merged:2025-01-01..2026-10-18 fix in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "linkedin/Liger-Kernel",
+      "query": "repo:linkedin/Liger-Kernel is:pr is:merged merged:2025-01-01..2026-10-18 bug in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "fla-org/flash-linear-attention",
+      "query": "repo:fla-org/flash-linear-attention is:pr is:merged merged:2025-01-01..2026-10-18 fix in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "fla-org/flash-linear-attention",
+      "query": "repo:fla-org/flash-linear-attention is:pr is:merged merged:2025-01-01..2026-10-18 bug in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "FlagOpen/FlagGems",
+      "query": "repo:FlagOpen/FlagGems is:pr is:merged merged:2025-01-01..2026-10-18 fix in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "FlagOpen/FlagGems",
+      "query": "repo:FlagOpen/FlagGems is:pr is:merged merged:2025-01-01..2026-10-18 bug in:title",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "query": "repo:vllm-project/vllm is:pr is:merged merged:2025-01-01..2026-10-18 fix in:title triton",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "query": "repo:vllm-project/vllm is:pr is:merged merged:2025-01-01..2026-10-18 bug in:title triton",
+      "per_page": 100,
+      "sort": "created",
+      "order": "desc",
+      "page": 1
+    }
+  ],
+  "per_query_cap": 100,
+  "no_model_outcomes_used": true,
+  "window": [
+    "2025-01-01",
+    "2026-10-18"
+  ],
+  "known_seen": [
+    "linkedin/Liger-Kernel#1490",
+    "linkedin/Liger-Kernel#1461"
+  ]
+}

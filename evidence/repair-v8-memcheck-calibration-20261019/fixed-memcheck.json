@@ -1,0 +1,1813 @@
+{
+  "component": "contract_violation",
+  "passed": false,
+  "tests_observed": 10,
+  "tests_passed": 0,
+  "cases": [
+    {
+      "spec": {
+        "id": "h_boundary_low",
+        "kind": "attn",
+        "n": 31,
+        "d": 19
+      },
+      "seed": 3901,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 7.640395503491163,
+        "peak_rss_bytes": 1140400128,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_low-3901/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_low-3901/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            31,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 5.29553460248966e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.4090736036309615e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 5.110971237343165e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.7947094144155074e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 4.351228687912226
+      }
+    },
+    {
+      "spec": {
+        "id": "h_boundary",
+        "kind": "attn",
+        "n": 32,
+        "d": 19
+      },
+      "seed": 3901,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 7.8597331792116165,
+        "peak_rss_bytes": 1512124416,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary-3901/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary-3901/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            32,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 6.863170848303568e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.2459568196621085e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 5.358850811987281e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.2994189460546757e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 4.429507236927748
+      }
+    },
+    {
+      "spec": {
+        "id": "h_boundary_high",
+        "kind": "attn",
+        "n": 33,
+        "d": 19
+      },
+      "seed": 3901,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 13.932293966412544,
+        "peak_rss_bytes": 1144840192,
+        "peak_gpu_bytes": 873791488,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_high-3901/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_high-3901/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            33,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 4.7779670220293724e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 3.6124027172346196e-09,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 7.033780988763283e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 10.551583778113127
+      }
+    },
+    {
+      "spec": {
+        "id": "h_larger",
+        "kind": "attn",
+        "n": 65,
+        "d": 31
+      },
+      "seed": 3901,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 38.02866115048528,
+        "peak_rss_bytes": 1301434368,
+        "peak_gpu_bytes": 875888640,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_larger-3901/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_larger-3901/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            65,
+            1,
+            3,
+            31
+          ],
+          "stride": [
+            93,
+            93,
+            31,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            31
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            31
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            31
+          ],
+          "stride": [
+            93,
+            31,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 4.590703890361425e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.1462431698250342e-09,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.8617743244853102e-06,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 34.608775578439236
+      }
+    },
+    {
+      "spec": {
+        "id": "h_fp16",
+        "kind": "attn",
+        "n": 4,
+        "d": 32,
+        "dtype": "float16"
+      },
+      "seed": 3901,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 5.567912150174379,
+        "peak_rss_bytes": 1155944448,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_fp16-3901/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_fp16-3901/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            4,
+            1,
+            3,
+            32
+          ],
+          "stride": [
+            96,
+            96,
+            32,
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "query": {
+          "shape": [
+            32
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "norm": {
+          "shape": [
+            32
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            32
+          ],
+          "stride": [
+            96,
+            32,
+            1
+          ],
+          "dtype": "torch.float16"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.00048762335870256024,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.01,
+          "rtol": 0.001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0002800580398668595,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0038533223785250925,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.00023257286276356925,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 1.9180209040641785
+      }
+    },
+    {
+      "spec": {
+        "id": "h_boundary_low",
+        "kind": "attn",
+        "n": 31,
+        "d": 19
+      },
+      "seed": 3902,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 7.959274906665087,
+        "peak_rss_bytes": 1511432192,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_low-3902/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_low-3902/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            31,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 8.290622388607005e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.1371063542153781e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 7.947172013800241e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 3.0899709069220904e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 4.426728148013353
+      }
+    },
+    {
+      "spec": {
+        "id": "h_boundary",
+        "kind": "attn",
+        "n": 32,
+        "d": 19
+      },
+      "seed": 3902,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 7.702790256589651,
+        "peak_rss_bytes": 1106657280,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary-3902/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary-3902/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            32,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 9.526740546439427e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.1244967082491009e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 8.148798285034786e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.2005255289881944e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 4.363136552274227
+      }
+    },
+    {
+      "spec": {
+        "id": "h_boundary_high",
+        "kind": "attn",
+        "n": 33,
+        "d": 19
+      },
+      "seed": 3902,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 14.082733780145645,
+        "peak_rss_bytes": 1178497024,
+        "peak_gpu_bytes": 873791488,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_high-3902/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_boundary_high-3902/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            33,
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            19
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            19
+          ],
+          "stride": [
+            57,
+            19,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 5.181540141396823e-08,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 4.289728225415068e-09,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 4.078736810519956e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 10.69530688971281
+      }
+    },
+    {
+      "spec": {
+        "id": "h_larger",
+        "kind": "attn",
+        "n": 65,
+        "d": 31
+      },
+      "seed": 3902,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 38.13121708482504,
+        "peak_rss_bytes": 1302822912,
+        "peak_gpu_bytes": 875888640,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_larger-3902/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_larger-3902/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            65,
+            1,
+            3,
+            31
+          ],
+          "stride": [
+            93,
+            93,
+            31,
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "query": {
+          "shape": [
+            31
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "norm": {
+          "shape": [
+            31
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float32"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            31
+          ],
+          "stride": [
+            93,
+            31,
+            1
+          ],
+          "dtype": "torch.float32"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 3.3625043394103216e-07,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0002,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 9.456506133709297e-10,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 1.6298501668288168e-06,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.001,
+          "rtol": 0.0001
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 34.64902027696371
+      }
+    },
+    {
+      "spec": {
+        "id": "h_fp16",
+        "kind": "attn",
+        "n": 4,
+        "d": 32,
+        "dtype": "float16"
+      },
+      "seed": 3902,
+      "passed": false,
+      "component": "contract_violation",
+      "instrumentation": "memcheck",
+      "kernel_identity_checked": false,
+      "sandbox": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 5.259308360517025,
+        "peak_rss_bytes": 1162522624,
+        "peak_gpu_bytes": 871694336,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_fp16-3902/isolated/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/liger_attnres/fixed-memcheck/h_fp16-3902/isolated/worker.log"
+      },
+      "input_metadata": {
+        "v": {
+          "shape": [
+            4,
+            1,
+            3,
+            32
+          ],
+          "stride": [
+            96,
+            96,
+            32,
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "query": {
+          "shape": [
+            32
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "norm": {
+          "shape": [
+            32
+          ],
+          "stride": [
+            1
+          ],
+          "dtype": "torch.float16"
+        },
+        "grad_output": {
+          "shape": [
+            1,
+            3,
+            32
+          ],
+          "stride": [
+            96,
+            32,
+            1
+          ],
+          "dtype": "torch.float16"
+        }
+      },
+      "checks": [
+        {
+          "name": "output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0004339923401190937,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.01,
+          "rtol": 0.001
+        },
+        {
+          "name": "grad_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.00024300910077967863,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "grad_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0014225261057152494,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "grad_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 2.8917709957082538e-05,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.05,
+          "rtol": 0.005
+        },
+        {
+          "name": "input_v",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_query",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_norm",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        },
+        {
+          "name": "input_grad_output",
+          "passed": true,
+          "finite": true,
+          "max_error": 0.0,
+          "mismatch_count": 0,
+          "shape_ok": true,
+          "dtype_ok": true,
+          "atol": 0.0,
+          "rtol": 0.0
+        }
+      ],
+      "flags": [
+        "undeclared_host_tensor_operation"
+      ],
+      "worker": {
+        "status": "complete",
+        "stage": "complete",
+        "flags": [],
+        "ops": [
+          "aten._to_copy.default",
+          "aten.copy_.default",
+          "aten.empty.memory_format",
+          "aten.empty_like.default",
+          "aten.new_empty_strided.default",
+          "aten.view.default",
+          "aten.zeros.default"
+        ],
+        "kernels": [],
+        "instrumentation": "memcheck",
+        "execution_seconds": 1.8769077137112617
+      }
+    }
+  ],
+  "static_flags": [],
+  "panel": "hidden",
+  "seconds": 146.74482057988644
+}

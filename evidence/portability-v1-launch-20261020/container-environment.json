@@ -1,0 +1,5 @@
+{
+  "image": "sha256:dacdca4039c98270005f9c543eeb638b547d09e484d072526e98b4d18f66074c",
+  "python": "/mnt/fastdata/glomergence/.venv/bin/python",
+  "probe_log": "{\"torch\": \"2.13.0+cu130\", \"cuda\": \"13.0\", \"triton\": \"3.7.1\", \"gpu\": \"NVIDIA GeForce RTX 5070 Ti\", \"capability\": [12, 0], \"uid\": 1000, \"filesystem_network_controls\": \"PASS\"}\n"
+}

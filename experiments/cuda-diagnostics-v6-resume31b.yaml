@@ -1,0 +1,11 @@
+id: cuda-diagnostics-v6-resume31b
+parent_archive_sha256: 1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5
+parent_archive_bytes: 678478
+parent_controller: runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000
+parent_prepared: runs/diagnostics-v6/prepared-20261016
+resume_model: gemma-4-31B-it
+gpu_memory_utilization: 0.90
+reason: 31B engine initialization failed before any completion; 20.64 GiB KV needed versus 20.07 GiB available at 0.85.
+preserve: All original tasks, prompts, seeds, BF16, 24576 context, 8192 output cap, two sequences, evaluation and stopping rules.
+completed_12B: Preserve all 12 episodes and 37 physical generations; never reroll them.
+interpretation: Development only; the memory change and failed startup remain disclosed. No bitwise reproducibility claim across memory allocations.

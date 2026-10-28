@@ -1,0 +1,89 @@
+{
+  "gate": "C6",
+  "status": "PASS",
+  "time_utc": "20261005T165633.936013Z",
+  "git": {
+    "sha": "5c83918dec6191104dfe1729b8786515026bb43d",
+    "status": "M REPORT.md"
+  },
+  "checks": [
+    {
+      "name": "arm_C",
+      "status": "PASS",
+      "final": {
+        "step": 35,
+        "adapter": "/root/autodl-tmp/cuda-gemma4-llm/runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-35",
+        "lora_hash": "1d740f48e3b32cd28fdccee9cfe8b26a01e353f9c4cc94db3d4919e1e0ac1fac"
+      },
+      "declared_stop": {
+        "reason": "kl",
+        "step": 35,
+        "metrics": {
+          "loss": 0.7718261480331421,
+          "grad_norm": 0.21768075227737427,
+          "learning_rate": 1e-05,
+          "num_tokens": 687036.0,
+          "completions/mean_length": 1853.25,
+          "completions/min_length": 652.0,
+          "completions/max_length": 3409.0,
+          "completions/clipped_ratio": 0.0,
+          "completions/mean_terminated_length": 1853.25,
+          "completions/min_terminated_length": 652.0,
+          "completions/max_terminated_length": 3409.0,
+          "rewards/kernel_reward/mean": 0.862500011920929,
+          "rewards/kernel_reward/std": 0.3889087438583374,
+          "reward": 0.862500011920929,
+          "reward_std": 0.3889087438583374,
+          "frac_reward_zero_std": 0.0,
+          "env/detector_fraction": 0.0,
+          "env/eval_seconds": 48.372510930523276,
+          "env/gpu_after_bytes": 26463436800,
+          "env/gpu_before_bytes": 26463436800,
+          "env/gpu_delta_bytes": 0,
+          "env/harness_errors": 0,
+          "env/median_length": 1539.0,
+          "env/sandbox_violations": 0,
+          "env/truncation_fraction": 0.0,
+          "env/valid": 0.875,
+          "sampling/sampling_logp_difference/mean": 0.025133026763796806,
+          "sampling/sampling_logp_difference/max": 14.062509536743164,
+          "sampling/importance_sampling_ratio/min": 7.811414661773597e-07,
+          "sampling/importance_sampling_ratio/mean": 0.9853728413581848,
+          "sampling/importance_sampling_ratio/max": 2.5161216259002686,
+          "kl": 242.33519557930413,
+          "entropy": 0.4216031916439533,
+          "clip_ratio/low_mean": 0.0,
+          "clip_ratio/high_mean": 0.0,
+          "clip_ratio/region_mean": 0.0,
+          "clip_ratio/low_min": 0.0,
+          "clip_ratio/high_max": 0.0,
+          "step_time": 151.41384870000184,
+          "epoch": 0.7291666666666666,
+          "step": 35,
+          "elapsed_seconds": 4907.341889619827
+        }
+      },
+      "elapsed_seconds": 21614.484840348363,
+      "error": null
+    },
+    {
+      "name": "arm_S",
+      "status": "PASS",
+      "final": {
+        "step": 40,
+        "adapter": "/root/autodl-tmp/cuda-gemma4-llm/runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-40",
+        "lora_hash": "82e88c8b668197d1be1c88127ce4bbd672e4784b30dcd1a27021078a43e2f5ea"
+      },
+      "declared_stop": null,
+      "elapsed_seconds": 21623.852917015553,
+      "error": null
+    },
+    {
+      "name": "complete_bootstrap_report",
+      "status": "PASS",
+      "manifest": "runs/c6/20261005T035943.498204Z/report-manifest.json"
+    }
+  ],
+  "prerequisite": "runs/gates/c5-20261005T035544.370523Z-bb47b38c.json",
+  "artifacts": "runs/c6/20261005T035943.498204Z"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "scope": "Archive relocation, all 8 execution manifests, identical plan semantics and CPU unit controls; remote installation/GPU not tested",
+  "bundle_sha256": "e8396e87b14ae16a7cca42484cc96d6f07be92288fc7cb7dc7c0639ad1d142cb",
+  "commands": [
+    {
+      "command": [
+        "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+        "-m",
+        "research.repair_v8.qualify",
+        "plan",
+        "--root",
+        "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/portable-smoke/runs/repair-v8-qualification-20261018"
+      ],
+      "returncode": 0,
+      "stdout": "{\"tasks\": 4, \"execution_snapshots\": 8}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_repair_v8_qualification.py",
+        "-q"
+      ],
+      "returncode": 0,
+      "stdout": ".......                                                                  [100%]\n7 passed in 0.69s\n",
+      "stderr": ""
+    }
+  ],
+  "GPU_runs": 0
+}

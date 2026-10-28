@@ -1,0 +1,931 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-20T08:29:34.201433+00:00",
+  "checks": [
+    {
+      "name": "triton",
+      "passed": true,
+      "result": {
+        "component": "correct",
+        "numerically_correct": true,
+        "contract_compliant": true,
+        "correct": true,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          }
+        ],
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [],
+        "output_sha256": {
+          "output-0.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-1.safetensors": "f61fbb0b55e6762b80b251158d5e6ffd4ba8aecdbec9191828723f4553155454",
+          "output-2.safetensors": "8b0ece71bca69c2f637fd7e47efd3772cedd26b2f3944d976d043e49d64afc09",
+          "output-3.safetensors": "71ed2d9b516132b65ab93ff022a739aa8e0611ca209b4b1d9b03081fbedef1f3"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:28:55.203393638Z",
+            "FinishedAt": "2026-10-20T08:28:57.849343304Z"
+          },
+          "seconds": 3.1015424630022608,
+          "peak_device_used_bytes": 319815680,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/triton/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/triton/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "cuda_cpp",
+      "passed": true,
+      "result": {
+        "component": "correct",
+        "numerically_correct": true,
+        "contract_compliant": true,
+        "correct": true,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one_kernel(float const*, float*, int)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one_kernel(float const*, float*, int)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one_kernel(float const*, float*, int)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.empty_like.default",
+                "aten.empty_like.default"
+              ],
+              "cuda_kernels": [
+                "add_one_kernel(float const*, float*, int)"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          },
+          {
+            "component": "compliant",
+            "reason": "dispatch_and_CUDA_events_agree"
+          }
+        ],
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [],
+        "output_sha256": {
+          "output-0.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-1.safetensors": "f61fbb0b55e6762b80b251158d5e6ffd4ba8aecdbec9191828723f4553155454",
+          "output-2.safetensors": "8b0ece71bca69c2f637fd7e47efd3772cedd26b2f3944d976d043e49d64afc09",
+          "output-3.safetensors": "71ed2d9b516132b65ab93ff022a739aa8e0611ca209b4b1d9b03081fbedef1f3"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:28:58.330836978Z",
+            "FinishedAt": "2026-10-20T08:29:21.621936882Z"
+          },
+          "seconds": 24.363339498988353,
+          "peak_device_used_bytes": 319815680,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/cuda_cpp/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/cuda_cpp/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "pytorch",
+      "passed": true,
+      "result": {
+        "component": "contract_violation",
+        "numerically_correct": true,
+        "contract_compliant": false,
+        "correct": false,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          }
+        ],
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [],
+        "output_sha256": {
+          "output-0.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-1.safetensors": "f61fbb0b55e6762b80b251158d5e6ffd4ba8aecdbec9191828723f4553155454",
+          "output-2.safetensors": "8b0ece71bca69c2f637fd7e47efd3772cedd26b2f3944d976d043e49d64afc09",
+          "output-3.safetensors": "71ed2d9b516132b65ab93ff022a739aa8e0611ca209b4b1d9b03081fbedef1f3"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:29:22.722530888Z",
+            "FinishedAt": "2026-10-20T08:29:24.581636631Z"
+          },
+          "seconds": 2.0747479420388117,
+          "peak_device_used_bytes": 307232768,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/pytorch/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/pytorch/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "wrong_values",
+      "passed": true,
+      "result": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add.Tensor",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor"
+            ]
+          }
+        ],
+        "checks": [
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [],
+        "output_sha256": {
+          "output-0.safetensors": "d453ea0b337bb74a35495a1e678fda7632e5494c2c3c80030e5884bf383154ce",
+          "output-1.safetensors": "e9173cf4c65621203068374fa9470f44a08089fa54e3d6f1c5d4158b6f3f2789",
+          "output-2.safetensors": "7094192c635498630a0f5457b66638ce302a21d70a5e2fd041010ee0a07fdfa9",
+          "output-3.safetensors": "3af47ca133d51ed46b6505de832738b01100a9e628ef5b06ef46642a22f51d34"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:29:24.816038633Z",
+            "FinishedAt": "2026-10-20T08:29:26.464076563Z"
+          },
+          "seconds": 2.0791975850006565,
+          "peak_device_used_bytes": 307232768,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/wrong_values/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/wrong_values/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "input_mutation",
+      "passed": true,
+      "result": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add_.Tensor",
+                "aten.add_.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add_.Tensor",
+                "aten.add_.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add_.Tensor",
+                "aten.add_.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.add_.Tensor",
+                "aten.add_.Tensor"
+              ],
+              "cuda_kernels": [
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [
+            "input_alias",
+            "input_mutation",
+            "output_persistence"
+          ],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add_.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add_.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add_.Tensor"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add_.Tensor"
+            ]
+          }
+        ],
+        "checks": [
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [
+          "input_alias",
+          "input_mutation",
+          "output_persistence"
+        ],
+        "output_sha256": {
+          "output-0.safetensors": "d453ea0b337bb74a35495a1e678fda7632e5494c2c3c80030e5884bf383154ce",
+          "output-1.safetensors": "e9173cf4c65621203068374fa9470f44a08089fa54e3d6f1c5d4158b6f3f2789",
+          "output-2.safetensors": "7094192c635498630a0f5457b66638ce302a21d70a5e2fd041010ee0a07fdfa9",
+          "output-3.safetensors": "3af47ca133d51ed46b6505de832738b01100a9e628ef5b06ef46642a22f51d34"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:29:26.9264979Z",
+            "FinishedAt": "2026-10-20T08:29:28.58164495Z"
+          },
+          "seconds": 2.080673819000367,
+          "peak_device_used_bytes": 307232768,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/input_mutation/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/input_mutation/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "persistent_wrong",
+      "passed": true,
+      "result": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false,
+        "runtime": {
+          "calibration_kernels": [
+            "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+          ],
+          "initialization_completed": true,
+          "forward_completed": true,
+          "observations": [
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.arange.default",
+                "aten.add.Tensor",
+                "aten.arange.default",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>::result_type*)",
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.arange.default",
+                "aten.add.Tensor",
+                "aten.arange.default",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>::result_type*)",
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.arange.default",
+                "aten.add.Tensor",
+                "aten.arange.default",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>::result_type*)",
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            },
+            {
+              "complete": true,
+              "cuda_available": true,
+              "dispatch_ops": [
+                "aten.arange.default",
+                "aten.add.Tensor",
+                "aten.arange.default",
+                "aten.add.Tensor"
+              ],
+              "cuda_kernels": [
+                "void (anonymous namespace)::elementwise_kernel_with_index<int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>(int, at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}, function_traits<at::native::arange_cuda_out(c10::Scalar const&, c10::Scalar const&, c10::Scalar const&, at::Tensor&)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(long)#1}>::result_type*)",
+                "void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)"
+              ]
+            }
+          ],
+          "init_dispatch_ops": [],
+          "flags": [],
+          "output_contract_failure": null,
+          "candidate_error": null,
+          "phase": "complete",
+          "outputs_written": 4
+        },
+        "contract_checks": [
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor",
+              "aten.arange.default"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor",
+              "aten.arange.default"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor",
+              "aten.arange.default"
+            ]
+          },
+          {
+            "component": "contract_violation",
+            "reason": "high_level_tensor_compute",
+            "ops": [
+              "aten.add.Tensor",
+              "aten.arange.default"
+            ]
+          }
+        ],
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ],
+        "flags": [
+          "fresh_input_failure"
+        ],
+        "output_sha256": {
+          "output-0.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-1.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-2.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b",
+          "output-3.safetensors": "c6ebd1e69cb7995b981937227e17044fa7c2552aba7589b56a5f6597bee2c67b"
+        },
+        "execution": {
+          "returncode": 0,
+          "reason": null,
+          "container_state": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-20T08:29:29.03236156Z",
+            "FinishedAt": "2026-10-20T08:29:30.807761249Z"
+          },
+          "seconds": 2.0804797589662485,
+          "peak_device_used_bytes": 307232768,
+          "work": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/persistent_wrong/execution/work",
+          "log": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/sessions/2026-10-20T082852.956640_0000/controls/persistent_wrong/execution/worker.log"
+        }
+      }
+    },
+    {
+      "name": "timeout_cleanup",
+      "passed": true
+    }
+  ],
+  "model_outputs": 0
+}

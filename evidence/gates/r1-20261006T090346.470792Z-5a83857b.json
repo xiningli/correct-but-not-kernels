@@ -1,0 +1,32 @@
+{
+  "gate": "R1",
+  "status": "PASS",
+  "time_utc": "20261006T090346.470792Z",
+  "git": {
+    "sha": "80955ec4d7ffa2399240723ef92f11e05d533da5",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "adapter_disabled_reference_invariance",
+      "status": "PASS",
+      "evidence": "runs/replication-v1.1/audit/20261006T074521.673972Z/kl-probe.json",
+      "kl_spike_cause": "not established by this check"
+    },
+    {
+      "name": "reference_replay_correctness",
+      "status": "PASS",
+      "programs": 120
+    },
+    {
+      "name": "three_step_grpo_restart",
+      "status": "PASS"
+    },
+    {
+      "name": "three_step_sft_restart_and_reevaluation",
+      "status": "PASS"
+    }
+  ],
+  "protocol_sha256": "79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e",
+  "artifacts": "runs/replication-v1.1/audit/20261006T074521.673972Z"
+}

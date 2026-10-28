@@ -1,0 +1,122 @@
+[
+  {
+    "id": "linkedin/Liger-Kernel#1298",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1298",
+    "files": 14,
+    "before_commit": "e44a5fe86d3ee00def43913329e4c4ff70c3b416",
+    "fixed_commit": "9ac26bb82226c9279f0fda784300f5e02ce444b2",
+    "manifest_sha256": "9daa22a8f1ee29ca6c0561f45582174a2cd20ecaefde23ffbfb329590df0fa63"
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1344",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1344",
+    "files": 14,
+    "before_commit": "f01ffb1f5d3af9df407fc4f1b442f8b3dca15849",
+    "fixed_commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+    "manifest_sha256": "ed67933e51f243cce246ffdaca2a94adc9016de3ea453d45e54ebb9509828ea5"
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1374",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1374",
+    "files": 14,
+    "before_commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+    "fixed_commit": "559d33e7b14d81476b295ef41a962937efa74517",
+    "manifest_sha256": "610583d8e19454728cbfd331765f0512b837f9d10032bd5502df30e2bbb25899"
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1376",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1376",
+    "files": 14,
+    "before_commit": "559d33e7b14d81476b295ef41a962937efa74517",
+    "fixed_commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+    "manifest_sha256": "d410e06f01a848bbdaa3a1eb0792352c89439473ddef40e8e21a2a206acd4a85"
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1397",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1397",
+    "files": 20,
+    "before_commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+    "fixed_commit": "5b828eef2bd2a723d001a7557b2e12da1817b505",
+    "manifest_sha256": "633a815902f420b46af9c7bd93f3b2c076156132d66d74de4dd5d37f8d87dc4e"
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1103",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/fla-org--flash-linear-attention-1103",
+    "files": 16,
+    "before_commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d",
+    "fixed_commit": "ebd4dd27c0038e73cee514130f8c3efd203cef37",
+    "manifest_sha256": "4d123d667b1955925aaefa3d2774bd55121e979f652fae2ef0524ad83602b18e"
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1108",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/fla-org--flash-linear-attention-1108",
+    "files": 18,
+    "before_commit": "613210444e1e18b2e4f28a0dad36ca007df8ae48",
+    "fixed_commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d",
+    "manifest_sha256": "caa4a56b96566d0e3af64c6e930c0b79d20a8b0dcee6f6eff2d78a7cac4da512"
+  },
+  {
+    "id": "flagos-ai/FlagGems#519",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-519",
+    "files": 16,
+    "before_commit": "f981b62bf979b14935a8ff4f3d5ec8e3c84d0c83",
+    "fixed_commit": "18347b37a1ae7300893b61b808df64580d71234e",
+    "manifest_sha256": "ab2752abb43d3a639036ff405f5d81314d4b664ee9f7d8eb12859deb1614e397"
+  },
+  {
+    "id": "flagos-ai/FlagGems#553",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-553",
+    "files": 12,
+    "before_commit": "a2892aae441171d55d7472c2b94240023402e5ee",
+    "fixed_commit": "42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291",
+    "manifest_sha256": "5d808999edb6ff0b01620a238885857707102ab80a77115c5950e2611e5392bf"
+  },
+  {
+    "id": "flagos-ai/FlagGems#6560",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-6560",
+    "files": 16,
+    "before_commit": "92edf1dff80d025bc0994591ab91ef22d2b6f626",
+    "fixed_commit": "0d1931d262d93d4e4e6c84746c9e97acc0bdebc0",
+    "manifest_sha256": "c561773fabb3a3aa2abbb542771ea826dd70cd15496d62e571fcf691fb48b5ed"
+  },
+  {
+    "id": "flagos-ai/FlagGems#6727",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-6727",
+    "files": 18,
+    "before_commit": "e5a396b489f581106e31b937d3b1276c83e99fa5",
+    "fixed_commit": "cea096d5faa68ff51f66ebd6ee1ee520143d5d34",
+    "manifest_sha256": "5962e5236bb3852fa56cdf488aa6221607d4eb7de3ec00018720a2e3796d3274"
+  },
+  {
+    "id": "flagos-ai/FlagGems#960",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-960",
+    "files": 10,
+    "before_commit": "eae2664445fcf4fd341a76f75a1409f196a81fd5",
+    "fixed_commit": "e7fa001cc747facc3e1618a5083107bf39d96cc1",
+    "manifest_sha256": "ba62fc4531d7faa258c390b064ab2fc5d424d0855ee10221655481ce0f8e0282"
+  },
+  {
+    "id": "vllm-project/vllm#33326",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/vllm-project--vllm-33326",
+    "files": 22,
+    "before_commit": "0493d897c4b7ed645b506bcd0452b7f3326f85f6",
+    "fixed_commit": "23591e631e1982610731d3de1ed09cad16094d32",
+    "manifest_sha256": "af3fb4155359e24e8d1c3ffd43453d7aa9a717ecfaa08869b866955b64f11e88"
+  },
+  {
+    "id": "vllm-project/vllm#15909",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/vllm-project--vllm-15909",
+    "files": 22,
+    "before_commit": "58f5a59769b89a9457dfbedaac9d200bb100be78",
+    "fixed_commit": "24b7fb455a77518f50b21c35a693ae28a5b49b0b",
+    "manifest_sha256": "0a9a93451490a2a7ab746fd2f2744fc836b6522c1823fe92e7f400e9c22c129f"
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1433",
+    "directory": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1433",
+    "files": 14,
+    "before_commit": "5b828eef2bd2a723d001a7557b2e12da1817b505",
+    "fixed_commit": "ed1f856d5b00d4ff75a62d66cdb78a4ad935d02f",
+    "manifest_sha256": "5852928190f84d49b1442bb2db09b845ef957b208c3346fdc86c01ce98e31a3d"
+  }
+]

@@ -1,0 +1,52 @@
+{
+ "dataset": "GPUMODE/KernelBook dataset_permissive.parquet",
+ "license": "June 9 Researcher Reciprocity License",
+ "source": "https://huggingface.co/datasets/GPUMODE/KernelBook",
+ "sha256": "64af2baa3c9a835dac85a5d0c772cc698610bccd5c63c44a56ebe0afaf5d9ed2",
+ "rows": 18162,
+ "static_class": {
+  "reachable": 18162
+ },
+ "static_class_by_synthetic": {
+  "True": {},
+  "False": {
+   "reachable": 18162
+  }
+ },
+ "reachable_with_extern_or_aten_call": {
+  "False": 7185,
+  "True": 10977
+ },
+ "reachable_with_extern_gemm_or_conv": {
+  "False": 7413,
+  "True": 10749
+ },
+ "extern_or_aten_ops_in_reachable": {
+  "mm": 5083,
+  "convolution": 4489,
+  "addmm": 4095,
+  "bmm": 2095,
+  "randn": 95,
+  "_trilinear": 58,
+  "native_dropout": 50,
+  "set_": 50,
+  "normal_functional": 45,
+  "max_pool2d_with_indices": 35,
+  "max_pool3d_with_indices": 34,
+  "rand": 29,
+  "avg_pool2d": 27,
+  "_linalg_slogdet": 26,
+  "topk": 24,
+  "linalg_inv_ex": 15,
+  "_scaled_dot_product_efficient_attention": 15,
+  "_sparse_addmm": 13,
+  "_thnn_fused_gru_cell": 12,
+  "median": 11,
+  "normal": 10,
+  "_linalg_svd": 9,
+  "multinomial": 8,
+  "randint": 8,
+  "_embedding_bag": 7
+ },
+ "scope": "static source classes only; no dataset code executed"
+}

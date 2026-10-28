@@ -1,0 +1,69 @@
+id: cuda-diagnostics-v6
+status: development_not_confirmatory
+question: Can a larger Gemma and visible execution feedback repair defects that single-turn generation misses?
+training_enabled: false
+formal_test_enabled: false
+models:
+  - gemma-4-12B-it
+  - gemma-4-31B-it
+model_dtype: bfloat16
+thinking: false
+model_comparison_limit: Same-family checkpoints differ in architecture and training; not an isolated causal parameter-count experiment.
+development:
+  tasks: [development/case-001, development/case-002]
+  independent_defects: 2
+  previously_seen: true
+  replicates: 2
+  conditions: [independent, revision_verdict, revision_diagnostic]
+  rounds: 4
+  episodes: 24
+  logical_attempt_cap: 96
+  unique_generation_cap: 80
+  first_attempt: shared_exact_completion_and_visible_evaluation_across_conditions
+  initial_feedback: same_grouped_visible_facts_for_all_conditions
+  independent: restart_original_program_and_initial_feedback_with_new_seed
+  revision_verdict: revise_last_parseable_program_using_only_latest_component_and_pass_counts
+  revision_diagnostic: revise_last_parseable_program_using_visible_facts_and_allowlisted_compiler_errors
+  state: current_program_and_latest_feedback_no_full_conversation_history
+  malformed_response: retain_attempt_and_last_parseable_source_expose_format_or_truncation_outcome
+  stopping: first_visible_strict_pass_or_four_attempts
+  selection: first_visible_strict_pass_else_final_attempt_never_hidden_selection
+  hidden_scoring: only_after_all_visible_generation_for_a_model_never_fed_back
+sampling:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 64
+  max_tokens: 8192
+inference:
+  max_model_len: 24576
+  max_num_seqs: 2
+  gpu_memory_utilization: 0.85
+  enforce_eager: true
+  overflow: stop_no_asymmetric_truncation
+  execution: generator_process_exits_before_serial_isolated_candidate_evaluation
+seeds:
+  generation: 2026101606
+  order: 2026101607
+  evaluator: 2026101608
+limits:
+  generation_batch_seconds: 7200
+  run_wall_seconds: 86400
+controls:
+  prepared_v5: runs/diagnostics-v5/prepared-20261016-c
+  fresh_isolation_probes: 6
+  original_fail_official_fix_pass: 8
+  syntax_and_API_error_feedback: separately_validated_on_current_GPU
+analysis:
+  primary: resolved_development_episodes_per_model_and_condition
+  count_shared_first_attempt: once_physically_and_once_logically_per_branch
+  costs: prompt_tokens_output_tokens_generation_and_evaluation_wall_time_actual_and_per_episode_caps
+  task_sample: descriptive_only_no_p_values_or_generalization_claim
+  limitations:
+    - Same two reduced defects from one repository; cannot support prize-level/general claims by themselves.
+    - Rich feedback is not guaranteed to identify the true cause; failure does not prove intrinsic inability.
+    - Equal attempt/output caps do not imply equal FLOPs, latency, or actual prompt-token costs across models.
+    - Full-program replacement remains part of this version; local-patch interfaces are a separate intervention.
+    - Earlier v5 scores are historical context, not a matched comparison to this new iterative protocol.
+operations:
+  completion: report_archive_verified_local_backup_shutdown
+  CPU_preparation: download_and_validate_without_loading_GPU_weights

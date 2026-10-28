@@ -1,0 +1,1151 @@
+{
+  "policies": {
+    "base": {
+      "arm": "base",
+      "training_seed": null,
+      "failure_components": {
+        "crash": 306,
+        "correct": 537,
+        "format": 60,
+        "incorrect": 57
+      },
+      "source_indicators": {
+        "mentions_triton": 466,
+        "not_extractable": 60,
+        "pytorch_without_custom_kernel_markers": 395,
+        "mentions_custom_cuda": 39
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.6125,
+            "ci95": [
+              0.46875,
+              0.74375
+            ]
+          },
+          "fast1": {
+            "value": 0.34375,
+            "ci95": [
+              0.2375,
+              0.45625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9569969413630036,
+            "ci95": [
+              0.8837508197923702,
+              0.9996044575070899
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.34375,
+            "1.1": 0.0,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.54875,
+            "ci95": [
+              0.49125,
+              0.605
+            ]
+          },
+          "fast1": {
+            "value": 0.1925,
+            "ci95": [
+              0.14625,
+              0.2425
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0186445965484032,
+            "ci95": [
+              1.0028643672235207,
+              1.037172972240414
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.005,
+            "ci95": [
+              0.00125,
+              0.01
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.1925,
+            "1.1": 0.055,
+            "2.0": 0.00375
+          }
+        }
+      }
+    },
+    "C-20261021": {
+      "arm": "C",
+      "training_seed": 20261021,
+      "failure_components": {
+        "correct": 699,
+        "incorrect": 51,
+        "format": 44,
+        "crash": 165,
+        "sandbox_blocked": 1
+      },
+      "source_indicators": {
+        "mentions_triton": 463,
+        "not_extractable": 44,
+        "pytorch_without_custom_kernel_markers": 418,
+        "mentions_custom_cuda": 35
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.825,
+            "ci95": [
+              0.75625,
+              0.8875
+            ]
+          },
+          "fast1": {
+            "value": 0.4,
+            "ci95": [
+              0.29375,
+              0.5125
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0113392581723974,
+            "ci95": [
+              0.9986950796061866,
+              1.036267273559272
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.4,
+            "1.1": 0.025,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.70875,
+            "ci95": [
+              0.655,
+              0.75875
+            ]
+          },
+          "fast1": {
+            "value": 0.21625,
+            "ci95": [
+              0.1675,
+              0.26875
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0190138994925484,
+            "ci95": [
+              0.9981843544825747,
+              1.0444467356052871
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0075,
+            "ci95": [
+              0.0,
+              0.0175
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.21625,
+            "1.1": 0.05625,
+            "2.0": 0.00625
+          }
+        }
+      }
+    },
+    "S-20261021": {
+      "arm": "S",
+      "training_seed": 20261021,
+      "failure_components": {
+        "crash": 155,
+        "incorrect": 75,
+        "correct": 671,
+        "format": 59
+      },
+      "source_indicators": {
+        "mentions_triton": 456,
+        "not_extractable": 59,
+        "pytorch_without_custom_kernel_markers": 413,
+        "mentions_custom_cuda": 32
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.78125,
+            "ci95": [
+              0.68125,
+              0.875
+            ]
+          },
+          "fast1": {
+            "value": 0.3375,
+            "ci95": [
+              0.21875,
+              0.4625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9809809715549027,
+            "ci95": [
+              0.9556897648707218,
+              1.0003926991609926
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.3375,
+            "1.1": 0.00625,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.6825,
+            "ci95": [
+              0.6275,
+              0.73625
+            ]
+          },
+          "fast1": {
+            "value": 0.33875,
+            "ci95": [
+              0.28375,
+              0.395
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.034778953892207,
+            "ci95": [
+              1.0097395663964934,
+              1.0642020963935734
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.005,
+            "ci95": [
+              0.0,
+              0.01125
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.33875,
+            "1.1": 0.07125,
+            "2.0": 0.01
+          }
+        }
+      }
+    },
+    "SFT-20261021": {
+      "arm": "SFT",
+      "training_seed": 20261021,
+      "failure_components": {
+        "correct": 684,
+        "crash": 177,
+        "incorrect": 55,
+        "format": 41,
+        "sandbox_blocked": 3
+      },
+      "source_indicators": {
+        "mentions_triton": 420,
+        "pytorch_without_custom_kernel_markers": 466,
+        "mentions_custom_cuda": 33,
+        "not_extractable": 41
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.80625,
+            "ci95": [
+              0.71875,
+              0.8875
+            ]
+          },
+          "fast1": {
+            "value": 0.3875,
+            "ci95": [
+              0.275,
+              0.50625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9927464663623469,
+            "ci95": [
+              0.9752418062262734,
+              1.0102175896218382
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.3875,
+            "1.1": 0.0125,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.69375,
+            "ci95": [
+              0.6425,
+              0.74375
+            ]
+          },
+          "fast1": {
+            "value": 0.24,
+            "ci95": [
+              0.19,
+              0.295
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.025583023135703,
+            "ci95": [
+              0.9952299185764427,
+              1.0645217089140437
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0075,
+            "ci95": [
+              0.00125,
+              0.015
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.24,
+            "1.1": 0.06625,
+            "2.0": 0.00625
+          }
+        }
+      }
+    },
+    "S-20261022": {
+      "arm": "S",
+      "training_seed": 20261022,
+      "failure_components": {
+        "correct": 708,
+        "format": 36,
+        "crash": 153,
+        "incorrect": 62,
+        "gpu_memory_limit": 1
+      },
+      "source_indicators": {
+        "mentions_triton": 432,
+        "not_extractable": 36,
+        "pytorch_without_custom_kernel_markers": 446,
+        "mentions_custom_cuda": 46
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.79375,
+            "ci95": [
+              0.7,
+              0.88125
+            ]
+          },
+          "fast1": {
+            "value": 0.3375,
+            "ci95": [
+              0.23125,
+              0.45625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0044123541788923,
+            "ci95": [
+              0.9994930404469465,
+              1.0127340732122665
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.3375,
+            "1.1": 0.0125,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.72625,
+            "ci95": [
+              0.6775,
+              0.77375
+            ]
+          },
+          "fast1": {
+            "value": 0.26375,
+            "ci95": [
+              0.20875,
+              0.32125
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0333199687112329,
+            "ci95": [
+              1.0043339679847703,
+              1.0698248530547616
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.005,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.26375,
+            "1.1": 0.065,
+            "2.0": 0.00875
+          }
+        }
+      }
+    },
+    "SFT-20261022": {
+      "arm": "SFT",
+      "training_seed": 20261022,
+      "failure_components": {
+        "crash": 154,
+        "correct": 704,
+        "incorrect": 61,
+        "format": 41
+      },
+      "source_indicators": {
+        "mentions_triton": 392,
+        "pytorch_without_custom_kernel_markers": 485,
+        "mentions_custom_cuda": 42,
+        "not_extractable": 41
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.76875,
+            "ci95": [
+              0.675,
+              0.85625
+            ]
+          },
+          "fast1": {
+            "value": 0.29375,
+            "ci95": [
+              0.1875,
+              0.40625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.985152442137675,
+            "ci95": [
+              0.9429747737717104,
+              1.0141232628551027
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.00625,
+            "ci95": [
+              0.0,
+              0.01875
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.29375,
+            "1.1": 0.0125,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.72625,
+            "ci95": [
+              0.67625,
+              0.775
+            ]
+          },
+          "fast1": {
+            "value": 0.2525,
+            "ci95": [
+              0.2,
+              0.31125
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0248527215042178,
+            "ci95": [
+              1.0066626923294368,
+              1.0467978278318342
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.00625,
+            "ci95": [
+              0.00125,
+              0.01375
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.2525,
+            "1.1": 0.075,
+            "2.0": 0.00375
+          }
+        }
+      }
+    },
+    "C-20261022": {
+      "arm": "C",
+      "training_seed": 20261022,
+      "failure_components": {
+        "correct": 684,
+        "format": 52,
+        "crash": 166,
+        "incorrect": 57,
+        "sandbox_blocked": 1
+      },
+      "source_indicators": {
+        "mentions_triton": 479,
+        "not_extractable": 52,
+        "pytorch_without_custom_kernel_markers": 388,
+        "mentions_custom_cuda": 41
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.7625,
+            "ci95": [
+              0.65,
+              0.8625
+            ]
+          },
+          "fast1": {
+            "value": 0.35625,
+            "ci95": [
+              0.24375,
+              0.475
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9983735327263991,
+            "ci95": [
+              0.9541577800240947,
+              1.0469764559262724
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.35625,
+            "1.1": 0.0375,
+            "2.0": 0.00625
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.7025,
+            "ci95": [
+              0.64625,
+              0.7575
+            ]
+          },
+          "fast1": {
+            "value": 0.27125,
+            "ci95": [
+              0.22125,
+              0.32375
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.033778147840896,
+            "ci95": [
+              1.0017922770118668,
+              1.0770604701953288
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0075,
+            "ci95": [
+              0.0025,
+              0.01375
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.27125,
+            "1.1": 0.06625,
+            "2.0": 0.00875
+          }
+        }
+      }
+    },
+    "SFT-20261023": {
+      "arm": "SFT",
+      "training_seed": 20261023,
+      "failure_components": {
+        "correct": 690,
+        "format": 39,
+        "crash": 183,
+        "incorrect": 48
+      },
+      "source_indicators": {
+        "mentions_triton": 387,
+        "not_extractable": 39,
+        "pytorch_without_custom_kernel_markers": 468,
+        "mentions_custom_cuda": 66
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.725,
+            "ci95": [
+              0.58125,
+              0.85625
+            ]
+          },
+          "fast1": {
+            "value": 0.3,
+            "ci95": [
+              0.2,
+              0.4
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9838338982397116,
+            "ci95": [
+              0.9530983654680304,
+              0.9999755062848258
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.3,
+            "1.1": 0.0,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.7175,
+            "ci95": [
+              0.66875,
+              0.765
+            ]
+          },
+          "fast1": {
+            "value": 0.245,
+            "ci95": [
+              0.19375,
+              0.30125
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0136838999257363,
+            "ci95": [
+              0.9953324776984944,
+              1.034140001210469
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.00125,
+            "ci95": [
+              0.0,
+              0.00375
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.245,
+            "1.1": 0.0575,
+            "2.0": 0.005
+          }
+        }
+      }
+    },
+    "C-20261023": {
+      "arm": "C",
+      "training_seed": 20261023,
+      "failure_components": {
+        "incorrect": 59,
+        "correct": 733,
+        "crash": 131,
+        "format": 37
+      },
+      "source_indicators": {
+        "mentions_triton": 412,
+        "pytorch_without_custom_kernel_markers": 457,
+        "mentions_custom_cuda": 54,
+        "not_extractable": 37
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.8375,
+            "ci95": [
+              0.71875,
+              0.93125
+            ]
+          },
+          "fast1": {
+            "value": 0.35625,
+            "ci95": [
+              0.225,
+              0.5
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9930304793538948,
+            "ci95": [
+              0.9797814541154809,
+              1.0027988864651585
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.35625,
+            "1.1": 0.0,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.74875,
+            "ci95": [
+              0.69875,
+              0.79625
+            ]
+          },
+          "fast1": {
+            "value": 0.265,
+            "ci95": [
+              0.21,
+              0.32375
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0141545017403968,
+            "ci95": [
+              1.0009162019673983,
+              1.028856844809008
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.005,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.265,
+            "1.1": 0.06875,
+            "2.0": 0.00125
+          }
+        }
+      }
+    },
+    "S-20261023": {
+      "arm": "S",
+      "training_seed": 20261023,
+      "failure_components": {
+        "correct": 721,
+        "incorrect": 61,
+        "crash": 135,
+        "format": 41,
+        "gpu_memory_limit": 1,
+        "sandbox_blocked": 1
+      },
+      "source_indicators": {
+        "mentions_triton": 451,
+        "not_extractable": 41,
+        "pytorch_without_custom_kernel_markers": 438,
+        "mentions_custom_cuda": 30
+      },
+      "levels": {
+        "level1": {
+          "correctness": {
+            "value": 0.8,
+            "ci95": [
+              0.68125,
+              0.9
+            ]
+          },
+          "fast1": {
+            "value": 0.3,
+            "ci95": [
+              0.18125,
+              0.43125
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 0.9611603088013065,
+            "ci95": [
+              0.9131669826671241,
+              0.997342220353854
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.3,
+            "1.1": 0.0,
+            "2.0": 0.0
+          }
+        },
+        "level2": {
+          "correctness": {
+            "value": 0.74125,
+            "ci95": [
+              0.6925,
+              0.7875
+            ]
+          },
+          "fast1": {
+            "value": 0.29875,
+            "ci95": [
+              0.24375,
+              0.35625
+            ]
+          },
+          "correct_geomean_speedup": {
+            "value": 1.0153550979796935,
+            "ci95": [
+              1.0006638619634856,
+              1.0314940806719657
+            ]
+          },
+          "detector_fraction": {
+            "value": 0.00375,
+            "ci95": [
+              0.0,
+              0.00875
+            ]
+          },
+          "fast_thresholds": {
+            "1.0": 0.29875,
+            "1.1": 0.07,
+            "2.0": 0.0025
+          }
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "C-base/level1": {
+      "paired": {
+        "value": 0.19583333333333336,
+        "ci": [
+          0.10625000000000002,
+          0.29583333333333334
+        ],
+        "confidence": 0.95,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "C-20261021": 0.825,
+        "C-20261022": 0.7625,
+        "C-20261023": 0.8375,
+        "base": 0.6125
+      }
+    },
+    "C-base/level2": {
+      "paired": {
+        "value": 0.17125,
+        "ci": [
+          0.12625,
+          0.21791666666666668
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "C-20261021": 0.70875,
+        "C-20261022": 0.7025,
+        "C-20261023": 0.74875,
+        "base": 0.54875
+      }
+    },
+    "S-base/level1": {
+      "paired": {
+        "value": 0.17916666666666667,
+        "ci": [
+          0.09583333333333333,
+          0.26875
+        ],
+        "confidence": 0.95,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "S-20261021": 0.78125,
+        "S-20261022": 0.79375,
+        "S-20261023": 0.8,
+        "base": 0.6125
+      }
+    },
+    "S-base/level2": {
+      "paired": {
+        "value": 0.1679166666666667,
+        "ci": [
+          0.12333333333333334,
+          0.21416666666666667
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "S-20261021": 0.6825,
+        "S-20261022": 0.72625,
+        "S-20261023": 0.74125,
+        "base": 0.54875
+      }
+    },
+    "C-SFT/level1": {
+      "paired": {
+        "value": 0.04166666666666668,
+        "ci": [
+          -0.004166666666666652,
+          0.08958333333333335
+        ],
+        "confidence": 0.95,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "C-20261021": 0.825,
+        "C-20261022": 0.7625,
+        "C-20261023": 0.8375,
+        "SFT-20261021": 0.80625,
+        "SFT-20261022": 0.76875,
+        "SFT-20261023": 0.725
+      }
+    },
+    "C-SFT/level2": {
+      "paired": {
+        "value": 0.007499999999999998,
+        "ci": [
+          -0.01958333333333334,
+          0.03583333333333333
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "policy_correctness": {
+        "C-20261021": 0.70875,
+        "C-20261022": 0.7025,
+        "C-20261023": 0.74875,
+        "SFT-20261021": 0.69375,
+        "SFT-20261022": 0.72625,
+        "SFT-20261023": 0.7175
+      }
+    }
+  },
+  "common_correct_speed": {
+    "C-20261021-base/level1": {
+      "common_successful_draws": 89,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.0029701216889144,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "C-20261021-base/level2": {
+      "common_successful_draws": 356,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 0.9884686228983459,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261021-base/level1": {
+      "common_successful_draws": 89,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 0.9991338741263667,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261021-base/level2": {
+      "common_successful_draws": 356,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.0111911935486992,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261021-base/level1": {
+      "common_successful_draws": 83,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 0.9950574109322976,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261021-base/level2": {
+      "common_successful_draws": 357,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.0038069853280622,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261022-base/level1": {
+      "common_successful_draws": 83,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.0486451073285195,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261022-base/level2": {
+      "common_successful_draws": 361,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 0.9900832848375793,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261022-base/level1": {
+      "common_successful_draws": 81,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.018962355328219,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261022-base/level2": {
+      "common_successful_draws": 361,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.000532114066657,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "C-20261022-base/level1": {
+      "common_successful_draws": 82,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.0174172202140381,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "C-20261022-base/level2": {
+      "common_successful_draws": 360,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.001267841201463,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261023-base/level1": {
+      "common_successful_draws": 86,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.024769659947042,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "SFT-20261023-base/level2": {
+      "common_successful_draws": 355,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 0.9882251031390805,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "C-20261023-base/level1": {
+      "common_successful_draws": 91,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.046179627273055,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "C-20261023-base/level2": {
+      "common_successful_draws": 381,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.0002129127106103,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261023-base/level1": {
+      "common_successful_draws": 84,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 0.9975808074544833,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261023-base/level2": {
+      "common_successful_draws": 368,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 0.9991167894151737,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261021-C-20261021/level1": {
+      "common_successful_draws": 110,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 0.9678656825802622,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261021-C-20261021/level2": {
+      "common_successful_draws": 438,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.0123236457278393,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261022-C-20261022/level1": {
+      "common_successful_draws": 100,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 1.0277650587881715,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261022-C-20261022/level2": {
+      "common_successful_draws": 456,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 0.9967240190518425,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261023-C-20261023/level1": {
+      "common_successful_draws": 114,
+      "all_draws": 160,
+      "geomean_speedup_ratio": 0.9752481432412407,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    },
+    "S-20261023-C-20261023/level2": {
+      "common_successful_draws": 481,
+      "all_draws": 800,
+      "geomean_speedup_ratio": 1.0021954004161757,
+      "scope": "conditional on both policies succeeding on the same task/input draw; descriptive"
+    }
+  },
+  "limitations": [
+    "Previously observed tasks; independent generation draws, not an unseen-task confirmation.",
+    "Intervals resample task clusters conditional on saved policies; they do not estimate population training-seed uncertainty.",
+    "Training seeds are reported separately; base samples are shared, never counted as extra independent baselines.",
+    "Source indicators and detector flags require manual/runtime review; they are not verified mechanisms.",
+    "Conditional speedup changes with the successful task set; no equivalence claim from a nonsignificant difference."
+  ]
+}

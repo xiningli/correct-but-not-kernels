@@ -1,0 +1,17 @@
+# Development qualification only. Never install into a training environment.
+# PyTorch 2.8.0 Linux wheels use CUDA 12.8; upstream release reference in report.
+torch==2.8.0
+triton==3.4.0
+transformers==4.57.1
+einops==0.8.1
+numpy==2.2.6
+scipy==1.15.3
+packaging==25.0
+pyyaml==6.0.3
+pytest==8.4.2
+pytest-xdist==3.8.0
+pytest-rerunfailures==16.1
+pytest-asyncio==1.2.0
+pytest-cov==7.0.0
+setuptools==80.9.0
+wheel==0.45.1

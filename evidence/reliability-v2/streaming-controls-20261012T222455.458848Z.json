@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "manifest_sha256": "dd7b52e6b273eea6d1d7cbbfc3a844cfe369ef71dc6c66599238b693dc49a246",
+  "code_hashes": {
+    "research/reliability_v2/storage.py": "3cdff4ab671dc1bc36ebdcac1e2e763b22ba94078ef3e8d024cf20d597545122",
+    "research/reliability_v2/sandbox.py": "10a625fa64c881b6dd42d3e20514cf6d84a2c7853c9dc56f0dd848f76f6fa155",
+    "research/reliability_v2/tensor_checks.py": "11c167640c26f2e3d5dc4c1e36abf6fc88ced7de6f6606d61fa7039f56e76620",
+    "research/reliability_v2/kernel_worker.py": "ae648cdd3f61e9c60702f8227ddbc2adf4141bec9af7eb2a138ace5b8303b117",
+    "research/reliability_v2/evaluator.py": "8716075448da00c99362af380e084e1528a72cc0d2a84b48cf615a028964ad3d",
+    "research/reliability_v2/controls.py": "a15f7975a3523a5ebfe2565dcfb7c38d797c2ad204b03edb5b773232290dc74d",
+    "research/reliability_v2/replay.py": "43a4c7a276d08cd8a43d84494295588554ac5c271db201652361f03f093fd5f2"
+  },
+  "utc": "2026-10-12T22:37:21.970388+00:00",
+  "checks": [
+    {
+      "name": "reference",
+      "passed": true
+    },
+    {
+      "name": "custom_triton",
+      "passed": true
+    },
+    {
+      "name": "wrong_shape",
+      "passed": true
+    },
+    {
+      "name": "wrong_dtype",
+      "passed": true
+    },
+    {
+      "name": "unchanged_nan",
+      "passed": true
+    },
+    {
+      "name": "input_mutation",
+      "passed": true
+    },
+    {
+      "name": "output_mutation",
+      "passed": true
+    },
+    {
+      "name": "socket",
+      "passed": true
+    },
+    {
+      "name": "write_outside",
+      "passed": true
+    },
+    {
+      "name": "read_oracle",
+      "passed": true
+    },
+    {
+      "name": "full_size_reference",
+      "passed": true
+    },
+    {
+      "name": "full_size_custom",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-19T18:46:28.154809+00:00",
+  "active": {
+    "controller": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controllers/handoff-20261019T182917Z",
+    "pid": 3134,
+    "utc": "2026-10-19T18:29:17.684887+00:00"
+  },
+  "progress.json": {
+    "stage": "awaiting_verified_backup"
+  },
+  "outcome.json": {
+    "status": "blocked",
+    "error": "GPU controls failed before model generation; see controls-driver.log",
+    "model_outputs": 0,
+    "utc": "2026-10-19T18:46:12.734854+00:00"
+  },
+  "repairs": null
+}

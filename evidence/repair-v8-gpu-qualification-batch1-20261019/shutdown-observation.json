@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-19T01:44:54.405724+00:00",
+  "backup_ack_uploaded": true,
+  "existing_ssh_session_closed_after_ack": true,
+  "fresh_connection_probes": [
+    {
+      "attempt": 1,
+      "utc": "2026-10-19T01:44:42.206766+00:00",
+      "error": "TimeoutError: timed out",
+      "ssh_banner_received": false
+    },
+    {
+      "attempt": 2,
+      "utc": "2026-10-19T01:44:49.318967+00:00",
+      "error": "TimeoutError: timed out",
+      "ssh_banner_received": false
+    }
+  ],
+  "ssh_available": false,
+  "platform_power_state_or_billing_queried": false,
+  "shutdown_return_receipt_retrieved": false,
+  "status": "backup_acknowledged_auto_shutdown_triggered_ssh_unavailable",
+  "basis": "Bounded supervisor writes report/archive, validates backup SHA acknowledgement, then invokes AutoDL /usr/bin/shutdown. SSH closed immediately after acknowledgement; no restart requested."
+}

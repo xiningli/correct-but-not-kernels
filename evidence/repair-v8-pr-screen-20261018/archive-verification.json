@@ -1,0 +1,77 @@
+[
+  {
+    "id": "fla-org/flash-linear-attention#1103",
+    "manifest_sha256": "4d123d667b1955925aaefa3d2774bd55121e979f652fae2ef0524ad83602b18e",
+    "files_verified": 16
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1108",
+    "manifest_sha256": "caa4a56b96566d0e3af64c6e930c0b79d20a8b0dcee6f6eff2d78a7cac4da512",
+    "files_verified": 18
+  },
+  {
+    "id": "flagos-ai/FlagGems#519",
+    "manifest_sha256": "ab2752abb43d3a639036ff405f5d81314d4b664ee9f7d8eb12859deb1614e397",
+    "files_verified": 16
+  },
+  {
+    "id": "flagos-ai/FlagGems#553",
+    "manifest_sha256": "5d808999edb6ff0b01620a238885857707102ab80a77115c5950e2611e5392bf",
+    "files_verified": 12
+  },
+  {
+    "id": "flagos-ai/FlagGems#6560",
+    "manifest_sha256": "c561773fabb3a3aa2abbb542771ea826dd70cd15496d62e571fcf691fb48b5ed",
+    "files_verified": 16
+  },
+  {
+    "id": "flagos-ai/FlagGems#6727",
+    "manifest_sha256": "5962e5236bb3852fa56cdf488aa6221607d4eb7de3ec00018720a2e3796d3274",
+    "files_verified": 18
+  },
+  {
+    "id": "flagos-ai/FlagGems#960",
+    "manifest_sha256": "ba62fc4531d7faa258c390b064ab2fc5d424d0855ee10221655481ce0f8e0282",
+    "files_verified": 10
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1298",
+    "manifest_sha256": "9daa22a8f1ee29ca6c0561f45582174a2cd20ecaefde23ffbfb329590df0fa63",
+    "files_verified": 14
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1344",
+    "manifest_sha256": "ed67933e51f243cce246ffdaca2a94adc9016de3ea453d45e54ebb9509828ea5",
+    "files_verified": 14
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1374",
+    "manifest_sha256": "610583d8e19454728cbfd331765f0512b837f9d10032bd5502df30e2bbb25899",
+    "files_verified": 14
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1376",
+    "manifest_sha256": "d410e06f01a848bbdaa3a1eb0792352c89439473ddef40e8e21a2a206acd4a85",
+    "files_verified": 14
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1397",
+    "manifest_sha256": "633a815902f420b46af9c7bd93f3b2c076156132d66d74de4dd5d37f8d87dc4e",
+    "files_verified": 20
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1433",
+    "manifest_sha256": "5852928190f84d49b1442bb2db09b845ef957b208c3346fdc86c01ce98e31a3d",
+    "files_verified": 14
+  },
+  {
+    "id": "vllm-project/vllm#15909",
+    "manifest_sha256": "0a9a93451490a2a7ab746fd2f2744fc836b6522c1823fe92e7f400e9c22c129f",
+    "files_verified": 22
+  },
+  {
+    "id": "vllm-project/vllm#33326",
+    "manifest_sha256": "af3fb4155359e24e8d1c3ffd43453d7aa9a717ecfaa08869b866955b64f11e88",
+    "files_verified": 22
+  }
+]

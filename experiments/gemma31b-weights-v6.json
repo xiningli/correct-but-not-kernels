@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-16T16:45:46.950817+00:00",
+  "repo": "google/gemma-4-31B-it",
+  "hf_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "source": "https://huggingface.co/google/gemma-4-31B-it",
+  "files": [
+    {
+      "path": "chat_template.jinja",
+      "bytes": 18683,
+      "sha256": "ae53464bf3be25802b3a5b37def7fd89667067d7577049b3b2d74c4d8de4c6d4",
+      "modelscope_revision": "57da71606acd38c6a8e60d1a20371b819bbffa94"
+    },
+    {
+      "path": "config.json",
+      "bytes": 4621,
+      "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "generation_config.json",
+      "bytes": 208,
+      "sha256": "d4226bbe3117d2d253ba4609720ba82c6c4ce4627a9a6ae05387c78983ac03de",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "model-00001-of-00002.safetensors",
+      "bytes": 49784788364,
+      "sha256": "eeef8791537bc04f110967c513149e037d2a9ae97d49add7291ebfa62806bbfa",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "model-00002-of-00002.safetensors",
+      "bytes": 12761549884,
+      "sha256": "018912220f559f7025d60333e0996183cd538aa77ad6f4988a89ce47be681f10",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "bytes": 120246,
+      "sha256": "d4aff3b976d69c123a29d1c085d7ba4de1ac3f4ca1726a7f81e1b11462a64ea2",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "processor_config.json",
+      "bytes": 1689,
+      "sha256": "32bdf45d2ad4cc29a0822ddd157a182de76644f0419a6228d151495256e9813c",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 32169626,
+      "sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+      "modelscope_revision": "272b328105b7c76f6b46acbe580bd5bd47323a58"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "bytes": 3082,
+      "sha256": "9f4fec4b1dc6ecddf8f4a92e9caea5971c0e67d81309f3f9066a2bee8c362633",
+      "modelscope_revision": "c7a493cd69771548e767c0273cc19fe1c15d7513"
+    }
+  ],
+  "bytes": 62578656403,
+  "mirror": "https://modelscope.cn/models/google/gemma-4-31B-it",
+  "verification": "Every mirror file hash matches the pinned upstream Hugging Face revision."
+}

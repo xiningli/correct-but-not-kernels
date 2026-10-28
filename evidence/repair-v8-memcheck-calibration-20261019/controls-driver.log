@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/autodl-tmp/repair-v8-pilot-20261019-r6/research/repair_v8/pilot/controls.py", line 171, in <module>
+    main()
+  File "/root/autodl-tmp/repair-v8-pilot-20261019-r6/research/repair_v8/pilot/controls.py", line 167, in main
+    a = p.parse_args(); controls(a.prepared.resolve(), a.out.resolve())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/repair-v8-pilot-20261019-r6/research/repair_v8/pilot/controls.py", line 147, in controls
+    raise RuntimeError('Isolated memcheck control failed: ' + task)
+RuntimeError: Isolated memcheck control failed: liger_attnres

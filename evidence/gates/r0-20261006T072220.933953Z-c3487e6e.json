@@ -1,0 +1,24 @@
+{
+  "gate": "R0",
+  "status": "PASS",
+  "time_utc": "20261006T072220.933953Z",
+  "git": {
+    "sha": "160408d4aae668b8cbb36e4bbe09b87691dacaaf",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "pilot_archive",
+      "status": "PASS",
+      "sha256": "d58e5119237fe80eeb3553d3d9fe800f30ce75f6ad6d0509bba7d28bff1e96fc",
+      "bytes": 7143496613
+    },
+    {
+      "name": "frozen_protocol_and_final_adapters",
+      "status": "PASS"
+    }
+  ],
+  "protocol_sha256": "79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e",
+  "artifacts": "runs/replication-v1.1",
+  "scope": "CPU validation only; R1 GPU audit and SFT smoke remain mandatory"
+}

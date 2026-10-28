@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-19T18:07:25.586051+00:00",
+  "sha256": "1625367728ce787409883f8b85a236cfd9347c54c16add428c88b999f97bb934",
+  "bytes": 177662,
+  "local_archive": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-pilot-20261019/remote/20261019T180544.370170Z/evidence.tgz",
+  "inventory_files_verified": 45
+}

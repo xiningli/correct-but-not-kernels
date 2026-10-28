@@ -1,0 +1,61 @@
+id: cuda-scoped-repair-v7
+status: local_interface_prototype_not_executable_experiment
+question: Does a function-edit interface help Gemma use visible execution feedback to repair GPU defects?
+training_enabled: false
+GPU_launch_enabled: false
+formal_test_enabled: false
+dependencies:
+  unchanged_active_study: experiments/cuda-diagnostics-v6.yaml
+  prototype: research/scoped_repair/edits.py
+  reuse_after_integration: visible_diagnostic_projection_and_isolated_strict_evaluator
+scope:
+  source: supplied_pre_fix_program_only
+  editable: all_top_level_functions_and_direct_class_methods
+  selection: no_human_fix_lines_no_gold_localization
+  frozen: imports_module_constants_class_declarations_license_tests_and_harness
+  external_signature: ModelNew.forward
+  internal_signatures: editable_together_with_call_sites
+  limitation: bugs_requiring_edits_outside_this_scope_are_out_of_scope_before_model_evaluation
+interfaces:
+  - full_program_same_scope
+  - named_function_replacements_same_scope
+fairness:
+  context: same_complete_before_program_issue_and_visible_diagnostic_facts
+  editable_boundary: identical_in_both_interfaces
+  feedback_conditions: [independent_resampling, revision_verdict, revision_diagnostic]
+  models: [gemma-4-12B-it, gemma-4-31B-it]
+  attempt_cap: 4
+  output_token_cap: 8192
+  first_attempt: may_be_shared_across_feedback_branches_within_an_interface_not_across_interfaces
+  failed_edits: count_against_attempt_and_token_budget_no_free_format_repair
+  actual_costs: record_tokens_wall_time_and_evaluations_not_equal_compute_claim
+scoring:
+  stopping: first_visible_strict_pass_or_attempt_budget
+  final_selection: determined_from_visible_information_only
+  withheld: once_after_selection_never_feedback_never_retry_on_hidden_failure
+  endpoints:
+    - resolved_independent_defects_with_withheld_regression_pass
+    - edit_application_and_format_failures
+    - compilation_and_runtime_failures
+    - numerical_failures_and_custom_compute_violations
+    - successful_repairs_per_actual_token_and_time_budget
+  statistical_unit: independent_defect_not_generation_or_training_seed
+stages:
+  local_prototype: scope_enforcement_atomic_edits_no_generated_code_execution
+  development: existing_two_seen_defects_only_after_runner_and_GPU_controls_exist
+  expansion: independently_reproduced_defects_then_freeze_a_disjoint_formal_test_set
+  training: consider_only_after_a_measurable_repair_signal_and_evaluation_are_established
+not_yet_implemented:
+  - model_response_wire_format_and_prompt
+  - integration_with_generation_and_feedback_loop
+  - visible_before_fail_fixed_pass_controls_under_scoped_interface
+  - end_to_end_GPU_validation_and_model_scores
+  - formal_dataset_or_power_analysis
+claims:
+  - Interface_acceptance_is_neither_security_nor_correctness_certification.
+  - Existing_v6_full_program_outputs_are_not_a_matched_v7_comparison.
+  - Feedback_and_editing_interfaces_have_prior_work_no_novelty_claim_from_combination_alone.
+  - Prototype_success_does_not_demonstrate_reliable_Gemma_repairs.
+references:
+  - https://arxiv.org/abs/2502.10517
+  - https://arxiv.org/abs/2405.15793

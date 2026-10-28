@@ -1,0 +1,22 @@
+{
+  "status": "CPU_preparation_not_GPU_qualification",
+  "tasks": [
+    "linkedin/Liger-Kernel#1344",
+    "linkedin/Liger-Kernel#1376",
+    "flagos-ai/FlagGems#553",
+    "fla-org/flash-linear-attention#1103"
+  ],
+  "selection_reason": "First operational batch from the fixed development queue: three repositories, bounded APIs, archived tests; no model/GPU outcomes used.",
+  "remaining_development_tasks": [
+    "linkedin/Liger-Kernel#1298",
+    "vllm-project/vllm#15909",
+    "linkedin/Liger-Kernel#1397",
+    "fla-org/flash-linear-attention#1108",
+    "flagos-ai/FlagGems#519",
+    "vllm-project/vllm#33326",
+    "flagos-ai/FlagGems#6727",
+    "flagos-ai/FlagGems#6560"
+  ],
+  "no_formal_evaluation": true,
+  "no_training": true
+}

@@ -1,0 +1,16 @@
+# K1–K4: retry after correctness saturation; two existing fusion TRAIN tasks.
+# The split, reward, evaluation protocol and model-card sampling stay fixed.
+hypotheses: [K1, K2, K3, K4]
+models: [gemma-4-12B-it, gemma-4-E4B-it]
+tasks:
+  - level1/40_LayerNorm
+  - level1/88_MinGPTNewGelu
+seed: 20261005
+samples_per_task: 32
+group_size: 8
+sampling: {temperature: 1.0, top_p: 0.95, top_k: 64, max_tokens: 4096}
+max_model_len: 8192
+eval_gpu_memory_utilization: 0.85
+max_num_seqs: 8
+minimum_signal: 0.2
+minimum_signal_tasks: 2

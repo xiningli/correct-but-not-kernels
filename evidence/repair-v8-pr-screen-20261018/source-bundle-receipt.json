@@ -1,0 +1,9 @@
+{
+  "path": "evidence/repair-v8-pr-screen-20261018/investigator-source-bundle.tgz",
+  "bytes": 2886455,
+  "sha256": "db38f257fba21742f0223657396f3a704a45e80221a2e86e57b75f8e78c9cb51",
+  "files_readback_verified": 1104,
+  "inventory_sha256": "89ea2157c19bed18b97d48d12b86808b179487371c1c14a5f9511d2a77e8714b",
+  "visibility": "investigator_only_gold_tests_PR_bodies_and_future_history_do_not_expose_to_models",
+  "not_a_complete_repository_checkout": true
+}

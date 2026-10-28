@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "scope": "strict_launcher_C1_regression",
+  "checks": [
+    {
+      "name": "socket",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": -31,
+        "elapsed_seconds": 2.3656648881733418,
+        "peak_rss_bytes": 831324160,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/socket/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/socket/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "write_outside",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 2.777699038386345,
+        "peak_rss_bytes": 837115904,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/write_outside/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/write_outside/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "fork_bomb",
+      "status": "PASS",
+      "expected_component": "process_limit",
+      "result": {
+        "component": "process_limit",
+        "returncode": 79,
+        "elapsed_seconds": 2.9918826557695866,
+        "peak_rss_bytes": 13264891904,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/fork_bomb/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/fork_bomb/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "gpu_oom",
+      "status": "PASS",
+      "expected_component": "gpu_oom",
+      "result": {
+        "component": "gpu_oom",
+        "returncode": 77,
+        "elapsed_seconds": 2.926833998411894,
+        "peak_rss_bytes": 862097408,
+        "peak_gpu_bytes": 101928075264,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/gpu_oom/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/gpu_oom/worker.log"
+      },
+      "reward_C": -0.1,
+      "memory_before_bytes": 666107904,
+      "memory_after_bytes": 666107904,
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 3.8593832328915596,
+        "peak_rss_bytes": 1062522880,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/gpu_oom-recovery/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/gpu_oom-recovery/worker.log"
+      }
+    },
+    {
+      "name": "infinite_kernel",
+      "status": "PASS",
+      "expected_component": "timeout",
+      "result": {
+        "component": "timeout",
+        "returncode": -9,
+        "elapsed_seconds": 30.217342272400856,
+        "peak_rss_bytes": 886550528,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/infinite_kernel/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/infinite_kernel/worker.log"
+      },
+      "reward_C": -0.1,
+      "memory_before_bytes": 666107904,
+      "memory_after_bytes": 666107904,
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 3.8751156851649284,
+        "peak_rss_bytes": 987697152,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/infinite_kernel-recovery/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/infinite_kernel-recovery/worker.log"
+      }
+    },
+    {
+      "name": "read_oracle",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 2.7752330005168915,
+        "peak_rss_bytes": 882184192,
+        "peak_gpu_bytes": 730005504,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/read_oracle/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/strict-isolation/20261015T185011.345044Z/read_oracle/worker.log"
+      },
+      "reward_C": -0.1
+    }
+  ],
+  "prerequisite": "runs/gates/c0-20261012T222627.889390Z-ce063754.json",
+  "artifacts": "runs/reliability-v2/strict-isolation/20261015T185011.345044Z"
+}

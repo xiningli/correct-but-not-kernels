@@ -1,0 +1,50 @@
+[
+  {
+    "task": "liger_attnres",
+    "gates": {
+      "before_same_bug_three_processes": true,
+      "fixed_all_probes_three_processes": true,
+      "preservation_both_revisions_three_processes": true,
+      "custom_kernel_trace": true,
+      "memcheck": true
+    },
+    "status": "development_controls_pass",
+    "formal_eligible": false
+  },
+  {
+    "task": "liger_groupnorm",
+    "gates": {
+      "before_same_bug_three_processes": true,
+      "fixed_all_probes_three_processes": true,
+      "preservation_both_revisions_three_processes": true,
+      "custom_kernel_trace": true,
+      "memcheck": true
+    },
+    "status": "development_controls_pass",
+    "formal_eligible": false
+  },
+  {
+    "task": "flaggems_addmm",
+    "gates": {
+      "before_same_bug_three_processes": false,
+      "fixed_all_probes_three_processes": false,
+      "preservation_both_revisions_three_processes": false,
+      "custom_kernel_trace": false,
+      "memcheck": false
+    },
+    "status": "not_qualified",
+    "formal_eligible": false
+  },
+  {
+    "task": "fla_rwkv7",
+    "gates": {
+      "before_same_bug_three_processes": true,
+      "fixed_all_probes_three_processes": true,
+      "preservation_both_revisions_three_processes": true,
+      "custom_kernel_trace": true,
+      "memcheck": true
+    },
+    "status": "development_controls_pass",
+    "formal_eligible": false
+  }
+]

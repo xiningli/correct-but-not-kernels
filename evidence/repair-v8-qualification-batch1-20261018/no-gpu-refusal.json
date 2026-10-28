@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/mnt/fastdata/cuda-gemma4-llm/research/repair_v8/qualify.py\", line 302, in <module>\n    main()\n  File \"/mnt/fastdata/cuda-gemma4-llm/research/repair_v8/qualify.py\", line 298, in main\n    gpu_run(root, prepared)\n  File \"/mnt/fastdata/cuda-gemma4-llm/research/repair_v8/qualify.py\", line 227, in gpu_run\n    raise RuntimeError('No CUDA device; nothing launched')\nRuntimeError: No CUDA device; nothing launched\n",
+  "GPU_runs": 0,
+  "gpu_output_directory_created": false
+}

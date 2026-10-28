@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-19T19:21:50.477614+00:00",
+  "status": "blocked_before_model_generation",
+  "model_outputs": 0,
+  "task": "liger_attnres",
+  "panel_counts": {
+    "before-visible": {
+      "passed": 1,
+      "total": 2
+    },
+    "before-hidden": {
+      "passed": 6,
+      "total": 10
+    },
+    "fixed-visible": {
+      "passed": 2,
+      "total": 2
+    },
+    "fixed-hidden": {
+      "passed": 10,
+      "total": 10
+    },
+    "fixed-memcheck": {
+      "passed": 0,
+      "total": 10
+    }
+  },
+  "upstream_passed": {
+    "before-upstream": 27,
+    "fixed-upstream": 27
+  },
+  "profile_allowed_ops": [
+    "aten._to_copy.default",
+    "aten.detach.default",
+    "aten.empty.memory_format",
+    "aten.empty_like.default",
+    "aten.view.default",
+    "aten.zeros.default"
+  ],
+  "memcheck_observed_ops": [
+    "aten._to_copy.default",
+    "aten.copy_.default",
+    "aten.empty.memory_format",
+    "aten.empty_like.default",
+    "aten.new_empty_strided.default",
+    "aten.view.default",
+    "aten.zeros.default"
+  ],
+  "memcheck_numerical_checks_all_pass": true,
+  "memcheck_zero_error_logs": 10,
+  "rejection_flags": [
+    "undeclared_host_tensor_operation"
+  ],
+  "root_cause": "Profile-only host-operation calibration was incorrectly reused for the separate memcheck execution mode.",
+  "repair": "Calibrate separate contracts from trusted official-patch controls before model generation; require the matching frozen contract for candidates.",
+  "remote_revalidation": "pending; SSH connection timed out on this check",
+  "platform_power_state_verified": false
+}

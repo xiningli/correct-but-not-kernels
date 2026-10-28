@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-19T01:18:40.832189+00:00",
+  "pid": 1710,
+  "scope": "Four development candidates: CPU preparation and original before/fixed GPU qualification only",
+  "power_off": true,
+  "basis": "User requested autonomous decisions and shutdown after completion or blockage",
+  "prepare_wall_seconds": 2700,
+  "gpu_wall_seconds": 14400,
+  "backup_ack_wait_seconds": 300
+}

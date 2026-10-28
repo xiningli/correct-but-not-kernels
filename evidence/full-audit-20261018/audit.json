@@ -1,0 +1,124 @@
+{
+  "audit_utc": "2026-10-18T18:11:10.496888+00:00",
+  "baseline_commit": "7462bafcc417a65973ff7622f85e86ecc8418778",
+  "scope": "Existing asset inventory, archive integrity, raw-result reconstruction, critical protocol/code review and CPU checks; no new GPU candidate execution or training",
+  "script": {
+    "path": "research/full_audit_20261018.py",
+    "sha256": "2376e9da76d00e658c7693e61dab1e9b9780c8e20ea841c46dbe8aa2980d5314"
+  },
+  "completed_phases": {
+    "assets": {
+      "completed_utc": "2026-10-18T17:54:56.486481+00:00",
+      "receipt_sha256": "c74ddac226c33232d057ff342b8f25cf81c53e698a5d6da6e9e1605eb2e6db49",
+      "receipt_path": "runs/full-audit-20261018/assets-completion.json"
+    },
+    "archive-members": {
+      "completed_utc": "2026-10-18T17:58:25.730906+00:00",
+      "receipt_sha256": "0e99e0798df73b59c93a66a3a0379d762ee7360e4aaab3094df2a5ef1d2be25f",
+      "receipt_path": "runs/full-audit-20261018/archive-members-completion.json"
+    },
+    "studies": {
+      "completed_utc": "2026-10-18T17:56:10.638865+00:00",
+      "receipt_sha256": "5e020af9fd05ead357418b0f6f486f30b42b4c06a9741826ccddf384b0c5096b",
+      "receipt_path": "runs/full-audit-20261018/studies-completion.json"
+    },
+    "legacy": {
+      "completed_utc": "2026-10-18T18:10:27.663843+00:00",
+      "receipt_sha256": "3c58cb6e7765c63492f454442b52cd577136137b556c2dea931b98ee64af2d7b",
+      "receipt_path": "runs/full-audit-20261018/legacy-completion.json"
+    },
+    "final-report": {
+      "completed_utc": "2026-10-18T18:05:33.687695+00:00",
+      "receipt_sha256": "230f563868229f7ecff83347beea44afa5d0857e1cacc7a6e263d641fd1c2868",
+      "receipt_path": "runs/full-audit-20261018/final-report-completion.json"
+    },
+    "probes": {
+      "completed_utc": "2026-10-18T18:10:25.670732+00:00",
+      "receipt_sha256": "406245f859ec1b9582e0223a2557e21ef86f25ff46706de43b30290a739f1d90",
+      "receipt_path": "runs/full-audit-20261018/probes-completion.json"
+    }
+  },
+  "artifacts": {
+    "inventory-summary.json": {
+      "sha256": "d513edd47892f2c27d9f8b9f0040cbd373fc5aa6eb608353678cd1ba3e69d1f7",
+      "bytes": 3943,
+      "source": "runs/full-audit-20261018/inventory-summary.json"
+    },
+    "archive-hashes.json": {
+      "sha256": "13848d372d8e97f803124cfbde38c5a6c2c66b5be86e506a6352b952904f5fa7",
+      "bytes": 30262,
+      "source": "runs/full-audit-20261018/archive-hashes.json"
+    },
+    "main-archive-members.json": {
+      "sha256": "42a02fd525bd63940972d28faabfdfea2ebef70e8a75200cb8358a0fafa6d322",
+      "bytes": 23630,
+      "source": "runs/full-audit-20261018/main-archive-members.json"
+    },
+    "study-reconstruction.json": {
+      "sha256": "91679ae911906099bb44cda56ca75dc4e5cacc2744a842c4cf73d0986015efd0",
+      "bytes": 62130,
+      "source": "runs/full-audit-20261018/study-reconstruction.json"
+    },
+    "legacy-and-training.json": {
+      "sha256": "f900c0b24f5e12813c040dc10ff04d193e96cae24cdb0831d8748a52ea15fac1",
+      "bytes": 13941,
+      "source": "runs/full-audit-20261018/legacy-and-training.json"
+    },
+    "confirmation-report.json": {
+      "sha256": "f1ed5d7755c9e2ffbb13c2bcf28ff27c9abcdca416fc95a2b9f7cda378fd34c4",
+      "bytes": 29606,
+      "source": "runs/full-audit-20261018/confirmation-report.json"
+    },
+    "interface-format-diagnosis.json": {
+      "sha256": "84147c7fede0f68a397d7d152eaae0b65189c9219ff2aae5e616700db24d79ad",
+      "bytes": 7105,
+      "source": "runs/full-audit-20261018/interface-format-diagnosis.json"
+    },
+    "numerical-and-scope-probe.json": {
+      "sha256": "0222dbd50c2db55c0a549153ba33e9bd22b188528932bacb61ccdbdc0d1d0b2b",
+      "bytes": 675,
+      "source": "runs/full-audit-20261018/numerical-and-scope-probe.json"
+    },
+    "baseline-tracked-files.json": {
+      "sha256": "2abc4c78770ee1865ff4b8c7d430384033fed1154516aeddc4d673af83b1491f",
+      "bytes": 26324,
+      "source": "runs/full-audit-20261018/tracked-files.json"
+    }
+  },
+  "cpu_tests": {
+    "interpreter": "/home/noname/anaconda3/bin/python3",
+    "torch": "2.11.0+cu130",
+    "command": "python -m pytest -q tests research/reliability_v2 research/diagnostics_v1 research/diagnostics_v2 research/diagnostics_resume_v6 research/scoped_repair -m 'not cuda'",
+    "tests": 179,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_sha256": "31e5aa2c095ae3584e35ba957b2452ef1087f594c894a26cb596dccaf0544819",
+    "dev_only_venv_attempt": {
+      "passed": 176,
+      "skipped": 2,
+      "failed": 1,
+      "failure": "PyTorch not installed; diagnostics_v2 runner import"
+    }
+  },
+  "baseline_tracked_file_comparison": {
+    "checked": 243,
+    "changed": [
+      "README.md",
+      "REPORT_STATUS.md"
+    ],
+    "all_other_existing_tracked_bytes_unchanged": true
+  },
+  "remote": {
+    "read_only_ssh_probe": "timeout, exit 255",
+    "current_gpu_execution": "not performed",
+    "power_and_billing": "not verified"
+  },
+  "limitations": [
+    "File inventory contains backups, not independent experiments; regular files were not all hashed individually outside archives.",
+    "32 of 50 archives automatically matched neighboring historical JSON receipts; lack of such a match is not a corruption finding.",
+    "No fresh GPU rerun or independent model replication; report reconstruction validates stored records, not all historical runtime verdicts.",
+    "The numerical probe is trusted manually transcribed CPU arithmetic, not execution of the candidate GPU source.",
+    "Reproduction currently depends on local ignored data and archives; public packaging remains incomplete."
+  ]
+}

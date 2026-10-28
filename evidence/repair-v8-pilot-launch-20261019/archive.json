@@ -1,0 +1,7 @@
+{
+  "path": "/root/autodl-tmp/repair-v8-pilot-20261019/runs/pilot/controllers/20261019T180544.370170Z/evidence.tgz",
+  "sha256": "1625367728ce787409883f8b85a236cfd9347c54c16add428c88b999f97bb934",
+  "bytes": 177662,
+  "readback_verified": true,
+  "omitted": "Reconstructible checkouts, immutable packaged input snapshots/tokenizer, sandbox caches and raw tensor scratch. Original logs, parsed measurements, prompts, outputs, sources and decisions retained."
+}

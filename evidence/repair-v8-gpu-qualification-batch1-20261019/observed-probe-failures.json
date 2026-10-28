@@ -1,0 +1,65 @@
+[
+  {
+    "task": "liger_attnres",
+    "revision": "before",
+    "status": "test_failure",
+    "error": "output: numerical mismatch",
+    "count": 6
+  },
+  {
+    "task": "liger_groupnorm",
+    "revision": "before",
+    "status": "probe_exception",
+    "error": "RuntimeError: shape '[2, 6, 4, 8]' is invalid for input of size 96",
+    "count": 3
+  },
+  {
+    "task": "liger_groupnorm",
+    "revision": "before",
+    "status": "probe_exception",
+    "error": "RuntimeError: shape '[2, 8, 2, 3, 5]' is invalid for input of size 80",
+    "count": 3
+  },
+  {
+    "task": "liger_groupnorm",
+    "revision": "before",
+    "status": "probe_exception",
+    "error": "RuntimeError: shape '[2, 9, 3, 7]' is invalid for input of size 126",
+    "count": 3
+  },
+  {
+    "task": "flaggems_addmm",
+    "revision": "before",
+    "status": "probe_exception",
+    "error": "TypeError: function takes exactly 16 arguments (15 given)",
+    "count": 24
+  },
+  {
+    "task": "flaggems_addmm",
+    "revision": "fixed",
+    "status": "probe_exception",
+    "error": "TypeError: function takes exactly 16 arguments (15 given)",
+    "count": 24
+  },
+  {
+    "task": "fla_rwkv7",
+    "revision": "before",
+    "status": "test_failure",
+    "error": "out-of-bounds store changed guard",
+    "count": 6
+  },
+  {
+    "task": "fla_rwkv7",
+    "revision": "before",
+    "status": "test_failure",
+    "error": "output: numerical mismatch",
+    "count": 2
+  },
+  {
+    "task": "fla_rwkv7",
+    "revision": "before",
+    "status": "test_failure",
+    "error": "output: nonfinite result",
+    "count": 4
+  }
+]

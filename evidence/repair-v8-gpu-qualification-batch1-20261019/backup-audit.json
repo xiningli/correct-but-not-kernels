@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-19T01:42:37.351430+00:00",
+  "status": "pass",
+  "archive_sha256": "1144d82ec7e368b296dc2408483b77193f93462adb1d3d4e18eb5d97c7eefbc8",
+  "archive_bytes": 867849,
+  "regular_members_verified": 544,
+  "planned_processes": 204,
+  "actual_unique_processes": 204,
+  "process_logs_hash_verified": 204,
+  "all_receipt_sidecars_match": true,
+  "frozen_runner_and_lock_match_local_and_remote": true,
+  "execution_manifest_files_match_original_local_preparation": true,
+  "task_summaries_independently_recomputed": true,
+  "qualified_development_tasks": 3,
+  "formal_eligible_tasks": 0,
+  "model_runs": 0,
+  "timeouts": 0,
+  "original_test_outcome_counts": {
+    "liger_attnres": {
+      "passed": 162
+    },
+    "liger_groupnorm": {
+      "passed": 30
+    },
+    "flaggems_addmm": {
+      "failed": 270
+    },
+    "fla_rwkv7": {
+      "passed": 24
+    }
+  }
+}

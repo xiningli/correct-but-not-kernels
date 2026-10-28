@@ -1,0 +1,238 @@
+{
+  "kind": "independent_local_receipt_verification",
+  "verified_utc": "2026-10-13T18:37:28.223908+00:00",
+  "archive": {
+    "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/archives/20261012T222455.458848Z.tgz",
+    "bytes": 385996,
+    "sha256": "de83d2378cb98e59a7ff4a64552d0b9e37c62c243772769e9f379d77bc022f2e",
+    "verified_utc": "2026-10-13T03:36:02.283505+00:00",
+    "transfer_returncode": 0
+  },
+  "complete": {
+    "status": "complete",
+    "utc": "2026-10-13T03:35:22.030270+00:00",
+    "programs": 80,
+    "manifest_sha256": "dd7b52e6b273eea6d1d7cbbfc3a844cfe369ef71dc6c66599238b693dc49a246",
+    "scores_sha256": "a749eca90d6be175987af6f4e56347d29ee7e94731e548c8f7fee6a659f8efdb",
+    "report_sha256": "efcb9df981a8960d36e102b66d50980a0fdf4c07cb5dee3e379a7eb01ecd48ba"
+  },
+  "task": "level1/38_L1Norm_",
+  "programs": 80,
+  "controls_passed": 12,
+  "source_seed_original_records_match_manifest": true,
+  "replay_and_report_hashes_match": true,
+  "archived_and_local_evaluator_code_matches_manifest": true,
+  "original_components": {
+    "correct": 40,
+    "format": 4,
+    "crash": 33,
+    "gpu_memory_limit": 2,
+    "incorrect": 1
+  },
+  "replay_components": {
+    "correct": 61,
+    "format": 4,
+    "crash": 12,
+    "gpu_memory_limit": 2,
+    "incorrect": 1
+  },
+  "enospc_audit_cases": 21,
+  "enospc_cases_correct_on_replay": 21,
+  "all_other_components_unchanged": true,
+  "policy_summary": [
+    {
+      "label": "C-20261021",
+      "programs": 8,
+      "original_correct": 7,
+      "replay_correct": 7
+    },
+    {
+      "label": "C-20261022",
+      "programs": 8,
+      "original_correct": 7,
+      "replay_correct": 7
+    },
+    {
+      "label": "C-20261023",
+      "programs": 8,
+      "original_correct": 0,
+      "replay_correct": 7
+    },
+    {
+      "label": "S-20261021",
+      "programs": 8,
+      "original_correct": 8,
+      "replay_correct": 8
+    },
+    {
+      "label": "S-20261022",
+      "programs": 8,
+      "original_correct": 4,
+      "replay_correct": 4
+    },
+    {
+      "label": "S-20261023",
+      "programs": 8,
+      "original_correct": 0,
+      "replay_correct": 6
+    },
+    {
+      "label": "SFT-20261021",
+      "programs": 8,
+      "original_correct": 5,
+      "replay_correct": 5
+    },
+    {
+      "label": "SFT-20261022",
+      "programs": 8,
+      "original_correct": 7,
+      "replay_correct": 7
+    },
+    {
+      "label": "SFT-20261023",
+      "programs": 8,
+      "original_correct": 0,
+      "replay_correct": 8
+    },
+    {
+      "label": "base",
+      "programs": 8,
+      "original_correct": 2,
+      "replay_correct": 2
+    }
+  ],
+  "changed_cases": [
+    {
+      "label": "C-20261023",
+      "sample": 0,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 1,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 2,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 3,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 4,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 5,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "C-20261023",
+      "sample": 7,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 0,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 3,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 4,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 5,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 6,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "S-20261023",
+      "sample": 7,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 0,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 1,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 2,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 3,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 4,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 5,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 6,
+      "from": "crash",
+      "to": "correct"
+    },
+    {
+      "label": "SFT-20261023",
+      "sample": 7,
+      "from": "crash",
+      "to": "correct"
+    }
+  ],
+  "limits": [
+    "One previously observed task; same saved programs and seeds",
+    "Original permissive implementation contract",
+    "Driver and evaluator differ; old/new timing is not an isolated storage-repair effect",
+    "Frozen v1.1 scores remain unchanged; primary Level-2 comparisons are unaffected"
+  ]
+}

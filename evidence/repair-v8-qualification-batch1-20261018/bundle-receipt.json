@@ -1,0 +1,10 @@
+{
+  "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/autodl-batch1-investigator.tgz",
+  "sha256": "e8396e87b14ae16a7cca42484cc96d6f07be92288fc7cb7dc7c0639ad1d142cb",
+  "bytes": 39794876,
+  "files_and_symlinks": 5948,
+  "readback_verified": true,
+  "package_manifest_sha256": "b849d36311692e2ea7ac2aad6f4bfcf24121711b35b7ba8d307f1351f67fa290",
+  "contains_gold_fixes": true,
+  "mount_in_model_container": false
+}

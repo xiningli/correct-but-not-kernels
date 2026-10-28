@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "untampered_archive_passes": true,
+    "same_size_source_tampering_rejected": true,
+    "escaping_symlink_rejected": true,
+    "traversal_rejected": true,
+    "corrupted_response_cache_rejected_without_network": true,
+    "duplicate_root_cluster_rejected": true
+  },
+  "passed": true,
+  "network_used": false,
+  "upstream_code_executed": false
+}

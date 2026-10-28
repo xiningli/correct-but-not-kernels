@@ -1,0 +1,744 @@
+{
+  "status": "pass",
+  "scope": "CPU_reference_arithmetic_and_subprocess_paths_only_not_GPU_import_or_kernel_success",
+  "python": "3.12.13 (main, Apr  7 2026, 20:45:25) [Clang 22.1.1 ]",
+  "torch": "2.8.0+cu128",
+  "runtime_cuda": "12.8",
+  "packages": {
+    "torch": "2.8.0",
+    "triton": "3.4.0",
+    "transformers": "4.57.1",
+    "pytest": "8.4.2"
+  },
+  "GPU_runs": 0,
+  "cases": [
+    {
+      "task": "liger_attnres",
+      "case": "attnres_40",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_40",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_40.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.5667711570276879,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_40.log",
+        "log_sha256": "3821b9e0686fcaed628c76e22c784cbe6b5e6c54c8f09db0fdd5eae4fd20c3f4"
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "case": "attnres_33",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_33",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_33.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0151820780010894,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_33.log",
+        "log_sha256": "f676e2b7b0c5bc505c0ffe6669798dbeef33d1bb81e6eb64e0b83b440d7830cf"
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "case": "attnres_31",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_31",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_31.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9651264559943229,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_31.log",
+        "log_sha256": "591236657df8aef437234f38b9a67a08bb69e402b390cceb1e85e47510954d19"
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "case": "attnres_32",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_32",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_32.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9150752200512215,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_32.log",
+        "log_sha256": "e99b5aecf5fb71b8b197c655b64c4c477973a7f1df0480360a62b84bee43b6b7"
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "case": "attnres_3",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_3",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_3.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.2155870749847963,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_3.log",
+        "log_sha256": "8da0ed929f0d318f1773d7d0526200b156365694325e410354bc9c970b0a052f"
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "case": "attnres_fp16",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_attnres",
+          "--case",
+          "attnres_fp16",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_fp16.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0152821400552057,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_attnres-attnres_fp16.log",
+        "log_sha256": "27bb42a2c9b96c3146af22f49c7fb2a55b325e4c59f1b0c0149bc7e38b3f72ed"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_4d",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_4d",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_4d.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9149627820006572,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_4d.log",
+        "log_sha256": "3214b2953dc9af088539c4663e75c180760b4e62d4fe36125d5776a0dd729836"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_5d",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_5d",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_5d.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9151204179506749,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_5d.log",
+        "log_sha256": "8f3d4cf3809a3a989c6491396a61a5968e6fc96e57d5f7cf92b3dcc8c276548c"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_odd",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_odd",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_odd.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0153210730059072,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_odd.log",
+        "log_sha256": "263860276f4a94ba66342ed9a85e4a4b90795cc08665fb7cff7e762feea39973"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_3d",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_3d",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_3d.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9149286260362715,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_3d.log",
+        "log_sha256": "9c9508483b4b8f13933223e2d007228ec83e581e3971b281081d437c475fcd20"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_one_group",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_one_group",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_one_group.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9653806459973566,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_one_group.log",
+        "log_sha256": "ec04a8227f63b0551df7e4d4b2aa87c4b1b50e2c2866ba81f4f890c9ae20f1d2"
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "case": "groupnorm_channel_groups",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "liger_groupnorm",
+          "--case",
+          "groupnorm_channel_groups",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_channel_groups.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9650918309926055,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/liger_groupnorm-groupnorm_channel_groups.log",
+        "log_sha256": "c159b309dc61e828ef174559f86aec14ad1c66a98525becfbf6dc5cf44fb6949"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_matrix",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_matrix",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_matrix.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.714827060000971,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_matrix.log",
+        "log_sha256": "034e2fe2b71717e58df860fb9b85dca6398184cae97d850f7e9f173ae35e7c3a"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_column",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_column",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_column.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7147489569615573,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_column.log",
+        "log_sha256": "f075ef009e9b0de683b2fdf199f8932b2514413ecb4cfc4a4e0b73c406cbc57a"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_scalar",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_scalar",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_scalar.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.81496488902485,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_scalar.log",
+        "log_sha256": "0b9d55e99c9aecaaac660065bf2a8fab5820baad6cfda82ed32e939ea04c8c9c"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_vector",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_vector",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_vector.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.8649413819657639,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_vector.log",
+        "log_sha256": "1363503ff864accc735627150bfd98ca0425e023618e5d2eb781bd7dbcdf3407"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_row",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_row",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_row.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7648579789674841,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_row.log",
+        "log_sha256": "9b375981bc35efa13b9906bf4d815f58f735253a3419994dc46ad7577dde2b1b"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_transpose",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_transpose",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_transpose.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7147055940004066,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_transpose.log",
+        "log_sha256": "d704cf51db16f9e6b7b7b1e176bf6799a9efc04dc855e120f3de0adadfc6e6da"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_beta_zero",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_beta_zero",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_beta_zero.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7148213399923407,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_beta_zero.log",
+        "log_sha256": "417fb9089df87dbd37f6fcb73ad4d2b3b35985aaa45cd979fd633c34052333ad"
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "case": "addmm_fp16",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "flaggems_addmm",
+          "--case",
+          "addmm_fp16",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_fp16.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.714609096001368,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/flaggems_addmm-addmm_fp16.log",
+        "log_sha256": "1866e279cab22ee5aa9dfcf31306abb5623b3436984a9e737edda5eea9fcdf93"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_tail_guard",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_tail_guard",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_guard.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7146226930199191,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_guard.log",
+        "log_sha256": "2dd1b4c4345731af43e28e4e968dc87849ce7982145ac946c1992990357f1d85"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_tail_small",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_tail_small",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_small.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.7146377239841968,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_small.log",
+        "log_sha256": "47fdbfd667c28c300c7eb1fc0f7074b40af3e95504b29e6c36c52c913e14c006"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_tail_aligned",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_tail_aligned",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_aligned.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.8648546670447104,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_tail_aligned.log",
+        "log_sha256": "056b665a69e60d2dd020fc916b7fbec9e1adfe7513779d4d8cfab9993b0848f1"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_full_odd",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_full_odd",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_odd.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0151563679683022,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_odd.log",
+        "log_sha256": "80b45d66a263ea1d5dad65231c73cc772e06a19b257c9993cae3b0cefc0c62bb"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_full_aligned",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_full_aligned",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_aligned.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9652464439859614,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_aligned.log",
+        "log_sha256": "76be4bbcb656583ba46c4003cf90d9012512bdb211553efd61b5d6efaa587472"
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "case": "rwkv_full_prev3d",
+      "status": "pass",
+      "process": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "research.repair_v8.worker",
+          "--task",
+          "fla_rwkv7",
+          "--case",
+          "rwkv_full_prev3d",
+          "--checkout",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+          "--seed",
+          "1701",
+          "--out",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_prev3d.json",
+          "--oracle-only"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 0.9150335239828564,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-check/fla_rwkv7-rwkv_full_prev3d.log",
+        "log_sha256": "bda6f6a3c72e2992add45bb022df96e1815c1ef7f585f985ee5bab4e5553826a"
+      }
+    }
+  ]
+}

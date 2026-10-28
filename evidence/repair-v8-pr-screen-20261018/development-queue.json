@@ -1,0 +1,893 @@
+{
+  "status": "provisional_CPU_candidates_not_execution_ready",
+  "development": [
+    {
+      "id": "linkedin/Liger-Kernel#1298",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1298,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1298",
+      "title": "Fix wrong grad_weight/grad_bias for fused linear cross entropy with reduction='none'",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Per-token upstream weights are applied after reduction over tokens, losing information needed for weight/bias gradients.",
+      "root_cluster": "liger-flce-nonuniform-upstream-gradient",
+      "family": "gradient_reduction",
+      "trigger": "reduction=none with nonuniform positive, zero and signed per-token grad_output; bias on/off.",
+      "oracle": "Independent PyTorch linear plus cross_entropy and autograd on identical inputs; compare loss and all requested gradients.",
+      "preservation": "Original mean/sum paths, uniform upstream gradient, ignored labels, frozen weight, bias absent, FP32/FP16/BF16 within declared support.",
+      "test_clue": "test/transformers/test_fused_linear_cross_entropy.py::test_correctness_reduction_none_per_token_grad_output",
+      "risk": "Original module fits 6144; official fixed response is larger but fits 8192. Higher-level host work is legitimate only while preserving existing custom CE path. Shares CE dependency with old #1490, so development-only and never counted as fresh formal evidence.",
+      "merged": true,
+      "merged_at": "2026-07-30T23:19:04Z",
+      "changed_files": 2,
+      "paths": [
+        "src/liger_kernel/ops/fused_linear_cross_entropy.py",
+        "test/transformers/test_fused_linear_cross_entropy.py"
+      ],
+      "pull_sha256": "ac70ce1d377388af72904bd7acc049b44995c8969e44ebce6986598693ff8d12",
+      "diff_sha256": "6e57d66fff4ab973122d09bf2f044e5ed6530b9f497bbfb2eeda256dd6acd35f",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1298/manifest.json",
+      "archive_manifest_sha256": "9daa22a8f1ee29ca6c0561f45582174a2cd20ecaefde23ffbfb329590df0fa63",
+      "before_commit": "e44a5fe86d3ee00def43913329e4c4ff70c3b416",
+      "fixed_commit": "9ac26bb82226c9279f0fda784300f5e02ce444b2",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/fused_linear_cross_entropy.py"
+      ],
+      "archived_files_verified": 14,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1298",
+        "modules": [
+          "src/liger_kernel/ops/fused_linear_cross_entropy.py"
+        ],
+        "before_full_response_tokens": 5742,
+        "fixed_full_response_tokens": 6609,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1298.diff",
+        "actual_merge_parent_diff_sha256": "f1e916bea09db5e79cd108d51038f45e4a2af926402887d1fcb90c8fe6614b40"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_fused_linear_cross_entropy.py",
+        "fixed/test/transformers/test_fused_linear_cross_entropy.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "9f4c25a089a97b556fca68a5614dc6e15f5b8c3ae4a8ad059026728de1efc406",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "fla-org/flash-linear-attention#1103",
+      "repo": "fla-org/flash-linear-attention",
+      "number": 1103,
+      "url": "https://github.com/fla-org/flash-linear-attention/pull/1103",
+      "title": "[Fix] Mask out-of-bounds accesses in RWKV7 channel mixing kernels",
+      "queries": [
+        2
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "ReLU-square forward/backward and x_prev backward stores access lanes outside the logical tensor tail.",
+      "root_cluster": "fla-rwkv7-channel-mixing-tail-access",
+      "family": "memory_bounds",
+      "trigger": "Small/non-tile-multiple tensor sizes, including guarded storage tails; evaluate public channel-mixing forward and backward.",
+      "oracle": "Independent PyTorch channel mixing and gradient reference plus canary storage and supported memcheck.",
+      "preservation": "Tile-aligned sizes, sequence first-step behavior, original supported layouts/dtypes, input mutation and all gradients.",
+      "test_clue": "tests/ops/test_rwkv7.py::test_channel_mixing_no_out_of_bounds_writes",
+      "risk": "Several missing tail masks in one module are one bundled PR/root cluster, never several independent n. Shared tests/conftest.py changed too; do not silently apply unrelated test behavior to before controls.",
+      "merged": true,
+      "merged_at": "2026-08-09T08:28:08Z",
+      "changed_files": 3,
+      "paths": [
+        "fla/ops/rwkv7/channel_mixing.py",
+        "tests/conftest.py",
+        "tests/ops/test_rwkv7.py"
+      ],
+      "pull_sha256": "da68301467fa6082fad682cacd90f91c09862cf3343688977d33bc31ea9fad85",
+      "diff_sha256": "e69cd268e7e3aaa908f73baac749ef236836abfdee4e4e28516b3b01510d0fa1",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/fla-org--flash-linear-attention-1103/manifest.json",
+      "archive_manifest_sha256": "4d123d667b1955925aaefa3d2774bd55121e979f652fae2ef0524ad83602b18e",
+      "before_commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d",
+      "fixed_commit": "ebd4dd27c0038e73cee514130f8c3efd203cef37",
+      "owner_modules_provisional": [
+        "fla/ops/rwkv7/channel_mixing.py"
+      ],
+      "archived_files_verified": 16,
+      "source_scope": {
+        "id": "fla-org/flash-linear-attention#1103",
+        "modules": [
+          "fla/ops/rwkv7/channel_mixing.py"
+        ],
+        "before_full_response_tokens": 4116,
+        "fixed_full_response_tokens": 4206,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/fla-org--flash-linear-attention-1103.diff",
+        "actual_merge_parent_diff_sha256": "0627c684723bf5980d2e1ef4007cfff7c8ed438edc13f4ab89399291a8702117"
+      },
+      "archived_test_files": [
+        "before/tests/conftest.py",
+        "before/tests/ops/test_rwkv7.py",
+        "fixed/tests/conftest.py",
+        "fixed/tests/ops/test_rwkv7.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "9f911774f28279be4345ab3fe07432202b6736e71c00d57f5bf67d99ecb46afa",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "flagos-ai/FlagGems#553",
+      "repo": "flagos-ai/FlagGems",
+      "number": 553,
+      "url": "https://github.com/flagos-ai/FlagGems/pull/553",
+      "title": "Fix addmm op bug",
+      "queries": [
+        5
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "addmm treats a broadcastable matrix bias as a single row.",
+      "root_cluster": "flaggems-addmm-bias-broadcast",
+      "family": "shape_and_stride",
+      "trigger": "Bias shape (M,N) with distinct rows, plus (M,1), (1,N) and scalar where publicly supported.",
+      "oracle": "torch.addmm and FP64 alpha*(A@B)+beta*bias on small inputs with fixed tolerances.",
+      "preservation": "Vector/row bias, signed alpha/beta and beta=0 behavior, transposed inputs, shape validation.",
+      "test_clue": "tests/test_blas_ops.py changed test cases",
+      "risk": "Older repository snapshot and Triton APIs require a compatible environment. Expanded beta=0/special-value contract must be checked on official fix before sealing.",
+      "merged": true,
+      "merged_at": "2025-04-25T06:22:12Z",
+      "changed_files": 2,
+      "paths": [
+        "src/flag_gems/ops/addmm.py",
+        "tests/test_blas_ops.py"
+      ],
+      "pull_sha256": "0fbf06aab9d0015a277fa73876c83d508f458f495a362685a7961637045f752f",
+      "diff_sha256": "d9770a5d57a6a94abbd6bd9b737e430bbf5efa0bdc088ec6de57d7791103ff12",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-553/manifest.json",
+      "archive_manifest_sha256": "5d808999edb6ff0b01620a238885857707102ab80a77115c5950e2611e5392bf",
+      "before_commit": "a2892aae441171d55d7472c2b94240023402e5ee",
+      "fixed_commit": "42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291",
+      "owner_modules_provisional": [
+        "src/flag_gems/ops/addmm.py"
+      ],
+      "archived_files_verified": 12,
+      "source_scope": {
+        "id": "flagos-ai/FlagGems#553",
+        "modules": [
+          "src/flag_gems/ops/addmm.py"
+        ],
+        "before_full_response_tokens": 1196,
+        "fixed_full_response_tokens": 1303,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-553.diff",
+        "actual_merge_parent_diff_sha256": "0801edf72c9c8115cc57859bd7f29f276f72c39d7ab0fcc7e692266fdbe9c75e"
+      },
+      "archived_test_files": [
+        "before/tests/test_blas_ops.py",
+        "fixed/tests/test_blas_ops.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "3b6c9a77b819d227ce519d9c6c72c8ffd99816cb93d167ea76ce786e1c2fe0b2",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "vllm-project/vllm#15909",
+      "repo": "vllm-project/vllm",
+      "number": 15909,
+      "url": "https://github.com/vllm-project/vllm/pull/15909",
+      "title": "[V1][Spec Decode][Bugfix] Fix input triton kernel for eagle",
+      "queries": [
+        6
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Input preparation writes the same first-block query indices repeatedly for sequences spanning multiple tiles.",
+      "root_cluster": "vllm-eagle-input-multiblock-offset",
+      "family": "indexing",
+      "trigger": "Sequence length larger than BLOCK_SIZE, mixed batches and nonzero query prefix offsets.",
+      "oracle": "Exact integer arange per sequence using cu_query_lens; call original prepare-input path.",
+      "preservation": "One-block sequences, block-1/block/block+1, ragged batches, untouched output regions.",
+      "test_clue": "Issue #15908; no test changed in PR, existing test files probed in source archive.",
+      "risk": "Small kernel is promising, but kernel-only repro is insufficient. Original Eagle caller must be exercised without loading an impractically large model or silently replacing integration.",
+      "merged": true,
+      "merged_at": "2025-04-02T01:15:14Z",
+      "changed_files": 1,
+      "paths": [
+        "vllm/v1/spec_decode/eagle.py"
+      ],
+      "pull_sha256": "1d16a236e64a0e26aaa3ec522bbbffe298b3a73ed54e785169feb002476841dd",
+      "diff_sha256": "97689b4b8fa0625150a0fff6de3e4011bf7cb411e3142c8a82e20e740ee86ff9",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/vllm-project--vllm-15909/manifest.json",
+      "archive_manifest_sha256": "0a9a93451490a2a7ab746fd2f2744fc836b6522c1823fe92e7f400e9c22c129f",
+      "before_commit": "58f5a59769b89a9457dfbedaac9d200bb100be78",
+      "fixed_commit": "24b7fb455a77518f50b21c35a693ae28a5b49b0b",
+      "owner_modules_provisional": [
+        "vllm/v1/spec_decode/eagle.py"
+      ],
+      "archived_files_verified": 22,
+      "source_scope": {
+        "id": "vllm-project/vllm#15909",
+        "modules": [
+          "vllm/v1/spec_decode/eagle.py"
+        ],
+        "before_full_response_tokens": 3216,
+        "fixed_full_response_tokens": 3202,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/vllm-project--vllm-15909.diff",
+        "actual_merge_parent_diff_sha256": "bbf8accda74cb3012fe0a1b39c3561930857f2d5a981a9a707d838ab8c3d932a"
+      },
+      "archived_test_files": [
+        "before/tests/spec_decode/e2e/test_eagle_correctness.py",
+        "before/tests/spec_decode/e2e/test_integration.py",
+        "fixed/tests/spec_decode/e2e/test_eagle_correctness.py",
+        "fixed/tests/spec_decode/e2e/test_integration.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "d221c84fab7ed9fc87428e99f0e17f1e65d284955d87947c243b87387ae498af",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1397",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1397,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1397",
+      "title": "Fix JSD underflow for low-probability vocabulary entries",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Probability-space mixture underflows and produces log(0) and NaN loss terms.",
+      "root_cluster": "liger-jsd-probability-underflow",
+      "family": "numerical_stability",
+      "trigger": "Finite low log probabilities around -120 and a large vocabulary with one dominant entry; both standalone and fused path.",
+      "oracle": "Independently reviewed FP64 log-space mixture and gradients, rather than only the modified upstream test reference.",
+      "preservation": "Ordinary probabilities, supported beta endpoints, ignored labels, gradients, vocabulary tails and dtype tolerances.",
+      "test_clue": "test/transformers/test_jsd.py and test_fused_linear_jsd.py::test_low_probability_vocab_block_is_finite",
+      "risk": "Ascend and cuTile changes are the same root fix and not extra defects. Only NVIDIA Triton owner is in provisional edit scope; non-NVIDIA source is retained as provenance.",
+      "merged": true,
+      "merged_at": "2026-09-28T06:36:23Z",
+      "changed_files": 5,
+      "paths": [
+        "src/liger_kernel/ops/backends/_ascend/ops/jsd.py",
+        "src/liger_kernel/ops/cutile/ops/jsd.py",
+        "src/liger_kernel/ops/jsd.py",
+        "test/transformers/test_fused_linear_jsd.py",
+        "test/transformers/test_jsd.py"
+      ],
+      "pull_sha256": "9f6796bbec674800e14521d7f2b350ab63bd841e186e8758966e5622d786ec07",
+      "diff_sha256": "2764602bb8376e48b97d957640c03fb74bbb61d246dfa9a4ed0ad116ea4f7f3c",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1397/manifest.json",
+      "archive_manifest_sha256": "633a815902f420b46af9c7bd93f3b2c076156132d66d74de4dd5d37f8d87dc4e",
+      "before_commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+      "fixed_commit": "5b828eef2bd2a723d001a7557b2e12da1817b505",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/jsd.py"
+      ],
+      "archived_files_verified": 20,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1397",
+        "modules": [
+          "src/liger_kernel/ops/jsd.py"
+        ],
+        "before_full_response_tokens": 2499,
+        "fixed_full_response_tokens": 2449,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1397.diff",
+        "actual_merge_parent_diff_sha256": "19f1323b05258a6bd634d1900be551975ccd9992cd8d132af47ba4fc9bcdcfd0"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_fused_linear_jsd.py",
+        "before/test/transformers/test_jsd.py",
+        "fixed/test/transformers/test_fused_linear_jsd.py",
+        "fixed/test/transformers/test_jsd.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "a9b5d0c14cabfb342388bf2c66a852b4fc1ded3b3ab60cd2c38f61a129796441",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "fla-org/flash-linear-attention#1108",
+      "repo": "fla-org/flash-linear-attention",
+      "number": 1108,
+      "url": "https://github.com/fla-org/flash-linear-attention/pull/1108",
+      "title": "[Fix] Hoist in-kernel triton.next_power_of_2 to host launchers",
+      "queries": [
+        2
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Two related token-parallel kernels call a host helper from a JIT kernel, rejected by the documented Triton 3.6 execution path.",
+      "root_cluster": "fla-token-parallel-host-call-inside-jit",
+      "family": "compiler_API_boundary",
+      "trigger": "Invoke original KDA and GDN2 token-parallel launchers under a supported pinned Triton version that rejects this construct.",
+      "oracle": "Compilation plus independent small-shape numerical reference; compile success alone is insufficient.",
+      "preservation": "Dense/varlen inputs, K boundaries, both launchers and relevant existing chunk tests.",
+      "test_clue": "tests/ops/test_kda.py and tests/ops/test_gdn2.py; PR references issue #1106",
+      "risk": "Upstream regression runs used Triton 3.4, not the failing 3.6. Must establish supported-version before/fix control locally. Both copied occurrences count once.",
+      "merged": true,
+      "merged_at": "2026-08-07T06:54:56Z",
+      "changed_files": 2,
+      "paths": [
+        "fla/ops/gdn2/chunk_intra_token_parallel.py",
+        "fla/ops/kda/chunk_intra_token_parallel.py"
+      ],
+      "pull_sha256": "5c86c4eded2d84251be9c2cb235f5190cbb40c7dacfc5db02ac8a804b47f2945",
+      "diff_sha256": "84af963449a8f7bb73eea5bcbc25fec3cc4e86c6bb28c3846905c27a9304d56a",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/fla-org--flash-linear-attention-1108/manifest.json",
+      "archive_manifest_sha256": "caa4a56b96566d0e3af64c6e930c0b79d20a8b0dcee6f6eff2d78a7cac4da512",
+      "before_commit": "613210444e1e18b2e4f28a0dad36ca007df8ae48",
+      "fixed_commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d",
+      "owner_modules_provisional": [
+        "fla/ops/gdn2/chunk_intra_token_parallel.py",
+        "fla/ops/kda/chunk_intra_token_parallel.py"
+      ],
+      "archived_files_verified": 18,
+      "source_scope": {
+        "id": "fla-org/flash-linear-attention#1108",
+        "modules": [
+          "fla/ops/gdn2/chunk_intra_token_parallel.py",
+          "fla/ops/kda/chunk_intra_token_parallel.py"
+        ],
+        "before_full_response_tokens": 4554,
+        "fixed_full_response_tokens": 4574,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/fla-org--flash-linear-attention-1108.diff",
+        "actual_merge_parent_diff_sha256": "dd22af29538f448e3360abfa21a3464d2dd5ebafaac48d065434b6afba8fa322"
+      },
+      "archived_test_files": [
+        "before/tests/ops/test_gdn2.py",
+        "before/tests/ops/test_kda.py",
+        "fixed/tests/ops/test_gdn2.py",
+        "fixed/tests/ops/test_kda.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "a236393e66285f4f5b184a863325645a9374d97966ec128f8283f216a7ce197e",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "flagos-ai/FlagGems#519",
+      "repo": "flagos-ai/FlagGems",
+      "number": 519,
+      "url": "https://github.com/flagos-ai/FlagGems/pull/519",
+      "title": "Fix argsort datatype bug",
+      "queries": [
+        5
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Sort narrows int64 values/sentinels to int32, changing ordering; related dtype helper adjustments belong to this single task cluster.",
+      "root_cluster": "flaggems-argsort-dtype-truncation",
+      "family": "dtype_and_sentinel",
+      "trigger": "Int64 values outside int32 range, odd/padded sort widths, ascending/descending.",
+      "oracle": "torch.sort/argsort with the public tie/stability contract and exact integer comparison; topk preservation.",
+      "preservation": "Supported small integer and floating types, tie permutations per API, topk dtype extrema, non-last dimension where supported.",
+      "test_clue": "Upstream issue #505; no regression test added by this PR, existing test discovery recorded in archive.",
+      "risk": "Need independently constructed trigger and original repository tests. Int8 helper and sort changes are not counted as two independent defects.",
+      "merged": true,
+      "merged_at": "2025-06-20T09:00:35Z",
+      "changed_files": 2,
+      "paths": [
+        "src/flag_gems/ops/sort.py",
+        "src/flag_gems/ops/topk.py"
+      ],
+      "pull_sha256": "84a0931604df0caa5ae68f9f84627efa718495b63fe1a96679598f89c5271ea1",
+      "diff_sha256": "2da71baad8618d6a08dbc763d9e4f827d844ce3e5be7eaaf426c2b0564d9f067",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-519/manifest.json",
+      "archive_manifest_sha256": "ab2752abb43d3a639036ff405f5d81314d4b664ee9f7d8eb12859deb1614e397",
+      "before_commit": "f981b62bf979b14935a8ff4f3d5ec8e3c84d0c83",
+      "fixed_commit": "18347b37a1ae7300893b61b808df64580d71234e",
+      "owner_modules_provisional": [
+        "src/flag_gems/ops/sort.py",
+        "src/flag_gems/ops/topk.py"
+      ],
+      "archived_files_verified": 16,
+      "source_scope": {
+        "id": "flagos-ai/FlagGems#519",
+        "modules": [
+          "src/flag_gems/ops/sort.py",
+          "src/flag_gems/ops/topk.py"
+        ],
+        "before_full_response_tokens": 5019,
+        "fixed_full_response_tokens": 4939,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-519.diff",
+        "actual_merge_parent_diff_sha256": "6dbeade68381437eb695ab6b5afe42396d20cc07a1ddf5df6a9b55fb5d116395"
+      },
+      "archived_test_files": [
+        "before/tests/test_reduction_ops.py",
+        "before/tests/test_special_ops.py",
+        "fixed/tests/test_reduction_ops.py",
+        "fixed/tests/test_special_ops.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "4e82ac6e5aff890f90743ebee5795caa2e74b09577e5254e977485b19d7ca364",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "vllm-project/vllm#33326",
+      "repo": "vllm-project/vllm",
+      "number": 33326,
+      "url": "https://github.com/vllm-project/vllm/pull/33326",
+      "title": "[Bugfix][Kernel] Fix negative memory offset in GDN Triton kernel",
+      "queries": [
+        6
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "CUDA-graph padding sentinel -1 is used as a state-cache address.",
+      "root_cluster": "vllm-gdn-negative-padding-state-slot",
+      "family": "memory_bounds",
+      "trigger": "Mixed valid and -1 ssm_state_indices, initial/final state paths and graph replay where supported.",
+      "oracle": "Independent valid-sequence recurrence and state-canary checks; padded lanes follow an explicitly stated public contract.",
+      "preservation": "Nonnegative indices, non-inplace state path, accepted-token offsets, state noncorruption and repeated replay.",
+      "test_clue": "Issue #31186; PR reports four-GPU Qwen3-Next serving repro, no unit regression added.",
+      "risk": "High integration risk: only retain if original repo call path can reproduce on one GPU without substituting a reduced-only benchmark. FLA-derived code requires lineage review; missing padded cache index guard is distinct from gate-tail masks.",
+      "merged": true,
+      "merged_at": "2026-01-29T18:40:11Z",
+      "changed_files": 1,
+      "paths": [
+        "vllm/model_executor/layers/fla/ops/fused_recurrent.py"
+      ],
+      "pull_sha256": "4daf434ced39b8ef9af9a2bdc231075188e33df488ea81a7635e7edeb03eb53c",
+      "diff_sha256": "1e1534796e5981a11de84f6f14ee2f22e5f2b1f282ce9b0edefcdc8028271c5d",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/vllm-project--vllm-33326/manifest.json",
+      "archive_manifest_sha256": "af3fb4155359e24e8d1c3ffd43453d7aa9a717ecfaa08869b866955b64f11e88",
+      "before_commit": "0493d897c4b7ed645b506bcd0452b7f3326f85f6",
+      "fixed_commit": "23591e631e1982610731d3de1ed09cad16094d32",
+      "owner_modules_provisional": [
+        "vllm/model_executor/layers/fla/ops/fused_recurrent.py"
+      ],
+      "archived_files_verified": 22,
+      "source_scope": {
+        "id": "vllm-project/vllm#33326",
+        "modules": [
+          "vllm/model_executor/layers/fla/ops/fused_recurrent.py"
+        ],
+        "before_full_response_tokens": 4889,
+        "fixed_full_response_tokens": 5057,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/vllm-project--vllm-33326.diff",
+        "actual_merge_parent_diff_sha256": "a2f75cae46b43701271c1d629294b88d4e339a1793bfcb49b2c8f904912746de"
+      },
+      "archived_test_files": [
+        "before/tests/v1/e2e/test_spec_decode.py",
+        "before/tests/v1/spec_decode/test_mtp.py",
+        "fixed/tests/v1/e2e/test_spec_decode.py",
+        "fixed/tests/v1/spec_decode/test_mtp.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "df994e63f61c1d5bffac8ae5c456ca6fd72220a94f5824a4c0e52d4250f0f012",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1344",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1344,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1344",
+      "title": "Fix AttnRes silently dropping blocks past 32",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Static maximum of 32 silently drops later attention-residual blocks and leaves part of backward output unwritten.",
+      "root_cluster": "liger-attnres-static-block-ceiling",
+      "family": "loop_coverage",
+      "trigger": "More than 32 blocks, starting with upstream N=40; test 31/32/33 and other supported counts independently.",
+      "oracle": "Independent depth-softmax weighted-sum reference and autograd for inputs/query/norm weights.",
+      "preservation": "Original <=32 cases, odd feature dimensions, all output gradients initialized, supported dtypes.",
+      "test_clue": "test/transformers/test_attn_res.py forward and backward parameterizations",
+      "risk": "PR author explicitly did not run GPU controls. Merge is provenance, not verification. Larger counts may hit compiler/resource limits.",
+      "merged": true,
+      "merged_at": "2026-09-28T06:25:42Z",
+      "changed_files": 2,
+      "paths": [
+        "src/liger_kernel/ops/attn_res.py",
+        "test/transformers/test_attn_res.py"
+      ],
+      "pull_sha256": "a14f3d1dc47b585366dce35d637d03e999c8b21e7fde99cbd2452ffb2e47b6f8",
+      "diff_sha256": "15b85070f849d3f549f28c9ad21956aaf8b4b2d3fc2604e707627df7eb622334",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1344/manifest.json",
+      "archive_manifest_sha256": "ed67933e51f243cce246ffdaca2a94adc9016de3ea453d45e54ebb9509828ea5",
+      "before_commit": "f01ffb1f5d3af9df407fc4f1b442f8b3dca15849",
+      "fixed_commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/attn_res.py"
+      ],
+      "archived_files_verified": 14,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1344",
+        "modules": [
+          "src/liger_kernel/ops/attn_res.py"
+        ],
+        "before_full_response_tokens": 4649,
+        "fixed_full_response_tokens": 4728,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1344.diff",
+        "actual_merge_parent_diff_sha256": "7d9aa75514d09abb47897b8c4e020a1dc3be0f3408167ffee06869168adb985f"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_attn_res.py",
+        "fixed/test/transformers/test_attn_res.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "aac9c897b9ca9f34eb074b47c4ec8ca708a829235ff5f361680ef0a522f3742a",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "flagos-ai/FlagGems#6727",
+      "repo": "flagos-ai/FlagGems",
+      "number": 6727,
+      "url": "https://github.com/flagos-ai/FlagGems/pull/6727",
+      "title": "fix(attention): materialize non-contiguous q/k/v before the FlashAttention kernel",
+      "queries": [
+        4
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "FlashAttention wrappers pass unsupported noncontiguous layouts into the existing custom kernel.",
+      "root_cluster": "flaggems-issue5896-flash-attention-layout",
+      "family": "layout_contract",
+      "trigger": "BHSD/BSHD views from model-style projection/transpose for Q/K/V; exercise both public wrappers.",
+      "oracle": "Small-shape FP64 attention formula and separately reviewed SDPA reference; original kernel dispatch must remain active.",
+      "preservation": "Already-contiguous inputs, causal flag, supported dimensions/dtypes, output metadata and input nonmutation.",
+      "test_clue": "conf/ci_test_aliases.yaml maps _flash_attention_forward to test_flash_attention; issue #5896",
+      "risk": "Explicit cherry-pick of #6667: canonical cluster is issue5896 and includes both PRs, count once. This is a wrapper/layout repair and should be reported separately from kernel-body edits.",
+      "merged": true,
+      "merged_at": "2026-09-29T02:31:33Z",
+      "changed_files": 3,
+      "paths": [
+        "conf/ci_test_aliases.yaml",
+        "src/flag_gems/ops/_flash_attention_forward.py",
+        "src/flag_gems/ops/_scaled_dot_product_flash_attention.py"
+      ],
+      "pull_sha256": "66576c9d9e3c119d31474392cffb47d423fd1a8cd5d73d14412674417bc0b15f",
+      "diff_sha256": "49b93f5348b5de1222379b87bdbca5b9e02b6d89dd48d669c6d0c6548e5a295d",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-6727/manifest.json",
+      "archive_manifest_sha256": "5962e5236bb3852fa56cdf488aa6221607d4eb7de3ec00018720a2e3796d3274",
+      "before_commit": "e5a396b489f581106e31b937d3b1276c83e99fa5",
+      "fixed_commit": "cea096d5faa68ff51f66ebd6ee1ee520143d5d34",
+      "owner_modules_provisional": [
+        "src/flag_gems/ops/_flash_attention_forward.py",
+        "src/flag_gems/ops/_scaled_dot_product_flash_attention.py"
+      ],
+      "archived_files_verified": 18,
+      "source_scope": {
+        "id": "flagos-ai/FlagGems#6727",
+        "modules": [
+          "src/flag_gems/ops/_flash_attention_forward.py",
+          "src/flag_gems/ops/_scaled_dot_product_flash_attention.py"
+        ],
+        "before_full_response_tokens": 1087,
+        "fixed_full_response_tokens": 1470,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-6727.diff",
+        "actual_merge_parent_diff_sha256": "40c690a5de563af4c58149e286d311b856a1f09d1a2af16b7f54686545f68d5f"
+      },
+      "archived_test_files": [
+        "before/tests/test_flash_attention.py",
+        "fixed/tests/test_flash_attention.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "71b9f7b2e3c7dcbbd096caf9b7c304ebc7258e86e1364386228f4b8d6a4fecf1",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1376",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1376,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1376",
+      "title": "Fix group norm backward for inputs with more than three dimensions",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Backward derives hidden size before flattening spatial dimensions, underallocating dx for 4D/5D input.",
+      "root_cluster": "liger-groupnorm-spatial-backward-allocation",
+      "family": "shape_allocation",
+      "trigger": "(2,6,4,8) with 3 groups and a 5D input; compare 3D unaffected baseline.",
+      "oracle": "torch.nn.GroupNorm with shared weights and gradients; supported memcheck on the original repo call.",
+      "preservation": "3D input, group=1, group=channels, nonaligned spatial sizes, dx/dw/db shape and finiteness.",
+      "test_clue": "test/transformers/test_group_norm.py::test_liger_group_norm_spatial_dims",
+      "risk": "Illegal writes can corrupt a process, so each before control must run in a fresh subprocess. #999 is a separate pointer-refactor PR with no demonstrated bug trigger and is not another task here.",
+      "merged": true,
+      "merged_at": "2026-09-28T06:30:33Z",
+      "changed_files": 2,
+      "paths": [
+        "src/liger_kernel/ops/group_norm.py",
+        "test/transformers/test_group_norm.py"
+      ],
+      "pull_sha256": "1e344157dcb8c4738d9a30c6d05d72daf464dd924671f2d76065fead818bfc42",
+      "diff_sha256": "cd42e60ec54b5b03f6b14189b866ef450b477213a811b3d32a15f777ec0e3a80",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1376/manifest.json",
+      "archive_manifest_sha256": "d410e06f01a848bbdaa3a1eb0792352c89439473ddef40e8e21a2a206acd4a85",
+      "before_commit": "559d33e7b14d81476b295ef41a962937efa74517",
+      "fixed_commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/group_norm.py"
+      ],
+      "archived_files_verified": 14,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1376",
+        "modules": [
+          "src/liger_kernel/ops/group_norm.py"
+        ],
+        "before_full_response_tokens": 3880,
+        "fixed_full_response_tokens": 3931,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1376.diff",
+        "actual_merge_parent_diff_sha256": "7893bf3816b5aa27627faac4dc2362933d447c853812e1bd89add24e9815bf10"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_group_norm.py",
+        "fixed/test/transformers/test_group_norm.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "dc2daa75b0619685b4604589ed8e8e5c8c0634de57bd0259bd1df646de6a4739",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "flagos-ai/FlagGems#6560",
+      "repo": "flagos-ai/FlagGems",
+      "number": 6560,
+      "url": "https://github.com/flagos-ai/FlagGems/pull/6560",
+      "title": "fix(ops): iterate over N in renorm_ kernel so BLOCK_SIZE < N is handled",
+      "queries": [
+        4
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Autotune can choose BLOCK_SIZE smaller than N, leaving most of each row outside the norm reduction and scaling stores.",
+      "root_cluster": "flaggems-renorm-inplace-uncovered-row-tail",
+      "family": "loop_coverage",
+      "trigger": "N=640 with a legal smaller block and an original entrypoint run; p=2/3 and maxnorm=1.",
+      "oracle": "Independent p-norm row clipping and torch.renorm; check aliasing required by the inplace API.",
+      "preservation": "N below/equal/above blocks, varied dim and maxnorm, unaffected functional renorm, declared dtypes.",
+      "test_clue": "tests/test_renorm.py and tests/test_renorm_.py",
+      "risk": "Autotuning choice is hardware-sensitive. Freezing a legal tuning choice is an auxiliary trigger; primary eligibility still requires original repository entrypoint reproduction, not a synthetic failure-only launch.",
+      "merged": true,
+      "merged_at": "2026-09-23T03:31:19Z",
+      "changed_files": 3,
+      "paths": [
+        "src/flag_gems/ops/renorm_.py",
+        "tests/test_renorm.py",
+        "tests/test_renorm_.py"
+      ],
+      "pull_sha256": "9545e3aae80e785b58771638f6467de121872b58ca64b4c6c0ce0ba2dac95218",
+      "diff_sha256": "995868b25df193851e9e51a481127d16fbb686ff8eb1800cd9031d038a17407d",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/flagos-ai--FlagGems-6560/manifest.json",
+      "archive_manifest_sha256": "c561773fabb3a3aa2abbb542771ea826dd70cd15496d62e571fcf691fb48b5ed",
+      "before_commit": "92edf1dff80d025bc0994591ab91ef22d2b6f626",
+      "fixed_commit": "0d1931d262d93d4e4e6c84746c9e97acc0bdebc0",
+      "owner_modules_provisional": [
+        "src/flag_gems/ops/renorm_.py"
+      ],
+      "archived_files_verified": 16,
+      "source_scope": {
+        "id": "flagos-ai/FlagGems#6560",
+        "modules": [
+          "src/flag_gems/ops/renorm_.py"
+        ],
+        "before_full_response_tokens": 785,
+        "fixed_full_response_tokens": 934,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-6560.diff",
+        "actual_merge_parent_diff_sha256": "b54a9bb2b47cc36caf9e65bf6b68c60fcd9ef58faeedae6f820ec20640261306"
+      },
+      "archived_test_files": [
+        "before/tests/test_renorm.py",
+        "before/tests/test_renorm_.py",
+        "fixed/tests/test_renorm.py",
+        "fixed/tests/test_renorm_.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "987809c76cfac97111b28c089c6bd6720f14c0755852e52ffa85177a26edda26",
+      "split": "development_candidate",
+      "formal_test_eligible": false
+    }
+  ],
+  "reserves": [
+    {
+      "id": "linkedin/Liger-Kernel#1374",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1374,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1374",
+      "title": "Fix TVD gradient at p == q",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Equality falls into the negative gradient branch, violating the zero-at-tie subgradient convention of the public reference.",
+      "root_cluster": "liger-tvd-zero-subgradient-at-ties",
+      "family": "boundary_semantics",
+      "trigger": "All or some p==q entries, including zero padded vocabulary entries; mixed unequal entries as controls.",
+      "oracle": "0.5 * abs(p-q), using the explicitly stated PyTorch zero subgradient at equality; not a claim of a unique mathematical derivative at the kink.",
+      "preservation": "Untied entries, reductions, ignored labels, original loss values and declared dtypes.",
+      "test_clue": "test/transformers/test_tvd.py::test_correctness_with_ties",
+      "risk": "Upstream reduction=none tie test does not exercise backward. Expanded contract and exact zero checks required.",
+      "merged": true,
+      "merged_at": "2026-09-28T06:28:43Z",
+      "changed_files": 2,
+      "paths": [
+        "src/liger_kernel/ops/tvd.py",
+        "test/transformers/test_tvd.py"
+      ],
+      "pull_sha256": "33298c27bf9e7dac2a8a3911f186712ad686782d0cc08a1927193aaba59fefc7",
+      "diff_sha256": "50c51914b0fa06b0d4b7ea07c92fee08e318994235b083c0899322f2a22812bb",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1374/manifest.json",
+      "archive_manifest_sha256": "610583d8e19454728cbfd331765f0512b837f9d10032bd5502df30e2bbb25899",
+      "before_commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+      "fixed_commit": "559d33e7b14d81476b295ef41a962937efa74517",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/tvd.py"
+      ],
+      "archived_files_verified": 14,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1374",
+        "modules": [
+          "src/liger_kernel/ops/tvd.py"
+        ],
+        "before_full_response_tokens": 2311,
+        "fixed_full_response_tokens": 2362,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1374.diff",
+        "actual_merge_parent_diff_sha256": "314aa53409b84dc9c14709298f9648b680f541ed990795ad4407d3f72928dc8e"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_tvd.py",
+        "fixed/test/transformers/test_tvd.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "ddb76535a831fdf5fd04e80980aae7529bce57025db0a3e462956f9ecd5f2eb2",
+      "split": "development_reserve",
+      "formal_test_eligible": false
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1433",
+      "repo": "linkedin/Liger-Kernel",
+      "number": 1433,
+      "url": "https://github.com/linkedin/Liger-Kernel/pull/1433",
+      "title": "fix: request float32 logits from the fused JSD projection GEMM",
+      "queries": [
+        0
+      ],
+      "review_level": "PR_body_and_diff_review",
+      "decision": "cpu_candidate",
+      "reason": "Casting GEMM output to FP32 after low-precision storage cannot recover logits precision and harms near-cancelling gradients.",
+      "root_cluster": "liger-fused-jsd-premature-gemm-downcast",
+      "family": "precision_order",
+      "trigger": "Same-dtype BF16/FP16 inputs and projection weights on supported NVIDIA hardware; nearby student/teacher distributions.",
+      "oracle": "FP64 projection and independently reviewed loss/gradient reference on small shapes; compare errors with dtype-specific fixed tolerances.",
+      "preservation": "FP32 path, older-API fallback as declared, mixed-dtype/autocast support, forward and weight/input gradients.",
+      "test_clue": "test/transformers/test_fused_linear_jsd.py (changed regression tests archived)",
+      "risk": "Requires supported torch.mm out_dtype and compute capability. This is a host-to-GPU precision-contract repair, not evidence of writing a new CUDA kernel. Related #1397 is a different failure mechanism; quarantine both to development.",
+      "merged": true,
+      "merged_at": "2026-09-28T06:42:11Z",
+      "changed_files": 2,
+      "paths": [
+        "src/liger_kernel/ops/fused_linear_jsd.py",
+        "test/transformers/test_fused_linear_jsd.py"
+      ],
+      "pull_sha256": "80e71599e7648ccab7f4cd5040d8a8fab733f4313f0c8b68ad0272ffdcdf8f47",
+      "diff_sha256": "7f2442146f4fd85b973bbf9ed548fb2446797d6e21d5e9fd7b51aebdc9537572",
+      "archive_manifest": "runs/repair-v8-pr-screen-20261018/archives/linkedin--Liger-Kernel-1433/manifest.json",
+      "archive_manifest_sha256": "5852928190f84d49b1442bb2db09b845ef957b208c3346fdc86c01ce98e31a3d",
+      "before_commit": "5b828eef2bd2a723d001a7557b2e12da1817b505",
+      "fixed_commit": "ed1f856d5b00d4ff75a62d66cdb78a4ad935d02f",
+      "owner_modules_provisional": [
+        "src/liger_kernel/ops/fused_linear_jsd.py"
+      ],
+      "archived_files_verified": 14,
+      "source_scope": {
+        "id": "linkedin/Liger-Kernel#1433",
+        "modules": [
+          "src/liger_kernel/ops/fused_linear_jsd.py"
+        ],
+        "before_full_response_tokens": 5044,
+        "fixed_full_response_tokens": 5694,
+        "before_within_6144": true,
+        "official_fix_within_8192": true,
+        "syntax_parse": "pass_before_and_fixed_no_execution",
+        "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1433.diff",
+        "actual_merge_parent_diff_sha256": "3baa80a40ee715ab5b1f6c7755cc95be20ffbdaa3e5d39a65fa25240a5be9138"
+      },
+      "archived_test_files": [
+        "before/test/transformers/test_fused_linear_jsd.py",
+        "fixed/test/transformers/test_fused_linear_jsd.py"
+      ],
+      "GPU_qualification": "not_run",
+      "assignment_hash": "f05f2df58723eb189870f6c5d1f9ff8ae96e7ea2f185ad0c693aba4d14bc7008",
+      "split": "development_reserve",
+      "formal_test_eligible": false
+    }
+  ],
+  "shared_pending_gates": [
+    "Reconstruct original repository checkout and pin a reproducible environment; declarations are archived, installed dependency lock is not complete.",
+    "Write an issue-only task specification without solution hints; upstream PR bodies, gold source and regression tests are investigator-only.",
+    "Freeze owning modules from before-source public issue/stack and call graph; provisional module lists are not permission to expose gold localization.",
+    "Validate public API, supported input domain, independent oracle and visible/hidden partition; both edit interfaces must express a valid fix.",
+    "Verify full input context and actual response framing fit budgets; current token audit measures compact JSON of complete modules only.",
+    "Run unfixed and official-fix controls in three fresh GPU processes, relevant repository preservation tests and supported memory checks.",
+    "Confirm actual repository dispatch reaches intended GPU kernel with no forbidden replacement; no reduced-only task may enter the primary endpoint.",
+    "Complete copy/backport lineage and contamination review before any formal test sealing. All selected and reserve tasks in this batch stay development-only."
+  ],
+  "duplicate_groups": [
+    {
+      "cluster": "flaggems-issue5896-flash-attention-layout",
+      "members": [
+        "flagos-ai/FlagGems#6667",
+        "flagos-ai/FlagGems#6727"
+      ],
+      "evidence": "#6727 body explicitly states cherry-pick from #6667; original #6667 not separately counted or archived in this batch."
+    },
+    {
+      "cluster": "fla-recurrent-gate-tail-lineage-pending",
+      "members": [
+        "fla-org/flash-linear-attention#1135",
+        "fla-org/flash-linear-attention#1165",
+        "fla-org/flash-linear-attention#1171"
+      ],
+      "evidence": "Reviewed #1135/#1165 use the same missing gate mask pattern in related recurrent implementations; #1171 metadata only. Conservative quarantine, not proven identical commits."
+    },
+    {
+      "cluster": "fla-token-parallel-host-call-inside-jit",
+      "members": [
+        "fla-org/flash-linear-attention#1108"
+      ],
+      "evidence": "GDN2 and KDA fixes in the same PR count as one cluster."
+    },
+    {
+      "cluster": "liger-jsd-probability-underflow",
+      "members": [
+        "linkedin/Liger-Kernel#1397"
+      ],
+      "evidence": "NVIDIA Triton, Ascend and cuTile ports count once."
+    },
+    {
+      "cluster": "flaggems-splitkv-output-layout-held",
+      "members": [
+        "flagos-ai/FlagGems#6894"
+      ],
+      "evidence": "Default and Enflame ports count once; candidate held for scope."
+    }
+  ]
+}

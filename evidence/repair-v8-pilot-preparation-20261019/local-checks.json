@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "tests": [
+    "tests/test_repair_v8_pilot.py",
+    "tests/test_repair_v8_qualification.py",
+    "tests/test_repair_v8_supervise.py"
+  ],
+  "passed": 25,
+  "duration_seconds": 3.02,
+  "GPU_runs": 0,
+  "record_type": "Summary of completed local pytest invocation; independently rerun pilot tests are captured in portable-check.json",
+  "portable_pilot_tests_passed": 17
+}

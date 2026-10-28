@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "scope": "CPU_import_hashes_scheduler_editor_tests_and_shell_syntax_only",
+  "GPU_runs": 0,
+  "checks": [
+    {
+      "command": [
+        "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+        "-c",
+        "from pathlib import Path;from research.repair_v8.pilot.prepare import load; m,c=load(Path('prepared'));print('portable_manifest_pass',len(m['tasks']))"
+      ],
+      "returncode": 0,
+      "stdout": "portable_manifest_pass 3\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_repair_v8_pilot.py"
+      ],
+      "returncode": 0,
+      "stdout": ".................                                                        [100%]\n17 passed in 0.84s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/bin/bash",
+        "-n",
+        "scripts/repair_v8_pilot_autodl.sh"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "status": "pass",
+  "matching_suite_counts": true,
+  "scope": "CPU import and test discovery only; no test bodies or GPU kernels executed",
+  "GPU_runs": 0,
+  "rows": [
+    {
+      "task": "liger_attnres",
+      "revision": "before",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "liger_attnres",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/before"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 2.167640003026463,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_attnres-before.import.log",
+        "log_sha256": "a2ffd38bf905e71f52c546f5064af5d4abb00ed7c1d2e67c635036ef8c5ee41f"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "test/transformers/test_attn_res.py"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 2.6177125100512058,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_attnres-before.collection.log",
+        "log_sha256": "110e3988e5affd48390217d7212a0502791d3700cfa9ba973729549995a29c5e"
+      },
+      "collected": 27,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 27,
+        "rows": []
+      }
+    },
+    {
+      "task": "liger_attnres",
+      "revision": "fixed",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "liger_attnres",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.8667007719632238,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_attnres-fixed.import.log",
+        "log_sha256": "be08ef5d71902fdb77c3ae1e834f40d35118cb70ed828e071d14e3a0e45e3f87"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "test/transformers/test_attn_res.py"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 2.5674995909794234,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_attnres-fixed.collection.log",
+        "log_sha256": "7c4d32a17ea2bdefcd024dba3fdfc4bcfa3afbfc4e2b34bbcfea1f5fc5754dc9"
+      },
+      "collected": 27,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 27,
+        "rows": []
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "revision": "before",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "liger_groupnorm",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/before"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.615975430002436,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_groupnorm-before.import.log",
+        "log_sha256": "fca6f9cb22a84e455590d566ee79f3d591152ed6b729927b535daa557d03b4d5"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "test/transformers/test_group_norm.py"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 2.56746191898128,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_groupnorm-before.collection.log",
+        "log_sha256": "b30e6d10758555ed1e943d262b6fbb6f4f79b07a98de1108ec66be1785fdda16"
+      },
+      "collected": 5,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 5,
+        "rows": []
+      }
+    },
+    {
+      "task": "liger_groupnorm",
+      "revision": "fixed",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "liger_groupnorm",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.6660902419826016,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_groupnorm-fixed.import.log",
+        "log_sha256": "1b905ffb0be8740c889bc071dcbc17b00c20e259d9ae503d03bc0d2329b958b1"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "test/transformers/test_group_norm.py"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 2.617620208009612,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/liger_groupnorm-fixed.collection.log",
+        "log_sha256": "b30e6d10758555ed1e943d262b6fbb6f4f79b07a98de1108ec66be1785fdda16"
+      },
+      "collected": 5,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 5,
+        "rows": []
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "revision": "before",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "flaggems_addmm",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/before"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0151840099715628,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/flaggems_addmm-before.import.log",
+        "log_sha256": "cf8a53399c030e11d09a62b203e2f7086b60db64de6474a730abf53356946981"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "tests/test_blas_ops.py",
+          "-k",
+          "addmm or test_accuracy_mm"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.3668887390522286,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/flaggems_addmm-before.collection.log",
+        "log_sha256": "e37a53006e7fd9be2c9e3b98d6c3adc471cb0ca1effcc2d490e1f7cec3547b3d"
+      },
+      "collected": 45,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 45,
+        "rows": []
+      }
+    },
+    {
+      "task": "flaggems_addmm",
+      "revision": "fixed",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "flaggems_addmm",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.0651966070290655,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/flaggems_addmm-fixed.import.log",
+        "log_sha256": "8f5affa337d8b2d00e6a840378aee29bdf363a6d5bb0be41152fa873f38a12d6"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "tests/test_blas_ops.py",
+          "-k",
+          "addmm or test_accuracy_mm"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 1.2154656099737622,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/flaggems_addmm-fixed.collection.log",
+        "log_sha256": "e37a53006e7fd9be2c9e3b98d6c3adc471cb0ca1effcc2d490e1f7cec3547b3d"
+      },
+      "collected": 45,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 45,
+        "rows": []
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "revision": "before",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "fla_rwkv7",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/before"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 3.7196189400274307,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/fla_rwkv7-before.import.log",
+        "log_sha256": "399dc6034986f3fb82d2a29390cbfd1938320e4ca3971c76aad9654c9361542b"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "tests/ops/test_rwkv7.py",
+          "-k",
+          "channel_mixing_gradients"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 4.520579133997671,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/fla_rwkv7-before.collection.log",
+        "log_sha256": "444297938783f8ed88c2cc1b0f77f66e15eae8b62244c61c856fa7744ebf1210"
+      },
+      "collected": 4,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 4,
+        "rows": []
+      }
+    },
+    {
+      "task": "fla_rwkv7",
+      "revision": "fixed",
+      "import": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-c",
+          "import sys; from pathlib import Path; from research.repair_v8.cases import load_owner; print(load_owner(sys.argv[1], Path(sys.argv[2])).__file__)",
+          "fla_rwkv7",
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 4.722399387974292,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/fla_rwkv7-fixed.import.log",
+        "log_sha256": "8dd4d981278f0e06a67d0ab52e4ac47765d453d1ca272052bea0c7de5422b1e2"
+      },
+      "collection": {
+        "command": [
+          "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/venv/bin/python",
+          "-m",
+          "pytest",
+          "-p",
+          "research.repair_v8.pytest_receipt",
+          "--collect-only",
+          "-q",
+          "tests/ops/test_rwkv7.py",
+          "-k",
+          "channel_mixing_gradients"
+        ],
+        "returncode": 0,
+        "timeout": false,
+        "seconds": 4.721047982980963,
+        "log": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/cpu-preflight/fla_rwkv7-fixed.collection.log",
+        "log_sha256": "711f3b27d1c95a1df59dedd87a9625522d84d5c2de71bfdd6ee762770d5d387d"
+      },
+      "collected": 4,
+      "receipt": {
+        "exitstatus": 0,
+        "collected": 4,
+        "rows": []
+      }
+    }
+  ]
+}

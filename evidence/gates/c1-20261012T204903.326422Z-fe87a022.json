@@ -1,0 +1,125 @@
+{
+  "gate": "C1",
+  "status": "PASS",
+  "time_utc": "20261012T204903.326422Z",
+  "git": {
+    "sha": "86f6377659e3e02afc6c52b2347a97f15e4d119e",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "socket",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": -31,
+        "elapsed_seconds": 1.41696335375309,
+        "peak_rss_bytes": 606601216,
+        "peak_gpu_bytes": 3014656,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/socket/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/socket/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "write_outside",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 1.6135017648339272,
+        "peak_rss_bytes": 668176384,
+        "peak_gpu_bytes": 3014656,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/write_outside/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/write_outside/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "fork_bomb",
+      "status": "PASS",
+      "expected_component": "process_limit",
+      "result": {
+        "component": "process_limit",
+        "returncode": 79,
+        "elapsed_seconds": 1.8859189674258232,
+        "peak_rss_bytes": 9890152448,
+        "peak_gpu_bytes": 3014656,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/fork_bomb/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/fork_bomb/worker.log"
+      },
+      "reward_C": -0.1
+    },
+    {
+      "name": "gpu_oom",
+      "status": "PASS",
+      "expected_component": "gpu_oom",
+      "result": {
+        "component": "gpu_oom",
+        "returncode": 77,
+        "elapsed_seconds": 2.012283194810152,
+        "peak_rss_bytes": 741859328,
+        "peak_gpu_bytes": 101785468928,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/gpu_oom/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/gpu_oom/worker.log"
+      },
+      "reward_C": -0.1,
+      "memory_before_bytes": 666107904,
+      "memory_after_bytes": 666107904,
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 2.833966128528118,
+        "peak_rss_bytes": 893452288,
+        "peak_gpu_bytes": 717422592,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/gpu_oom-recovery/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/gpu_oom-recovery/worker.log"
+      }
+    },
+    {
+      "name": "infinite_kernel",
+      "status": "PASS",
+      "expected_component": "timeout",
+      "result": {
+        "component": "timeout",
+        "returncode": -9,
+        "elapsed_seconds": 30.19819186627865,
+        "peak_rss_bytes": 772513792,
+        "peak_gpu_bytes": 717422592,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/infinite_kernel/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/infinite_kernel/worker.log"
+      },
+      "reward_C": -0.1,
+      "memory_before_bytes": 666107904,
+      "memory_after_bytes": 666107904,
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 2.8479903377592564,
+        "peak_rss_bytes": 852627456,
+        "peak_gpu_bytes": 717422592,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/infinite_kernel-recovery/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/infinite_kernel-recovery/worker.log"
+      }
+    },
+    {
+      "name": "read_oracle",
+      "status": "PASS",
+      "expected_component": "sandbox_blocked",
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 1.5834560953080654,
+        "peak_rss_bytes": 622571520,
+        "peak_gpu_bytes": 3014656,
+        "workdir": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/read_oracle/work",
+        "log": "/root/autodl-tmp/cuda-gemma4-llm/runs/c1/20261012T204815.988420Z/read_oracle/worker.log"
+      },
+      "reward_C": -0.1
+    }
+  ],
+  "prerequisite": "runs/gates/c0-20261012T204815.765404Z-0ef33946.json",
+  "artifacts": "runs/c1/20261012T204815.988420Z"
+}

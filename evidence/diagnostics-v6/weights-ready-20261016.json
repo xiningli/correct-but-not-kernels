@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-16T21:30:34.669343+00:00",
+  "status": "CPU_weights_and_preparation_verified_waiting_for_GPU",
+  "live_remote_validation": {
+    "utc": "2026-10-16T21:30:11.244580+00:00",
+    "prepared_validation": "PASS",
+    "prepared_receipt_sha256": "ce6c7bcc825089e8cb2a7975794feca7c5e70f5a15e661f07fb4275fa8b039c6",
+    "models": [
+      "gemma-4-12B-it",
+      "gemma-4-31B-it"
+    ],
+    "tasks": [
+      "development/case-001",
+      "development/case-002"
+    ],
+    "active_exists": false,
+    "nvidia_smi": {
+      "error": "PermissionError: [Errno 13] Permission denied: 'nvidia-smi'"
+    }
+  },
+  "download_status": {
+    "status": "complete",
+    "utc": "2026-10-16T19:12:02.917067+00:00",
+    "bytes": 62578656403
+  },
+  "remote_weight_receipt_summary": {
+    "status": "CPU_weights_verified_GPU_load_pending",
+    "utc": "2026-10-16T19:12:02.903074+00:00",
+    "manifest_sha256": "276b50c7dc580ae5cb5f9bef1cc0e61ffb7fc23e4a3683c1dd4cbc73331a840d",
+    "model": "google/gemma-4-31B-it",
+    "upstream_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "free_GiB": 15.010200500488281
+  },
+  "staging": {
+    "stage": "ready_for_GPU",
+    "prepared": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6/prepared-20261016",
+    "receipt_sha256": "ce6c7bcc825089e8cb2a7975794feca7c5e70f5a15e661f07fb4275fa8b039c6",
+    "pid": 1862,
+    "utc": "2026-10-16T19:17:53.437885+00:00"
+  },
+  "local_preparation_backup_sha256": "ce6c7bcc825089e8cb2a7975794feca7c5e70f5a15e661f07fb4275fa8b039c6",
+  "local_and_remote_source_identity_match": true,
+  "GPU_validation_complete": false,
+  "model_evaluation_started": false,
+  "no_remote_process_modified": true
+}

@@ -1,0 +1,112 @@
+{
+  "status": "post_hoc_supplement_not_new_confirmatory_evidence",
+  "utc": "2026-10-14T07:21:18.899898+00:00",
+  "method": "null-centered studentized paired-task bootstrap, two-sided",
+  "null": "E_task[mean_saved_policy_correctness_left - mean_saved_policy_correctness_right] = 0",
+  "assumptions": [
+    "Paired task vectors are modeled as independent, representative task-population draws.",
+    "All saved checkpoints are fixed; within-task policy/seed/sample outcomes stay together.",
+    "Task differences have finite, nonzero variance; bootstrap validity is approximate."
+  ],
+  "limitations": [
+    "Tasks were curated and previously observed, not randomly sampled unseen tasks.",
+    "Related tasks may be dependent; task-IID assumption is not established by this analysis.",
+    "No population inference over training seeds; three seeds are not hundreds of training replicates.",
+    "No exact label-exchangeability or normality claim; no equivalence or mechanism conclusion.",
+    "Method was chosen after results were observed; original protocol and intervals remain unchanged.",
+    "Bonferroni uses the three existing Level-2 contrasts, not every historical exploratory analysis.",
+    "Original percentile intervals and studentized tests are not exact inverses of one another.",
+    "Monte Carlo resolution is numerical, not a guarantee about the unknown true tail probability."
+  ],
+  "family_size": 3,
+  "familywise_alpha": 0.05,
+  "comparisons": {
+    "C-base/level2": {
+      "tasks": 100,
+      "mean_difference": 0.17125,
+      "standard_error": 0.018987182973889273,
+      "repeats": 100000,
+      "seed": 20261014,
+      "alternative": "two-sided",
+      "status": "approximate_conditional_test",
+      "observed_t": 9.019242097972036,
+      "tail_exceedances": 0,
+      "degenerate_resamples": 0,
+      "p_raw": 9.99990000099999e-06,
+      "p_estimator": "(1 + exceedances) / (1 + repeats)",
+      "monte_carlo_resolution": 9.99990000099999e-06,
+      "tail_count_zero_warning": true,
+      "p_bonferroni": 2.999970000299997e-05,
+      "original_preregistered_percentile_interval": {
+        "value": 0.17125,
+        "ci": [
+          0.12625,
+          0.21791666666666668
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      }
+    },
+    "S-base/level2": {
+      "tasks": 100,
+      "mean_difference": 0.1679166666666667,
+      "standard_error": 0.01886264330814072,
+      "repeats": 100000,
+      "seed": 20261014,
+      "alternative": "two-sided",
+      "status": "approximate_conditional_test",
+      "observed_t": 8.902075065703935,
+      "tail_exceedances": 0,
+      "degenerate_resamples": 0,
+      "p_raw": 9.99990000099999e-06,
+      "p_estimator": "(1 + exceedances) / (1 + repeats)",
+      "monte_carlo_resolution": 9.99990000099999e-06,
+      "tail_count_zero_warning": true,
+      "p_bonferroni": 2.999970000299997e-05,
+      "original_preregistered_percentile_interval": {
+        "value": 0.1679166666666667,
+        "ci": [
+          0.12333333333333334,
+          0.21416666666666667
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      }
+    },
+    "C-SFT/level2": {
+      "tasks": 100,
+      "mean_difference": 0.007499999999999998,
+      "standard_error": 0.01158067152033736,
+      "repeats": 100000,
+      "seed": 20261014,
+      "alternative": "two-sided",
+      "status": "approximate_conditional_test",
+      "observed_t": 0.6476308378861187,
+      "tail_exceedances": 51853,
+      "degenerate_resamples": 0,
+      "p_raw": 0.5185348146518535,
+      "p_estimator": "(1 + exceedances) / (1 + repeats)",
+      "monte_carlo_resolution": 9.99990000099999e-06,
+      "tail_count_zero_warning": false,
+      "p_bonferroni": 1.0,
+      "original_preregistered_percentile_interval": {
+        "value": 0.007499999999999998,
+        "ci": [
+          -0.01958333333333334,
+          0.03583333333333333
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      }
+    }
+  },
+  "receipt_sha256": "7c86a7c8997ebf7b05721682ea15eace9802ee98226807e8e58313894bf7543c",
+  "frozen_plan_sha256": "3cbbb1ad79823c88038f2a7937c39ea8f7212504a6b96340e1af30c827ae5b0b",
+  "analysis_source_sha256": "7d41ef3996305554f57de129b930e4ad0945b683f7b8675769342094eaa72cbf",
+  "analysis_file": "runs/reliability-v2/task-inference-20261014/analysis.json",
+  "analysis_sha256": "4935cbdf562f1d5e769bbdb162f65a2d7dbb74286077dd925a81844be9993939",
+  "cpu_tests": {
+    "passed": 7
+  },
+  "original_source_seal": "PASS"
+}

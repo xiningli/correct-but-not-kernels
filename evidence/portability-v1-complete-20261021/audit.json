@@ -1,0 +1,400 @@
+{
+  "verification": "PASS",
+  "source": "runs/portability-v1-20261020/run-r3",
+  "finished_utc": "2026-10-20T13:36:32.177336+00:00",
+  "hours": 5.127561299722221,
+  "preparation_sha256": "aebc0fb74ac8192dbcbc6e1dc7e4ab5fe0fad93e6a251df0b3bb8aa62b91f1a3",
+  "sealed_files_verified": 5438,
+  "metrics_sha256": "a5cef6f671d50d22b4a6be50438bc64e2e4b86a287de5dc061c3598808b6ad0b",
+  "report_sha256": "1afdb1fbea19df340b2c2407e4d39d2f3073cb7f5b55fc6501f7df60fe451e58",
+  "archive": {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3/evidence.tgz",
+    "bytes": 40837846,
+    "sha256": "eaf9f02441458cda14e73d8879f1fc4b80a178bff3435dfdc213ffa4299eb84e"
+  },
+  "attempts": 4368,
+  "complete_tasks": 78,
+  "excluded_tasks": 22,
+  "exclusion_counts": {
+    "reference_total_storage_cap": 6,
+    "disk_limit": 13,
+    "reference_output_storage_cap": 3
+  },
+  "families": {
+    "base": {
+      "attempts": 624,
+      "local_pass": 337,
+      "local_unknown": 223,
+      "local_pass_rate": 0.5400641025641025,
+      "remote_pass": 337,
+      "remote_unknown": 223,
+      "remote_pass_rate": 0.5400641025641025
+    },
+    "C": {
+      "attempts": 1872,
+      "local_pass": 1342,
+      "local_unknown": 355,
+      "local_pass_rate": 0.7168803418803419,
+      "remote_pass": 1341,
+      "remote_unknown": 355,
+      "remote_pass_rate": 0.7163461538461539
+    },
+    "SFT": {
+      "attempts": 1872,
+      "local_pass": 1338,
+      "local_unknown": 364,
+      "local_pass_rate": 0.7147435897435898,
+      "remote_pass": 1337,
+      "remote_unknown": 363,
+      "remote_pass_rate": 0.7142094017094017
+    }
+  },
+  "effects": {
+    "C-base/local": {
+      "estimate": 0.1768162393162393,
+      "interval": [
+        0.12393162393162394,
+        0.2313034188034188
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "C-base/remote_same_tasks": {
+      "estimate": 0.17628205128205124,
+      "interval": [
+        0.12286324786324786,
+        0.2307692307692308
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "C-base/local_minus_remote_effect": {
+      "estimate": 0.0005341880341880323,
+      "interval": [
+        -0.0016025641025641068,
+        0.0026709401709401684
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "SFT-base/local": {
+      "estimate": 0.1746794871794872,
+      "interval": [
+        0.12393162393162394,
+        0.2248931623931624
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "SFT-base/remote_same_tasks": {
+      "estimate": 0.17414529914529916,
+      "interval": [
+        0.1233974358974359,
+        0.22471955128205187
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "SFT-base/local_minus_remote_effect": {
+      "estimate": 0.0005341880341880351,
+      "interval": [
+        0.0,
+        0.0021367521367521404
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "C-SFT/local": {
+      "estimate": 0.002136752136752132,
+      "interval": [
+        -0.02884615384615385,
+        0.03472222222222221
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "C-SFT/remote_same_tasks": {
+      "estimate": 0.002136752136752135,
+      "interval": [
+        -0.028846153846153848,
+        0.03401442307692366
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    },
+    "C-SFT/local_minus_remote_effect": {
+      "estimate": -2.846725704167068e-18,
+      "interval": [
+        -0.0026709401709401758,
+        0.0026709401709401684
+      ],
+      "tasks": 78,
+      "confidence": 0.9833333333333333
+    }
+  },
+  "strict_pass": 0,
+  "numeric_transitions": {
+    "True->True": 3014,
+    "None->None": 938,
+    "False->False": 408,
+    "True->False": 1,
+    "None->True": 3,
+    "False->None": 4
+  },
+  "discordant": [
+    {
+      "policy": "C-20261023",
+      "task": "level2/18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp",
+      "sample": 1,
+      "candidate_sha256": "7fd5f252d926280f95a98a75cd3dec98e7905a5556e3f291ca8f3a24d27041db",
+      "remote": {
+        "component": "contract_violation",
+        "numerically_correct": true,
+        "contract_compliant": false,
+        "correct": false
+      },
+      "local": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "checks": [
+          {
+            "correct": false,
+            "component": "numerical",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ]
+      },
+      "candidate_error": null
+    },
+    {
+      "policy": "C-20261021",
+      "task": "level2/22_Matmul_Scale_ResidualAdd_Clamp_LogSumExp_Mish",
+      "sample": 5,
+      "candidate_sha256": "c8fd57041c8398080986f3b8b348b149257a6290a0a055dceb6c8437b2e8cadd",
+      "remote": {
+        "component": "sandbox_blocked",
+        "numerically_correct": null,
+        "contract_compliant": null,
+        "correct": false
+      },
+      "local": {
+        "component": "contract_violation",
+        "numerically_correct": true,
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ]
+      },
+      "candidate_error": null
+    },
+    {
+      "policy": "C-20261021",
+      "task": "level2/88_Gemm_GroupNorm_Swish_Multiply_Swish",
+      "sample": 1,
+      "candidate_sha256": "69c41c4950424c2bd6a24ccfa5c78451b90e5a65ffcecc0cae1991ec2e785c49",
+      "remote": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false
+      },
+      "local": {
+        "component": "crash",
+        "numerically_correct": null,
+        "checks": null
+      },
+      "candidate_error": "AcceleratorError: CUDA error: an illegal memory access was encountered\nSearch for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\n"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "level2/88_Gemm_GroupNorm_Swish_Multiply_Swish",
+      "sample": 1,
+      "candidate_sha256": "7853906a7c97ccb114790a04ea38d1e7d907bbcd3b5cde99f8368a315f77e7da",
+      "remote": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false
+      },
+      "local": {
+        "component": "crash",
+        "numerically_correct": null,
+        "checks": null
+      },
+      "candidate_error": "AcceleratorError: CUDA error: an illegal memory access was encountered\nSearch for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\n"
+    },
+    {
+      "policy": "SFT-20261022",
+      "task": "level2/88_Gemm_GroupNorm_Swish_Multiply_Swish",
+      "sample": 1,
+      "candidate_sha256": "737012526a5628b088a0d8fdf51ae2daeeeaace5f92ebc1623f5ef8dbac178a8",
+      "remote": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false
+      },
+      "local": {
+        "component": "crash",
+        "numerically_correct": null,
+        "checks": null
+      },
+      "candidate_error": "AcceleratorError: CUDA error: an illegal memory access was encountered\nSearch for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\n"
+    },
+    {
+      "policy": "SFT-20261023",
+      "task": "level2/88_Gemm_GroupNorm_Swish_Multiply_Swish",
+      "sample": 1,
+      "candidate_sha256": "8daf49d94869471144f1f9e3e15f8c01b0e06366ae7acf5f828ea8996f9ad146",
+      "remote": {
+        "component": "contract_violation",
+        "numerically_correct": false,
+        "contract_compliant": false,
+        "correct": false
+      },
+      "local": {
+        "component": "crash",
+        "numerically_correct": null,
+        "checks": null
+      },
+      "candidate_error": "AcceleratorError: CUDA error: an illegal memory access was encountered\nSearch for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\n"
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "level2/47_Conv3d_Mish_Tanh",
+      "sample": 4,
+      "candidate_sha256": "bda2f38b37c042ad738d228c2e2dfacca7b49b4054cccf2db726198c9516e4be",
+      "remote": {
+        "component": "sandbox_blocked",
+        "numerically_correct": null,
+        "contract_compliant": null,
+        "correct": false
+      },
+      "local": {
+        "component": "contract_violation",
+        "numerically_correct": true,
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ]
+      },
+      "candidate_error": null
+    },
+    {
+      "policy": "C-20261022",
+      "task": "level2/73_Conv2d_BatchNorm_Scaling",
+      "sample": 6,
+      "candidate_sha256": "5ba308a197f9fef5ec1aa6f49cb0c4e5a14a6b4710634172cb62487d44ba6153",
+      "remote": {
+        "component": "sandbox_blocked",
+        "numerically_correct": null,
+        "contract_compliant": null,
+        "correct": false
+      },
+      "local": {
+        "component": "contract_violation",
+        "numerically_correct": true,
+        "checks": [
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          },
+          {
+            "correct": true,
+            "component": "correct",
+            "rtol": 0.001,
+            "atol": 0.0001
+          }
+        ]
+      },
+      "candidate_error": null
+    }
+  ],
+  "limits": [
+    "Both GPUs have compute capability 12.0; this is not cross-architecture evidence.",
+    "Legacy prompts allowed PyTorch; numerical correctness is not proof of custom CUDA skill.",
+    "Driver, container and resource differences make this a platform replication, not pure hardware causality.",
+    "Previously observed tasks are not new-task generalization.",
+    "Unknown numerical outcomes remain explicitly unknown; operational pass rate retains their attempts.",
+    "No significance test or equivalence claim is inferred from a small point difference.",
+    "Shared base samples are not three independent training runs."
+  ],
+  "diagnosis": "Discordant logs are observations; no additional GPU reproducer or causal mechanism established."
+}

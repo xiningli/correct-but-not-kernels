@@ -1,0 +1,540 @@
+[
+  {
+    "path": "runs/autodl-pilot-backup/20261005T035943.378043Z-reconnected-20261005T162218Z/evidence-and-checkpoints.tgz",
+    "member_counts": {
+      "other": 3265,
+      "files": 8486
+    },
+    "uncompressed_regular_bytes": 8739252219,
+    "duplicate_member_names": [],
+    "adapter_checkpoints": [
+      {
+        "path": "runs/c5/20261005T034343.616845Z/training/checkpoints/checkpoint-1/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "16582014efedd8314f739b4ec55c83baa101a142e4463e5cccb71e57b647f53f"
+      },
+      {
+        "path": "runs/c5/20261005T034343.616845Z/training/checkpoints/policy-step-1/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "16582014efedd8314f739b4ec55c83baa101a142e4463e5cccb71e57b647f53f"
+      },
+      {
+        "path": "runs/c5/20261005T034343.616845Z/training/checkpoints/checkpoint-2/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "67209ca68e9f48978d0d90516d4649726a43dee441778fd764b50247639f691e"
+      },
+      {
+        "path": "runs/c5/20261005T034343.616845Z/training/checkpoints/checkpoint-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "bf683160b7cad193d088474ef1c7d2c291d5c666394599e5745f1625ace633e1"
+      },
+      {
+        "path": "runs/c5/20261005T034343.616845Z/training/checkpoints/policy-step-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "bf683160b7cad193d088474ef1c7d2c291d5c666394599e5745f1625ace633e1"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "9adb5a73d8ef19b8b09e79b38d524f6c55e6c289511c00d50a7b9740b2ddd5a3"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "8b29f2317f8eba62d8f81528c3d1dd5f27c59e256ccdc3b1edb83067dba46e2f"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "a942c826bde3b2c45cf1b4179fa82a3f8686d47288f7261610833f7d31261c3e"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/checkpoint-34/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "29e88ca7fac6134f94db4b2827d032e6569d0badf215c2990b84a23b94e85bc3"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/checkpoint-35/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5aa331524cda13c1ad4e80a0b77b3f2eb46763586e9f7567f760de9e5d4762e1"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-35/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5aa331524cda13c1ad4e80a0b77b3f2eb46763586e9f7567f760de9e5d4762e1"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "725dae0eb0541693d22ec8b3607f2be094f2fa1f090280b0cec337079ccb900f"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "da4b2f7cf49a8b010ff4b397380004f59fda8a4bbf2cc6f0ae1c9624073921c6"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "72a27293280152d92abd13bd4dcea72fa7597b075b4b454092cb9e95db190114"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "b01666bb5939afa40ebd6192fc64b79af76a7eb31ddb09d3017a334dbce3eb71"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "e59ee3ede38cae0f9a255c4b87349bbc12d019713a8552afeb7afba6f151540d"
+      },
+      {
+        "path": "runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "e59ee3ede38cae0f9a255c4b87349bbc12d019713a8552afeb7afba6f151540d"
+      }
+    ]
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/terminal-recovery-20261012/evidence-and-checkpoints.tgz",
+    "member_counts": {
+      "other": 34051,
+      "files": 86264
+    },
+    "uncompressed_regular_bytes": 35893390860,
+    "duplicate_member_names": [],
+    "adapter_checkpoints": [
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/grpo/checkpoints/policy-step-1/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "0d0f603e3da29d4ba3c69a8bd18d7923ed99fb6051683d15b997633c451a830b"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/grpo/checkpoints/checkpoint-2/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "41d60a39c9fa1023ac01d7a8de7edc48a5078c3bbdb620884fd70399a8c224ea"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/grpo/checkpoints/checkpoint-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "56621133e3de214c15d6927dc921b2529ad9ea9faf00dc60366f19e29c499cae"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/grpo/checkpoints/policy-step-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "56621133e3de214c15d6927dc921b2529ad9ea9faf00dc60366f19e29c499cae"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/sft/checkpoints/policy-step-1/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "6421f42d449f591d16331f7ee412a1bf3f65bbb1c1dc7a16e109d35deea790fa"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/sft/checkpoints/checkpoint-2/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "bc3ca21e79c64349f211bbec6c9063348d27be8ddf1c7662601cd98159064495"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/sft/checkpoints/checkpoint-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "56db451c13ecfcac8eefbc757383519e1b8414b733743f2b50fb1cbb001e618d"
+      },
+      {
+        "path": "runs/replication-v1.1/audit/20261006T074521.673972Z/sft/checkpoints/policy-step-3/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "56db451c13ecfcac8eefbc757383519e1b8414b733743f2b50fb1cbb001e618d"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-0/training/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "e7db2f0b43f02a988963fe21d15d9a928329581a236f115b4f838563661949eb"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-0/training/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5391b5e6adb755fd91a5af6243a11c3a476cda48f6075d2db89683599711597c"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-0/training/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5391b5e6adb755fd91a5af6243a11c3a476cda48f6075d2db89683599711597c"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-1/training/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5785b48396522fe7d36cf20fa8390b509d3da3f025746c9cbad6385cc1bb1912"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-1/training/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "df12cd41b6302aa899246ba46e7d33aa02cac2a675d857b1df6ac9fabe281afd"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-1/training/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "df12cd41b6302aa899246ba46e7d33aa02cac2a675d857b1df6ac9fabe281afd"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-2/training/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "485097adcba5db5bcc469d923ab54f6ffbc1264a6d8186995f4da057eb8cc449"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-2/training/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "c3a2f63c39a1703d75c89c0af738ec52e1e7c2f8ba7463b9018bc6e338a0af83"
+      },
+      {
+        "path": "runs/replication-v1.1/sft-tuning/candidate-2/training/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "c3a2f63c39a1703d75c89c0af738ec52e1e7c2f8ba7463b9018bc6e338a0af83"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "483e35336b0393e0a8a814d569c6ebd8623a88d11c082c49fe5704d5559e2847"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "0ccc58f1d8267bffff15cc5b0a9700ac870463447f230387bfead5716709daa8"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "01e15b6d7a0ebe6476c8b061f06e6d38a21b45e38b83503d8fccc74c3eda34b6"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "f64b2c626739458a22b1be48dfa35ca941f4d9306c5b97fba0d6ebd7e4ea84cd"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "caa672f82cef79c058fc7cd4c12dd39f9a5dd8f11c7d5f96d5b18e0f19b0f27a"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261021/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "caa672f82cef79c058fc7cd4c12dd39f9a5dd8f11c7d5f96d5b18e0f19b0f27a"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261021/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "0a3ffd7c7583fc558bd96d5da8ae1e2503f4dd77a9184b0298f4ff8e61430dcf"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261021/checkpoints/checkpoint-14/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "c35dcfe24f3996cb5f96a90b5f7d16478a69f16f8655f24ede9f17b1d62a688c"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261021/checkpoints/checkpoint-15/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "828bead90b73fcf3a3a44b00e3938990f415c2d7e5bb296947e4f5175ebf0526"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261021/checkpoints/policy-step-15/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "828bead90b73fcf3a3a44b00e3938990f415c2d7e5bb296947e4f5175ebf0526"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "63ab39dae9ff801d860dd429c561b706a71880dc787e9da4197eeeabd8a49875"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "8da2b3cd6cd6645946deddfb1314bdee4befc84c70b28db7ef14f6ebc147bc12"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "435d6facbc35a98d2e91c51fc0f4131b21c6e19054aa5d6321f91cea561184a1"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "a91a6d66858160fb29b708c00973fa3009df9bb2bd274e7d276fdf282062e6ec"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "778760d275f70efbdad18cf5a5ee3ad9b1dbb4da2ad7722205539af97aa265b9"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261021/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "778760d275f70efbdad18cf5a5ee3ad9b1dbb4da2ad7722205539af97aa265b9"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "5f2cd8cc88196ca711e1d56977c39206704ec8922dfba3dad36e3bab37cd07dc"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "6e6993b4c096bd3dfd2d651b5bf95afa1cd1cc7db0609455109922c37d1fcc7c"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "7fcebfaa63000a92cd377f04038b801d550af9dd51eeb6cefdbb988a30eb8bf9"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "33df26dd9353cdb5aff2538316733cbf423e36f8c5c23edfbe927067f92e0904"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "a6af3f0d749b94fd1050cc977c3cef763081c4791bc179fda22dd47435bca9b1"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261022/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "a6af3f0d749b94fd1050cc977c3cef763081c4791bc179fda22dd47435bca9b1"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "4c2cfc3c0476e296fa3c38e7ea29adfbab50f93f5c0116359d0bc09dbda94aad"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "32d10b2ba4cc48adbd7c06e5c1004047da0d94f1a2d5e267543d6b5258b6207a"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "1cdbcb36b380776da06cc7eb888b7c7f9b8a6c666a4d99b8f144780a6b42496c"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "26c102d1830f78a39d29e8bf62fafb6cec6869f28cbce7cadde34bcd4e6a1d21"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "2f9f7d82440c4e0d298ef90819cf86d6657f246156a6b39ad9ec2196916f2d61"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261022/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "2f9f7d82440c4e0d298ef90819cf86d6657f246156a6b39ad9ec2196916f2d61"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "f002b93c4223e23ea51811dac06fa8a4f1af4552279d427ae52986a24e6b20a0"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "fd644eee20d179c1341caec7c035ac2e6bed60243fc83027f7f9379e3f7811b9"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "d2c0df299b21f27f2543f1bac64629830ef1bf214ca458733c3d8d75755a224e"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "4b94794649995da895bb42fbe6322f2f9f0e2c547f7631efc7d4e8495d344637"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "cdc852c664bf22e1c9fc908158eedea7d36024651c52c505cea50ef710fca0fe"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261022/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "cdc852c664bf22e1c9fc908158eedea7d36024651c52c505cea50ef710fca0fe"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "d1b73e559cf2893819699314e9d9dfcabfa4e297e303b9c25cb3893dcbeeae1d"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "60ce776d4cef088892a4072f5e9958ebd2e25b99d1b717b4b1d05a4ac669aef1"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "3d2848c95ea7af4240aad4fbab1d96de40dfa4e5286106550d0201000e247dff"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "79e170fb274678f038b22b6e7e3e3d096f7ee9c2343944e68f4618f3c78efe92"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "d49edb55d1b269e52042e08a356c07eec4aa7655632da341fdad84c1c4c78569"
+      },
+      {
+        "path": "runs/replication-v1.1/training/SFT-20261023/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "d49edb55d1b269e52042e08a356c07eec4aa7655632da341fdad84c1c4c78569"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "77c00f98bf96de388adf5acf3aeb716ae0518fd0d8cbaa010c656b96191f850f"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "858e5673af6e36c5c294278817f1b967dab9233f6c0b42d4cb156371869b1b05"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "0304741cab0598282dbd269239cda7b8d32d5771755d613db04a0f5d8cffc55f"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "b37b4e85036083ae68fca3f089af5812b6e592b4eccb36e6dd9677013438ac1e"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "3253c20187d74c8afd2d33e31c04a42d482bf32ca4f5675da87c96a5942d2443"
+      },
+      {
+        "path": "runs/replication-v1.1/training/C-20261023/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "3253c20187d74c8afd2d33e31c04a42d482bf32ca4f5675da87c96a5942d2443"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/policy-step-10/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "f7cbc7209b352b8f3eeedc7aae7c89686d4ae575e9addb6aca6b555c7df522c4"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/policy-step-20/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "a8e873059471694a2d73251b4f8b8b1fe6494d08e9076cd548b5de5ac1b309ee"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/policy-step-30/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "f4f2959096d4c4d3f439c6a8a4d8ec8979b9321ff63ff01be43fed13977f1afd"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/checkpoint-39/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "184e1bf495ffe7e91d7136765aeae7656f726bf7f155fe01cf9ae3c6ba10e4d4"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/checkpoint-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "b59651eec8ecba3255e51e584d49fe36333258f9710cf33e44dee80a031b4bf4"
+      },
+      {
+        "path": "runs/replication-v1.1/training/S-20261023/checkpoints/policy-step-40/adapter_model.safetensors",
+        "bytes": 262373216,
+        "type": "0",
+        "sha256": "b59651eec8ecba3255e51e584d49fe36333258f9710cf33e44dee80a031b4bf4"
+      }
+    ]
+  }
+]

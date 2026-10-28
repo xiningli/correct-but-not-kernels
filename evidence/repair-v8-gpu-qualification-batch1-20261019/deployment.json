@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-19T01:16:28.621775+00:00",
+  "bundle_sha256": "e8396e87b14ae16a7cca42484cc96d6f07be92288fc7cb7dc7c0639ad1d142cb",
+  "files_verified": 5948,
+  "supervisor_sha256": "20e991fd7b02d2fff4cfdb653eaa18406b40c833b26d63557c61793aa6016e90",
+  "source_commit": "83ec977",
+  "GPU_model": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "source_qualification_plan_changed": false,
+  "additional_code": "supervise.py controls lifecycle, archive and shutdown; benchmark probes unchanged",
+  "supervisor_commit": "97a808d"
+}

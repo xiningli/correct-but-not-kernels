@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-13T20:07:08.561513+00:00",
+  "status": "development_controls_PASS_not_confirmatory_results",
+  "runtime_controls": 7,
+  "strict_isolation_controls": 6,
+  "real_bug_development_cases": 2,
+  "repairs_scope": "reduced_upstream_kernel_reproductions_not_full_repo_issues_not_policy_repairs",
+  "test_graph_candidates": 48,
+  "development_graphs": 6,
+  "CPU_domain_checks": 216,
+  "CPU_tests": {
+    "passed": 24,
+    "skipped": 1,
+    "skip_reason": "existing_optional_torch_check_in_CPU_only_venv"
+  },
+  "old_source_seal": "PASS",
+  "files": {
+    "runs/reliability-v2/transfer-v3/verified-controls/isolation-receipt.json": "78dbd41ce0b99db311e2e266e9715cd319dd6e30dfcdc4afc4e5b7cb450aab11",
+    "runs/reliability-v2/transfer-v3/verified-controls/repair-cases.json": "9949a98d3c33c68d89cd9cce121bed508d43721919895bb00bb433a7b9227c59",
+    "runs/reliability-v2/transfer-v3/verified-controls/strict-checks.json": "72fb3b19b285f9bf2383e864d5d9241ab672dab74e6ca35c6b11e7ba62b61b81",
+    "runs/reliability-v2/transfer-v3/verified-controls/strict-receipt.json": "11dde7a082c1ed354aa8ae8eb2d392220e516f93f8cd872c7fcde0991e1e77d0"
+  },
+  "runtime_source_sha256": {
+    "research/reliability_v2/strict_contract.py": "6c05bc63e75e014535d3b0b29584817f94108dde1bc700bb099cb7acc0036e90",
+    "research/reliability_v2/strict_controls.py": "6e77a95f9cdf67e3d19c4299feff226c82bc4781ea1a23ea2f3bf494fb054bcb",
+    "research/reliability_v2/strict_evaluator.py": "568214955215dc7fde109fa9bee729606893380cb39592ab14b5cad2ee640cc2",
+    "research/reliability_v2/strict_launcher.py": "4a667c639e4b149d7a5dd319df2f3884fcf7818ba5d87da2269e103f9bab0cc6",
+    "research/reliability_v2/strict_sandbox.py": "b35c938ec8202301f8a3911ca650547f60b3c8cf226f5fa1efcfd30569a39a68",
+    "research/reliability_v2/strict_worker.py": "ce0235899f4efcb043412904b5f91db255f09017b23b41e99285e2d9d5c32d2c"
+  },
+  "controller": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/transfer-controllers/20261013T200847.197395Z",
+  "development_pilot": {
+    "scope": "6_development_graphs_2_prompts_3_policies_1_draw",
+    "attempts_planned": 36,
+    "policies": [
+      "base",
+      "C-20261021",
+      "SFT-20261021"
+    ],
+    "launch_status": "restarted_via_original_gpu_env_after_zero_score_missing_ninja_failure"
+  },
+  "remaining": [
+    "formal_new_task_review_and_freeze",
+    "independent_real_repair_test_set",
+    "three_seed_confirmation",
+    "mechanism_intervention_analysis"
+  ],
+  "previous_controller": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/transfer-controllers/20261013T200456.397879Z",
+  "failed_development_backup_sha256": "9b90230beefa82fbea08221a968534c9fbb63572053cd30def79454fc9502d73",
+  "previous_controller_shutdown_deferred": true
+}

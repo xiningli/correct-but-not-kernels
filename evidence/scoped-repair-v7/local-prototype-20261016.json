@@ -1,0 +1,76 @@
+{
+  "utc": "2026-10-16T18:21:06.565279+00:00",
+  "status": "local_CPU_interface_prototype_PASS_not_GPU_integrated",
+  "tests": {
+    "tests": 82,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_interface_tests": 14,
+  "junit_sha256": "e12557fdf358b9b35f47e6a5dc4d0673428a2d1ff770a246d871832e3e6312e6",
+  "compileall": "PASS",
+  "v6_source_unchanged": true,
+  "v6_sealed_files": 131,
+  "v6_before_receipt_sha256": "d067b3bdb40a3d4d04cb4e76b9483a1a890e70939fb92237639a3a97156cf69f",
+  "prototype_source_sha256": {
+    "research/scoped_repair/__init__.py": "904d290844328d0743189b80be235b7efe66d426fc2ef44d7d7604d181a26b23",
+    "research/scoped_repair/edits.py": "733efcc910d84d8323d34d6a38cbab51945cc1d69fb0d921e4acc80839344d9f",
+    "research/scoped_repair/test_edits.py": "af7b61bec690cb591cfb5bba2a1d4934426d9473f5b3835cadcb5e8d18fd72f2",
+    "experiments/cuda-scoped-repair-v7-draft.yaml": "772433f3809c97d27c97939871ff8806cffcf0c029709ab8661dabb8b9c61587"
+  },
+  "public_development_scopes": {
+    "development/case-001": {
+      "origin": "all_functions_in_supplied_before_source_no_gold_localization",
+      "original_sha256": "bda34456ff87c105c9693d7130fc7869173958150de337266614f204a2a40bce",
+      "editable": [
+        "liger_cross_entropy_kernel",
+        "ModelNew.forward"
+      ],
+      "protected_external_signatures": [
+        "ModelNew.forward"
+      ],
+      "outside_functions": "byte_identical",
+      "internal_signatures": "editable_with_their_call_sites",
+      "security_or_correctness_certification": false
+    },
+    "development/case-002": {
+      "origin": "all_functions_in_supplied_before_source_no_gold_localization",
+      "original_sha256": "ffcacb605fc448f9b16e73a014534a7efb1a4c0b1549a16c8c8290a75f5f8910",
+      "editable": [
+        "initialize_logp",
+        "_selective_log_softmax_kernel",
+        "fused_selective_log_softmax",
+        "ModelNew.forward"
+      ],
+      "protected_external_signatures": [
+        "ModelNew.forward"
+      ],
+      "outside_functions": "byte_identical",
+      "internal_signatures": "editable_with_their_call_sites",
+      "security_or_correctness_certification": false
+    }
+  },
+  "local_monitor_snapshot": {
+    "observed_utc": "2026-10-16T18:20:47.139384+00:00",
+    "stage": "waiting_for_download",
+    "download": {
+      "status": "downloading",
+      "utc": "2026-10-16T18:20:46.319981+00:00",
+      "file": "model-00001-of-00002.safetensors",
+      "file_bytes": 23541579776,
+      "file_total": 49784788364,
+      "completed_bytes": 23512,
+      "total_bytes": 62578656403,
+      "attempt": 1,
+      "range_workers": 4
+    }
+  },
+  "remote_processes_modified": false,
+  "GPU_model_results": 0,
+  "limitations": [
+    "No model output format, prompt, or feedback-loop integration yet.",
+    "Scope validity does not certify safe execution or correct kernels.",
+    "Two seen developer defects are not a generalization test."
+  ]
+}

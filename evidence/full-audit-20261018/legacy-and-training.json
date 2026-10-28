@@ -1,0 +1,514 @@
+{
+  "pilot": {
+    "base": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.6,
+          "fast1": 0.3,
+          "correct_geomean_speedup": 1.0004353287743781,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.51,
+          "fast1": 0.2,
+          "correct_geomean_speedup": 1.0272669211949448,
+          "detector_fraction": 0.01
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "C-step-10": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.7,
+          "fast1": 0.2,
+          "correct_geomean_speedup": 1.0011728400408313,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.67,
+          "fast1": 0.21,
+          "correct_geomean_speedup": 0.998322542448498,
+          "detector_fraction": 0.0
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "C-step-20": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.75,
+          "fast1": 0.15,
+          "correct_geomean_speedup": 1.007417832520326,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.61,
+          "fast1": 0.25,
+          "correct_geomean_speedup": 1.0386092622991123,
+          "detector_fraction": 0.02
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "C-step-30": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.8,
+          "fast1": 0.4,
+          "correct_geomean_speedup": 1.0019703543763832,
+          "detector_fraction": 0.05
+        },
+        "level2": {
+          "correctness": 0.69,
+          "fast1": 0.24,
+          "correct_geomean_speedup": 1.0622956727191708,
+          "detector_fraction": 0.01
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "C": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.7,
+          "fast1": 0.4,
+          "correct_geomean_speedup": 1.0283806896644354,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.71,
+          "fast1": 0.29,
+          "correct_geomean_speedup": 1.0476178341167555,
+          "detector_fraction": 0.02
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "S-step-10": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.65,
+          "fast1": 0.2,
+          "correct_geomean_speedup": 1.0031176020861516,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.63,
+          "fast1": 0.21,
+          "correct_geomean_speedup": 1.0087423979314845,
+          "detector_fraction": 0.02
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "S-step-20": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.8,
+          "fast1": 0.35,
+          "correct_geomean_speedup": 0.8645536499905047,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.75,
+          "fast1": 0.3,
+          "correct_geomean_speedup": 1.0296827321740913,
+          "detector_fraction": 0.02
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "S-step-30": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.85,
+          "fast1": 0.45,
+          "correct_geomean_speedup": 0.9992719129764749,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.72,
+          "fast1": 0.26,
+          "correct_geomean_speedup": 1.0858979594733256,
+          "detector_fraction": 0.01
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    },
+    "S": {
+      "programs": 120,
+      "levels": {
+        "level1": {
+          "correctness": 0.85,
+          "fast1": 0.35,
+          "correct_geomean_speedup": 0.999290537490674,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.73,
+          "fast1": 0.29,
+          "correct_geomean_speedup": 1.0059895194161594,
+          "detector_fraction": 0.01
+        }
+      },
+      "all_metric_intervals_reproduced": true
+    }
+  },
+  "reevaluation": {
+    "base": {
+      "programs": 960,
+      "levels": {
+        "level1": {
+          "correctness": 0.6125,
+          "fast1": 0.34375,
+          "correct_geomean_speedup": 0.9569969413630036,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.54875,
+          "fast1": 0.1925,
+          "correct_geomean_speedup": 1.0186445965484032,
+          "detector_fraction": 0.005
+        }
+      }
+    },
+    "C": {
+      "programs": 960,
+      "levels": {
+        "level1": {
+          "correctness": 0.8,
+          "fast1": 0.2625,
+          "correct_geomean_speedup": 0.9987225113548241,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.74375,
+          "fast1": 0.28,
+          "correct_geomean_speedup": 1.0196676175359436,
+          "detector_fraction": 0.00625
+        }
+      }
+    },
+    "S": {
+      "programs": 960,
+      "levels": {
+        "level1": {
+          "correctness": 0.79375,
+          "fast1": 0.33125,
+          "correct_geomean_speedup": 0.9984255589857869,
+          "detector_fraction": 0.0
+        },
+        "level2": {
+          "correctness": 0.73875,
+          "fast1": 0.29,
+          "correct_geomean_speedup": 1.0310308979801048,
+          "detector_fraction": 0.005
+        }
+      }
+    }
+  },
+  "training": {
+    "C-20261021": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "caa672f82cef79c058fc7cd4c12dd39f9a5dd8f11c7d5f96d5b18e0f19b0f27a",
+      "elapsed_training_seconds": 5453.788124799728,
+      "stop": null
+    },
+    "C-20261022": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "cdc852c664bf22e1c9fc908158eedea7d36024651c52c505cea50ef710fca0fe",
+      "elapsed_training_seconds": 5827.964291572571,
+      "stop": null
+    },
+    "C-20261023": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "3253c20187d74c8afd2d33e31c04a42d482bf32ca4f5675da87c96a5942d2443",
+      "elapsed_training_seconds": 5675.324618339539,
+      "stop": null
+    },
+    "S-20261021": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 15,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "828bead90b73fcf3a3a44b00e3938990f415c2d7e5bb296947e4f5175ebf0526",
+      "elapsed_training_seconds": 2346.336287498474,
+      "stop": "detector_finding"
+    },
+    "S-20261022": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "a6af3f0d749b94fd1050cc977c3cef763081c4791bc179fda22dd47435bca9b1",
+      "elapsed_training_seconds": 5629.4358167648315,
+      "stop": null
+    },
+    "S-20261023": {
+      "method": "grpo",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "b59651eec8ecba3255e51e584d49fe36333258f9710cf33e44dee80a031b4bf4",
+      "elapsed_training_seconds": 5593.300064563751,
+      "stop": null
+    },
+    "SFT-20261021": {
+      "method": "sft",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "778760d275f70efbdad18cf5a5ee3ad9b1dbb4da2ad7722205539af97aa265b9",
+      "elapsed_training_seconds": 513.4373114109039,
+      "stop": null,
+      "sft_dataset": {
+        "source_scores_sha256": "fa9a46e4fb74d43788a9c4c6c73810dba80da7decff432937380c370a4987af6",
+        "data_sha256": "86220c130b2195a5b3146249f3b2cc54be5e66ae6e3cba7d2d9a53165608958f",
+        "candidates": 320,
+        "accepted": 171,
+        "tasks": [
+          "level1/40_LayerNorm"
+        ],
+        "selection": "correct and no flags and finish_reason=stop; retain duplicate frequency"
+      },
+      "sft_generator": "same Gemma 12B base; no teacher adapter"
+    },
+    "SFT-20261022": {
+      "method": "sft",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "2f9f7d82440c4e0d298ef90819cf86d6657f246156a6b39ad9ec2196916f2d61",
+      "elapsed_training_seconds": 494.53960490226746,
+      "stop": null,
+      "sft_dataset": {
+        "source_scores_sha256": "55f0009bf49aa71f0cddd6725c742300fa2f31d1592aa671ffb4475c2637427b",
+        "data_sha256": "2ef29b9fba3483c997eeee3bf1f8405586592ceabcd21b78f5f2301e0ed0590a",
+        "candidates": 320,
+        "accepted": 177,
+        "tasks": [
+          "level1/40_LayerNorm"
+        ],
+        "selection": "correct and no flags and finish_reason=stop; retain duplicate frequency"
+      },
+      "sft_generator": "same Gemma 12B base; no teacher adapter"
+    },
+    "SFT-20261023": {
+      "method": "sft",
+      "tasks": [
+        "level1/40_LayerNorm"
+      ],
+      "final_step": 40,
+      "adapter_hash_matches_final_evaluation": true,
+      "adapter_sha256": "d49edb55d1b269e52042e08a356c07eec4aa7655632da341fdad84c1c4c78569",
+      "elapsed_training_seconds": 517.5397715568542,
+      "stop": null,
+      "sft_dataset": {
+        "source_scores_sha256": "9f911f3c77076cc7dec7782e9626ff48a7298a2d70d3268fe13b63f8467add71",
+        "data_sha256": "520cbe28972f7d8f0aa94f3cee5d142a1d920c222b46a04f426cbe71c9553348",
+        "candidates": 320,
+        "accepted": 200,
+        "tasks": [
+          "level1/40_LayerNorm"
+        ],
+        "selection": "correct and no flags and finish_reason=stop; retain duplicate frequency"
+      },
+      "sft_generator": "same Gemma 12B base; no teacher adapter"
+    }
+  },
+  "storage_replay": {
+    "programs": 80,
+    "original_correct": 40,
+    "replay_correct": 61,
+    "changed": [
+      {
+        "label": "C-20261023",
+        "sample": 0,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 1,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 2,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 3,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 4,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 5,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "C-20261023",
+        "sample": 7,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 0,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 3,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 4,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 5,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 6,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "S-20261023",
+        "sample": 7,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 0,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 1,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 2,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 3,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 4,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 5,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 6,
+        "from": "crash",
+        "to": "correct"
+      },
+      {
+        "label": "SFT-20261023",
+        "sample": 7,
+        "from": "crash",
+        "to": "correct"
+      }
+    ],
+    "same_candidate_and_seed_verified": true,
+    "original_scores_unchanged": true
+  },
+  "reevaluation_primary_intervals_and_common_correct_speed_reproduced": true,
+  "sft_tuning": {
+    "learning_rate": 1e-05,
+    "correctness": 0.8125,
+    "scores_sha256": "995ad336a14bfb51d63ad1f3cbd43f167a73366cd27f9f77ca88c3f983cd8ada",
+    "candidates": [
+      {
+        "learning_rate": 5e-06,
+        "correctness": 0.78125,
+        "scores_sha256": "603c28bf50c7d4bf5d0f4d22c363c271b22d245d99ec0ff1d0d00cbbe0cab565"
+      },
+      {
+        "learning_rate": 1e-05,
+        "correctness": 0.8125,
+        "scores_sha256": "995ad336a14bfb51d63ad1f3cbd43f167a73366cd27f9f77ca88c3f983cd8ada"
+      },
+      {
+        "learning_rate": 2e-05,
+        "correctness": 0.78125,
+        "scores_sha256": "7aeac41ef203aa84f404472cd96f849ce3dc36f82593ff0524aac903dba38fea"
+      }
+    ],
+    "scope": "TRAIN only; extra tuning cost must be reported"
+  },
+  "r2_base_rows_reused_in_r3": 960,
+  "local_final_grids_match_complete_archives": true
+}

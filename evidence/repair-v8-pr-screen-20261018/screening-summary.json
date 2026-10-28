@@ -1,0 +1,62 @@
+{
+  "status": "bounded_CPU_PR_screen_complete_GPU_qualification_not_started",
+  "review_notes": "experiments/cuda-repair-v8-pr-screen.json",
+  "review_notes_sha256": "d7e1ca9a3da2ea302da42e78b55b78b0b449fe19720664633a172e152100250f",
+  "discovered_unique_PRs": 471,
+  "deep_reviewed_PRs": 40,
+  "deferred_metadata_only": 429,
+  "decision_counts": {
+    "hold_scope": 17,
+    "deferred_not_deep_reviewed": 429,
+    "excluded_prior_development": 2,
+    "exclude_scope": 1,
+    "cpu_candidate": 14,
+    "exclude_no_bug_evidence": 1,
+    "hold_scope_and_lineage": 2,
+    "exclude_hardware": 1,
+    "exclude_no_kernel_fix": 1,
+    "hold_contract": 1,
+    "hold_scope_and_oracle": 1,
+    "hold_scope_and_contract": 1
+  },
+  "archives": 15,
+  "archived_files_verified": 240,
+  "CPU_candidates": 14,
+  "development_candidates": 12,
+  "development_reserves": 2,
+  "GPU_qualified": 0,
+  "formal_tasks_sealed": 0,
+  "development_by_repository": {
+    "linkedin/Liger-Kernel": 4,
+    "fla-org/flash-linear-attention": 2,
+    "flagos-ai/FlagGems": 4,
+    "vllm-project/vllm": 2
+  },
+  "search_queries": 8,
+  "capped_queries": 3,
+  "split_seed": "cuda-repair-v8-pr-screen-20261018-development-v1",
+  "assignment": "Sort CPU candidates within repository by SHA256(seed + newline + root_cluster); take round-robin in canonical repository priority. Remaining candidates are development-only reserves. Do not change seed after outcomes.",
+  "replacement": "Before model evaluation only: record qualification failure and take next reserve in the same repository, otherwise canonical round-robin. Never replace based on model repair success.",
+  "shared_pending_gates": [
+    "Reconstruct original repository checkout and pin a reproducible environment; declarations are archived, installed dependency lock is not complete.",
+    "Write an issue-only task specification without solution hints; upstream PR bodies, gold source and regression tests are investigator-only.",
+    "Freeze owning modules from before-source public issue/stack and call graph; provisional module lists are not permission to expose gold localization.",
+    "Validate public API, supported input domain, independent oracle and visible/hidden partition; both edit interfaces must express a valid fix.",
+    "Verify full input context and actual response framing fit budgets; current token audit measures compact JSON of complete modules only.",
+    "Run unfixed and official-fix controls in three fresh GPU processes, relevant repository preservation tests and supported memory checks.",
+    "Confirm actual repository dispatch reaches intended GPU kernel with no forbidden replacement; no reduced-only task may enter the primary endpoint.",
+    "Complete copy/backport lineage and contamination review before any formal test sealing. All selected and reserve tasks in this batch stay development-only."
+  ],
+  "model_runs": 0,
+  "GPU_runs": 0,
+  "upstream_code_executed": false,
+  "qualification_labor": "Not measured as person-hours. Retrieval receipts preserve timestamps; these are not human labor or GPU time.",
+  "limitations": [
+    "Title-keyword, latest-created, capped discovery is not representative random sampling or an exhaustive PR census.",
+    "All CPU candidates here are development or development reserve, never the formal test set.",
+    "Merged source and upstream claimed tests do not prove independently reproducible correctness.",
+    "Scope holds from PR-head estimates are preliminary, not definitive merge-parent exclusions.",
+    "Public-source pretraining contamination cannot be ruled out; recent merges do not prove unfamiliarity.",
+    "Full repository checkout, exact environment lock, independent tests, integration and GPU controls remain pending."
+  ]
+}

@@ -1,0 +1,229 @@
+id: cuda-repair-v8
+status: design_only_not_frozen_not_executable
+created_utc: '2026-10-18'
+question: Do updated execution diagnostics and atomic edits improve reliable repair of unseen GPU defects at matched resource ceilings?
+scope: bounded_module_repair_with_original_repository_integration
+training_enabled: false
+GPU_launch_enabled: false
+formal_test_enabled: false
+historical_experiments_immutable: true
+primary_model:
+  name: gemma-4-31B-it
+  dtype: bfloat16
+  thinking: false
+  snapshot_hash: bind_existing_verified_snapshot_before_freeze
+  sampling: {temperature: 1.0, top_p: 0.95, top_k: 64}
+  comparison: same_weights_for_all_arms_not_a_parameter_scaling_or_RL_study
+dataset:
+  source_type: independently_reproducible_merged_real_bug_fixes
+  candidate_repository_priority:
+    - linkedin/Liger-Kernel
+    - fla-org/flash-linear-attention
+    - FlagOpen/FlagGems
+    - vllm-project/vllm
+    - sgl-project/sglang
+    - pytorch/executorch
+  candidate_window: merged_2025-01-01_through_2026-10-18_UTC
+  minimum_formal_repositories: 4
+  target_formal_defects: 80
+  minimum_for_planned_confirmatory_track: 60
+  minimum_per_formal_repository: 10
+  maximum_repository_fraction: 0.35
+  development: existing_two_seen_bugs_plus_12_new_root_defects_from_at_least_three_repositories
+  split: deterministic_hash_assignment_with_repository_strata_before_model_evaluation
+  independence: one_primary_task_per_root_cause_cluster_including_cross_repository_copies_backports_and_duplicate_PRs
+  formal_n_rule: seal_all_eligible_up_to_80_using_frozen_stratified_hash_order_before_any_formal_model_output
+  scarcity_rule: fewer_than_60_or_four_repositories_means_exploratory_study_or_amendment_before_any_formal_outputs
+  no_outcome_based_sample_extension: true
+  candidate_not_eligible_until:
+    - parent_fixed_source_license_and_dependency_hashes_archived
+    - issue_specification_has_no_gold_patch_or_fix_instructions
+    - chosen_edit_surface_derived_from_before_source_issue_or_stack_not_gold_lines
+    - before_fails_bug_regression_and_after_passes_full_sealed_suite_in_three_fresh_processes
+    - equivalent_valid_fix_is_representable_by_both_edit_interfaces
+    - original_repository_invocation_and_relevant_preserved_tests_run_in_pinned_environment
+    - independent_oracle_and_numerical_tolerances_reviewed_without_model_outputs
+    - contamination_duplicate_and_development_overlap_review_complete
+    - public_context_and_before_full_response_fit_the_frozen_token_caps
+  exclusions:
+    - pure_speed_optimization_or_new_feature_without_reproducible_bug
+    - unsupported_hardware_distributed_only_or_unrecoverable_environment
+    - flaky_failure_or_after_fix_fails_required_expanded_domain
+    - repair_requires_changes_outside_predeclared_shared_surface
+    - only_reduced_reproduction_available_without_original_repository_validation
+  exclusion_ledger: retain_every_screened_candidate_reason_and_human_qualification_cost
+  limitations:
+    - Not_absence_from_pretraining_unseen_means_not_used_for_harness_development.
+    - Candidate_repository_names_do_not_assert_any_particular_PR_is_eligible.
+    - Synthetic_mutations_and_48_graph_candidates_are_auxiliary_not_real_defect_counts.
+    - If_exclusion_rate_is_high_report_restricted_population_in_title_and_claims.
+arms:
+  A: {interface: full_module, updates: verdict_counts, state: latest_applied_source}
+  B: {interface: full_module, updates: structured_diagnostics, state: latest_applied_source}
+  C: {interface: atomic_edits, updates: verdict_counts, state: latest_applied_source}
+  D: {interface: atomic_edits, updates: structured_diagnostics, state: latest_applied_source}
+  E: {interface: atomic_edits, updates: original_summary_only, state: restart_original_source}
+initial_attempt:
+  feedback: same_before_execution_verdict_and_counts_no_detailed_diagnostics
+  sharing: exact_initial_draw_and_score_shared_between_A_B_and_between_C_D_E
+  charging: each_logical_episode_pays_full_initial_token_and_execution_cost_even_when_cached
+  estimand_limit: updated_feedback_effect_after_initial_attempt_not_all_possible_initial_diagnostic_designs
+shared_context:
+  items: [issue, complete_editable_modules, frozen_relevant_readonly_context, visible_tests, versioned_API_card]
+  no_gold_localization: true
+  API_card: same_offline_version_specific_symbols_and_generic_examples_for_all_arms_no_task_specific_solution
+  conversation: current_source_and_latest_feedback_only
+  forbidden: [gold_fix, future_git_history, withheld_tests, internet_answer_search, cross_task_memory]
+edit_surface:
+  selection: nominated_owning_modules_from_before_issue_stack_and_call_graph
+  max_modules: 3
+  original_full_response_token_limit: 6144
+  editable: [all_functions_and_methods, internal_signatures_and_call_sites, imports, module_constants, new_nonconflicting_helpers]
+  protected: [public_interfaces, license, tests, harness, dependency_pins, all_unlisted_files]
+  identical_boundary_for_all_arms: true
+  full_module_wire_format: JSON_files_path_and_complete_source
+  atomic_wire_format: JSON_replace_function_upsert_helper_replace_import_block_replace_constant
+  validation: same_resulting_source_scope_and_syntax_checks_both_interfaces
+  failure: count_attempt_and_tokens_retain_previous_applied_source_no_free_repair
+  semantics: no_human_fix_or_runtime_semantic_correction_by_editor
+  v7_limit: new_version_required_v7_cannot_express_all_needed_import_constant_or_helper_edits
+execution_contract:
+  scope: per_task_target_GPU_computation_and_pinned_repository_call_path
+  custom_kernel: required_for_the_target_computation_no_replacement_by_high_level_library_or_CPU
+  existing_host_behavior: explicit_task_specific_allowlist_validated_on_before_and_official_fix
+  compatibility: do_not_apply_old_blanket_PyTorch_ban_to_legitimate_unchanged_repository_host_code
+  controls: actual_runtime_kernel_evidence_and_targeted_fallback_rejection_under_bounded_observer
+  isolation: existing_security_boundary_must_be_revalidated_for_new_repository_runner
+diagnostics:
+  common: [outcome_component, tests_observed, tests_passed]
+  detailed: [bounded_compiler_exception_and_API, failing_visible_case_id, shapes, strides, dtype, finite_status, max_error, mismatch_count]
+  limits: {max_detail_tokens: 2048, raw_candidate_bytes_as_instructions: false}
+  projection: deterministic_allowlist_from_visible_execution_no_gold_root_cause_label_or_suggested_patch
+  overflow: predetermined_field_priority_same_across_tasks_no_adaptive_hinting
+budget:
+  replicates_per_defect: 3
+  attempts_per_episode: 4
+  max_prompt_tokens_per_call: 16384
+  max_output_tokens_per_call: 8192
+  max_prompt_tokens_per_episode: 65536
+  max_output_tokens_per_episode: 32768
+  visible_test_calls_per_episode: 4
+  candidate_execution_timeout_seconds: 300
+  non_stop_generation: failure_in_every_arm
+  scope_or_format_rejection: consumes_attempt_no_repair_call
+  infrastructure_retry: only_identical_saved_request_or_candidate_no_new_seed_no_hidden_feedback_logged_separately
+  infrastructure_exclusion: task_wide_all_arms_blind_review_never_drop_one_losing_arm
+  scheduling: randomized_block_order_same_hardware_image_and_settings_no_concurrent_evaluator_contention
+  claim: matched_attempt_input_output_and_execution_ceilings_not_equal_actual_FLOPs
+  telemetry: [prompt_tokens, output_tokens, per_request_generation_times, compilation_times, execution_times, queue_times, engine_load_times, peak_memory, cache_state]
+  shared_generation: record_both_unique_physical_work_and_full_logical_episode_cost
+selection:
+  stop: first_visible_strict_pass_else_budget_exhaustion
+  final: first_visible_pass_else_last_applied_candidate_else_original
+  hidden_judging: after_all_formal_generation_is_frozen_no_retries_or_prompt_edits_from_hidden_results
+  alternative_budget_curves: use_only_last_completed_visible_eligible_prefix_no_hidden_best_of_n_or_partial_completion_credit
+regressions:
+  public_spec: domain_layout_dtype_and_numerical_contract_public_exact_hidden_cases_private
+  visible_minimum: one_bug_trigger_plus_representative_original_passing_cases
+  hidden_panels:
+    bug: new_instances_of_original_fault_with_seeds_and_shapes_disjoint_from_visible
+    preserve: original_before_passing_behaviors_and_repository_tests
+    boundary: specification_valid_edge_cases_across_applicable_axes
+    integration: actual_original_repository_call_path_on_pinned_revision
+    memory: supported_compute_sanitizer_memcheck_and_input_output_contracts
+  applicable_axes:
+    - shape_one_odd_prime_and_tile_boundary_minus_one_equal_plus_one
+    - noncontiguous_independent_strides_and_storage_offsets_when_supported
+    - fp32_fp16_bf16_when_supported_and_fp64_or_other_independent_stable_oracle
+    - zero_constant_signed_small_and_large_finite_inputs_when_in_domain
+    - masked_padding_and_tail_liveness
+    - input_mutation_output_aliasing_shape_dtype_and_finiteness_contracts
+  cross_product: frozen_covering_design_plus_seeded_random_cases_not_all_axes_exhaustive
+  special_values: NaN_Inf_empty_and_negative_strides_only_if_upstream_contract_supports_them
+  tolerance: operator_and_dtype_specific_frozen_before_generation_same_for_all_arms
+  oracle: independent_formula_or_separately_reviewed_implementation_not_only_agreement_with_human_patch
+  controls: official_fix_passes_and_unfixed_bug_fails_plus_known_bad_patch_controls
+  sanitizer_caveat: detects_supported_memory_errors_not_a_proof_of_all_race_or_memory_safety
+  preservation_scoring: compile_format_runtime_unobservability_separate_from_observed_semantic_regression
+  additional_audit: post_freeze_new_tests_are_labeled_new_audit_never_silently_replace_primary_scores
+endpoints:
+  primary_success: selected_patch_passes_visible_and_all_sealed_hidden_bug_preservation_boundary_integration_memory_contract_checks
+  primary_rate: repository_macro_average_of_per_defect_mean_of_three_replica_successes
+  secondary: [visible_pass_rate, visible_pass_hidden_fail_rate, original_pass_to_fail_regressions, observed_error_signature_recurrence, format_and_apply_failure, compile_runtime_failure, cost_frontiers]
+  kernel_runtime_speedup: secondary_descriptive_not_required_for_repair_claim
+statistics:
+  primary_contrast: D_minus_A
+  preregistered_component_contrasts: [D_minus_C, D_minus_B]
+  family: three_two_sided_contrasts_Bonferroni_alpha_0.05
+  intervals: 98.333_percent_repository_stratified_defect_cluster_bootstrap
+  p_values: null_centered_studentized_stratified_defect_bootstrap_100000_draws_plus_one_tail_estimator
+  conditional_unit: root_defect_all_arms_and_replicas_kept_together_repositories_fixed
+  assumptions: independent_representative_root_defects_within_each_sampled_repository_nonzero_estimable_variance_approximate_inference
+  degeneracy: report_not_testable_no_invented_p_value
+  no_equivalence_from_nonsignificance: true
+  exploration: [factorial_interaction, E_comparisons, bug_family_subgroups, per_repository_intervals]
+  cross_repository_evidence: per_repository_effects_and_leave_one_repository_out_sensitivity_no_universal_repository_population_claim
+  practical_effect_target: 0.10
+  practical_effect_rule: point_estimate_target_is_a_planning_goal_claim_at_least_10pp_requires_lower_CI_above_0.10
+  optional_stopping: no_formal_outcome_peeking_or_enlargement_until_significant
+mechanism_forks:
+  status: preregister_before_formal_generation_supplementary_small_sample
+  source: earliest_scope_valid_compile_or_numerical_failure_from_shared_A_B_initial_draw_per_defect
+  selection: at_most_24_defects_by_frozen_hash_order_balanced_where_possible_no_later_outcome_selection
+  common_state: identical_issue_source_budget_seed_and_preceding_failure
+  interface: atomic_edits
+  feedback_branches: [verdict_only, full_diagnostics, diagnostics_with_one_predeclared_error_specific_field_group_ablated]
+  field_rule: compiler_exception_API_or_shape_stride_or_numerical_error_group_selected_by_frozen_observed_signature_rules_not_gold_patch
+  replicas: 3
+  attempts_per_fork: 1
+  endpoints: [next_step_repair, observed_signature_removed, preserved_tests_broken]
+  interpretation: randomized_paired_intervention_on_feedback_from_shared_states_not_neural_mechanism_or_formal_mediation
+  unknown_signature_rule: retain_in_verdict_full_comparison_report_ablation_not_applicable
+  insufficient_states_rule: report_actual_count_no_new_tasks_or_harder_seeds_selected_to_fill_quota
+cost_validation:
+  subset: 24_formal_tasks_selected_by_hash_and_repository_before_model_outputs
+  arms: [A, D]
+  repeats: 1
+  concurrency: 1
+  budget_seconds: null
+  freeze_deadline_rule: choose_ceil_to_minute_75th_percentile_development_baseline_episode_cost_before_formal_launch
+  setup: same_dedicated_inference_and_evaluator_hardware_pair_no_contention
+  clock: from_first_request_to_selected_visible_result_including_compilation_and_tool_execution_excluding_one_time_engine_setup_report_setup_separately
+  late_result: no_success_credit_if_completion_exceeds_deadline
+  report: both_elapsed_time_and_aggregate_GPU_resource_seconds_no_token_equals_FLOP_claim
+optional_model_check:
+  model: gemma-4-12B-it
+  arms: [A, D]
+  tasks: same_24_hash_selected_formal_tasks
+  replicas: 2
+  enabled: false
+  decision_deadline: before_any_formal_model_outputs
+  interpretation: model_specific_replication_not_causal_parameter_count_comparison
+stages:
+  - qualify_12_new_development_defects_and_record_curation_cost
+  - implement_v8_scope_protocol_diagnostics_regressions_and_cost_telemetry_in_new_namespace
+  - GPU_before_after_controls_and_development_signal_feasibility_gate
+  - seal_task_manifest_container_hashes_domain_tests_prompts_models_budgets_and_analysis
+  - run_complete_formal_matrix_and_preregistered_forks_without_hidden_feedback
+  - run_hidden_judging_rebuild_tables_archive_and_publish_reproduction_artifacts
+development_go_gate:
+  tasks: twelve_new_development_defects_old_two_are_extra_controls
+  replicas: 2
+  all_arms: true
+  required_controls: every_eligible_before_after_scope_regression_and_isolation_control_passes
+  minimum_signal: at_least_three_distinct_new_defects_resolved_by_any_arm
+  ceiling_check: at_least_three_new_defects_not_solved_by_every_arm_in_every_replica
+  no_required_direction: D_need_not_beat_A_on_development_to_start_a_valid_formal_test
+  failure_action: diagnose_using_development_only_amend_and_revalidate_before_formal_seal_no_test_peeking
+launch_blockers:
+  - no_qualified_independent_formal_task_manifest
+  - no_v8_runner_or_extended_editor
+  - no_GPU_validation_of_expanded_regressions_and_repository_integration
+  - cost_deadline_and_hardware_environment_not_yet_calibrated
+references:
+  SWE_agent: https://arxiv.org/abs/2405.15793
+  RealisticTritonBench: https://arxiv.org/abs/2608.12004
+  Harness2: https://github.com/google-research/harness2
+  GEAK: https://rocm.blogs.amd.com/software-tools-optimization/triton-kernel-ai/README.html
+  Compute_Sanitizer: https://docs.nvidia.com/compute-sanitizer/ComputeSanitizer/index.html
+novelty_limit: diagnosis_edit_interfaces_PR_tasks_and_retry_loops_are_not_novel_alone

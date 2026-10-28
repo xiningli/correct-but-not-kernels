@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "utc": "2026-10-20T08:26:43.537246+00:00",
+  "attempts": 0,
+  "error": "RuntimeError: GPU positive/negative control failed: triton",
+  "model_outputs": 0
+}

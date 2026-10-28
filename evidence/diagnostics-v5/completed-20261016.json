@@ -1,0 +1,89 @@
+{
+  "utc": "2026-10-16T16:33:18.500332+00:00",
+  "studies": {
+    "diagnostics": {
+      "archive": "runs/diagnostics-v5/recovery/2026-10-16T051325.446441_0000/evidence.tgz",
+      "archive_sha256": "75df54757356a62d0591ea0edcc20449afc36eb9a647679e8536fd313e19367d",
+      "archive_bytes": 1617499,
+      "outcome": {
+        "status": "complete",
+        "utc": "2026-10-16T13:44:02.670585+00:00",
+        "scored": 84,
+        "seconds": 3296.5076449923217,
+        "finished_utc": "2026-10-16T14:38:59.178233+00:00"
+      },
+      "attempts": 84,
+      "exact_grid_verified": true,
+      "report_JSON_and_Markdown_reproduced": true,
+      "sealed_source_files_verified": 114,
+      "metrics_sha256": "39bd5c4a9a34327e498f35c4794db6e80a2c427f20ee3d27650a99e376a15ca9",
+      "details": {
+        "successes": [
+          {
+            "policy": "base",
+            "task": "development/case-002",
+            "condition": "facts_grouped",
+            "replicate": 0
+          },
+          {
+            "policy": "base",
+            "task": "development/case-002",
+            "condition": "facts_grouped",
+            "replicate": 1
+          }
+        ],
+        "components": {
+          "incorrect": 49,
+          "correct": 2,
+          "format": 11,
+          "crash": 19,
+          "contract_violation": 3
+        },
+        "finish_reasons": {
+          "stop": 82,
+          "length": 2
+        },
+        "independent_defects": 2,
+        "all_rich_feedback_facts_identical": true
+      },
+      "report_path": "runs/diagnostics-v5/terminal-audit-20261016/diagnostics/REPORT.md"
+    },
+    "replay": {
+      "archive": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/evidence.tgz",
+      "archive_sha256": "b5c24cb5886febd405a88f622ca8fd88a0d3ea0069d2ffeaa1f1ff59490f013e",
+      "archive_bytes": 30942267,
+      "outcome": {
+        "status": "complete",
+        "action": "decomposition",
+        "utc": "2026-10-15T19:15:42.292417+00:00",
+        "scored": 5600,
+        "seconds": 66283.3335419856,
+        "finished_utc": "2026-10-16T13:40:25.625961+00:00"
+      },
+      "attempts": 5600,
+      "exact_grid_verified": true,
+      "report_JSON_and_Markdown_reproduced": true,
+      "sealed_source_files_verified": 34,
+      "metrics_sha256": "2a0dab03958f703c103b5e8ce23610e5d7341799a7bdacba89aeeb510da2470e",
+      "details": {
+        "independent_task_ids": 100,
+        "strict_successes": 0,
+        "components": {
+          "crash": 949,
+          "contract_violation": 4236,
+          "format": 264,
+          "incorrect": 133,
+          "source_blocked": 13,
+          "sandbox_blocked": 5
+        }
+      },
+      "report_path": "runs/diagnostics-v5/terminal-audit-20261016/replay/REPORT.md"
+    }
+  },
+  "shutdown": {
+    "ssh_available": false,
+    "platform_power_and_billing_verified": false,
+    "shutdown_return_receipt_observed": false,
+    "local_backup_acknowledged": true
+  }
+}

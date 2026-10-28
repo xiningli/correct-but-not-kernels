@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "socket",
+      "passed": true,
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": -31,
+        "elapsed_seconds": 2.225632429122925,
+        "peak_rss_bytes": 819298304,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/socket/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/socket/worker.log"
+      }
+    },
+    {
+      "name": "write_outside",
+      "passed": true,
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 2.554764796048403,
+        "peak_rss_bytes": 952692736,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/write_outside/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/write_outside/worker.log"
+      }
+    },
+    {
+      "name": "read_oracle",
+      "passed": true,
+      "result": {
+        "component": "sandbox_blocked",
+        "returncode": 78,
+        "elapsed_seconds": 2.5856426246464252,
+        "peak_rss_bytes": 865574912,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/read_oracle/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/read_oracle/worker.log"
+      }
+    },
+    {
+      "name": "fork_bomb",
+      "passed": true,
+      "result": {
+        "component": "process_limit",
+        "returncode": 79,
+        "elapsed_seconds": 2.860445838421583,
+        "peak_rss_bytes": 11959844864,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/fork_bomb/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/fork_bomb/worker.log"
+      }
+    },
+    {
+      "name": "gpu_oom",
+      "passed": true,
+      "result": {
+        "component": "gpu_oom",
+        "returncode": 77,
+        "elapsed_seconds": 2.6288756243884563,
+        "peak_rss_bytes": 923115520,
+        "peak_gpu_bytes": 101892423680,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/gpu_oom/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/gpu_oom/worker.log"
+      },
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 3.3130147643387318,
+        "peak_rss_bytes": 932532224,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/gpu_oom-recovery/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/gpu_oom-recovery/worker.log"
+      }
+    },
+    {
+      "name": "infinite_kernel",
+      "passed": true,
+      "result": {
+        "component": "timeout",
+        "returncode": -9,
+        "elapsed_seconds": 30.217840988188982,
+        "peak_rss_bytes": 897224704,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/infinite_kernel/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/infinite_kernel/worker.log"
+      },
+      "recovery": {
+        "component": "ok",
+        "returncode": 0,
+        "elapsed_seconds": 3.402717463672161,
+        "peak_rss_bytes": 1057660928,
+        "peak_gpu_bytes": 694353920,
+        "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/infinite_kernel-recovery/work",
+        "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/isolation/infinite_kernel-recovery/worker.log"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "gate": "C4",
+  "status": "PASS",
+  "time_utc": "20261005T032853.993235Z",
+  "git": {
+    "sha": "b7c2e2300948a61713e7e8db00b9258b79908db4",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "base_policy_signal",
+      "status": "PASS",
+      "selected_model": "gemma-4-12B-it",
+      "summaries": {
+        "gemma-4-12B-it": {
+          "tasks": {
+            "level1/40_LayerNorm": {
+              "n": 32,
+              "correct": 20,
+              "pass_at_1": 0.625,
+              "pass_at_8": 0.9999529391631727,
+              "p_signal": 0.9879766692336214,
+              "median_tokens": 1578.5,
+              "truncation_fraction": 0.0625,
+              "correct_speedups": [
+                1.0010777721636617,
+                1.0004284643946548,
+                1.0007647849013688,
+                1.0010662807285389,
+                1.0010605274919127,
+                0.9876387473811096,
+                1.0019070795339158,
+                1.0015613142981183,
+                1.0014406918549346,
+                1.0013278884488503,
+                1.0012826725322341,
+                1.0019196077731944,
+                1.0015947495558308,
+                1.0016396270167944,
+                1.001530741313909,
+                1.0013351784321607,
+                1.0007331195114777,
+                1.0016025249353284,
+                1.001098218606029,
+                1.0006124547014212
+              ],
+              "harness_errors": 0
+            }
+          },
+          "mean_p_signal": 0.9879766692336214,
+          "signal_tasks": 1,
+          "harness_errors": 0
+        },
+        "gemma-4-E4B-it": {
+          "tasks": {
+            "level1/40_LayerNorm": {
+              "n": 32,
+              "correct": 6,
+              "pass_at_1": 0.1875,
+              "pass_at_8": 0.8514707699913484,
+              "p_signal": 0.8514707699913484,
+              "median_tokens": 2563.0,
+              "truncation_fraction": 0.03125,
+              "correct_speedups": [
+                1.001197457411809,
+                1.0011126937470503,
+                1.0015384418780828,
+                1.0020435211686698,
+                1.0013615450184221,
+                1.0009213862823167
+              ],
+              "harness_errors": 0
+            }
+          },
+          "mean_p_signal": 0.8514707699913484,
+          "signal_tasks": 1,
+          "harness_errors": 0
+        }
+      }
+    }
+  ],
+  "prerequisite": "runs/gates/c3-20261005T022109.670740Z-bd951734.json",
+  "artifacts": "runs/c4/20261005T031840.312078Z",
+  "operator_continue": "User authorized autonomous decisions and power-off on completion/blockage; narrow existing TRAIN curriculum to measured LayerNorm signal."
+}

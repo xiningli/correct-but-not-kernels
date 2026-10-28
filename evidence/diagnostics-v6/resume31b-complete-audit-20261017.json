@@ -1,0 +1,213 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-17T23:55:41.551240+00:00",
+  "combined": {
+    "episodes": 24,
+    "unique_generations": 59,
+    "physical_prompt_tokens": 216092,
+    "physical_output_tokens": 125474,
+    "cells": [
+      {
+        "model": "gemma-4-12B-it",
+        "condition": "independent",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 1,
+        "visible_pass": 1,
+        "logical_attempts": 14,
+        "prompt_tokens": 70296,
+        "output_tokens": 40409,
+        "visible_evaluation_seconds": 46.50322686880827,
+        "selected_components": {
+          "crash": 1,
+          "incorrect": 2,
+          "correct": 1
+        }
+      },
+      {
+        "model": "gemma-4-12B-it",
+        "condition": "revision_diagnostic",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 0,
+        "visible_pass": 0,
+        "logical_attempts": 16,
+        "prompt_tokens": 56963,
+        "output_tokens": 37583,
+        "visible_evaluation_seconds": 52.66527006402612,
+        "selected_components": {
+          "crash": 2,
+          "incorrect": 2
+        }
+      },
+      {
+        "model": "gemma-4-12B-it",
+        "condition": "revision_verdict",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 1,
+        "visible_pass": 1,
+        "logical_attempts": 15,
+        "prompt_tokens": 48571,
+        "output_tokens": 36036,
+        "visible_evaluation_seconds": 52.04552615061402,
+        "selected_components": {
+          "correct": 1,
+          "incorrect": 2,
+          "format": 1
+        }
+      },
+      {
+        "model": "gemma-4-31B-it",
+        "condition": "independent",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 2,
+        "visible_pass": 2,
+        "logical_attempts": 10,
+        "prompt_tokens": 58856,
+        "output_tokens": 17271,
+        "visible_evaluation_seconds": 34.42137960344553,
+        "selected_components": {
+          "correct": 2,
+          "crash": 2
+        }
+      },
+      {
+        "model": "gemma-4-31B-it",
+        "condition": "revision_diagnostic",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 3,
+        "visible_pass": 3,
+        "logical_attempts": 10,
+        "prompt_tokens": 28936,
+        "output_tokens": 13198,
+        "visible_evaluation_seconds": 34.07779099047184,
+        "selected_components": {
+          "correct": 3,
+          "crash": 1
+        }
+      },
+      {
+        "model": "gemma-4-31B-it",
+        "condition": "revision_verdict",
+        "episodes": 4,
+        "independent_defects": 2,
+        "resolved": 2,
+        "visible_pass": 2,
+        "logical_attempts": 10,
+        "prompt_tokens": 28486,
+        "output_tokens": 13013,
+        "visible_evaluation_seconds": 33.51688887178898,
+        "selected_components": {
+          "correct": 2,
+          "crash": 2
+        }
+      }
+    ],
+    "limits": [
+      "Two previously seen reduced defects, not an independent test set.",
+      "First candidate/evaluation is shared across the three branches; repetitions are not new defects.",
+      "First visible pass is selected; withheld scores never drive generation or selection.",
+      "Matched attempt/output caps are not matched actual compute, FLOPs or latency.",
+      "12B/31B checkpoints differ beyond parameter count; this is not a causal scaling-law test.",
+      "Rich feedback may omit the root cause; failure does not establish intrinsic inability.",
+      "Descriptive development results only; no p-values, generalization, or prize claim."
+    ]
+  },
+  "archives": {
+    "gemma-4-12B-it": {
+      "archive_sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+      "archive_bytes": 678478,
+      "sealed_files_unchanged": 131,
+      "reports_byte_identical": true,
+      "first_draw_visible_success": 0,
+      "first_draw_unique_candidates": 4,
+      "unique_selected_success_programs": 2,
+      "physical_components": {
+        "format": 5,
+        "incorrect": 20,
+        "correct": 2,
+        "crash": 8,
+        "contract_violation": 2
+      }
+    },
+    "gemma-4-31B-it": {
+      "archive_sha256": "c20870fa852a1046590d06ab013e136257679d06589849fc592f0aac29c8ead5",
+      "archive_bytes": 1158235,
+      "sealed_files_unchanged": 137,
+      "reports_byte_identical": true,
+      "first_draw_visible_success": 2,
+      "first_draw_unique_candidates": 4,
+      "unique_selected_success_programs": 3,
+      "physical_components": {
+        "correct": 3,
+        "crash": 18,
+        "incorrect": 1
+      }
+    }
+  },
+  "31B_outcome": {
+    "status": "complete",
+    "utc": "2026-10-17T20:47:10.142284+00:00",
+    "episodes": 12,
+    "nodes": 22,
+    "finished_utc": "2026-10-17T21:07:09.933451+00:00",
+    "seconds": 1199.7911682501435
+  },
+  "31B_generation_batches": [
+    {
+      "model": "gemma-4-31B-it",
+      "round": 0,
+      "seconds": 217.61004446074367,
+      "candidates": 4
+    },
+    {
+      "model": "gemma-4-31B-it",
+      "round": 1,
+      "seconds": 278.0515677817166,
+      "candidates": 6
+    },
+    {
+      "model": "gemma-4-31B-it",
+      "round": 2,
+      "seconds": 243.01416908577085,
+      "candidates": 6
+    },
+    {
+      "model": "gemma-4-31B-it",
+      "round": 3,
+      "seconds": 328.1240111924708,
+      "candidates": 6
+    }
+  ],
+  "31B_distinct_success_programs": 3,
+  "31B_logical_resolved_episodes": 7,
+  "diagnostic_additional_success": {
+    "model": "gemma-4-31B-it",
+    "task": "development/case-001",
+    "replicate": 1,
+    "condition": "revision_diagnostic",
+    "trace": [
+      "case-001-rep1-shared_initial-r0",
+      "case-001-rep1-revision_diagnostic-r1",
+      "case-001-rep1-revision_diagnostic-r2",
+      "case-001-rep1-revision_diagnostic-r3"
+    ],
+    "selected": "case-001-rep1-revision_diagnostic-r3",
+    "attempts_used": 4,
+    "visible_pass": true,
+    "resolved": true,
+    "selected_component": "correct"
+  },
+  "shared_initial_successes_are_not_independent_repair_discoveries": true,
+  "shutdown_return_observed": false,
+  "platform_power_and_billing_verified": false,
+  "limitations": [
+    "Only two previously seen development defects and two replicas; descriptive, not confirmatory.",
+    "One diagnostic-only success is a lead, not a reliable estimated diagnostic effect.",
+    "Different checkpoints and adjusted inference memory prevent a causal parameter-count claim.",
+    "No new fine-tuning was performed; these results do not demonstrate RL superiority."
+  ]
+}

@@ -1,0 +1,143 @@
+# K1/K3/K4: proposed follow-up after the completed, immutable v1.1 study.
+# Draft only: no GPU run may treat this file as a sealed protocol.
+id: reliability-v2
+status: draft_not_preregistered
+generation_enabled: false
+training_enabled: false
+question: Which parts of GPU-program reliability improve after post-training, beyond reference reuse and interface prompting?
+prior_study:
+  path: runs/replication-v1.1
+  protocol_sha256: 79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e
+  preserve_source_scores_stops: true
+  new_code_namespace: research/reliability_v2
+  reason: Adding files to the old env/train/eval/tools/tasks trees would break its source seal.
+
+phase_a_retrospective_audit:
+  scope: exploratory_analysis_of_existing_results_not_independent_confirmation
+  command: .venv/bin/python -m research.reliability_v2.audit --out runs/reliability-v2/audit-YYYYMMDD
+  policies: [base, C-20261021, C-20261022, C-20261023, S-20261021, S-20261022, S-20261023, SFT-20261021, SFT-20261022, SFT-20261023]
+  retain_all_attempts: true
+  original_verdicts_immutable: true
+  artifacts: [programs.jsonl, summary.json, REPORT.md, manual_review.csv]
+  observations:
+    - original_failure_components_and_all_paired_outcome_transitions
+    - traceback_hints_with_original_logs_and_hashes
+    - AST_import_and_literal_markers_not_runtime_attribution
+    - exact_forward_AST_matches_not_full_program_equivalence
+  review:
+    cases_per_arm: 24
+    arms: [base, C, S, SFT]
+    selection_seed: 20261012
+    selection: deterministic_diversity_sample_across_outcome_source_marker_and_log_hint
+    scope: diagnostic_examples_not_an_unbiased_prevalence_estimate
+    manual_review_status: pending
+  candidate_execution: prohibited_in_this_CPU_analysis
+
+phase_a_measurement_follow_up:
+  trigger: archived_harness_output_serialization_ENOSPC_in_one_Level1_task
+  old_results: immutable_and_disclosed_with_measurement_limitation
+  storage_cause: pending_historical_resource_audit
+  new_evaluator_requirements:
+    - account_for_private_input_and_sandbox_input_copies_and_all_outputs_and_compile_headroom
+    - check_free_space_before_evaluation_not_only_per_program_file_limits
+    - distinguish_harness_output_IO_failure_from_candidate_compile_or_runtime_failure
+    - validate_output_shape_and_dtype_before_serialization_so_oversized_wrong_outputs_are_not_mislabelled_infrastructure_failures
+    - validate_known_good_reference_and_custom_kernel_at_the_full_task_size
+  replay_scope: all_saved_programs_for_the_affected_task_across_shared_base_and_all_nine_policies
+  replay_inputs: original_input_seeds_and_four_trials_no_regeneration_or_training
+  replay_status: complete_80_programs_21_ENOSPC_recovered_59_other_verdicts_unchanged
+  replay_completion_receipt: evidence/reliability-v2/replay-complete-20261013.json
+  streaming_controls_receipt: evidence/reliability-v2/streaming-controls-20261012T222455.458848Z.json
+  replay_manifest: runs/reliability-v2/replay-20261012/manifest.json
+  replay_manifest_sha256: dd7b52e6b273eea6d1d7cbbfc3a844cfe369ef71dc6c66599238b693dc49a246
+  replay_implementation_contract: original_permissive_not_the_prospective_strict_contract
+  report: original_and_replayed_results_side_by_side_no_silent_score_replacement
+
+phase_b_contract_and_controls:
+  scope: implement_and_validate_before_any_new_policy_evaluation
+  regimes: [original_permissive, custom_kernel_required]
+  custom_kernel_required:
+    core_computation: executed_custom_CUDA_or_Triton
+    allowed_host_work: tensor_allocation_and_shape_stride_metadata_and_noncomputational_views
+    forbidden_core_work: PyTorch_or_vendor_high_level_computation_and_reference_replay
+    compliance_evidence: protected_runtime_observation_plus_correctness_checks_not_keywords
+    candidate_execution: C1_sandbox_only
+    note: This is a new task contract; never relabel permissive v1.1 scores as violations.
+  evaluator_controls:
+    - insufficient_output_storage_is_identified_before_candidate_scoring
+    - legitimate_reference_replay_passes_permissive_contract
+    - reference_replay_rejected_only_by_custom_kernel_contract
+    - unused_custom_kernel_definition_does_not_establish_compliance
+    - dummy_kernel_plus_PyTorch_result_is_rejected
+    - legitimate_custom_kernels_pass_correctness_and_contract_checks
+    - unchanged_NaNs_do_not_trigger_mutation_but_still_fail_finite_output_requirement
+    - actual_output_mutation_is_detected
+    - missing_runtime_observation_is_a_harness_failure_not_a_model_success
+  regression_status: pending
+
+phase_c_prospective_evaluation:
+  models: [gemma-4-12B-it]
+  policies: all_nine_existing_final_checkpoints_plus_shared_base
+  checkpoint_selection: fixed_v1.1_final_checkpoints_no_best_seed_or_heldout_selection
+  stopped_run: S-20261021_remains_step15_with_exposure_reported
+  task_manifest: pending
+  task_scope: new_to_this_study_not_claimed_unseen_in_model_pretraining
+  target_new_tasks: 48
+  task_unit: distinct_operator_graph_not_random_input_or_shape_repetition
+  proposed_families:
+    - elementwise_compositions
+    - reductions
+    - normalization
+    - indexing_and_masking
+    - matrix_operations_with_epilogues
+    - fused_reduction_and_elementwise_operations
+  development_tasks: separate_from_sealed_test_tasks
+  valid_input_contracts: shapes_dtypes_and_distributions_declared_before_test_generation
+  prompt_conditions: [minimal_contract, explicit_API_scaffold]
+  prompt_selection: development_tasks_only_applied_equally_to_all_policies
+  samples_per_task_per_condition: 8
+  sampling: retain_v1.1_temperature_top_p_top_k_and_token_budget
+  random_namespaces: pending_must_differ_from_v1.1
+  bridge:
+    target_known_tasks: 24
+    selection: metadata_stratification_and_fixed_hash_order_before_new_outcomes
+    regimes: [original_permissive, custom_kernel_required]
+    prompt: same_template_except_implementation_constraint
+    scope: known_task_contract_sensitivity_not_fresh_task_generalization
+  primary:
+    condition: new_tasks_custom_kernel_required_explicit_API_scaffold
+    endpoint: correct_and_contract_compliant_fraction_of_all_generated_attempts
+    comparisons: [[C, base], [SFT, base], [C, SFT]]
+    familywise_alpha: 0.05
+    multiplicity: bonferroni_task_cluster_intervals
+    shared_base: do_not_count_as_three_independent_baselines
+    training_seed_uncertainty: show_all_seeds_and_range_no_population_seed_precision_claim
+  secondary:
+    - compile_and_execution_success
+    - conditional_numerical_correctness_with_denominators_and_selection_warning
+    - implementation_contract_compliance
+    - paired_speed_on_common_correct_compliant_draws
+    - API_scaffold_sensitivity_for_all_policies
+    - S_arm_results_with_early_stop_disclosed
+  no_equivalence_claim_from_nonsignificance: true
+  reuse_of_test_for_tuning: prohibited
+  feasibility_and_interval_width_estimate: pending_before_freeze
+
+freeze_requirements:
+  - output_serialization_measurement_issue_resolved_and_disclosed
+  - concrete_task_sources_and_references_reviewed_and_hashed
+  - development_and_test_manifests_disjoint_and_sealed
+  - runtime_contract_controls_pass_in_C1_sandbox
+  - original_v1.1_source_seal_still_passes
+  - all_checkpoint_and_prompt_hashes_bound_to_requests
+  - sampling_and_input_seeds_and_analysis_code_frozen
+  - execution_cost_estimate_from_development_tasks
+  - terminal_report_backup_and_shutdown_workflow_prepared
+
+decision_rules:
+  - Proceed_to_new_evaluation_after_contract_and_data_are_ready_not_directly_to_retraining.
+  - If_strict_kernel_gains_persist_on_new_tasks_report_supported_transfer_with_intervals.
+  - If_prompt_scaffolding_explains_gains_report_that_result_without_claiming_training_is_necessary.
+  - If_contract_changes_remove_gains_use_bridge_evidence_to_test_implementation_strategy_explanations.
+  - If_RL_does_not_beat_SFT_do_not_select_seeds_or_conditions_to_create_an_RL_advantage.
+  - Any_new_training_or_second_model_is_a_separate_follow_up_after_this_diagnosis.

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "fla-org/flash-linear-attention#1085",
+    "path": "fla/ops/generalized_delta_rule/dplr/chunk_A_bwd.py",
+    "bytes": 20281,
+    "lines": 557,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1085/head-source/fla/ops/generalized_delta_rule/dplr/chunk_A_bwd.py",
+    "source_tokens": 9428
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1085",
+    "path": "fla/ops/generalized_delta_rule/dplr/chunk_A_fwd.py",
+    "bytes": 13158,
+    "lines": 379,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1085/head-source/fla/ops/generalized_delta_rule/dplr/chunk_A_fwd.py",
+    "source_tokens": 5990
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1103",
+    "path": "fla/ops/rwkv7/channel_mixing.py",
+    "bytes": 10293,
+    "lines": 342,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1103/head-source/fla/ops/rwkv7/channel_mixing.py",
+    "source_tokens": 3951
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1108",
+    "path": "fla/ops/gdn2/chunk_intra_token_parallel.py",
+    "bytes": 5214,
+    "lines": 174,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1108/head-source/fla/ops/gdn2/chunk_intra_token_parallel.py",
+    "source_tokens": 2168
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1108",
+    "path": "fla/ops/kda/chunk_intra_token_parallel.py",
+    "bytes": 5252,
+    "lines": 182,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1108/head-source/fla/ops/kda/chunk_intra_token_parallel.py",
+    "source_tokens": 2150
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1139",
+    "path": "fla/modules/conv/triton/kernels.py",
+    "bytes": 23567,
+    "lines": 684,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1139/head-source/fla/modules/conv/triton/kernels.py",
+    "source_tokens": 9726
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1139",
+    "path": "fla/modules/conv/triton/ops.py",
+    "bytes": 12735,
+    "lines": 424,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1139/head-source/fla/modules/conv/triton/ops.py",
+    "source_tokens": 4524
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1141",
+    "path": "fla/modules/conv/triton/kernels.py",
+    "bytes": 24184,
+    "lines": 694,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1141/head-source/fla/modules/conv/triton/kernels.py",
+    "source_tokens": 9927
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1141",
+    "path": "fla/modules/conv/triton/ops.py",
+    "bytes": 12761,
+    "lines": 427,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1141/head-source/fla/modules/conv/triton/ops.py",
+    "source_tokens": 4542
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1249",
+    "path": "fla/modules/layernorm.py",
+    "bytes": 47184,
+    "lines": 1480,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1249/head-source/fla/modules/layernorm.py",
+    "source_tokens": 15989
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1369",
+    "path": "fla/modules/activations/ops.py",
+    "bytes": 36880,
+    "lines": 1141,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1369/head-source/fla/modules/activations/ops.py",
+    "source_tokens": 14458
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1419",
+    "path": "fla/ops/generalized_delta_rule/iplr/fused_recurrent.py",
+    "bytes": 16003,
+    "lines": 460,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1419/head-source/fla/ops/generalized_delta_rule/iplr/fused_recurrent.py",
+    "source_tokens": 6649
+  },
+  {
+    "id": "flagos-ai/FlagGems#519",
+    "path": "src/flag_gems/ops/sort.py",
+    "bytes": 2381,
+    "lines": 84,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-519/head-source/src/flag_gems/ops/sort.py",
+    "source_tokens": 829
+  },
+  {
+    "id": "flagos-ai/FlagGems#519",
+    "path": "src/flag_gems/ops/topk.py",
+    "bytes": 10741,
+    "lines": 335,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-519/head-source/src/flag_gems/ops/topk.py",
+    "source_tokens": 3829
+  },
+  {
+    "id": "flagos-ai/FlagGems#553",
+    "path": "src/flag_gems/ops/addmm.py",
+    "bytes": 3299,
+    "lines": 116,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-553/head-source/src/flag_gems/ops/addmm.py",
+    "source_tokens": 1226
+  },
+  {
+    "id": "flagos-ai/FlagGems#6560",
+    "path": "src/flag_gems/ops/renorm_.py",
+    "bytes": 2493,
+    "lines": 76,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-6560/head-source/src/flag_gems/ops/renorm_.py",
+    "source_tokens": 850
+  },
+  {
+    "id": "flagos-ai/FlagGems#6727",
+    "path": "src/flag_gems/ops/_flash_attention_forward.py",
+    "bytes": 2107,
+    "lines": 73,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-6727/head-source/src/flag_gems/ops/_flash_attention_forward.py",
+    "source_tokens": 650
+  },
+  {
+    "id": "flagos-ai/FlagGems#6727",
+    "path": "src/flag_gems/ops/_scaled_dot_product_flash_attention.py",
+    "bytes": 2345,
+    "lines": 76,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-6727/head-source/src/flag_gems/ops/_scaled_dot_product_flash_attention.py",
+    "source_tokens": 689
+  },
+  {
+    "id": "flagos-ai/FlagGems#6894",
+    "path": "src/flag_gems/ops/flash_api.py",
+    "bytes": 44575,
+    "lines": 1298,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-6894/head-source/src/flag_gems/ops/flash_api.py",
+    "source_tokens": 14906
+  },
+  {
+    "id": "flagos-ai/FlagGems#6894",
+    "path": "src/flag_gems/ops/flash_kernel.py",
+    "bytes": 51454,
+    "lines": 1675,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-6894/head-source/src/flag_gems/ops/flash_kernel.py",
+    "source_tokens": 18053
+  },
+  {
+    "id": "flagos-ai/FlagGems#960",
+    "path": "src/flag_gems/ops/index_select.py",
+    "bytes": 2151,
+    "lines": 67,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/flagos-ai--FlagGems-960/head-source/src/flag_gems/ops/index_select.py",
+    "source_tokens": 743
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1298",
+    "path": "src/liger_kernel/ops/fused_linear_cross_entropy.py",
+    "bytes": 22547,
+    "lines": 487,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1298/head-source/src/liger_kernel/ops/fused_linear_cross_entropy.py",
+    "source_tokens": 6296
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1329",
+    "path": "src/liger_kernel/ops/cross_entropy.py",
+    "bytes": 27088,
+    "lines": 600,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1329/head-source/src/liger_kernel/ops/cross_entropy.py",
+    "source_tokens": 8418
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1344",
+    "path": "src/liger_kernel/ops/attn_res.py",
+    "bytes": 12004,
+    "lines": 349,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1344/head-source/src/liger_kernel/ops/attn_res.py",
+    "source_tokens": 4448
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1374",
+    "path": "src/liger_kernel/ops/tvd.py",
+    "bytes": 7064,
+    "lines": 219,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1374/head-source/src/liger_kernel/ops/tvd.py",
+    "source_tokens": 2192
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1376",
+    "path": "src/liger_kernel/ops/group_norm.py",
+    "bytes": 11431,
+    "lines": 313,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1376/head-source/src/liger_kernel/ops/group_norm.py",
+    "source_tokens": 3715
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1397",
+    "path": "src/liger_kernel/ops/jsd.py",
+    "bytes": 7153,
+    "lines": 213,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1397/head-source/src/liger_kernel/ops/jsd.py",
+    "source_tokens": 2288
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1478",
+    "path": "src/liger_kernel/chunked_loss/cosine_similarity_loss.py",
+    "bytes": 5134,
+    "lines": 146,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1478/head-source/src/liger_kernel/chunked_loss/cosine_similarity_loss.py",
+    "source_tokens": 1413
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1478",
+    "path": "src/liger_kernel/chunked_loss/fused_linear_distillation.py",
+    "bytes": 12991,
+    "lines": 300,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1478/head-source/src/liger_kernel/chunked_loss/fused_linear_distillation.py",
+    "source_tokens": 3381
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1500",
+    "path": "src/liger_kernel/ops/fused_linear_cross_entropy.py",
+    "bytes": 29525,
+    "lines": 634,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1500/head-source/src/liger_kernel/ops/fused_linear_cross_entropy.py",
+    "source_tokens": 8085
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1500",
+    "path": "src/liger_kernel/ops/utils.py",
+    "bytes": 5379,
+    "lines": 168,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1500/head-source/src/liger_kernel/ops/utils.py",
+    "source_tokens": 1797
+  },
+  {
+    "id": "vllm-project/vllm#23424",
+    "path": "vllm/attention/ops/triton_unified_attention.py",
+    "bytes": 30014,
+    "lines": 831,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-23424/head-source/vllm/attention/ops/triton_unified_attention.py",
+    "source_tokens": 10542
+  },
+  {
+    "id": "vllm-project/vllm#30974",
+    "path": "vllm/attention/ops/triton_unified_attention.py",
+    "bytes": 37249,
+    "lines": 1053,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-30974/head-source/vllm/attention/ops/triton_unified_attention.py",
+    "source_tokens": 13191
+  },
+  {
+    "id": "vllm-project/vllm#31676",
+    "path": "vllm/model_executor/layers/fused_moe/fused_moe.py",
+    "bytes": 83384,
+    "lines": 2453,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-31676/head-source/vllm/model_executor/layers/fused_moe/fused_moe.py",
+    "source_tokens": 28082
+  },
+  {
+    "id": "vllm-project/vllm#32149",
+    "path": "vllm/v1/attention/ops/triton_prefill_attention.py",
+    "bytes": 8671,
+    "lines": 272,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-32149/head-source/vllm/v1/attention/ops/triton_prefill_attention.py",
+    "source_tokens": 3169
+  },
+  {
+    "id": "vllm-project/vllm#33326",
+    "path": "vllm/model_executor/layers/fla/ops/fused_recurrent.py",
+    "bytes": 13510,
+    "lines": 393,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-33326/head-source/vllm/model_executor/layers/fla/ops/fused_recurrent.py",
+    "source_tokens": 4861
+  },
+  {
+    "id": "vllm-project/vllm#42739",
+    "path": "vllm/v1/sample/ops/topk_topp_triton.py",
+    "bytes": 50568,
+    "lines": 1064,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-42739/head-source/vllm/v1/sample/ops/topk_topp_triton.py",
+    "source_tokens": 14994
+  },
+  {
+    "id": "vllm-project/vllm#45361",
+    "path": "vllm/v1/attention/ops/triton_reshape_and_cache_flash.py",
+    "bytes": 20082,
+    "lines": 593,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-45361/head-source/vllm/v1/attention/ops/triton_reshape_and_cache_flash.py",
+    "source_tokens": 7258
+  },
+  {
+    "id": "vllm-project/vllm#49149",
+    "path": "vllm/models/minimax_m3/common/indexer.py",
+    "bytes": 21360,
+    "lines": 586,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-49149/head-source/vllm/models/minimax_m3/common/indexer.py",
+    "source_tokens": 6421
+  },
+  {
+    "id": "vllm-project/vllm#49149",
+    "path": "vllm/models/minimax_m3/common/sparse_attention.py",
+    "bytes": 18339,
+    "lines": 487,
+    "snapshot": "PR_head_not_merge_parent",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-49149/head-source/vllm/models/minimax_m3/common/sparse_attention.py",
+    "source_tokens": 5588
+  }
+]

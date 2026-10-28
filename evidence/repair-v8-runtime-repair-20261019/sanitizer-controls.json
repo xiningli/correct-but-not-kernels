@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "normal": {
+    "component": "ok",
+    "returncode": 0,
+    "elapsed_seconds": 4.019972614943981,
+    "peak_rss_bytes": 1219039232,
+    "peak_gpu_bytes": 874708992,
+    "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-normal/work",
+    "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-normal/worker.log"
+  },
+  "oracle_read": {
+    "component": "sandbox_blocked",
+    "returncode": 78,
+    "elapsed_seconds": 2.8152803778648376,
+    "peak_rss_bytes": 1041997824,
+    "peak_gpu_bytes": 874708992,
+    "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-read-oracle/work",
+    "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-read-oracle/worker.log"
+  },
+  "out_of_bounds": {
+    "component": "memory_error",
+    "returncode": 86,
+    "elapsed_seconds": 5.686300542205572,
+    "peak_rss_bytes": 1329152000,
+    "peak_gpu_bytes": 874708992,
+    "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-oob-negative/work",
+    "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-oob-negative/worker.log"
+  },
+  "recovery": {
+    "component": "ok",
+    "returncode": 0,
+    "elapsed_seconds": 3.3648559637367725,
+    "peak_rss_bytes": 1057374208,
+    "peak_gpu_bytes": 694353920,
+    "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-oob-recovery/work",
+    "log": "/root/autodl-tmp/repair-v8-pilot-20261019-r6/runs/pilot/controls/sanitizer-oob-recovery/worker.log"
+  }
+}

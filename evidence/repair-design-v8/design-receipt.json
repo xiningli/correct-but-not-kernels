@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-18T18:25:50.608233+00:00",
+  "baseline_commit": "ffb3c96f24b45c1d7e8654b7f8e73669f65a8cad",
+  "status": "design_complete_implementation_and_dataset_pending",
+  "remote_actions": false,
+  "training_or_evaluation_started": false,
+  "checks": [
+    "YAML parsed",
+    "five-arm matrix and sharing budget arithmetic verified",
+    "72 hypothetical power sensitivity cells generated",
+    "power bounds and sample-size monotonicity checked",
+    "git diff whitespace check"
+  ],
+  "files": {
+    "experiments/cuda-repair-v8-design.yaml": "97c1d21c3f8de12e0428a967c3ebec7bc9f6945300b2d7caa7ea566b77340d63",
+    "research/repair_design_v8.py": "5d0483f6b9eb377e85e49df3c51a64f91da65cdb269a65d01d2d6a4eba256b59",
+    "evidence/repair-design-v8/power-sensitivity.json": "09465e701645ac48ca3e9b0993e6aad521df3d62381d559c0bedbf77055a4e18"
+  },
+  "unresolved_before_freeze": [
+    "no_qualified_independent_formal_task_manifest",
+    "no_v8_runner_or_extended_editor",
+    "no_GPU_validation_of_expanded_regressions_and_repository_integration",
+    "cost_deadline_and_hardware_environment_not_yet_calibrated"
+  ]
+}

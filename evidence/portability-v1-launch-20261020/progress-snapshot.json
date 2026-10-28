@@ -1,0 +1,15 @@
+{
+  "observed_utc": "2026-10-20T08:31:12.794135+00:00",
+  "progress": {
+    "stage": "candidate_replay",
+    "task": "level2/57_Conv2d_ReLU_HardSwish",
+    "policy": "SFT-20261023",
+    "sample": 0,
+    "recorded": 6,
+    "total": 5600,
+    "utc": "2026-10-20T08:31:04.927104+00:00"
+  },
+  "report_attempts_recorded": 6,
+  "complete_task_grids": 0,
+  "no_effect_claim": true
+}

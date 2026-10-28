@@ -1,0 +1,7 @@
+{
+  "status": "blocked",
+  "error": "RuntimeError: controls exited 1",
+  "utc": "2026-10-19T18:07:19.428183+00:00",
+  "scope": "development_only_three_previously_qualified_tasks",
+  "seconds": 95.04924418404698
+}

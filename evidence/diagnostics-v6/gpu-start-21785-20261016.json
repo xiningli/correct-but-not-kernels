@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-16T22:24:35.585002+00:00",
+  "status": "GPU_controls_PASS_12B_first_generation_starting",
+  "endpoint": "connect.westd.seetacloud.com:21785",
+  "host": "autodl-container-53f24bbae3-fc86dda5",
+  "GPU": {
+    "torch": "2.13.0+cu130",
+    "torch_cuda": "13.0",
+    "cuda_available": true,
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_bytes": 101974081536,
+    "vllm": "0.30.0",
+    "triton": "3.7.1",
+    "transformers": "5.17.0",
+    "utc": "2026-10-16T22:20:51.599535+00:00"
+  },
+  "data_disk": {
+    "total_GiB": 470.0,
+    "free_GiB": 235.01361083984375
+  },
+  "active": {
+    "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000",
+    "pid": 2399,
+    "utc": "2026-10-16T22:21:19.856572+00:00"
+  },
+  "progress": {
+    "stage": "generation",
+    "model": "gemma-4-12B-it",
+    "round": 0,
+    "nodes": 0,
+    "episodes_completed": 0,
+    "episodes_total": 24,
+    "utc": "2026-10-16T22:23:24.660819+00:00"
+  },
+  "isolation": {
+    "status": "PASS",
+    "checks": 6,
+    "receipt_sha256": "71dd48c3eaecccb79382c3616e95c7eb53e12b40e023360ba7c5c6c334f3a29b"
+  },
+  "original_fixed_controls": {
+    "status": "PASS",
+    "controls": 8,
+    "utc": "2026-10-16T22:22:53.282805+00:00",
+    "boot": {
+      "pid1_start_ticks": "3044066660",
+      "boot_id": "4d2a08fd-32c4-4a47-a02f-cf0ea6c5ada0",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch": "2.13.0+cu130",
+      "cuda": "13.0"
+    },
+    "prepared_sha256": "3cc0db084a82124b0c1108f9e5ed1007bfb381f327971a92a6e9f871ce3dd846",
+    "isolation_sha256": "71dd48c3eaecccb79382c3616e95c7eb53e12b40e023360ba7c5c6c334f3a29b",
+    "checks_sha256": "6888aa31905ae78c41f431b00ac32bfafc55182182032d1a60ce91d2792ef50d",
+    "visible_diagnostics_sha256": "57c05eb5e4dd0d87d454a6bbd5bec2699b9d99627a8ae85130c8a2488355d9c1",
+    "scope": "two_reduced_development_defects_not_model_results"
+  },
+  "feedback_controls": {
+    "status": "PASS",
+    "utc": "2026-10-16T22:22:57.923366+00:00",
+    "prepared_sha256": "ce6c7bcc825089e8cb2a7975794feca7c5e70f5a15e661f07fb4275fa8b039c6",
+    "base_controls_sha256": "cfe112ff6a28ec51fbe941bc2c64b1e9c9a623a63d2ae0ee1f0b21fa5ddcbca2",
+    "feedback_sha256": "215b1e5dd00d2635d7c7663c6073c540526cea9e70fffa3e65b8802847d481f1"
+  },
+  "local_monitor": [
+    "MainPID=1598021",
+    "ActiveState=active",
+    "SubState=running"
+  ],
+  "runtime_source_unchanged": true,
+  "evidence_sha256": {
+    "inventory.json": "f6a273b6e460fbf60375f966e5188e1c8718ed92502df5096abbc523b4de1854",
+    "gpu-preflight.json": "79ff90b132ba7032c742d69b0e3eff989ec35939e967261a489703312a2e1783",
+    "launch.json": "83feaec63af5e575a3dead55067b575d6bc819ea3e1ea1639d2e116a8dafbf5a",
+    "launch-validation.json": "e56945c0671bacf9e27785a4d13e22293fb5142de0f58376e806aea24c143089",
+    "startup-snapshot.json": "25d23b4184832e2ebb890b457876a3f233c05d42d9adc6a6b16ebabfeacd1e09"
+  },
+  "scope": "v6_development_12B_31B_iterative_repair_not_training_not_scoped_v7",
+  "shutdown_policy": "report_archive_local_hash_verified_backup_then_shutdown",
+  "model_scored_attempts_at_observation": 0,
+  "31B_model_load_validated": false
+}

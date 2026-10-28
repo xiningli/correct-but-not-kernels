@@ -1,0 +1,221 @@
+{
+  "counts": {
+    "invalid syntax. Maybe you meant '==' or ':=' instead of '='?": 17,
+    "invalid syntax": 1,
+    "no_fence": 1,
+    "closing parenthesis ')' does not match opening parenthesis '['": 1
+  },
+  "rows": [
+    {
+      "policy": "base",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "BLOCK=BLOCK,"
+    },
+    {
+      "policy": "C-20261021",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "num_warps=4,"
+    },
+    {
+      "policy": "C-20261021",
+      "task": "development/row_sum",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "run_kernel[grid=(M,)]("
+    },
+    {
+      "policy": "C-20261021",
+      "task": "development/reverse",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "num_warps=4,"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "num_warps=4,"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "development/row_softmax",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "M=M, N=K, K=K,"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "development/reverse",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "BLOCK=BLOCK"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "development/matrix",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "num_warps=4,"
+    },
+    {
+      "policy": "C-20261022",
+      "task": "development/center",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax",
+      "syntax_error_line": "run_kernel[ ]("
+    },
+    {
+      "policy": "C-20261023",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "run_kernel[grid=(M // BLOCK + 1,)] ("
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "BLOCK=BLOCK,"
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "development/row_softmax",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "BLOCK=BLOCK,"
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "development/reverse",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "(M, N=K, K=K, SX0=x.stride(0), SX1=x.stride(1),"
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "development/matrix",
+      "condition": "full_program",
+      "finish_reason": "length",
+      "reason": "no_fence",
+      "syntax_error_line": null
+    },
+    {
+      "policy": "SFT-20261022",
+      "task": "development/row_softmax",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "closing parenthesis ')' does not match opening parenthesis '['",
+      "syntax_error_line": "run_kernel[)(M)("
+    },
+    {
+      "policy": "SFT-20261022",
+      "task": "development/reverse",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "grid=(M,),"
+    },
+    {
+      "policy": "SFT-20261023",
+      "task": "development/add_one",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "run_kernel[grid=(M,)]("
+    },
+    {
+      "policy": "SFT-20261023",
+      "task": "development/reverse",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "run_kernel[grid=(M,),"
+    },
+    {
+      "policy": "SFT-20261023",
+      "task": "development/matrix",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "(M, N, K, SX0, SX1, SY0, SY1, BLOCK=triton.next_power_of_2(max(N, K)))"
+    },
+    {
+      "policy": "SFT-20261023",
+      "task": "development/center",
+      "condition": "full_program",
+      "finish_reason": "stop",
+      "reason": "invalid syntax. Maybe you meant '==' or ':=' instead of '='?",
+      "syntax_error_line": "num_warps=4,"
+    }
+  ],
+  "full_program_format_contract_rejections": [
+    {
+      "policy": "base",
+      "task": "development/matrix",
+      "reason": "Both conditions require the identical run_kernel ABI",
+      "ModelNew_classes": 2
+    },
+    {
+      "policy": "C-20261021",
+      "task": "development/matrix",
+      "reason": "Both conditions require the identical run_kernel ABI",
+      "ModelNew_classes": 2
+    },
+    {
+      "policy": "C-20261023",
+      "task": "development/row_softmax",
+      "reason": "Both conditions require the identical run_kernel ABI",
+      "ModelNew_classes": 2
+    },
+    {
+      "policy": "SFT-20261022",
+      "task": "development/row_sum",
+      "reason": "full_program requires exactly one ModelNew class",
+      "ModelNew_classes": 2
+    }
+  ],
+  "length_capped_rows": [
+    {
+      "policy": "C-20261023",
+      "task": "development/reverse",
+      "condition": "fixed_host",
+      "new_tokens": 4096,
+      "finish_reason": "length",
+      "component": "correct",
+      "correct": true
+    },
+    {
+      "policy": "SFT-20261021",
+      "task": "development/matrix",
+      "condition": "full_program",
+      "new_tokens": 4096,
+      "finish_reason": "length",
+      "component": "format",
+      "correct": false
+    }
+  ],
+  "success_if_non_stop_outputs_counted_as_failure": {
+    "full_program": 1,
+    "fixed_host": 15
+  },
+  "scope": "static parse and descriptive sensitivity only; no execution or historical score changes"
+}

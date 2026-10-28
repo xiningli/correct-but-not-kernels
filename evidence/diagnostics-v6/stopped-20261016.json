@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-17T05:32:02.386919+00:00",
+  "archive": "runs/diagnostics-v6/recovery/2026-10-16T222119.856430_0000/evidence.tgz",
+  "archive_sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+  "archive_bytes": 678478,
+  "sealed_files_unchanged": 131,
+  "reports_byte_identical": true,
+  "episodes": 12,
+  "unique_generations": 37,
+  "cells": [
+    {
+      "model": "gemma-4-12B-it",
+      "condition": "independent",
+      "episodes": 4,
+      "independent_defects": 2,
+      "resolved": 1,
+      "visible_pass": 1,
+      "logical_attempts": 14,
+      "prompt_tokens": 70296,
+      "output_tokens": 40409,
+      "visible_evaluation_seconds": 46.50322686880827,
+      "selected_components": {
+        "crash": 1,
+        "incorrect": 2,
+        "correct": 1
+      }
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "condition": "revision_diagnostic",
+      "episodes": 4,
+      "independent_defects": 2,
+      "resolved": 0,
+      "visible_pass": 0,
+      "logical_attempts": 16,
+      "prompt_tokens": 56963,
+      "output_tokens": 37583,
+      "visible_evaluation_seconds": 52.66527006402612,
+      "selected_components": {
+        "crash": 2,
+        "incorrect": 2
+      }
+    },
+    {
+      "model": "gemma-4-12B-it",
+      "condition": "revision_verdict",
+      "episodes": 4,
+      "independent_defects": 2,
+      "resolved": 1,
+      "visible_pass": 1,
+      "logical_attempts": 15,
+      "prompt_tokens": 48571,
+      "output_tokens": 36036,
+      "visible_evaluation_seconds": 52.04552615061402,
+      "selected_components": {
+        "correct": 1,
+        "incorrect": 2,
+        "format": 1
+      }
+    }
+  ],
+  "successful_independent_defects": [
+    "development/case-002"
+  ],
+  "31B_generated_candidates": 0,
+  "31B_failure": "engine_initialization_KV_cache_budget",
+  "31B_required_cache_GiB": 20.64,
+  "31B_available_cache_GiB": 20.07,
+  "physical_prompt_tokens": 137822,
+  "physical_output_tokens": 94598,
+  "shutdown_return_observed": false,
+  "platform_power_and_billing_verified": false,
+  "limits": [
+    "Two previously seen reduced defects, not an independent test set.",
+    "First candidate/evaluation is shared across the three branches; repetitions are not new defects.",
+    "First visible pass is selected; withheld scores never drive generation or selection.",
+    "Matched attempt/output caps are not matched actual compute, FLOPs or latency.",
+    "12B/31B checkpoints differ beyond parameter count; this is not a causal scaling-law test.",
+    "Rich feedback may omit the root cause; failure does not establish intrinsic inability.",
+    "Descriptive development results only; no p-values, generalization, or prize claim."
+  ]
+}

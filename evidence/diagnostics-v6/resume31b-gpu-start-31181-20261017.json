@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-17T20:50:25.256045+00:00",
+  "status": "31B_GPU_engine_initialized_first_round_generating",
+  "endpoint": "connect.westd.seetacloud.com:31181",
+  "hostname": "autodl-container-6440418da2-103a5874",
+  "active": {
+    "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6-resume31b/controllers/2026-10-17T204539.738896_0000",
+    "pid": 3423,
+    "utc": "2026-10-17T20:45:39.739018+00:00"
+  },
+  "GPU": {
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "total_bytes": 101974081536,
+    "observed_usage": "88379 MiB, 98 %",
+    "weights_GiB": 57.76,
+    "available_KV_cache_GiB": 24.83,
+    "cache_tokens": 29562,
+    "engine_initialized_UTC": "2026-10-17T20:48:45+00:00"
+  },
+  "inference": {
+    "max_model_len": 24576,
+    "max_num_seqs": 2,
+    "gpu_memory_utilization": 0.9,
+    "enforce_eager": true,
+    "overflow": "stop_no_asymmetric_truncation",
+    "execution": "generator_process_exits_before_serial_isolated_candidate_evaluation"
+  },
+  "model": "gemma-4-31B-it",
+  "dtype": "bfloat16",
+  "generation_progress": {
+    "stage": "generation",
+    "model": "gemma-4-31B-it",
+    "round": 0,
+    "nodes": 0,
+    "episodes_completed": 0,
+    "episodes_total": 12,
+    "utc": "2026-10-17T20:47:57.429059+00:00"
+  },
+  "completed_generations_at_observation": 0,
+  "model_success_rate_measured": false,
+  "isolation": {
+    "status": "PASS",
+    "checks": 6,
+    "receipt_sha256": "10e534193f2de8447cf8f21be10d77ec5139876fec92d571e2c16a9fd4b0cef4"
+  },
+  "original_and_fixed_controls": {
+    "status": "PASS",
+    "controls": 8,
+    "utc": "2026-10-17T20:47:04.655076+00:00",
+    "boot": {
+      "pid1_start_ticks": "3121404813",
+      "boot_id": "1850c4a2-6815-419a-a28e-bbcdc27e3033",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "torch": "2.13.0+cu130",
+      "cuda": "13.0"
+    },
+    "prepared_sha256": "3cc0db084a82124b0c1108f9e5ed1007bfb381f327971a92a6e9f871ce3dd846",
+    "isolation_sha256": "10e534193f2de8447cf8f21be10d77ec5139876fec92d571e2c16a9fd4b0cef4",
+    "checks_sha256": "34ab120927e75db5e2e6626aae5c77a5abfecf43d8af02382cb1d29251ec22c7",
+    "visible_diagnostics_sha256": "57c05eb5e4dd0d87d454a6bbd5bec2699b9d99627a8ae85130c8a2488355d9c1",
+    "scope": "two_reduced_development_defects_not_model_results",
+    "receipt_sha256": "178ed1a21d444ed6e358dfa6d3f7a30e7fabe33f7c1a3b9e71b5f21238219976"
+  },
+  "feedback_controls": {
+    "status": "PASS",
+    "utc": "2026-10-17T20:47:08.587519+00:00",
+    "prepared_sha256": "6e0e3b2af0a440154302a5226530cb5b26c0a80a95c0d1ba06e581c4ce62af7f",
+    "base_controls_sha256": "178ed1a21d444ed6e358dfa6d3f7a30e7fabe33f7c1a3b9e71b5f21238219976",
+    "feedback_sha256": "215b1e5dd00d2635d7c7663c6073c540526cea9e70fffa3e65b8802847d481f1",
+    "receipt_sha256": "992750c4c99fd251df203e170a0dc8623a101b38918abfa46fdb440fc277182e"
+  },
+  "continuation_identity": {
+    "initial_requests_match_stopped_parent_exactly_except_prepared_path": true,
+    "initial_entries": 4,
+    "isolation_status": "PASS",
+    "isolation_path": "runs/reliability-v2/strict-isolation/20261017T204539.862430Z/receipt.json",
+    "initial_request_sha256": "fa4bf686370d0c7c7ee03de762f166ad5a1643dd7dc0ae3aac468c4524f3257f"
+  },
+  "source_seal_unchanged": true,
+  "source_files": 137,
+  "prepared_sha256": "6e0e3b2af0a440154302a5226530cb5b26c0a80a95c0d1ba06e581c4ce62af7f",
+  "local_monitor": [
+    "MainPID=3976759",
+    "ActiveState=active",
+    "SubState=running"
+  ],
+  "shutdown_policy": "completion_or_bounded_failure_report_archive_verified_local_backup_then_shutdown",
+  "scope": "Two previously seen developer defects; 12 episodes; at most four attempts each. No new training or formal test. Existing 12B outcomes retained.",
+  "receipts_sha256": {
+    "preflight.json": "e38380447f5cd9f0cdd75b5331a5345d4559ce7e2dba976bce385dc523229414",
+    "launch.json": "882fc0c96f930908975a13d1c729ba38982083d72a6f87620ba521e0a2b45b1b",
+    "launch_remote.py": "1a7886bc939d191bc3aad29f7b97b85a65e9d4116427d3626823f3bc2019bf32",
+    "startup-snapshot.json": "efdbd5ff8698d24e7848459dd018da675d7b006d9485b388acd083c78b5bf380",
+    "continuation-checks.json": "350fb87fe2fe492348540db17a51a94bf5623142f2a0a63b7458cce964f5dbfa",
+    "initial-request.json": "fa4bf686370d0c7c7ee03de762f166ad5a1643dd7dc0ae3aac468c4524f3257f",
+    "isolation-receipt.json": "10e534193f2de8447cf8f21be10d77ec5139876fec92d571e2c16a9fd4b0cef4",
+    "engine-live.json": "f28058d2bed59ebb795c29c83f1ddb429869763f5fcb77365c069a3cc744f7a5",
+    "engine-snapshot.json": "29a63c4ecddf411e50c17a3f0f03c0f5b74626cc31585f15b62b068ade7c6a2e"
+  },
+  "first_completion_observation": {
+    "utc": "2026-10-17T20:50:43.916696+00:00",
+    "round": 0,
+    "generations_written": 2,
+    "round_requested": 4,
+    "scored_candidates": 0,
+    "controller_outcome": null
+  }
+}

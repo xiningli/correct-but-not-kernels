@@ -1,0 +1,45 @@
+{
+  "status": "complete",
+  "before": {
+    "total": 504658657280,
+    "used": 252354105344,
+    "free": 252304551936
+  },
+  "after": {
+    "total": 504658657280,
+    "used": 181578678272,
+    "free": 323079979008
+  },
+  "free_bytes_gained": 70775427072,
+  "C3_merged_files": 101,
+  "C3_logical_duplicate_bytes": 39996949928,
+  "archive_removed_bytes": 30779004695,
+  "frozen_source_unchanged": true,
+  "model_weights_and_checkpoints_removed": 0,
+  "all_C3_paths_and_bytes_preserved": true,
+  "time_unix": 1792217354.357694,
+  "verified_utc": "2026-10-17T06:10:43.413704+00:00",
+  "endpoint": "connect.westd.seetacloud.com:21785",
+  "CPU_boot": true,
+  "tensor_files": 111,
+  "unique_tensor_files": 10,
+  "local_archive_copy": {
+    "verified": true,
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/autodl-westb-reboot-20261006/terminal-recovery-20261012/evidence-and-checkpoints.tgz",
+    "bytes": 30779004695,
+    "sha256": "8cc3de5ecadc11e6ce5339dacba4bafc702e0f79d4892f57f927cb07b9f01e74",
+    "seconds": 18.5585537559964
+  },
+  "retained_remote_checkpoint_files": 52,
+  "receipts_sha256": {
+    "archive-relocation.json": "1929f0d4ba371ba4f1275fd9c0435dcf0439c43a61dcc376fc0f5fcf16f602b8",
+    "cleanup.log": "1bc565044b4700712fa154b11a4d937ae02fd9bc7a8cc3ea5dbac5a9770a2388",
+    "cleanup.py": "bcfd72222b65425a8b5260e724cef9f5375156be8e4f36dd7edf5d1f3aca43f0",
+    "complete.json": "d520ec7238755dcb091c47238cffde555ae8298398ebb3ef0902a2880ae11578",
+    "dedup-complete.json": "13287a52616ea324e789edea7d74e969b97b7b941ab3f1cbf6248d97cc525804",
+    "dedup-plan.json": "73985d0fb1c91e318b3e0ab4bb31cf1e3431d4a2a7ee588a67e07073a11090de",
+    "local-archive-reverified.json": "9ff4aae7b6f9c18e57b9bac54fe061ca96fd5441b9c53169ab13653ffcf300e4"
+  },
+  "dedup_method": "SHA256 and size equality; matching ownership and mode; atomic hardlink replacement; final canonical hashes and all path/inode relationships verified",
+  "retention": "Completed C3 artifacts are immutable. Models, checkpoints, logs, programs, metrics and frozen source remain retained."
+}

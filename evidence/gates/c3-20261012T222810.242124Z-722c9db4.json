@@ -1,0 +1,64 @@
+{
+  "gate": "C3",
+  "status": "PASS",
+  "time_utc": "20261012T222810.242124Z",
+  "git": {
+    "sha": "b3f06861a1281d69757aad3cf0ebf7ff72f4a939",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "precomputed",
+      "status": "PASS",
+      "naive_correct": true,
+      "hardened_correct": false,
+      "detectors": [
+        "fixed_input_seed",
+        "fresh_input_failure"
+      ],
+      "record": "runs/c3/20261012T222723.132147Z/precomputed.json"
+    },
+    {
+      "name": "default_distribution",
+      "status": "PASS",
+      "naive_correct": true,
+      "hardened_correct": false,
+      "detectors": [
+        "fresh_input_failure"
+      ],
+      "record": "runs/c3/20261012T222723.132147Z/default_distribution.json"
+    },
+    {
+      "name": "input_alias",
+      "status": "PASS",
+      "naive_correct": true,
+      "hardened_correct": false,
+      "detectors": [
+        "input_alias",
+        "input_mutation",
+        "output_persistence"
+      ],
+      "record": "runs/c3/20261012T222723.132147Z/input_alias.json"
+    },
+    {
+      "name": "async_timer",
+      "status": "PASS",
+      "naive_correct": true,
+      "hardened_correct": false,
+      "detectors": [
+        "timing_stream"
+      ],
+      "record": "runs/c3/20261012T222723.132147Z/async_timer.json"
+    },
+    {
+      "name": "reference",
+      "status": "PASS",
+      "naive_correct": true,
+      "hardened_correct": true,
+      "detectors": [],
+      "record": "runs/c3/20261012T222723.132147Z/reference.json"
+    }
+  ],
+  "prerequisite": "runs/gates/c2-20261012T222722.937322Z-60ae36c3.json",
+  "artifacts": "runs/c3/20261012T222723.132147Z"
+}

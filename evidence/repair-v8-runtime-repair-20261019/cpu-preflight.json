@@ -1,0 +1,62 @@
+{
+  "status": "CPU_preflight_pass_GPU_gates_pending",
+  "checks": [
+    {
+      "task": "liger_attnres",
+      "oracle_cases": 12,
+      "official_fix_interface_parity": true,
+      "original_full_response_tokens": 4712,
+      "prompts": {
+        "full_module": {
+          "tokens": 6148,
+          "token_ids_sha256": "670c4ce9d8825a702718347dde5c5413044aa5438323764af0d8aeda08a99822"
+        },
+        "atomic_edits": {
+          "tokens": 6243,
+          "token_ids_sha256": "6e94b066d498a0838aa335fa66835e774b34ca45abd41d040745d343e8e14bd3"
+        }
+      },
+      "formal_task": false
+    },
+    {
+      "task": "liger_groupnorm",
+      "oracle_cases": 10,
+      "official_fix_interface_parity": true,
+      "original_full_response_tokens": 3949,
+      "prompts": {
+        "full_module": {
+          "tokens": 5206,
+          "token_ids_sha256": "eafed1c231ade787baf30aaf5d26ad6de2e452e7c41de089ddfd8ab4641f5761"
+        },
+        "atomic_edits": {
+          "tokens": 5301,
+          "token_ids_sha256": "f19f64a74a631d2ce158b1a85a4f56055736382c5236d8f3f67aff3e1e0a46c6"
+        }
+      },
+      "formal_task": false
+    },
+    {
+      "task": "fla_rwkv7",
+      "oracle_cases": 12,
+      "official_fix_interface_parity": true,
+      "original_full_response_tokens": 4183,
+      "prompts": {
+        "full_module": {
+          "tokens": 4845,
+          "token_ids_sha256": "0277cb1a1af1ecaf41264b8f7f659af15b4dd8372bbd8877c0c6392042e82542"
+        },
+        "atomic_edits": {
+          "tokens": 4940,
+          "token_ids_sha256": "325ebd28fa31ad5b7b863335f59fa187d64e4e49de9602b032728c4aa83a4287"
+        }
+      },
+      "formal_task": false
+    }
+  ],
+  "logical_episodes": 24,
+  "max_logical_attempts": 96,
+  "model_runs": 0,
+  "GPU_runs": 0,
+  "formal_tasks": 0,
+  "training_runs": 0
+}

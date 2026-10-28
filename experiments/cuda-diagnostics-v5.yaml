@@ -1,0 +1,81 @@
+# D1-D3 supersede RL-versus-SFT as the main research question; old studies remain immutable.
+id: cuda-diagnostics-v5
+status: development_not_confirmatory
+question: Does Gemma fail to repair GPU code because useful execution evidence is missing, or because it cannot use available evidence?
+authorization: operator_selected_question_1_20261016
+hypotheses:
+  D1: Automatically measured execution facts improve repair over pass/fail feedback at a fixed attempt budget.
+  D2: Organizing exactly the same facts changes repair success; information content and presentation are separate interventions.
+  D3: Further counterexample reduction may improve repair efficiency; deferred until D1/D2 feasibility is measured.
+training_enabled: false
+formal_test_enabled: false
+development:
+  task_ids: [development/case-001, development/case-002]
+  provenance: two_previously_seen_reduced_Liger_reproductions
+  independent_defects: 2
+  repositories: 1
+  test_eligible: false
+  policies: [base, C-20261021, C-20261022, C-20261023, SFT-20261021, SFT-20261022, SFT-20261023]
+  conditions: [verdict_only, facts_flat, facts_grouped]
+  replicates: 2
+  attempts_per_episode: 1
+  expected_attempts: 84
+  purpose: establish_toolchain_prompt_fit_failure_modes_and_cost_before_expanding_tasks
+feedback:
+  origin: original_broken_program_on_visible_inputs_only
+  invariant: every_condition_starts_from_identical_broken_code_and_issue
+  facts_flat: complete_flat_JSON_of_allowlisted_measured_facts
+  facts_grouped: lossless_nested_JSON_of_the_identical_fact_dictionary
+  raw_log_limit: facts_flat_is_not_unfiltered_stderr_or_a_claim_about_all_raw_logs
+  equal_facts_hash_required: true
+  derived_root_cause_or_fix_hints: prohibited
+  future_hidden_scores_and_upstream_fix: never_in_prompt
+  minimized_counterexamples: deferred_not_implemented
+  interpretation: failures_even_with_facts_do_not_prove_intrinsic_inability_or_sufficient_diagnosis
+repair:
+  scope: localized_reduced_real_bug_repair_not_autonomous_full_repository_navigation
+  source: original_upstream_kernel_with_previously_documented_wrapper_adaptations
+  remove_public_PR_locator: true
+  preserve_license_notice: true
+  contract: preserve_inputs_fresh_output_custom_GPU_compute_no_reference_or_framework_fallback
+  selection: one_completion_per_episode_no_hidden_selection_no_reroll
+  primary_success: visible_and_withheld_development_regressions_pass_with_runtime_contract
+  malformed_and_truncated: retained_as_failures
+  controls: original_fails_and_upstream_fix_passes_on_both_suites_on_current_boot
+sampling:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 64
+  max_tokens: 8192
+context:
+  max_model_len: 24576
+  prompt_overflow: stop_before_generation_never_truncate_one_condition
+  output_preflight: original_program_with_code_fences_must_fit_the_common_output_cap
+seeds:
+  generation: 2026101601
+  order: 2026101602
+  model_init: 2026101603
+  visible_input_generation: 2026101303
+  withheld_development_input_generation: 2026101304
+limits:
+  run_wall_seconds: 86400
+  generation_policy_seconds: 3600
+analysis:
+  unit: independent_defect
+  development_inference: descriptive_only_no_p_values_or_generalization_claim
+  report: every_policy_condition_replicate_failure_unknown_and_actual_cost
+  budgets: identical_output_caps_report_actual_prompt_tokens_output_tokens_and_GPU_evaluation_wall_time
+formal_followup_before_freeze:
+  - Collect independent real defects across repositories using outcome_blind eligibility and exclusion logs.
+  - Keep these two development defects and their variants outside the formal test set.
+  - Preserve original repository integration for a separately identified full_repository stratum.
+  - Estimate cost_and_precision_then_freeze_task_selection_primary_contrast_and_analysis.
+  - Add a strong_model_with_the_same_tools_and_evidence_before_claiming_a_model_size_gap.
+  - Validate each automatic diagnostic against independent evidence; never use a gold_fix to construct deployed feedback.
+  - Use independent withheld regressions; public_history_contamination_remains_a_limit.
+  - Demonstrate benefits beyond_existing_counterexample_repair_and_GPU_debugging_work.
+  - Independently audit diagnostic relevance; failure_with_rich_feedback_is_not_proof_of_intrinsic_inability.
+operations:
+  source_namespace: research/diagnostics_v1
+  preceding_job: capability_v4_must_finish_and_be_verified_locally_before_GPU_handoff
+  completion: generate_report_archive_verify_local_backup_then_shutdown

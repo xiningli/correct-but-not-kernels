@@ -1,0 +1,248 @@
+{
+ "bootstrap": {
+  "draws": 10000,
+  "interval": "percentile 95%, unadjusted",
+  "seed": 20261025,
+  "unit": "task"
+ },
+ "counts": {
+  "C": {
+   "all_by_class": {
+    "declared_not_launched": 1121,
+    "launched": 44,
+    "no_declared_kernel": 1235
+   },
+   "attempts": 2400,
+   "contract_reasons": {
+    "dispatch_and_CUDA_events_agree": 1,
+    "high_level_tensor_compute": 1933
+   },
+   "correct": 1728,
+   "correct_by_class": {
+    "declared_not_launched": 741,
+    "launched": 29,
+    "no_declared_kernel": 958
+   },
+   "correct_declared_not_launched_name_appears_only_at_definition": 660,
+   "correct_declared_not_launched_referenced_by_ModelNew": {
+    "False": 736,
+    "True": 5
+   },
+   "correct_without_runtime_observation": 2,
+   "strict_success": 0
+  },
+  "SFT": {
+   "all_by_class": {
+    "declared_not_launched": 970,
+    "launched": 35,
+    "no_declared_kernel": 1395
+   },
+   "attempts": 2400,
+   "contract_reasons": {
+    "high_level_tensor_compute": 1919
+   },
+   "correct": 1710,
+   "correct_by_class": {
+    "declared_not_launched": 626,
+    "launched": 23,
+    "no_declared_kernel": 1061
+   },
+   "correct_declared_not_launched_name_appears_only_at_definition": 566,
+   "correct_declared_not_launched_referenced_by_ModelNew": {
+    "False": 621,
+    "True": 5
+   },
+   "correct_without_runtime_observation": 2,
+   "strict_success": 0
+  },
+  "base": {
+   "all_by_class": {
+    "declared_not_launched": 262,
+    "launched": 12,
+    "no_declared_kernel": 526
+   },
+   "attempts": 800,
+   "contract_reasons": {
+    "high_level_tensor_compute": 516
+   },
+   "correct": 439,
+   "correct_by_class": {
+    "declared_not_launched": 154,
+    "launched": 10,
+    "no_declared_kernel": 275
+   },
+   "correct_declared_not_launched_name_appears_only_at_definition": 141,
+   "correct_declared_not_launched_referenced_by_ModelNew": {
+    "False": 154
+   },
+   "correct_without_runtime_observation": 0,
+   "strict_success": 0
+  }
+ },
+ "inputs": {
+  "runs/diagnostics-v5/terminal-audit-20261016/replay/metrics.jsonl": "2a0dab03958f703c103b5e8ce23610e5d7341799a7bdacba89aeeb510da2470e",
+  "runs/reliability-v2/capability-v4/saved-programs.json": "a67c891773a96ffd19f57c3f3c6b8150f85bbe1f712bcf808fa213a476c71628"
+ },
+ "limits": [
+  "Retrospective analysis of saved programs on tasks the researcher had already observed.",
+  "\"launched\" means a profiler kernel name matched a declared Triton/CUDA kernel; ATen compute may also run.",
+  "Seeds are pooled within arm per task; intervals are conditional on these checkpoints.",
+  "ModelNew-reference check is static and name-based; CUDA wrappers may hide kernel names."
+ ],
+ "paired_task_effects": {
+  "C-SFT": {
+   "all_declared_not_launched": {
+    "ci95": [
+     0.03791666666666666,
+     0.08791666666666666
+    ],
+    "estimate": 0.06291666666666666
+   },
+   "all_launched": {
+    "ci95": [
+     -0.00375,
+     0.012083333333333333
+    ],
+    "estimate": 0.00375
+   },
+   "all_no_declared_kernel": {
+    "ci95": [
+     -0.09041666666666667,
+     -0.04250000000000001
+    ],
+    "estimate": -0.06666666666666667
+   },
+   "correct": {
+    "ci95": [
+     -0.015,
+     0.030416666666666668
+    ],
+    "estimate": 0.007499999999999998
+   },
+   "correct_declared_not_launched": {
+    "ci95": [
+     0.02208333333333333,
+     0.07333333333333333
+    ],
+    "estimate": 0.04791666666666667
+   },
+   "correct_launched": {
+    "ci95": [
+     -0.0033333333333333344,
+     0.009166666666666667
+    ],
+    "estimate": 0.0024999999999999996
+   },
+   "correct_no_declared_kernel": {
+    "ci95": [
+     -0.06833333333333333,
+     -0.018333333333333326
+    ],
+    "estimate": -0.04291666666666666
+   }
+  },
+  "C-base": {
+   "all_declared_not_launched": {
+    "ci95": [
+     0.10125,
+     0.18
+    ],
+    "estimate": 0.1395833333333333
+   },
+   "all_launched": {
+    "ci95": [
+     -0.005,
+     0.011666666666666665
+    ],
+    "estimate": 0.0033333333333333327
+   },
+   "all_no_declared_kernel": {
+    "ci95": [
+     -0.18291666666666667,
+     -0.105
+    ],
+    "estimate": -0.14291666666666666
+   },
+   "correct": {
+    "ci95": [
+     0.13416666666666666,
+     0.20916666666666667
+    ],
+    "estimate": 0.17125
+   },
+   "correct_declared_not_launched": {
+    "ci95": [
+     0.08375,
+     0.14958333333333335
+    ],
+    "estimate": 0.11625
+   },
+   "correct_launched": {
+    "ci95": [
+     -0.0075000000000000015,
+     0.005833333333333333
+    ],
+    "estimate": -0.0004166666666666671
+   },
+   "correct_no_declared_kernel": {
+    "ci95": [
+     0.028333333333333335,
+     0.0825
+    ],
+    "estimate": 0.05541666666666667
+   }
+  },
+  "SFT-base": {
+   "all_declared_not_launched": {
+    "ci95": [
+     0.03625,
+     0.11833333333333335
+    ],
+    "estimate": 0.07666666666666667
+   },
+   "all_launched": {
+    "ci95": [
+     -0.01,
+     0.008333333333333333
+    ],
+    "estimate": -0.00041666666666666707
+   },
+   "all_no_declared_kernel": {
+    "ci95": [
+     -0.11791666666666666,
+     -0.03583333333333333
+    ],
+    "estimate": -0.07625
+   },
+   "correct": {
+    "ci95": [
+     0.12833333333333333,
+     0.2004166666666667
+    ],
+    "estimate": 0.16375
+   },
+   "correct_declared_not_launched": {
+    "ci95": [
+     0.03458333333333333,
+     0.1025
+    ],
+    "estimate": 0.06833333333333333
+   },
+   "correct_launched": {
+    "ci95": [
+     -0.011666666666666667,
+     0.004166666666666667
+    ],
+    "estimate": -0.002916666666666667
+   },
+   "correct_no_declared_kernel": {
+    "ci95": [
+     0.06458333333333333,
+     0.13291666666666666
+    ],
+    "estimate": 0.09833333333333334
+   }
+  }
+ },
+ "tasks": 100
+}

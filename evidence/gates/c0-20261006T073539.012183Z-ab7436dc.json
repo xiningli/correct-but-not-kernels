@@ -1,0 +1,245 @@
+{
+  "gate": "C0",
+  "status": "PASS",
+  "time_utc": "20261006T073539.012183Z",
+  "git": {
+    "sha": "5dba232acb12c4592f3c3d4fed2823c9413db4de",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "stack_weights_tasks",
+      "status": "PASS",
+      "result": {
+        "weights": [
+          {
+            "directory": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-12B-it",
+            "model_type": "gemma4_unified",
+            "architectures": [
+              "Gemma4UnifiedForConditionalGeneration"
+            ],
+            "files": {
+              "model.safetensors": 23919549408
+            },
+            "tensor_count": 677,
+            "total_bytes": 23919549408,
+            "validation": "structure_only_not_a_model_load"
+          },
+          {
+            "directory": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-E4B-it",
+            "model_type": "gemma4",
+            "architectures": [
+              "Gemma4ForConditionalGeneration"
+            ],
+            "files": {
+              "model.safetensors": 15992595884
+            },
+            "tensor_count": 2130,
+            "total_bytes": 15992595884,
+            "validation": "structure_only_not_a_model_load"
+          }
+        ],
+        "task_count": 200
+      }
+    },
+    {
+      "name": "load_gemma-4-12B-it",
+      "status": "PASS",
+      "result": {
+        "status": "PASS",
+        "directory": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-12B-it",
+        "model_type": "gemma4_unified",
+        "architectures": [
+          "Gemma4UnifiedForConditionalGeneration"
+        ],
+        "files": {
+          "model.safetensors": 23919549408
+        },
+        "tensor_count": 677,
+        "total_bytes": 23919549408,
+        "validation": "all_tensors_loaded_cpu_and_offline_metadata",
+        "loaded_tensors": 677,
+        "config_class": "Gemma4UnifiedConfig",
+        "tokenizer_class": "GemmaTokenizer"
+      }
+    },
+    {
+      "name": "load_gemma-4-E4B-it",
+      "status": "PASS",
+      "result": {
+        "status": "PASS",
+        "directory": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-E4B-it",
+        "model_type": "gemma4",
+        "architectures": [
+          "Gemma4ForConditionalGeneration"
+        ],
+        "files": {
+          "model.safetensors": 15992595884
+        },
+        "tensor_count": 2130,
+        "total_bytes": 15992595884,
+        "validation": "all_tensors_loaded_cpu_and_offline_metadata",
+        "loaded_tensors": 2130,
+        "config_class": "Gemma4Config",
+        "tokenizer_class": "GemmaTokenizer"
+      }
+    },
+    {
+      "name": "vllm_12b_answer",
+      "status": "PASS",
+      "result": {
+        "status": "PASS",
+        "model": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-12B-it",
+        "text": "READY",
+        "sampling": {
+          "temperature": 1.0,
+          "top_p": 0.95,
+          "top_k": 64
+        },
+        "finish_reason": "stop",
+        "tokens": 2
+      }
+    },
+    {
+      "name": "reference_cuda",
+      "status": "PASS",
+      "result": {
+        "status": "PASS",
+        "scope": "trusted_reference_smoke_not_performance_or_correctness_evaluation",
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "torch": "2.13.0+cu130",
+        "torch_cuda": "13.0",
+        "results": [
+          {
+            "task_id": "level1/1_Square_matrix_multiplication_",
+            "source_sha256": "7626d611b8f2c97a71ae40d731da8cb7ba067dc43cc2f3e8185ad85c68533f30",
+            "output_shape": [
+              4096,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "peak_allocated_bytes": 352321536,
+            "finite": true
+          },
+          {
+            "task_id": "level1/2_Standard_matrix_multiplication_",
+            "source_sha256": "136a33c4d598d07cd7931ef8c0eff4e683c221af6fc43c2d89b6632d3f9902a0",
+            "output_shape": [
+              2048,
+              4096
+            ],
+            "dtype": "torch.float32",
+            "peak_allocated_bytes": 327155712,
+            "finite": true
+          }
+        ]
+      }
+    }
+  ],
+  "inventory": {
+    "time_utc": "20261006T073437.739121Z",
+    "hostname": "autodl-container-pe4r4w4xj0-9ff879c4",
+    "python": "3.12.13 (main, Apr  7 2026, 20:45:25) [Clang 22.1.1 ]",
+    "python_executable": "/root/autodl-tmp/cuda-gemma4-llm/.venv/bin/python",
+    "logical_cpus": 208,
+    "cpu_affinity_count": 208,
+    "cgroup_v2_limits": {
+      "cpu.max": "2500000 100000",
+      "memory.max": "128849018880",
+      "pids.max": "20480"
+    },
+    "disk_bytes": {
+      "total": 268435456000,
+      "used": 119910645760,
+      "free": 148524810240
+    },
+    "packages": {
+      "torch": "2.13.0",
+      "triton": "3.7.1",
+      "vllm": "0.30.0",
+      "transformers": "5.17.0",
+      "trl": "1.14.0",
+      "peft": "0.21.0",
+      "safetensors": "0.8.0",
+      "modelscope": "1.40.1",
+      "pytest": "9.1.1"
+    },
+    "tools": {
+      "uv": "/root/autodl-tmp/cuda-gemma4-llm/.cache/bin/uv",
+      "nvcc": "/usr/local/cuda/bin/nvcc",
+      "docker": null,
+      "bwrap": null,
+      "git": "/usr/bin/git",
+      "g++": "/usr/bin/g++",
+      "ninja": "/root/autodl-tmp/cuda-gemma4-llm/.venv/bin/ninja"
+    },
+    "commands": {
+      "gpu": {
+        "argv": [
+          "nvidia-smi",
+          "--query-gpu=name,uuid,memory.total,memory.used,driver_version,compute_cap",
+          "--format=csv,noheader,nounits"
+        ],
+        "returncode": 0,
+        "stdout": "NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-c8925bb2-8afe-0460-07ea-34151c298d8e, 97887, 0, 595.58.03, 12.0",
+        "stderr": ""
+      },
+      "driver": {
+        "argv": [
+          "nvidia-smi"
+        ],
+        "returncode": 0,
+        "stdout": "Tue Oct  6 15:34:27 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 595.58.03              Driver Version: 595.58.03      CUDA Version: 13.2     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:98:00.0 Off |                  Off |\n| N/A   40C    P0            104W /  600W |       0MiB /  97887MiB |    100%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+",
+        "stderr": ""
+      },
+      "nvcc": {
+        "argv": [
+          "nvcc",
+          "--version"
+        ],
+        "returncode": 0,
+        "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Wed_Aug_20_01:58:59_PM_PDT_2025\nCuda compilation tools, release 13.0, V13.0.88\nBuild cuda_13.0.r13.0/compiler.36424714_0",
+        "stderr": ""
+      },
+      "cpu": {
+        "argv": [
+          "lscpu"
+        ],
+        "returncode": 0,
+        "stdout": "Architecture:                    x86_64\nCPU op-mode(s):                  32-bit, 64-bit\nAddress sizes:                   52 bits physical, 57 bits virtual\nByte Order:                      Little Endian\nCPU(s):                          208\nOn-line CPU(s) list:             0-207\nVendor ID:                       GenuineIntel\nModel name:                      Intel(R) Xeon(R) Platinum 8470Q\nCPU family:                      6\nModel:                           143\nThread(s) per core:              2\nCore(s) per socket:              52\nSocket(s):                       2\nStepping:                        8\nFrequency boost:                 enabled\nCPU max MHz:                     2101.0000\nCPU min MHz:                     800.0000\nBogoMIPS:                        4200.00\nFlags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                  VT-x\nL1d cache:                       4.9 MiB (104 instances)\nL1i cache:                       3.3 MiB (104 instances)\nL2 cache:                        208 MiB (104 instances)\nL3 cache:                        210 MiB (2 instances)\nNUMA node(s):                    2\nNUMA node0 CPU(s):               0-51,104-155\nNUMA node1 CPU(s):               52-103,156-207\nVulnerability Itlb multihit:     Not affected\nVulnerability L1tf:              Not affected\nVulnerability Mds:               Not affected\nVulnerability Meltdown:          Not affected\nVulnerability Mmio stale data:   Not affected\nVulnerability Retbleed:          Not affected\nVulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:        Mitigation; Enhanced IBRS, IBPB conditional, RSB filling, PBRSB-eIBRS SW sequence\nVulnerability Srbds:             Not affected\nVulnerability Tsx async abort:   Not affected",
+        "stderr": ""
+      },
+      "memory": {
+        "argv": [
+          "free",
+          "-b"
+        ],
+        "returncode": 0,
+        "stdout": "total        used        free      shared  buff/cache   available\nMem:     1081799245824 66207768576 240230035456  1033551872 775361441792 1002465157120\nSwap:              0           0           0",
+        "stderr": ""
+      },
+      "kernel": {
+        "argv": [
+          "uname",
+          "-sr"
+        ],
+        "returncode": 0,
+        "stdout": "Linux 5.15.0-78-generic",
+        "stderr": ""
+      }
+    },
+    "network": [
+      {
+        "url": "https://huggingface.co",
+        "reachable": false,
+        "error": "<urlopen error [Errno 101] Network is unreachable>"
+      },
+      {
+        "url": "https://modelscope.cn",
+        "reachable": true,
+        "http_status": 200
+      }
+    ]
+  },
+  "artifacts": "runs/c0/20261006T073437.739867Z"
+}

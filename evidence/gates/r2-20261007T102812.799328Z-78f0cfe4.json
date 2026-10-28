@@ -1,0 +1,18 @@
+{
+  "gate": "R2",
+  "status": "PASS",
+  "time_utc": "20261007T102812.799328Z",
+  "git": {
+    "sha": "1d3a6b2abb3da8298da975e892431150fc68c6bd",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "independent_programs_complete",
+      "status": "PASS",
+      "programs": 2880
+    }
+  ],
+  "protocol_sha256": "79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e",
+  "artifacts": "runs/replication-v1.1/reevaluation"
+}

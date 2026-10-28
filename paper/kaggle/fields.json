@@ -1,0 +1,5 @@
+{
+ "title": "Correct, But Not Kernels",
+ "subtitle": "RL on a permissive verifier raised Gemma 4's correctness, not its kernel writing",
+ "figure": "figure-decomposition.png"
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "fla-org/flash-linear-attention#1165",
+    "path": "fla/ops/gdn2/fused_recurrent.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1165/head-source/fla/ops/gdn2/fused_recurrent.py",
+    "bytes": 16922,
+    "lines": 484
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1191",
+    "path": "fla/ops/gsa/fused_recurrent.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1191/head-source/fla/ops/gsa/fused_recurrent.py",
+    "bytes": 16224,
+    "lines": 541
+  },
+  {
+    "id": "fla-org/flash-linear-attention#1135",
+    "path": "fla/ops/kda/fused_recurrent.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/fla-org--flash-linear-attention-1135/head-source/fla/ops/kda/fused_recurrent.py",
+    "bytes": 18028,
+    "lines": 488
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/ops/backends/_cutedsl/rope.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/ops/backends/_cutedsl/rope.py",
+    "bytes": 8561,
+    "lines": 189
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/ops/backends/_triton/rope.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/ops/backends/_triton/rope.py",
+    "bytes": 2192,
+    "lines": 62
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/ops/rope.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/ops/rope.py",
+    "bytes": 11797,
+    "lines": 304
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/transformers/functional.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/transformers/functional.py",
+    "bytes": 15777,
+    "lines": 549
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/transformers/monkey_patch.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/transformers/monkey_patch.py",
+    "bytes": 186084,
+    "lines": 4023
+  },
+  {
+    "id": "linkedin/Liger-Kernel#1530",
+    "path": "src/liger_kernel/transformers/rope.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/linkedin--Liger-Kernel-1530/head-source/src/liger_kernel/transformers/rope.py",
+    "bytes": 3811,
+    "lines": 81
+  },
+  {
+    "id": "vllm-project/vllm#42201",
+    "path": "vllm/model_executor/layers/quantization/utils/fp8_utils.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-42201/head-source/vllm/model_executor/layers/quantization/utils/fp8_utils.py",
+    "bytes": 43858,
+    "lines": 1346
+  },
+  {
+    "id": "vllm-project/vllm#15909",
+    "path": "vllm/v1/spec_decode/eagle.py",
+    "local": "runs/repair-v8-pr-screen-20261018/inspected/vllm-project--vllm-15909/head-source/vllm/v1/spec_decode/eagle.py",
+    "bytes": 9904,
+    "lines": 261
+  }
+]

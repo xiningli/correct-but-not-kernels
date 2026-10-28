@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-20T08:29:51.560507+00:00",
+  "manifest_sha256": "aebc0fb74ac8192dbcbc6e1dc7e4ab5fe0fad93e6a251df0b3bb8aa62b91f1a3",
+  "manifest_path": "runs/portability-v1-20261020/prepared-r3/manifest.json",
+  "attempts": 5600,
+  "tasks": 100,
+  "frozen_files": 5438,
+  "code": {
+    "env/correctness.py": "053a430c221568e460c8be65bc36b78beae7b4dd42e854aa71f7e44ea2a0bbd0",
+    "env/hacks/detectors.py": "0ad433d92a9b2384a3b49505302480be2dfc03597cb350b3296ad0331b298b97",
+    "env/kernelbench.lock.json": "017f216ffdef4ecc564b1c69fb29fea6aa662336e4ca573e7387d7ec918018f3",
+    "env/reward.py": "7832b583ea1d965301169b09b5f0eb3314a9ed1d16d48b16c1b8eea886654a0a",
+    "env/tasks.py": "deb56058858c9185374fe88dfd3441ec65306100b6fbb75e4616758691a49c53",
+    "experiments/cuda-portability-v1.json": "a6891b31e16063460e803b26c2dc42935f7e52ba11f5e6590e750f5934732eb2",
+    "research/portability_v1/__init__.py": "c3b60569dbfd573d4d3deff8b8df65e78e6e0ac4b8bd4dfc639efc4348be9040",
+    "research/portability_v1/backend.py": "57d4ed2427381596c022448606c690414e8e85c52d0a0bf0f1299365814ae131",
+    "research/portability_v1/common.py": "9351eb086a0cba58f76724a38d4d9072bd6779eb4f9cfe2590d0b5547d82abcb",
+    "research/portability_v1/controls.py": "22897ab3b588882ebfaaec52d99bec17c3afc2552e97dabbff0a9ad72dbece58",
+    "research/portability_v1/judge.py": "71d61c99f7bd9dd93d7144385956ddfc14d00b89782d52c97770a7daff6150ec",
+    "research/portability_v1/prepare.py": "a7b20f503b316fe3d165d3e73946a467d83338c29f762fabe0f74c0e6cb5ec81",
+    "research/portability_v1/reference_worker.py": "6514f6360f1dc6a5332bdcf36d9c2aeb027fb084bbe33ecbdda62b27e564da8c",
+    "research/portability_v1/report.py": "84330c7448abf39c66d1317ee5910e2121fcce6c4ffa710d3d19eed7d84103b4",
+    "research/portability_v1/run.py": "bcaf933654d450036978951ec175958a76c1166cb045e43651bca58861973c09",
+    "research/reliability_v2/decomposition_worker.py": "6381a10178d20f01fd9e350cf9f91e6c2cedd24348037cf11d2d62e388a1afea",
+    "research/reliability_v2/strict_contract.py": "6c05bc63e75e014535d3b0b29584817f94108dde1bc700bb099cb7acc0036e90",
+    "research/reliability_v2/tensor_checks.py": "11c167640c26f2e3d5dc4c1e36abf6fc88ced7de6f6606d61fa7039f56e76620",
+    "tests/test_portability_v1.py": "0608365fabd11c5fbdfe9f5d1c353d2a4303bbcb544dc63ee451c9fa59b4e092"
+  },
+  "historical_scores": {
+    "base": {
+      "path": "runs/autodl-westb-reboot-20261006/r2-complete/extracted/runs/replication-v1.1/reevaluation/base/scores.jsonl",
+      "sha256": "4992c2abe1160358c2bda0c69a85bbc6a59450ae7eb817b808d7c57ce7940b17"
+    },
+    "C-20261021": {
+      "path": "runs/autodl-westb-reboot-20261006/C-20261021-complete/extracted/runs/replication-v1.1/confirmation/C-20261021/eval-step-40/scores.jsonl",
+      "sha256": "ab25cc0dbe624a273e9f456ee74c1b3407c74259689102fff476d4b4435f90a5"
+    },
+    "C-20261022": {
+      "path": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/extracted/runs/replication-v1.1/confirmation/C-20261022/eval-step-40/scores.jsonl",
+      "sha256": "f53b33dfcb988afece68bc82be4bbcd7ed3f32b9375b4e3abc27ce089c020310"
+    },
+    "C-20261023": {
+      "path": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/extracted/runs/replication-v1.1/confirmation/C-20261023/eval-step-40/scores.jsonl",
+      "sha256": "25fead6f7fd7b02ec199e0fbec8380c3a6077ab2f7ec7d6a8d522d80cc85e672"
+    },
+    "SFT-20261021": {
+      "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/extracted/runs/replication-v1.1/confirmation/SFT-20261021/eval-step-40/scores.jsonl",
+      "sha256": "8eadd3200e877ceee9438156434718663d6ae07a3a45903a49a6c3222932526e"
+    },
+    "SFT-20261022": {
+      "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/extracted/runs/replication-v1.1/confirmation/SFT-20261022/eval-step-40/scores.jsonl",
+      "sha256": "e895e5124ed3896cb2d17db7923d4888ff2aa67af7d6abf424ec94bd9d85cd2d"
+    },
+    "SFT-20261023": {
+      "path": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/extracted/runs/replication-v1.1/confirmation/SFT-20261023/eval-step-40/scores.jsonl",
+      "sha256": "c5e83f550f5d94e2715986aa8baef969f07e935697c280a5b210d0684438e808"
+    }
+  },
+  "historical_seal_sha256": "79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e",
+  "remote_comparator_sha256": "2a0dab03958f703c103b5e8ce23610e5d7341799a7bdacba89aeeb510da2470e",
+  "preparation_r1": "not launched; superseded before GPU controls",
+  "preparation_r2": "blocked at Triton positive control, zero policy attempts; retained",
+  "preparation_r3": "launched; all startup controls passed"
+}

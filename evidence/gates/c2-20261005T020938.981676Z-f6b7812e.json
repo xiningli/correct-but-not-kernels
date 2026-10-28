@@ -1,0 +1,25 @@
+{
+  "gate": "C2",
+  "status": "PASS",
+  "time_utc": "20261005T020938.981676Z",
+  "git": {
+    "sha": "307d697cd9633addee2dbb0a54c8cebe12e090bf",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "fused_faster_all_pairs",
+      "status": "PASS",
+      "wins": 30,
+      "pairs": 30
+    },
+    {
+      "name": "reference_noise",
+      "status": "PASS",
+      "pair_median_cv": 0.00014457258664661595,
+      "maximum_within_pair_cv": 0.07400446595504474
+    }
+  ],
+  "prerequisite": "runs/gates/c1-20261005T020713.991318Z-60c65c3c.json",
+  "artifacts": "runs/c2/20261005T020931.458860Z"
+}

@@ -1,0 +1,13 @@
+{
+  "evaluation_packages": {
+    "torch": "2.8.0",
+    "triton": "3.4.0",
+    "transformers": "4.57.1",
+    "safetensors": "0.8.0"
+  },
+  "inference_check_returncode": 0,
+  "inference_stdout": "{\"versions\": {\"vllm\": \"0.30.0\", \"transformers\": \"5.17.0\", \"torch\": \"2.13.0\"}, \"model_revision\": \"842da3794eaa0b77d5f08bae87a17459d91ff475\", \"tokenizer_parity\": true}\n",
+  "inference_stderr": "",
+  "GPU_runs": 0,
+  "status": "pass"
+}

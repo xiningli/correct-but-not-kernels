@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-19T01:42:37.351526+00:00",
+  "sha256": "1144d82ec7e368b296dc2408483b77193f93462adb1d3d4e18eb5d97c7eefbc8",
+  "local_archive": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/remote/evidence.tgz",
+  "audit": "/mnt/fastdata/cuda-gemma4-llm/evidence/repair-v8-gpu-qualification-batch1-20261019/backup-audit.json"
+}

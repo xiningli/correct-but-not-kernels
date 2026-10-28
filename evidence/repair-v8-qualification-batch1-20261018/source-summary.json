@@ -1,0 +1,138 @@
+[
+  {
+    "task": "linkedin/Liger-Kernel#1344",
+    "revision": "before",
+    "commit": "f01ffb1f5d3af9df407fc4f1b442f8b3dca15849",
+    "url": "https://codeload.github.com/linkedin/Liger-Kernel/tar.gz/f01ffb1f5d3af9df407fc4f1b442f8b3dca15849",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/linkedin--Liger-Kernel-f01ffb1f5d3af9df407fc4f1b442f8b3dca15849.tgz",
+    "archive_sha256": "514c0102a3f015a90cb85cce989ffc68e86e2d99f65701eab771e2d38b89c36e",
+    "directory": "runs/repair-v8-qualification-20261018/sources/linkedin--Liger-Kernel-1344/before",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "setup.py",
+      "src/liger_kernel/ops/attn_res.py",
+      "test/transformers/test_attn_res.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "linkedin/Liger-Kernel#1344",
+    "revision": "fixed",
+    "commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+    "url": "https://codeload.github.com/linkedin/Liger-Kernel/tar.gz/39adfeefab06c9a8b596199cb7f9e9d515986d8c",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/linkedin--Liger-Kernel-39adfeefab06c9a8b596199cb7f9e9d515986d8c.tgz",
+    "archive_sha256": "70f37ece80c2f817b79ff3f9c75cbd13385c8d5ac7e687d4fccf6b8ee706afd6",
+    "directory": "runs/repair-v8-qualification-20261018/sources/linkedin--Liger-Kernel-1344/fixed",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "setup.py",
+      "src/liger_kernel/ops/attn_res.py",
+      "test/transformers/test_attn_res.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "linkedin/Liger-Kernel#1376",
+    "revision": "before",
+    "commit": "559d33e7b14d81476b295ef41a962937efa74517",
+    "url": "https://codeload.github.com/linkedin/Liger-Kernel/tar.gz/559d33e7b14d81476b295ef41a962937efa74517",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/linkedin--Liger-Kernel-559d33e7b14d81476b295ef41a962937efa74517.tgz",
+    "archive_sha256": "2b82757130fafebea55be95fed3eae5d20bbe5979a9581257c06bc3322f85366",
+    "directory": "runs/repair-v8-qualification-20261018/sources/linkedin--Liger-Kernel-1376/before",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "setup.py",
+      "src/liger_kernel/ops/group_norm.py",
+      "test/transformers/test_group_norm.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "linkedin/Liger-Kernel#1376",
+    "revision": "fixed",
+    "commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+    "url": "https://codeload.github.com/linkedin/Liger-Kernel/tar.gz/b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/linkedin--Liger-Kernel-b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46.tgz",
+    "archive_sha256": "be3bcccf8113193bc0c4ae07ef4f5b3336a7877b9e30da3f34388e79bc5f3c0a",
+    "directory": "runs/repair-v8-qualification-20261018/sources/linkedin--Liger-Kernel-1376/fixed",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "setup.py",
+      "src/liger_kernel/ops/group_norm.py",
+      "test/transformers/test_group_norm.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "flagos-ai/FlagGems#553",
+    "revision": "before",
+    "commit": "a2892aae441171d55d7472c2b94240023402e5ee",
+    "url": "https://codeload.github.com/flagos-ai/FlagGems/tar.gz/a2892aae441171d55d7472c2b94240023402e5ee",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/flagos-ai--FlagGems-a2892aae441171d55d7472c2b94240023402e5ee.tgz",
+    "archive_sha256": "feb118aac23b98c750347a02120f256b5383e53f00d86fe8763969c78c483f1d",
+    "directory": "runs/repair-v8-qualification-20261018/sources/flagos-ai--FlagGems-553/before",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "src/flag_gems/ops/addmm.py",
+      "tests/test_blas_ops.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "flagos-ai/FlagGems#553",
+    "revision": "fixed",
+    "commit": "42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291",
+    "url": "https://codeload.github.com/flagos-ai/FlagGems/tar.gz/42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/flagos-ai--FlagGems-42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291.tgz",
+    "archive_sha256": "3dbd3146d3287b1f5cee90b076ce53f2d491abec430ccf3ffab31924c1fc56cf",
+    "directory": "runs/repair-v8-qualification-20261018/sources/flagos-ai--FlagGems-553/fixed",
+    "screened_files_verified": [
+      "LICENSE",
+      "pyproject.toml",
+      "src/flag_gems/ops/addmm.py",
+      "tests/test_blas_ops.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "fla-org/flash-linear-attention#1103",
+    "revision": "before",
+    "commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d",
+    "url": "https://codeload.github.com/fla-org/flash-linear-attention/tar.gz/3c4c54ae7397d37130d7101edd0f4eb596af896d",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/fla-org--flash-linear-attention-3c4c54ae7397d37130d7101edd0f4eb596af896d.tgz",
+    "archive_sha256": "49e37a5c76620f9fa5eef253c2666adcd7e2df19366e9f8df104a393e9f8839d",
+    "directory": "runs/repair-v8-qualification-20261018/sources/fla-org--flash-linear-attention-1103/before",
+    "screened_files_verified": [
+      "LICENSE",
+      "fla/ops/rwkv7/channel_mixing.py",
+      "pyproject.toml",
+      "setup.py",
+      "tests/conftest.py",
+      "tests/ops/test_rwkv7.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  },
+  {
+    "task": "fla-org/flash-linear-attention#1103",
+    "revision": "fixed",
+    "commit": "ebd4dd27c0038e73cee514130f8c3efd203cef37",
+    "url": "https://codeload.github.com/fla-org/flash-linear-attention/tar.gz/ebd4dd27c0038e73cee514130f8c3efd203cef37",
+    "archive": "runs/repair-v8-qualification-20261018/downloads/fla-org--flash-linear-attention-ebd4dd27c0038e73cee514130f8c3efd203cef37.tgz",
+    "archive_sha256": "31af98cb907575b0822b0c2e4900533da15104981d8a9d4eeb9e7781a3db1d77",
+    "directory": "runs/repair-v8-qualification-20261018/sources/fla-org--flash-linear-attention-1103/fixed",
+    "screened_files_verified": [
+      "LICENSE",
+      "fla/ops/rwkv7/channel_mixing.py",
+      "pyproject.toml",
+      "setup.py",
+      "tests/conftest.py",
+      "tests/ops/test_rwkv7.py"
+    ],
+    "status": "complete_source_snapshot_not_GPU_validated"
+  }
+]

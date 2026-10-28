@@ -1,0 +1,2048 @@
+{
+  "frozen_files": 67,
+  "train_split_tasks": 80,
+  "heldout_tasks": 120,
+  "actual_training_tasks": [
+    "level1/40_LayerNorm"
+  ],
+  "final_programs": 9600,
+  "policies": {
+    "C-20261021": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 132,
+          "fast1": 64,
+          "fast1_1": 4,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 567,
+          "fast1": 173,
+          "fast1_1": 45,
+          "fast2": 5
+        }
+      },
+      "correct": 699,
+      "components": {
+        "correct": 699,
+        "incorrect": 51,
+        "format": 44,
+        "crash": 165,
+        "sandbox_blocked": 1
+      },
+      "adapter_sha256": "caa672f82cef79c058fc7cd4c12dd39f9a5dd8f11c7d5f96d5b18e0f19b0f27a",
+      "adapter": "runs/replication-v1.1/training/C-20261021/checkpoints/policy-step-40",
+      "scores_sha256": "ab25cc0dbe624a273e9f456ee74c1b3407c74259689102fff476d4b4435f90a5",
+      "generation_score_rows_identical": true
+    },
+    "C-20261022": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 122,
+          "fast1": 57,
+          "fast1_1": 6,
+          "fast2": 1
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 562,
+          "fast1": 217,
+          "fast1_1": 53,
+          "fast2": 7
+        }
+      },
+      "correct": 684,
+      "components": {
+        "correct": 684,
+        "format": 52,
+        "crash": 166,
+        "incorrect": 57,
+        "sandbox_blocked": 1
+      },
+      "adapter_sha256": "cdc852c664bf22e1c9fc908158eedea7d36024651c52c505cea50ef710fca0fe",
+      "adapter": "runs/replication-v1.1/training/C-20261022/checkpoints/policy-step-40",
+      "scores_sha256": "f53b33dfcb988afece68bc82be4bbcd7ed3f32b9375b4e3abc27ce089c020310",
+      "generation_score_rows_identical": true
+    },
+    "C-20261023": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 134,
+          "fast1": 57,
+          "fast1_1": 0,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 599,
+          "fast1": 212,
+          "fast1_1": 55,
+          "fast2": 1
+        }
+      },
+      "correct": 733,
+      "components": {
+        "incorrect": 59,
+        "correct": 733,
+        "crash": 131,
+        "format": 37
+      },
+      "adapter_sha256": "3253c20187d74c8afd2d33e31c04a42d482bf32ca4f5675da87c96a5942d2443",
+      "adapter": "runs/replication-v1.1/training/C-20261023/checkpoints/policy-step-40",
+      "scores_sha256": "25fead6f7fd7b02ec199e0fbec8380c3a6077ab2f7ec7d6a8d522d80cc85e672",
+      "generation_score_rows_identical": true
+    },
+    "S-20261021": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 125,
+          "fast1": 54,
+          "fast1_1": 1,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 546,
+          "fast1": 271,
+          "fast1_1": 57,
+          "fast2": 8
+        }
+      },
+      "correct": 671,
+      "components": {
+        "crash": 155,
+        "incorrect": 75,
+        "correct": 671,
+        "format": 59
+      },
+      "adapter_sha256": "828bead90b73fcf3a3a44b00e3938990f415c2d7e5bb296947e4f5175ebf0526",
+      "adapter": "runs/replication-v1.1/training/S-20261021/checkpoints/policy-step-15",
+      "scores_sha256": "b578575828cd0396c50f13f1174255d26fc1a8401edb7859b327c5ab115f6f4b",
+      "generation_score_rows_identical": true
+    },
+    "S-20261022": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 127,
+          "fast1": 54,
+          "fast1_1": 2,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 581,
+          "fast1": 211,
+          "fast1_1": 52,
+          "fast2": 7
+        }
+      },
+      "correct": 708,
+      "components": {
+        "correct": 708,
+        "format": 36,
+        "crash": 153,
+        "incorrect": 62,
+        "gpu_memory_limit": 1
+      },
+      "adapter_sha256": "a6af3f0d749b94fd1050cc977c3cef763081c4791bc179fda22dd47435bca9b1",
+      "adapter": "runs/replication-v1.1/training/S-20261022/checkpoints/policy-step-40",
+      "scores_sha256": "b585414d5c63c5970f1691e04bbc67de58091bcbd5667729504b98d09c765537",
+      "generation_score_rows_identical": true
+    },
+    "S-20261023": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 128,
+          "fast1": 48,
+          "fast1_1": 0,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 593,
+          "fast1": 239,
+          "fast1_1": 56,
+          "fast2": 2
+        }
+      },
+      "correct": 721,
+      "components": {
+        "correct": 721,
+        "incorrect": 61,
+        "crash": 135,
+        "format": 41,
+        "gpu_memory_limit": 1,
+        "sandbox_blocked": 1
+      },
+      "adapter_sha256": "b59651eec8ecba3255e51e584d49fe36333258f9710cf33e44dee80a031b4bf4",
+      "adapter": "runs/replication-v1.1/training/S-20261023/checkpoints/policy-step-40",
+      "scores_sha256": "6cf118079b6163c665cc2587b31e66d63dfa44ced2512f148425021400597a99",
+      "generation_score_rows_identical": true
+    },
+    "SFT-20261021": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 129,
+          "fast1": 62,
+          "fast1_1": 2,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 555,
+          "fast1": 192,
+          "fast1_1": 53,
+          "fast2": 5
+        }
+      },
+      "correct": 684,
+      "components": {
+        "correct": 684,
+        "crash": 177,
+        "incorrect": 55,
+        "format": 41,
+        "sandbox_blocked": 3
+      },
+      "adapter_sha256": "778760d275f70efbdad18cf5a5ee3ad9b1dbb4da2ad7722205539af97aa265b9",
+      "adapter": "runs/replication-v1.1/training/SFT-20261021/checkpoints/policy-step-40",
+      "scores_sha256": "8eadd3200e877ceee9438156434718663d6ae07a3a45903a49a6c3222932526e",
+      "generation_score_rows_identical": true
+    },
+    "SFT-20261022": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 123,
+          "fast1": 47,
+          "fast1_1": 2,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 581,
+          "fast1": 202,
+          "fast1_1": 60,
+          "fast2": 3
+        }
+      },
+      "correct": 704,
+      "components": {
+        "crash": 154,
+        "correct": 704,
+        "incorrect": 61,
+        "format": 41
+      },
+      "adapter_sha256": "2f9f7d82440c4e0d298ef90819cf86d6657f246156a6b39ad9ec2196916f2d61",
+      "adapter": "runs/replication-v1.1/training/SFT-20261022/checkpoints/policy-step-40",
+      "scores_sha256": "e895e5124ed3896cb2d17db7923d4888ff2aa67af7d6abf424ec94bd9d85cd2d",
+      "generation_score_rows_identical": true
+    },
+    "SFT-20261023": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 116,
+          "fast1": 48,
+          "fast1_1": 0,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 574,
+          "fast1": 196,
+          "fast1_1": 46,
+          "fast2": 4
+        }
+      },
+      "correct": 690,
+      "components": {
+        "correct": 690,
+        "format": 39,
+        "crash": 183,
+        "incorrect": 48
+      },
+      "adapter_sha256": "d49edb55d1b269e52042e08a356c07eec4aa7655632da341fdad84c1c4c78569",
+      "adapter": "runs/replication-v1.1/training/SFT-20261023/checkpoints/policy-step-40",
+      "scores_sha256": "c5e83f550f5d94e2715986aa8baef969f07e935697c280a5b210d0684438e808",
+      "generation_score_rows_identical": true
+    },
+    "base": {
+      "levels": {
+        "level1": {
+          "programs": 160,
+          "tasks": 20,
+          "correct": 98,
+          "fast1": 55,
+          "fast1_1": 0,
+          "fast2": 0
+        },
+        "level2": {
+          "programs": 800,
+          "tasks": 100,
+          "correct": 439,
+          "fast1": 154,
+          "fast1_1": 44,
+          "fast2": 3
+        }
+      },
+      "correct": 537,
+      "components": {
+        "crash": 306,
+        "correct": 537,
+        "format": 60,
+        "incorrect": 57
+      },
+      "adapter_sha256": null,
+      "adapter": null,
+      "scores_sha256": "4992c2abe1160358c2bda0c69a85bbc6a59450ae7eb817b808d7c57ce7940b17",
+      "generation_score_rows_identical": true
+    }
+  },
+  "arm_level2_rates": {
+    "C": 0.72,
+    "S": 0.7166666666666667,
+    "SFT": 0.7125,
+    "base": 0.54875
+  },
+  "primary_comparisons": {
+    "C-base/level2": {
+      "interval": {
+        "value": 0.17125,
+        "ci": [
+          0.12625,
+          0.21791666666666668
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "post_hoc_test": {
+        "tasks": 100,
+        "mean_difference": 0.17125,
+        "standard_error": 0.018987182973889273,
+        "repeats": 100000,
+        "seed": 20261014,
+        "alternative": "two-sided",
+        "status": "approximate_conditional_test",
+        "observed_t": 9.019242097972036,
+        "tail_exceedances": 0,
+        "degenerate_resamples": 0,
+        "p_raw": 9.99990000099999e-06,
+        "p_estimator": "(1 + exceedances) / (1 + repeats)",
+        "monte_carlo_resolution": 9.99990000099999e-06,
+        "tail_count_zero_warning": true
+      }
+    },
+    "S-base/level2": {
+      "interval": {
+        "value": 0.1679166666666667,
+        "ci": [
+          0.12333333333333334,
+          0.21416666666666667
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "post_hoc_test": {
+        "tasks": 100,
+        "mean_difference": 0.1679166666666667,
+        "standard_error": 0.01886264330814072,
+        "repeats": 100000,
+        "seed": 20261014,
+        "alternative": "two-sided",
+        "status": "approximate_conditional_test",
+        "observed_t": 8.902075065703935,
+        "tail_exceedances": 0,
+        "degenerate_resamples": 0,
+        "p_raw": 9.99990000099999e-06,
+        "p_estimator": "(1 + exceedances) / (1 + repeats)",
+        "monte_carlo_resolution": 9.99990000099999e-06,
+        "tail_count_zero_warning": true
+      }
+    },
+    "C-SFT/level2": {
+      "interval": {
+        "value": 0.007499999999999998,
+        "ci": [
+          -0.01958333333333334,
+          0.03583333333333333
+        ],
+        "confidence": 0.9833333333333333,
+        "unit": "task; conditional on these trained checkpoints"
+      },
+      "post_hoc_test": {
+        "tasks": 100,
+        "mean_difference": 0.007499999999999998,
+        "standard_error": 0.01158067152033736,
+        "repeats": 100000,
+        "seed": 20261014,
+        "alternative": "two-sided",
+        "status": "approximate_conditional_test",
+        "observed_t": 0.6476308378861187,
+        "tail_exceedances": 51853,
+        "degenerate_resamples": 0,
+        "p_raw": 0.5185348146518535,
+        "p_estimator": "(1 + exceedances) / (1 + repeats)",
+        "monte_carlo_resolution": 9.99990000099999e-06,
+        "tail_count_zero_warning": false
+      }
+    }
+  },
+  "studies": {
+    "transfer_v3": {
+      "records": 36,
+      "archive": "runs/reliability-v2/transfer-development-recovery/20261013T200847.197395Z/evidence.tgz",
+      "archive_sha256": "e6c164dde41f80839d280ac1ab76d3956fbef9f936f130b9a78e0907b2dfbd70",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/reliability-v2/transfer-controllers/20261013T200847.197395Z/pilot/source-seal.json": 26
+      },
+      "metrics_sha256": "03af7d36d6def55a9942fc303eed1d23deb09e2d369b0f93c329399549f46481",
+      "report": {
+        "scope": "six_development_graphs_one_draw_first_training_seed_only",
+        "not_confirmatory": true,
+        "outcome": {
+          "status": "complete",
+          "scope": "development_only_not_confirmatory",
+          "scored": 36,
+          "elapsed_seconds": 695.2732387036085,
+          "utc": "2026-10-13T20:20:23.897894+00:00",
+          "metrics_sha256": "03af7d36d6def55a9942fc303eed1d23deb09e2d369b0f93c329399549f46481"
+        },
+        "cells": [
+          {
+            "policy": "C-20261021",
+            "condition": "api_scaffold",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 2,
+            "components": {
+              "crash": 4,
+              "contract_violation": 2
+            },
+            "total_generated_tokens": 8661,
+            "mean_evaluation_seconds": 3.52877616075178
+          },
+          {
+            "policy": "C-20261021",
+            "condition": "minimal_contract",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 1,
+            "components": {
+              "crash": 2,
+              "contract_violation": 2,
+              "incorrect": 1,
+              "format": 1
+            },
+            "total_generated_tokens": 5867,
+            "mean_evaluation_seconds": 1.848545894647638
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "api_scaffold",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 1,
+            "components": {
+              "crash": 5,
+              "contract_violation": 1
+            },
+            "total_generated_tokens": 10977,
+            "mean_evaluation_seconds": 3.563485952715079
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "minimal_contract",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 0,
+            "components": {
+              "crash": 6
+            },
+            "total_generated_tokens": 5611,
+            "mean_evaluation_seconds": 2.7975320735325417
+          },
+          {
+            "policy": "base",
+            "condition": "api_scaffold",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 2,
+            "components": {
+              "crash": 4,
+              "contract_violation": 2
+            },
+            "total_generated_tokens": 6083,
+            "mean_evaluation_seconds": 3.2329587197552123
+          },
+          {
+            "policy": "base",
+            "condition": "minimal_contract",
+            "attempts": 6,
+            "strict_correct": 0,
+            "numerically_correct": 2,
+            "components": {
+              "contract_violation": 2,
+              "crash": 3,
+              "format": 1
+            },
+            "total_generated_tokens": 7655,
+            "mean_evaluation_seconds": 8.26151904153327
+          }
+        ],
+        "limitations": [
+          "No new test-graph policy outputs.",
+          "No real-repair agent result.",
+          "First training seed is for integration/cost, never a substitute for the three-seed comparison.",
+          "One draw on each of six developer graphs is too small for an effect or mechanism claim.",
+          "Profiling wall time is not a kernel-speed benchmark."
+        ]
+      }
+    },
+    "interface_v4": {
+      "records": 84,
+      "archive": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/interface-snapshot/interface-complete.tgz",
+      "archive_sha256": "0629028fadae86b51c878f53995630a91919557c951a8c878f5b77628e3a3209",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/reliability-v2/capability-controllers/20261015T185011.215170Z/interface/source-seal.json": 34
+      },
+      "metrics_sha256": "c9f297a4986418ec505c0c8d09e36ecb54571296344992e936d59428aed2aea3",
+      "report": {
+        "outcome": {
+          "status": "complete",
+          "action": "interface",
+          "utc": "2026-10-15T18:52:58.280173+00:00",
+          "scored": 84,
+          "seconds": 1362.0809288397431,
+          "finished_utc": "2026-10-15T19:15:40.361106+00:00"
+        },
+        "attempts": 84,
+        "cells": [
+          {
+            "policy": "C-20261021",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "incorrect": 4,
+              "correct": 1,
+              "format": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 1,
+              "false": 4,
+              "unknown": 1
+            },
+            "contract_compliant": {
+              "true": 5,
+              "false": 0,
+              "unknown": 1
+            },
+            "correct": {
+              "true": 1,
+              "false": 5,
+              "unknown": 0
+            },
+            "generated_tokens": 5640,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 20.159478921443224
+          },
+          {
+            "policy": "C-20261021",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 4,
+              "crash": 1,
+              "incorrect": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 1,
+              "unknown": 5
+            },
+            "contract_compliant": {
+              "true": 1,
+              "false": 0,
+              "unknown": 5
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 7966,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 7.707441445440054
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "incorrect": 3,
+              "correct": 2,
+              "crash": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 2,
+              "false": 3,
+              "unknown": 1
+            },
+            "contract_compliant": {
+              "true": 5,
+              "false": 0,
+              "unknown": 1
+            },
+            "correct": {
+              "true": 2,
+              "false": 4,
+              "unknown": 0
+            },
+            "generated_tokens": 4290,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 23.404040064662695
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 5,
+              "crash": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 7652,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 3.681012623012066
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "correct": 3,
+              "incorrect": 2,
+              "format": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 3,
+              "false": 2,
+              "unknown": 1
+            },
+            "contract_compliant": {
+              "true": 5,
+              "false": 0,
+              "unknown": 1
+            },
+            "correct": {
+              "true": 3,
+              "false": 3,
+              "unknown": 0
+            },
+            "generated_tokens": 8686,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 19.84227754548192
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 2,
+              "crash": 2,
+              "incorrect": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 2,
+              "unknown": 4
+            },
+            "contract_compliant": {
+              "true": 2,
+              "false": 0,
+              "unknown": 4
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 8410,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 15.559850607067347
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "incorrect": 2,
+              "correct": 2,
+              "crash": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 2,
+              "false": 2,
+              "unknown": 2
+            },
+            "contract_compliant": {
+              "true": 4,
+              "false": 0,
+              "unknown": 2
+            },
+            "correct": {
+              "true": 2,
+              "false": 4,
+              "unknown": 0
+            },
+            "generated_tokens": 3633,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 23.263394106179476
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 4,
+              "correct": 1,
+              "crash": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 1,
+              "false": 0,
+              "unknown": 5
+            },
+            "contract_compliant": {
+              "true": 1,
+              "false": 0,
+              "unknown": 5
+            },
+            "correct": {
+              "true": 1,
+              "false": 5,
+              "unknown": 0
+            },
+            "generated_tokens": 8950,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 7.575753521174192
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "incorrect": 4,
+              "correct": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 2,
+              "false": 4,
+              "unknown": 0
+            },
+            "contract_compliant": {
+              "true": 6,
+              "false": 0,
+              "unknown": 0
+            },
+            "correct": {
+              "true": 2,
+              "false": 4,
+              "unknown": 0
+            },
+            "generated_tokens": 3619,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 23.973354656249285
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "crash": 2,
+              "format": 3,
+              "incorrect": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 1,
+              "unknown": 5
+            },
+            "contract_compliant": {
+              "true": 1,
+              "false": 0,
+              "unknown": 5
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 5809,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 11.451616156846285
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "correct": 4,
+              "incorrect": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 4,
+              "false": 2,
+              "unknown": 0
+            },
+            "contract_compliant": {
+              "true": 6,
+              "false": 0,
+              "unknown": 0
+            },
+            "correct": {
+              "true": 4,
+              "false": 2,
+              "unknown": 0
+            },
+            "generated_tokens": 5546,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 23.864849254488945
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 4,
+              "crash": 1,
+              "contract_violation": 1
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 1,
+              "unknown": 5
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 1,
+              "unknown": 5
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 10278,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 7.660392038524151
+          },
+          {
+            "policy": "base",
+            "condition": "fixed_host",
+            "attempts": 6,
+            "components": {
+              "incorrect": 2,
+              "correct": 2,
+              "crash": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 2,
+              "false": 2,
+              "unknown": 2
+            },
+            "contract_compliant": {
+              "true": 4,
+              "false": 0,
+              "unknown": 2
+            },
+            "correct": {
+              "true": 2,
+              "false": 4,
+              "unknown": 0
+            },
+            "generated_tokens": 5404,
+            "prompt_tokens": 4166,
+            "evaluation_seconds": 23.725620806217194
+          },
+          {
+            "policy": "base",
+            "condition": "full_program",
+            "attempts": 6,
+            "components": {
+              "format": 2,
+              "crash": 2,
+              "incorrect": 2
+            },
+            "initialization_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "forward_completed": {
+              "true": 0,
+              "false": 0,
+              "unknown": 6
+            },
+            "numerically_correct": {
+              "true": 0,
+              "false": 2,
+              "unknown": 4
+            },
+            "contract_compliant": {
+              "true": 2,
+              "false": 0,
+              "unknown": 4
+            },
+            "correct": {
+              "true": 0,
+              "false": 6,
+              "unknown": 0
+            },
+            "generated_tokens": 7599,
+            "prompt_tokens": 3280,
+            "evaluation_seconds": 15.509127005934715
+          }
+        ],
+        "limits": [
+          "Retrospective known-task decomposition and development interface checks, not confirmatory new-task gains.",
+          "All attempt denominators are retained; unobserved runtime/numerical outcomes are unknown, not negative observations.",
+          "Initialization operations are separate from the custom-forward contract.",
+          "PyTorch compute was legal in the old study; this diagnostic does not establish cheating.",
+          "Profiling cost is not a kernel speed benchmark. No training occurred."
+        ]
+      }
+    },
+    "strict_replay_v4": {
+      "records": 5600,
+      "archive": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/evidence.tgz",
+      "archive_sha256": "b5c24cb5886febd405a88f622ca8fd88a0d3ea0069d2ffeaa1f1ff59490f013e",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/reliability-v2/capability-controllers/20261015T185011.215170Z/decomposition/source-seal.json": 34
+      },
+      "metrics_sha256": "2a0dab03958f703c103b5e8ce23610e5d7341799a7bdacba89aeeb510da2470e",
+      "report": {
+        "outcome": {
+          "status": "complete",
+          "action": "decomposition",
+          "utc": "2026-10-15T19:15:42.292417+00:00",
+          "scored": 5600,
+          "seconds": 66283.3335419856,
+          "finished_utc": "2026-10-16T13:40:25.625961+00:00"
+        },
+        "attempts": 5600,
+        "cells": [
+          {
+            "policy": "C-20261021",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 614,
+              "crash": 124,
+              "format": 39,
+              "source_blocked": 2,
+              "sandbox_blocked": 1,
+              "incorrect": 20
+            },
+            "initialization_completed": {
+              "true": 731,
+              "false": 28,
+              "unknown": 41
+            },
+            "forward_completed": {
+              "true": 614,
+              "false": 145,
+              "unknown": 41
+            },
+            "numerically_correct": {
+              "true": 567,
+              "false": 67,
+              "unknown": 166
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 634,
+              "unknown": 166
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9501.02309094742,
+            "original_correct": 567
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 612,
+              "crash": 126,
+              "format": 42,
+              "incorrect": 17,
+              "source_blocked": 2,
+              "sandbox_blocked": 1
+            },
+            "initialization_completed": {
+              "true": 733,
+              "false": 23,
+              "unknown": 44
+            },
+            "forward_completed": {
+              "true": 613,
+              "false": 143,
+              "unknown": 44
+            },
+            "numerically_correct": {
+              "true": 561,
+              "false": 68,
+              "unknown": 171
+            },
+            "contract_compliant": {
+              "true": 1,
+              "false": 628,
+              "unknown": 171
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9441.862511239946,
+            "original_correct": 562
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 654,
+              "crash": 93,
+              "incorrect": 17,
+              "source_blocked": 2,
+              "format": 34
+            },
+            "initialization_completed": {
+              "true": 743,
+              "false": 21,
+              "unknown": 36
+            },
+            "forward_completed": {
+              "true": 654,
+              "false": 110,
+              "unknown": 36
+            },
+            "numerically_correct": {
+              "true": 600,
+              "false": 71,
+              "unknown": 129
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 671,
+              "unknown": 129
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9963.79975124076,
+            "original_correct": 599
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 607,
+              "crash": 136,
+              "format": 35,
+              "incorrect": 19,
+              "sandbox_blocked": 3
+            },
+            "initialization_completed": {
+              "true": 737,
+              "false": 28,
+              "unknown": 35
+            },
+            "forward_completed": {
+              "true": 607,
+              "false": 158,
+              "unknown": 35
+            },
+            "numerically_correct": {
+              "true": 556,
+              "false": 70,
+              "unknown": 174
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 626,
+              "unknown": 174
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9374.597017422318,
+            "original_correct": 555
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 635,
+              "crash": 111,
+              "format": 33,
+              "incorrect": 18,
+              "source_blocked": 3
+            },
+            "initialization_completed": {
+              "true": 726,
+              "false": 38,
+              "unknown": 36
+            },
+            "forward_completed": {
+              "true": 635,
+              "false": 129,
+              "unknown": 36
+            },
+            "numerically_correct": {
+              "true": 581,
+              "false": 72,
+              "unknown": 147
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 653,
+              "unknown": 147
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9593.392362885177,
+            "original_correct": 581
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "contract_violation": 619,
+              "crash": 127,
+              "format": 33,
+              "incorrect": 21
+            },
+            "initialization_completed": {
+              "true": 731,
+              "false": 36,
+              "unknown": 33
+            },
+            "forward_completed": {
+              "true": 619,
+              "false": 148,
+              "unknown": 33
+            },
+            "numerically_correct": {
+              "true": 574,
+              "false": 66,
+              "unknown": 160
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 640,
+              "unknown": 160
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 9644.103947266936,
+            "original_correct": 574
+          },
+          {
+            "policy": "base",
+            "condition": "saved_program",
+            "attempts": 800,
+            "components": {
+              "crash": 232,
+              "contract_violation": 495,
+              "format": 48,
+              "source_blocked": 4,
+              "incorrect": 21
+            },
+            "initialization_completed": {
+              "true": 588,
+              "false": 160,
+              "unknown": 52
+            },
+            "forward_completed": {
+              "true": 495,
+              "false": 253,
+              "unknown": 52
+            },
+            "numerically_correct": {
+              "true": 439,
+              "false": 77,
+              "unknown": 284
+            },
+            "contract_compliant": {
+              "true": 0,
+              "false": 516,
+              "unknown": 284
+            },
+            "correct": {
+              "true": 0,
+              "false": 800,
+              "unknown": 0
+            },
+            "generated_tokens": 0,
+            "prompt_tokens": 0,
+            "evaluation_seconds": 8704.721704941243,
+            "original_correct": 439
+          }
+        ],
+        "limits": [
+          "Retrospective known-task decomposition and development interface checks, not confirmatory new-task gains.",
+          "All attempt denominators are retained; unobserved runtime/numerical outcomes are unknown, not negative observations.",
+          "Initialization operations are separate from the custom-forward contract.",
+          "PyTorch compute was legal in the old study; this diagnostic does not establish cheating.",
+          "Profiling cost is not a kernel speed benchmark. No training occurred."
+        ]
+      },
+      "all_original_sources_seeds_scores_match": true,
+      "components": {
+        "crash": 949,
+        "contract_violation": 4236,
+        "format": 264,
+        "incorrect": 133,
+        "source_blocked": 13,
+        "sandbox_blocked": 5
+      },
+      "strict_successes": 0,
+      "numerical_observations": {
+        "None": 1231,
+        "True": 3878,
+        "False": 491
+      },
+      "contract_observations": {
+        "None": 1231,
+        "False": 4368,
+        "True": 1
+      }
+    },
+    "diagnostics_v5": {
+      "records": 84,
+      "archive": "runs/diagnostics-v5/recovery/2026-10-16T051325.446441_0000/evidence.tgz",
+      "archive_sha256": "75df54757356a62d0591ea0edcc20449afc36eb9a647679e8536fd313e19367d",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/diagnostics-v5/controllers/2026-10-16T051325.446441_0000/repairs/source-seal.json": 114,
+        "runs/diagnostics-v5/controllers/2026-10-16T051325.446441_0000/source-seal.json": 114
+      },
+      "metrics_sha256": "39bd5c4a9a34327e498f35c4794db6e80a2c427f20ee3d27650a99e376a15ca9",
+      "report": {
+        "attempts": 84,
+        "independent_defects": 2,
+        "cells": [
+          {
+            "policy": "C-20261021",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 3,
+              "crash": 1
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 10720,
+            "evaluation_seconds": 34.56224316358566
+          },
+          {
+            "policy": "C-20261021",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "crash": 1,
+              "format": 1,
+              "incorrect": 2
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 22408,
+            "evaluation_seconds": 25.94647851958871
+          },
+          {
+            "policy": "C-20261021",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "format": 2
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 11624,
+            "evaluation_seconds": 17.687360759824514
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 3,
+              "crash": 1
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 10732,
+            "evaluation_seconds": 37.62089926376939
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "crash": 1,
+              "format": 1,
+              "incorrect": 2
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 15831,
+            "evaluation_seconds": 26.42392375320196
+          },
+          {
+            "policy": "C-20261022",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "crash": 2
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 9609,
+            "evaluation_seconds": 32.018472261726856
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "contract_violation": 1,
+              "crash": 1
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 11263,
+            "evaluation_seconds": 35.011783856898546
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "crash": 2,
+              "incorrect": 2
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 14952,
+            "evaluation_seconds": 33.07586446404457
+          },
+          {
+            "policy": "C-20261023",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "crash": 2,
+              "incorrect": 1,
+              "format": 1
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 11860,
+            "evaluation_seconds": 24.041654150933027
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 4
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 11561,
+            "evaluation_seconds": 35.769882805645466
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "format": 1,
+              "crash": 2,
+              "incorrect": 1
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 11933,
+            "evaluation_seconds": 24.095888067036867
+          },
+          {
+            "policy": "SFT-20261021",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "crash": 1,
+              "contract_violation": 1
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 12254,
+            "evaluation_seconds": 34.38636175915599
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 3,
+              "format": 1
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 9099,
+            "evaluation_seconds": 26.651643130928278
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "crash": 1,
+              "format": 1,
+              "incorrect": 2
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 12279,
+            "evaluation_seconds": 25.707465700805187
+          },
+          {
+            "policy": "SFT-20261022",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 4
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 11679,
+            "evaluation_seconds": 35.77850541844964
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "format": 2
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 23570,
+            "evaluation_seconds": 17.86053093522787
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 3,
+              "contract_violation": 1
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 11652,
+            "evaluation_seconds": 35.47200245037675
+          },
+          {
+            "policy": "SFT-20261023",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "crash": 2
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 10472,
+            "evaluation_seconds": 32.76260904967785
+          },
+          {
+            "policy": "base",
+            "condition": "facts_flat",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 3,
+              "format": 1
+            },
+            "prompt_tokens": 19604,
+            "generated_tokens": 12278,
+            "evaluation_seconds": 27.11383645236492
+          },
+          {
+            "policy": "base",
+            "condition": "facts_grouped",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 2,
+            "unresolved": 2,
+            "unknown": 0,
+            "components": {
+              "correct": 2,
+              "incorrect": 2
+            },
+            "prompt_tokens": 18604,
+            "generated_tokens": 12953,
+            "evaluation_seconds": 35.96491166949272
+          },
+          {
+            "policy": "base",
+            "condition": "verdict_only",
+            "attempts": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "unresolved": 4,
+            "unknown": 0,
+            "components": {
+              "incorrect": 2,
+              "crash": 2
+            },
+            "prompt_tokens": 14128,
+            "generated_tokens": 9609,
+            "evaluation_seconds": 31.082329634577036
+          }
+        ],
+        "limits": [
+          "Two previously seen reduced defects from one repository; no full-repository or generalization claim.",
+          "Repeated generations and saved training seeds are not independent defects.",
+          "Flat/grouped conditions contain identical measured facts; they are not unfiltered raw stderr.",
+          "A failure after diagnostic feedback does not establish that the evidence was sufficient.",
+          "No new training, strong-model comparison, significance test, or model-size claim.",
+          "Actual prompt/output tokens and GPU evaluation time are reported; profiling is not kernel timing."
+        ],
+        "outcome": {
+          "status": "complete",
+          "utc": "2026-10-16T13:44:02.670585+00:00",
+          "scored": 84,
+          "seconds": 3296.5076449923217,
+          "finished_utc": "2026-10-16T14:38:59.178233+00:00"
+        }
+      }
+    },
+    "iterative_12b_v6": {
+      "records": 37,
+      "archive": "runs/diagnostics-v6/recovery/2026-10-16T222119.856430_0000/evidence.tgz",
+      "archive_sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000/repairs/source-seal.json": 131,
+        "runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000/source-seal.json": 131
+      },
+      "metrics_sha256": "09d727a2a9efeda27beb1e4124de3ca8a12ed1aace3eae1d746c739ae395bde3",
+      "report": {
+        "episodes": 12,
+        "unique_generations": 37,
+        "physical_prompt_tokens": 137822,
+        "physical_output_tokens": 94598,
+        "cells": [
+          {
+            "model": "gemma-4-12B-it",
+            "condition": "independent",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 1,
+            "visible_pass": 1,
+            "logical_attempts": 14,
+            "prompt_tokens": 70296,
+            "output_tokens": 40409,
+            "visible_evaluation_seconds": 46.50322686880827,
+            "selected_components": {
+              "crash": 1,
+              "incorrect": 2,
+              "correct": 1
+            }
+          },
+          {
+            "model": "gemma-4-12B-it",
+            "condition": "revision_diagnostic",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 0,
+            "visible_pass": 0,
+            "logical_attempts": 16,
+            "prompt_tokens": 56963,
+            "output_tokens": 37583,
+            "visible_evaluation_seconds": 52.66527006402612,
+            "selected_components": {
+              "crash": 2,
+              "incorrect": 2
+            }
+          },
+          {
+            "model": "gemma-4-12B-it",
+            "condition": "revision_verdict",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 1,
+            "visible_pass": 1,
+            "logical_attempts": 15,
+            "prompt_tokens": 48571,
+            "output_tokens": 36036,
+            "visible_evaluation_seconds": 52.04552615061402,
+            "selected_components": {
+              "correct": 1,
+              "incorrect": 2,
+              "format": 1
+            }
+          }
+        ],
+        "limits": [
+          "Two previously seen reduced defects, not an independent test set.",
+          "First candidate/evaluation is shared across the three branches; repetitions are not new defects.",
+          "First visible pass is selected; withheld scores never drive generation or selection.",
+          "Matched attempt/output caps are not matched actual compute, FLOPs or latency.",
+          "12B/31B checkpoints differ beyond parameter count; this is not a causal scaling-law test.",
+          "Rich feedback may omit the root cause; failure does not establish intrinsic inability.",
+          "Descriptive development results only; no p-values, generalization, or prize claim."
+        ],
+        "outcome": {
+          "status": "stopped",
+          "utc": "2026-10-16T22:22:59.538813+00:00",
+          "error": "RuntimeError: Generation failed; see /root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000/repairs/gemma-4-31B-it/round-0/generation.log",
+          "episodes": 12,
+          "nodes": 37,
+          "finished_utc": "2026-10-16T22:58:42.301201+00:00",
+          "seconds": 2142.762399300933
+        },
+        "generation_batches": [
+          {
+            "model": "gemma-4-12B-it",
+            "round": 0,
+            "seconds": 220.91707435250282,
+            "candidates": 4
+          },
+          {
+            "model": "gemma-4-12B-it",
+            "round": 1,
+            "seconds": 645.8303797356784,
+            "candidates": 12
+          },
+          {
+            "model": "gemma-4-12B-it",
+            "round": 2,
+            "seconds": 532.3962051346898,
+            "candidates": 11
+          },
+          {
+            "model": "gemma-4-12B-it",
+            "round": 3,
+            "seconds": 468.7573998644948,
+            "candidates": 10
+          }
+        ]
+      },
+      "episodes": 12,
+      "logical_successes": 2,
+      "distinct_successful_programs": 2,
+      "physical_components": {
+        "format": 5,
+        "incorrect": 20,
+        "correct": 2,
+        "crash": 8,
+        "contract_violation": 2
+      },
+      "physical_prompt_tokens": 137822,
+      "physical_generated_tokens": 94598,
+      "first_candidate_shared_correctly": true,
+      "stopping_and_hidden_selection_verified": true
+    },
+    "iterative_31b_v6": {
+      "records": 22,
+      "archive": "runs/diagnostics-v6-resume31b/recovery/2026-10-17T204539.738896_0000/evidence.tgz",
+      "archive_sha256": "c20870fa852a1046590d06ab013e136257679d06589849fc592f0aac29c8ead5",
+      "reports_reproduced_byte_identically": true,
+      "source_seals": {
+        "runs/diagnostics-v6-resume31b/controllers/2026-10-17T204539.738896_0000/repairs/source-seal.json": 131,
+        "runs/diagnostics-v6-resume31b/controllers/2026-10-17T204539.738896_0000/source-seal.json": 137
+      },
+      "metrics_sha256": "bb9108c10d65b088885285d08181beef14b917e35e228e299f1af6c624ee3748",
+      "report": {
+        "episodes": 12,
+        "unique_generations": 22,
+        "physical_prompt_tokens": 78270,
+        "physical_output_tokens": 30876,
+        "cells": [
+          {
+            "model": "gemma-4-31B-it",
+            "condition": "independent",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 2,
+            "visible_pass": 2,
+            "logical_attempts": 10,
+            "prompt_tokens": 58856,
+            "output_tokens": 17271,
+            "visible_evaluation_seconds": 34.42137960344553,
+            "selected_components": {
+              "correct": 2,
+              "crash": 2
+            }
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "condition": "revision_diagnostic",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 3,
+            "visible_pass": 3,
+            "logical_attempts": 10,
+            "prompt_tokens": 28936,
+            "output_tokens": 13198,
+            "visible_evaluation_seconds": 34.07779099047184,
+            "selected_components": {
+              "correct": 3,
+              "crash": 1
+            }
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "condition": "revision_verdict",
+            "episodes": 4,
+            "independent_defects": 2,
+            "resolved": 2,
+            "visible_pass": 2,
+            "logical_attempts": 10,
+            "prompt_tokens": 28486,
+            "output_tokens": 13013,
+            "visible_evaluation_seconds": 33.51688887178898,
+            "selected_components": {
+              "correct": 2,
+              "crash": 2
+            }
+          }
+        ],
+        "limits": [
+          "Two previously seen reduced defects, not an independent test set.",
+          "First candidate/evaluation is shared across the three branches; repetitions are not new defects.",
+          "First visible pass is selected; withheld scores never drive generation or selection.",
+          "Matched attempt/output caps are not matched actual compute, FLOPs or latency.",
+          "12B/31B checkpoints differ beyond parameter count; this is not a causal scaling-law test.",
+          "Rich feedback may omit the root cause; failure does not establish intrinsic inability.",
+          "Descriptive development results only; no p-values, generalization, or prize claim."
+        ],
+        "outcome": {
+          "status": "complete",
+          "utc": "2026-10-17T20:47:10.142284+00:00",
+          "episodes": 12,
+          "nodes": 22,
+          "finished_utc": "2026-10-17T21:07:09.933451+00:00",
+          "seconds": 1199.7911682501435
+        },
+        "generation_batches": [
+          {
+            "model": "gemma-4-31B-it",
+            "round": 0,
+            "seconds": 217.61004446074367,
+            "candidates": 4
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "round": 1,
+            "seconds": 278.0515677817166,
+            "candidates": 6
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "round": 2,
+            "seconds": 243.01416908577085,
+            "candidates": 6
+          },
+          {
+            "model": "gemma-4-31B-it",
+            "round": 3,
+            "seconds": 328.1240111924708,
+            "candidates": 6
+          }
+        ]
+      },
+      "episodes": 12,
+      "logical_successes": 7,
+      "distinct_successful_programs": 3,
+      "physical_components": {
+        "correct": 3,
+        "crash": 18,
+        "incorrect": 1
+      },
+      "physical_prompt_tokens": 78270,
+      "physical_generated_tokens": 30876,
+      "first_candidate_shared_correctly": true,
+      "stopping_and_hidden_selection_verified": true
+    }
+  }
+}

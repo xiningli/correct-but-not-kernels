@@ -1,0 +1,173 @@
+{
+  "prior_preparation_sha256": "88ed9b8023574827a3d9a7509f4586673be9fb5affb74c446cb30c5ad527133a",
+  "new_preparation_sha256": "4b3bf62cb3b9b47d22ee3758bcc90be1b3087f5839d928018d8393e5fdbd55a4",
+  "tasks_and_assets_unchanged": true,
+  "config_and_sampling_budgets_unchanged": true,
+  "model_outputs_before_amendment": 0,
+  "changes": [
+    "Allow prctl PR_SET_NAME and PR_GET_NAME only; retain other syscall restrictions",
+    "Initialize trusted requests dependency before TSYNC to finish urllib3 IPv6 import probe",
+    "Launch Compute Sanitizer around the actual CUDA target and apply Landlock in that target before torch/candidate imports",
+    "Use separate profiled and memcheck passes for identical frozen patches and input panels; Kineto and Compute Sanitizer cannot subscribe to CUPTI simultaneously",
+    "Require an explicit zero-error sanitizer summary; add real OOB rejection, recovery, and sanitized oracle-read controls"
+  ],
+  "code": [
+    {
+      "path": "env/__init__.py",
+      "sha256": "6236f315b47f91bb64ad1b18e2414688553edc138c851c36e1b40aaa1edb58fd"
+    },
+    {
+      "path": "env/hacks/__init__.py",
+      "sha256": "6236f315b47f91bb64ad1b18e2414688553edc138c851c36e1b40aaa1edb58fd"
+    },
+    {
+      "path": "env/hacks/detectors.py",
+      "sha256": "0ad433d92a9b2384a3b49505302480be2dfc03597cb350b3296ad0331b298b97"
+    },
+    {
+      "path": "experiments/cuda-repair-v8-pilot.json",
+      "sha256": "5305d4e6d68d6f15e0875c9765d2e0a5c289e8d0fdcc8ff5d00e5511d4d3cc2e"
+    },
+    {
+      "path": "experiments/gemma31b-weights-v6.json",
+      "sha256": "276b50c7dc580ae5cb5f9bef1cc0e61ffb7fc23e4a3683c1dd4cbc73331a840d"
+    },
+    {
+      "path": "experiments/repair-v8-qualification.lock",
+      "sha256": "babef00961cbda88db55b5e862e59f97b84a78f6707341fb6bdfd3c3f9217d43"
+    },
+    {
+      "path": "research/reliability_v2/strict_contract.py",
+      "sha256": "6c05bc63e75e014535d3b0b29584817f94108dde1bc700bb099cb7acc0036e90"
+    },
+    {
+      "path": "research/repair_v8/__init__.py",
+      "sha256": "d081bfc2dc51fbdd4debe8ea34cec02deee596fd3e91538b726719dda998ef05"
+    },
+    {
+      "path": "research/repair_v8/cases.py",
+      "sha256": "377b604782df868e46d3a98476d576e9910aecedf6358391916e94fe0e131d0a"
+    },
+    {
+      "path": "research/repair_v8/pilot/__init__.py",
+      "sha256": "8e970f88f24047ea3c70d74e7b6dfc598e4385e6d6a6abc62cca293614098420"
+    },
+    {
+      "path": "research/repair_v8/pilot/artifacts.py",
+      "sha256": "bb35a6397c848cdaac697407d8088637a0f8a994d30b025ace6da07f5dfbe5d8"
+    },
+    {
+      "path": "research/repair_v8/pilot/bundle.py",
+      "sha256": "73f99bcb7067cfd4e4f3671e2e8a57c96b2d1b4545357c5f9a88ea06b300bfc9"
+    },
+    {
+      "path": "research/repair_v8/pilot/controls.py",
+      "sha256": "be27ca62711c9874c39e56c7998a773605a7b16fe232ce424230335601d61ba3"
+    },
+    {
+      "path": "research/repair_v8/pilot/data.py",
+      "sha256": "3e38e82015eec25371f0690880ff95e35c1b3cb3cc231470ef25a5748f610f57"
+    },
+    {
+      "path": "research/repair_v8/pilot/editor.py",
+      "sha256": "8533dc4e47f297a01b4610bc6b1f765421818ad16f436c704043629262dd4539"
+    },
+    {
+      "path": "research/repair_v8/pilot/evaluate.py",
+      "sha256": "8000ca83892c7c694ef240cd2926e8b63aeff2b08a8078f3a5d76cd138f67ad3"
+    },
+    {
+      "path": "research/repair_v8/pilot/isolation.py",
+      "sha256": "ae02e8974e92b1808779e923a0931000e276ae029b03becfdfaacbe5247f529e"
+    },
+    {
+      "path": "research/repair_v8/pilot/launcher.py",
+      "sha256": "4d579ab7128578532042f8daea85cfa2f90ca6c693b11536634d7e0c489baafe"
+    },
+    {
+      "path": "research/repair_v8/pilot/prepare.py",
+      "sha256": "e893ab4e0c4f5137097e3aeeff8f182b1e6ddcdade1295e2d3e35ddb93c28a22"
+    },
+    {
+      "path": "research/repair_v8/pilot/protocol.py",
+      "sha256": "d785e06a8a3b0e97b99954655116eacd68eccfe49ffb24a8b78926071cd23d98"
+    },
+    {
+      "path": "research/repair_v8/pilot/report.py",
+      "sha256": "e6fa2296f640bfdb2e525e7ae1da7b4036ebe0b925fbfdec1d49d6e124746b8c"
+    },
+    {
+      "path": "research/repair_v8/pilot/run.py",
+      "sha256": "74c568c45f5ebd337fac8872c9d32a8c8710979691f3c14e51af2db6fbe3ab88"
+    },
+    {
+      "path": "research/repair_v8/pilot/runtime.py",
+      "sha256": "ce15fd293b21046a0716ad8c5827a64396da31f968538315234cd5e6339b617f"
+    },
+    {
+      "path": "research/repair_v8/pilot/sample.py",
+      "sha256": "971abeeb41f356bc9ea3d49037975e1eebaacc0d86671a1561e0eed4182b6be7"
+    },
+    {
+      "path": "research/repair_v8/pilot/supervise.py",
+      "sha256": "7c964db4ebd55a1943a9d4cec5d223608da9c3bc8817fde21498f667b97917f3"
+    },
+    {
+      "path": "research/repair_v8/pilot/worker.py",
+      "sha256": "8070e08c3a6fce671a546a9fd6a3c0855d647238a88a60577be8ba19d99a5c06"
+    },
+    {
+      "path": "research/repair_v8/prepare.py",
+      "sha256": "5de68bfde1318a2ddaa461009eced4f514618d1fce68dafc3e01a9fac1e1dd8a"
+    },
+    {
+      "path": "research/repair_v8/qualify.py",
+      "sha256": "f8eb76541d209178aee9625dfc8eadc4660f81681416beac77543d209b37a5a4"
+    },
+    {
+      "path": "research/repair_v8/supervise.py",
+      "sha256": "20e991fd7b02d2fff4cfdb653eaa18406b40c833b26d63557c61793aa6016e90"
+    },
+    {
+      "path": "scripts/repair_v8_pilot_autodl.sh",
+      "sha256": "2cabfb059c19f946775c2507da28d0e8c159dea5214b1b2872fc1e6aea299192"
+    },
+    {
+      "path": "tests/hostile/fork_bomb.py",
+      "sha256": "5f3ffbf8f0ea32099dbbd660300375dce4cecb5cc69c8e249746c95257f20e26"
+    },
+    {
+      "path": "tests/hostile/gpu_oom.py",
+      "sha256": "d685008eac35cf908cb52ca901f4d29569ad17064213e44789f4d8fdeb2f5657"
+    },
+    {
+      "path": "tests/hostile/infinite_kernel.py",
+      "sha256": "5315465d6b342bb61850df2888efffcc49af65d7c2693040ec332d2491a67ebe"
+    },
+    {
+      "path": "tests/hostile/read_oracle.py",
+      "sha256": "8b08ac63b0584979683630fb7da4750c73538ff5eeccc8e11875b74a96d205cf"
+    },
+    {
+      "path": "tests/hostile/socket.py",
+      "sha256": "837e659b9681944db5f14024118ef2186767b69ed0f292e5fbfbd5b1a63f3638"
+    },
+    {
+      "path": "tests/hostile/write_outside.py",
+      "sha256": "13d6ea0e96ed58a7dfdb475e181d177b67b4079a436f04ab84a07e6b9a169252"
+    },
+    {
+      "path": "tests/test_repair_v8_pilot.py",
+      "sha256": "ee9feee714d6d0420179bbce5bce572598881acb17c6f595a7dd7c0fcec99834"
+    },
+    {
+      "path": "tests/test_repair_v8_qualification.py",
+      "sha256": "83ceea43e822a8a3ee95e466007758b8e3798cbe16da3dbc51e810389004a773"
+    },
+    {
+      "path": "tests/test_repair_v8_supervise.py",
+      "sha256": "393dcddcf2d253b29565d48fc099bca957e6d2b661f619fedb405d39d122ebf9"
+    }
+  ],
+  "interpretation": "Infrastructure amendment before any model sampling; all GPU controls must pass again."
+}

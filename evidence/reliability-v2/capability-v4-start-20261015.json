@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "runtime_controls": 14,
+  "isolation_controls": 6,
+  "source_files_verified": 34,
+  "scope": "current_source_development_controls_not_model_results",
+  "remote_controller": "runs/reliability-v2/capability-controllers/20261015T185011.215170Z",
+  "artifacts": {
+    "controls.json": "a6237bca3f4d7ede0cc5fb4a2fa80ea3b898f617a6921e819f40803d9ccdee87",
+    "checks.json": "2ab92b3b21626de00de464e334f5d386d156d78e76b451dd73ba60a7d9bd1f3e",
+    "isolation.json": "edce0a691dadba8a724692ab0d0a0b64a348aa2b687cdc73181d4bb2c288f015"
+  },
+  "superseded_run_backup": {
+    "sha256": "a722b141b6c8bfa32fcfb671b52b30f88f42d10546d0626e6f1b62dc678ae628",
+    "bytes": 90618,
+    "no_model_outputs": true
+  }
+}

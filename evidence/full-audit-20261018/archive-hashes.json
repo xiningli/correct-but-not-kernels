@@ -1,0 +1,714 @@
+[
+  {
+    "path": "runs/autodl-clone-20261006/20261006T071340.631763Z/evidence-and-checkpoints.tgz",
+    "bytes": 74269,
+    "sha256": "56e4f0e7721d3599379936fba20f4e3455bafd0c5dcbbf5b566850246af39fc4",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-clone-20261006/20261006T071340.631763Z/verified-archive.json",
+        "sha256": "56e4f0e7721d3599379936fba20f4e3455bafd0c5dcbbf5b566850246af39fc4",
+        "bytes": 74269,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/replication-v1/controllers/20261006T071340.631763Z/evidence-and-checkpoints.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-pilot-backup/20261005T035943.378043Z-reconnected-20261005T162218Z/evidence-and-checkpoints.tgz",
+    "bytes": 7143496613,
+    "sha256": "d58e5119237fe80eeb3553d3d9fe800f30ce75f6ad6d0509bba7d28bff1e96fc",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-pilot-backup/20261005T035943.378043Z-reconnected-20261005T162218Z/verified-archive.json",
+        "sha256": "d58e5119237fe80eeb3553d3d9fe800f30ce75f6ad6d0509bba7d28bff1e96fc",
+        "bytes": 7143496613,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/autonomous/20261005T035943.378043Z/evidence-and-checkpoints.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": "d58e5119237fe80eeb3553d3d9fe800f30ce75f6ad6d0509bba7d28bff1e96fc",
+    "main_archive_hash_match": true
+  },
+  {
+    "path": "runs/autodl-westb-20261006/ownership-repair-evidence.tgz",
+    "bytes": 52729,
+    "sha256": "9fd8c2003f5f1136c1e6145b2c78f1decb155776068e833961a4d6ade9c5eca9",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-20261006/ownership-repair-verified.json",
+        "sha256": "9fd8c2003f5f1136c1e6145b2c78f1decb155776068e833961a4d6ade9c5eca9",
+        "bytes": 52729
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/C-20261021-complete/completed-seed-evidence.tgz",
+    "bytes": 17982902,
+    "sha256": "0674773797f39cd1701fe25fa2b90922c626fe90cde5c485af3b5f6e8d2676f9",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/C-20261021-complete/archive.json",
+        "sha256": "0674773797f39cd1701fe25fa2b90922c626fe90cde5c485af3b5f6e8d2676f9",
+        "bytes": 17982902,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/C-20261021-complete-20261008/completed-seed-evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/C-20261021-complete/verified-archive.json",
+        "sha256": "0674773797f39cd1701fe25fa2b90922c626fe90cde5c485af3b5f6e8d2676f9",
+        "bytes": 17982902,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/C-20261021-complete-20261008/completed-seed-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/C-20261021-step40/policy-step-40-and-evidence.tgz",
+    "bytes": 258982814,
+    "sha256": "424ca9e54a65a0fee388697070668fcd6f0867e0f76e3b213fca538223369b27",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/C-20261021-step40/archive.json",
+        "sha256": "424ca9e54a65a0fee388697070668fcd6f0867e0f76e3b213fca538223369b27",
+        "bytes": 258982814,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/c-seed1-step40-backup-20261007/policy-step-40-and-evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/C-20261021-step40/verified-archive.json",
+        "sha256": "424ca9e54a65a0fee388697070668fcd6f0867e0f76e3b213fca538223369b27",
+        "bytes": 258982814,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/c-seed1-step40-backup-20261007/policy-step-40-and-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/S-20261021-complete/completed-seed-evidence.tgz",
+    "bytes": 9866851,
+    "sha256": "ed6ed5d88c4ca3d159f82591297ffb0a5edea7aa8117fd62a55a8a724d362548",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/S-20261021-complete/archive.json",
+        "sha256": "ed6ed5d88c4ca3d159f82591297ffb0a5edea7aa8117fd62a55a8a724d362548",
+        "bytes": 9866851,
+        "path": "runs/deploy/S-20261021-complete-20261008/completed-seed-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/S-20261021-stop15/stopped-policy-and-evidence.tgz",
+    "bytes": 255285460,
+    "sha256": "4915d84199a448cb32b0371fbdd4d757a32d0c49c9c2e6579be763310f07d99c",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/S-20261021-stop15/archive.json",
+        "sha256": "4915d84199a448cb32b0371fbdd4d757a32d0c49c9c2e6579be763310f07d99c",
+        "bytes": 255285460,
+        "path": "runs/deploy/S-20261021-detector-audit-20261008/stopped-policy-and-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/evidence.tgz",
+    "bytes": 20272244,
+    "sha256": "b0d9f85b22622532985d1958e318eab5954132d9206ac9f39b8137ca6e351cde",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/evidence-archive.json",
+        "sha256": "b0d9f85b22622532985d1958e318eab5954132d9206ac9f39b8137ca6e351cde",
+        "bytes": 20272244,
+        "path": "runs/deploy/completed-c22-20261010/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/evidence-verified.json",
+        "sha256": "b0d9f85b22622532985d1958e318eab5954132d9206ac9f39b8137ca6e351cde",
+        "bytes": 20272244,
+        "path": "runs/deploy/completed-c22-20261010/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/policies.tgz",
+    "bytes": 249599382,
+    "sha256": "2a152b34f99e5a858b2f0c08686e0f42de7f73f0504aa0aef119a116530635aa",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/policies-archive.json",
+        "sha256": "2a152b34f99e5a858b2f0c08686e0f42de7f73f0504aa0aef119a116530635aa",
+        "bytes": 249599382,
+        "path": "runs/deploy/completed-c22-20261010/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c22-20261010/policies-verified.json",
+        "sha256": "2a152b34f99e5a858b2f0c08686e0f42de7f73f0504aa0aef119a116530635aa",
+        "bytes": 249599382,
+        "path": "runs/deploy/completed-c22-20261010/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/evidence.tgz",
+    "bytes": 19722217,
+    "sha256": "cc2730dd385dcc380284399bda86b259470146ce130042d7bd348027a9a5a2e5",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/evidence-archive.json",
+        "sha256": "cc2730dd385dcc380284399bda86b259470146ce130042d7bd348027a9a5a2e5",
+        "bytes": 19722217,
+        "path": "runs/deploy/completed-c23-20261012/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/evidence-verified.json",
+        "sha256": "cc2730dd385dcc380284399bda86b259470146ce130042d7bd348027a9a5a2e5",
+        "bytes": 19722217,
+        "path": "runs/deploy/completed-c23-20261012/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/policies.tgz",
+    "bytes": 249629500,
+    "sha256": "02c4dfa6a6ca4ca4461ff3f06718c95adb2eed0c04638610be7753ce8cd37454",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/policies-archive.json",
+        "sha256": "02c4dfa6a6ca4ca4461ff3f06718c95adb2eed0c04638610be7753ce8cd37454",
+        "bytes": 249629500,
+        "path": "runs/deploy/completed-c23-20261012/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-c23-20261012/policies-verified.json",
+        "sha256": "02c4dfa6a6ca4ca4461ff3f06718c95adb2eed0c04638610be7753ce8cd37454",
+        "bytes": 249629500,
+        "path": "runs/deploy/completed-c23-20261012/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/evidence.tgz",
+    "bytes": 41221658,
+    "sha256": "cf38f652be48ad2a77f32aeaa9f2e5131c6ec65ffd0637772b4c3decf78da92f",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/evidence-archive.json",
+        "sha256": "cf38f652be48ad2a77f32aeaa9f2e5131c6ec65ffd0637772b4c3decf78da92f",
+        "bytes": 41221658,
+        "path": "runs/deploy/completed-jobs-20261009/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/evidence-verified.json",
+        "sha256": "cf38f652be48ad2a77f32aeaa9f2e5131c6ec65ffd0637772b4c3decf78da92f",
+        "bytes": 41221658,
+        "path": "runs/deploy/completed-jobs-20261009/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/policies.tgz",
+    "bytes": 499288574,
+    "sha256": "f6d440bbf4969bd2e65bd963409bd2a13cc4ea52b822eee92eb792e0aeca21cf",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/policies-archive.json",
+        "sha256": "f6d440bbf4969bd2e65bd963409bd2a13cc4ea52b822eee92eb792e0aeca21cf",
+        "bytes": 499288574,
+        "path": "runs/deploy/completed-jobs-20261009/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261009/policies-verified.json",
+        "sha256": "f6d440bbf4969bd2e65bd963409bd2a13cc4ea52b822eee92eb792e0aeca21cf",
+        "bytes": 499288574,
+        "path": "runs/deploy/completed-jobs-20261009/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/evidence.tgz",
+    "bytes": 22827012,
+    "sha256": "1d288ff8f6acd092614b6e149faa764a76cc63a5a1cb19f6c4a8e2a9856a6928",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/evidence-archive.json",
+        "sha256": "1d288ff8f6acd092614b6e149faa764a76cc63a5a1cb19f6c4a8e2a9856a6928",
+        "bytes": 22827012,
+        "path": "runs/deploy/completed-jobs-20261010/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/evidence-verified.json",
+        "sha256": "1d288ff8f6acd092614b6e149faa764a76cc63a5a1cb19f6c4a8e2a9856a6928",
+        "bytes": 22827012,
+        "path": "runs/deploy/completed-jobs-20261010/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/policies.tgz",
+    "bytes": 249747505,
+    "sha256": "82e7a39d19a3245fc59d14999a9242e4a6298d1490b899214c7927ffb076de3f",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/policies-archive.json",
+        "sha256": "82e7a39d19a3245fc59d14999a9242e4a6298d1490b899214c7927ffb076de3f",
+        "bytes": 249747505,
+        "path": "runs/deploy/completed-jobs-20261010/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-jobs-20261010/policies-verified.json",
+        "sha256": "82e7a39d19a3245fc59d14999a9242e4a6298d1490b899214c7927ffb076de3f",
+        "bytes": 249747505,
+        "path": "runs/deploy/completed-jobs-20261010/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/evidence.tgz",
+    "bytes": 19364340,
+    "sha256": "e7a7d84ae1395e8a7351371e25be35a09c2e0e82b5241b26fe5db2e5b6a525c3",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/evidence-archive.json",
+        "sha256": "e7a7d84ae1395e8a7351371e25be35a09c2e0e82b5241b26fe5db2e5b6a525c3",
+        "bytes": 19364340,
+        "path": "runs/deploy/completed-s23-20261012/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/evidence-verified.json",
+        "sha256": "e7a7d84ae1395e8a7351371e25be35a09c2e0e82b5241b26fe5db2e5b6a525c3",
+        "bytes": 19364340,
+        "path": "runs/deploy/completed-s23-20261012/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/policies.tgz",
+    "bytes": 249619640,
+    "sha256": "e062a4d033a6b524324e1ad3f7f1393991b6d624fef806289aff0dad6669fb4e",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/policies-archive.json",
+        "sha256": "e062a4d033a6b524324e1ad3f7f1393991b6d624fef806289aff0dad6669fb4e",
+        "bytes": 249619640,
+        "path": "runs/deploy/completed-s23-20261012/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-s23-20261012/policies-verified.json",
+        "sha256": "e062a4d033a6b524324e1ad3f7f1393991b6d624fef806289aff0dad6669fb4e",
+        "bytes": 249619640,
+        "path": "runs/deploy/completed-s23-20261012/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/evidence.tgz",
+    "bytes": 23164811,
+    "sha256": "2bf6648042aa62e940ac9a63095b0de56c247ae64915123d7f992ef484673a54",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/evidence-archive.json",
+        "sha256": "2bf6648042aa62e940ac9a63095b0de56c247ae64915123d7f992ef484673a54",
+        "bytes": 23164811,
+        "path": "runs/deploy/completed-sft23-20261011/evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/evidence-verified.json",
+        "sha256": "2bf6648042aa62e940ac9a63095b0de56c247ae64915123d7f992ef484673a54",
+        "bytes": 23164811,
+        "path": "runs/deploy/completed-sft23-20261011/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/policies.tgz",
+    "bytes": 249742791,
+    "sha256": "45e71224c72ff47f676886619c3254f1e539e8c053b8a92aecd31fb2002238fb",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/policies-archive.json",
+        "sha256": "45e71224c72ff47f676886619c3254f1e539e8c053b8a92aecd31fb2002238fb",
+        "bytes": 249742791,
+        "path": "runs/deploy/completed-sft23-20261011/policies.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/completed-sft23-20261011/policies-verified.json",
+        "sha256": "45e71224c72ff47f676886619c3254f1e539e8c053b8a92aecd31fb2002238fb",
+        "bytes": 249742791,
+        "path": "runs/deploy/completed-sft23-20261011/policies.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/pre-resume-evidence.tgz",
+    "bytes": 68985358,
+    "sha256": "4b053de08cb7f0146c0b6cb9f60f7d473cf4de7daa13408a1971adf81b5dbd33",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/verified-pre-resume.json",
+        "sha256": "4b053de08cb7f0146c0b6cb9f60f7d473cf4de7daa13408a1971adf81b5dbd33",
+        "bytes": 68985358,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/replication-v1.1/recovery/20261006-reboot/pre-resume-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/r2-complete/completed-r2-and-sft-tuning-evidence.tgz",
+    "bytes": 100714302,
+    "sha256": "e3b57f189950d6d4d056d1a881fe7d43e271cf091ad4e61bdff9841eb8949f17",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/r2-complete/archive.json",
+        "sha256": "e3b57f189950d6d4d056d1a881fe7d43e271cf091ad4e61bdff9841eb8949f17",
+        "bytes": 100714302,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/r2-complete-backup-20261007/completed-r2-and-sft-tuning-evidence.tgz"
+      },
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/r2-complete/verified-archive.json",
+        "sha256": "e3b57f189950d6d4d056d1a881fe7d43e271cf091ad4e61bdff9841eb8949f17",
+        "bytes": 100714302,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/deploy/r2-complete-backup-20261007/completed-r2-and-sft-tuning-evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/resumed-controller-receipts.tgz",
+    "bytes": 996,
+    "sha256": "ff3de6fe03863c0ab1261f3ad74c85d9896a2908d555625af575f1cff61fbf8d",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/autodl-westb-reboot-20261006/terminal-recovery-20261012/evidence-and-checkpoints.tgz",
+    "bytes": 30779004695,
+    "sha256": "8cc3de5ecadc11e6ce5339dacba4bafc702e0f79d4892f57f927cb07b9f01e74",
+    "matching_receipts": [
+      {
+        "receipt": "runs/autodl-westb-reboot-20261006/terminal-recovery-20261012/verified-archive.json",
+        "sha256": "8cc3de5ecadc11e6ce5339dacba4bafc702e0f79d4892f57f927cb07b9f01e74",
+        "bytes": 30779004695,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/replication-v1.1/controllers/20261006T211103.982319Z/evidence-and-checkpoints.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": "8cc3de5ecadc11e6ce5339dacba4bafc702e0f79d4892f57f927cb07b9f01e74",
+    "main_archive_hash_match": true
+  },
+  {
+    "path": "runs/deploy/20261004T201515.502242Z-5cb1016d/kernelbench.tar.gz",
+    "bytes": 3405401,
+    "sha256": "890907893b6e650728c68124fb68be48b9358ed4bf8325c8807045e92b1547e4",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/20261004T201908.750115Z-2fd38ee6/kernelbench.tar.gz",
+    "bytes": 3405328,
+    "sha256": "ebcfed111f3025aa5331c01df605f3f21de9276da3a03b121c188f4a75815634",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/20261004T214038.955483Z-0ad610e3/kernelbench.tar.gz",
+    "bytes": 3405329,
+    "sha256": "4d7759be600b998ff6002a173676928ec32fa9f397822d663fd7f0093bd7c99b",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c1-c3-metadata.tgz",
+    "bytes": 54288,
+    "sha256": "2eefdc100cf835dbbd8c47f01e964e8e8bc17f8a1525ae3543dd87f70866c654",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c4-first.tgz",
+    "bytes": 519603,
+    "sha256": "7da104bd479a93626165642f91cb3e60a653cb1cae8d51044403b1c49bd2640f",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c4-second.tgz",
+    "bytes": 681616,
+    "sha256": "2ac9b2a0f837b5f2298546647dc15e40823b118bdf68a1cbd086ae3da1fbc96b",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c4-third.tgz",
+    "bytes": 506015,
+    "sha256": "aeef3c457e8da2f0bc3604ace6cd1b752faee173b8745c8863d1976afd0b1984",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c5-first.tgz",
+    "bytes": 4170,
+    "sha256": "2cdda48d7b821cfdfe73a8c5e35dcae28731cb72159dbb60eada82b7617e9e11",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c5-second.tgz",
+    "bytes": 658003077,
+    "sha256": "88827fc052590367503dfb86ba7e7f470bd01f9d94bf5795eadd9903120db312",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c5-third-metadata.tgz",
+    "bytes": 165715,
+    "sha256": "fe325e080efeace68e721c137209737a3cb3466711dbee735dd76600a4f8720c",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c6-launch-metadata.tgz",
+    "bytes": 2881,
+    "sha256": "79e68a515562301af888846bde51f2c6e2813bfe0fa8348923e1f6be7c082ae7",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/c6-training-complete-metadata-20261005T1620Z.tgz",
+    "bytes": 18955,
+    "sha256": "b3a094727851ff1c75c3d83ea5a9f43ca9e34b7800e5f504bf8dd12fb5ea173d",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/cuda-transfer-v3-development.tgz",
+    "bytes": 70404,
+    "sha256": "294f4c543b49229145c4535aa4e91810710a86b03d0e68bf9e6c2efeef77511e",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/phase2-protocol.tgz",
+    "bytes": 8585,
+    "sha256": "fdd261132c6f366515b7efc1c3a8a353abca06397a1520993cc37d90613e4597",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/deploy/replication-v1.1-protocol.tgz",
+    "bytes": 10890,
+    "sha256": "c12f507fd4a9393f5d82a8a6a93d70d07ae6da53b108b9a6b31ff3595511e177",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/diagnostics-v5/recovery/2026-10-16T051325.446441_0000/evidence.tgz",
+    "bytes": 1617499,
+    "sha256": "75df54757356a62d0591ea0edcc20449afc36eb9a647679e8536fd313e19367d",
+    "matching_receipts": [
+      {
+        "receipt": "runs/diagnostics-v5/recovery/2026-10-16T051325.446441_0000/verified.json",
+        "sha256": "75df54757356a62d0591ea0edcc20449afc36eb9a647679e8536fd313e19367d",
+        "bytes": 1617499,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v5/controllers/2026-10-16T051325.446441_0000/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/diagnostics-v6/recovery/2026-10-16T222119.856430_0000/evidence.tgz",
+    "bytes": 678478,
+    "sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+    "matching_receipts": [
+      {
+        "receipt": "runs/diagnostics-v6/recovery/2026-10-16T222119.856430_0000/verified.json",
+        "sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+        "bytes": 678478,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6/controllers/2026-10-16T222119.856430_0000/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/diagnostics-v6-resume31b/deploy-20261017.tgz",
+    "bytes": 3972,
+    "sha256": "4fc44c19b6ee982da19c3e8d27b59fd54ece315b7089e2ace6b0ccbf0ab85970",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/diagnostics-v6-resume31b/prepared-local-20261016/parent-evidence.tgz",
+    "bytes": 678478,
+    "sha256": "1afa3bd3b5d3032775ae150ca43d0df3d24bd8f7f52ed0be2ad30fdff0e523d5",
+    "matching_receipts": [],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/diagnostics-v6-resume31b/recovery/2026-10-17T204539.738896_0000/evidence.tgz",
+    "bytes": 1158235,
+    "sha256": "c20870fa852a1046590d06ab013e136257679d06589849fc592f0aac29c8ead5",
+    "matching_receipts": [
+      {
+        "receipt": "runs/diagnostics-v6-resume31b/recovery/2026-10-17T204539.738896_0000/verified.json",
+        "sha256": "c20870fa852a1046590d06ab013e136257679d06589849fc592f0aac29c8ead5",
+        "bytes": 1158235,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/diagnostics-v6-resume31b/controllers/2026-10-17T204539.738896_0000/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/capability-recovery/20261015T170848.349323Z/evidence.tgz",
+    "bytes": 90618,
+    "sha256": "a722b141b6c8bfa32fcfb671b52b30f88f42d10546d0626e6f1b62dc678ae628",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/capability-recovery/20261015T170848.349323Z/verified.json",
+        "sha256": "a722b141b6c8bfa32fcfb671b52b30f88f42d10546d0626e6f1b62dc678ae628",
+        "bytes": 90618
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/evidence.tgz",
+    "bytes": 30942267,
+    "sha256": "b5c24cb5886febd405a88f622ca8fd88a0d3ea0069d2ffeaa1f1ff59490f013e",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/verified.json",
+        "sha256": "b5c24cb5886febd405a88f622ca8fd88a0d3ea0069d2ffeaa1f1ff59490f013e",
+        "bytes": 30942267,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/capability-controllers/20261015T185011.215170Z/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/interface-snapshot/interface-complete.tgz",
+    "bytes": 370741,
+    "sha256": "0629028fadae86b51c878f53995630a91919557c951a8c878f5b77628e3a3209",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/capability-recovery/20261015T185011.215170Z/interface-snapshot/verified.json",
+        "sha256": "0629028fadae86b51c878f53995630a91919557c951a8c878f5b77628e3a3209",
+        "bytes": 370741,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/capability-snapshots/20261015T185011.215170Z/interface-complete.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/remote-recovery-20261012/20261012T204658.744430Z/evidence.tgz",
+    "bytes": 121302,
+    "sha256": "1aaac9815cc99753aec7651d33ce15a30589705d40e9a40eec2a77adde3840b4",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/remote-recovery-20261012/20261012T204658.744430Z/verified.json",
+        "sha256": "1aaac9815cc99753aec7651d33ce15a30589705d40e9a40eec2a77adde3840b4",
+        "bytes": 121302,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/archives/20261012T204658.744430Z.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/remote-recovery-20261012/20261012T222455.458848Z/evidence.tgz",
+    "bytes": 385996,
+    "sha256": "de83d2378cb98e59a7ff4a64552d0b9e37c62c243772769e9f379d77bc022f2e",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/remote-recovery-20261012/20261012T222455.458848Z/verified.json",
+        "sha256": "de83d2378cb98e59a7ff4a64552d0b9e37c62c243772769e9f379d77bc022f2e",
+        "bytes": 385996,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/archives/20261012T222455.458848Z.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/transfer-development-recovery/20261013T200456.397879Z/evidence.tgz",
+    "bytes": 144467,
+    "sha256": "9b90230beefa82fbea08221a968534c9fbb63572053cd30def79454fc9502d73",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/transfer-development-recovery/20261013T200456.397879Z/verified.json",
+        "sha256": "9b90230beefa82fbea08221a968534c9fbb63572053cd30def79454fc9502d73",
+        "bytes": 144467,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/transfer-controllers/20261013T200456.397879Z/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  },
+  {
+    "path": "runs/reliability-v2/transfer-development-recovery/20261013T200847.197395Z/evidence.tgz",
+    "bytes": 325674,
+    "sha256": "e6c164dde41f80839d280ac1ab76d3956fbef9f936f130b9a78e0907b2dfbd70",
+    "matching_receipts": [
+      {
+        "receipt": "runs/reliability-v2/transfer-development-recovery/20261013T200847.197395Z/verified.json",
+        "sha256": "e6c164dde41f80839d280ac1ab76d3956fbef9f936f130b9a78e0907b2dfbd70",
+        "bytes": 325674,
+        "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/transfer-controllers/20261013T200847.197395Z/evidence.tgz"
+      }
+    ],
+    "expected_main_archive_sha256": null,
+    "main_archive_hash_match": null
+  }
+]

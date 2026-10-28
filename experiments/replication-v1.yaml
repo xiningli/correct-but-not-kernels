@@ -1,0 +1,44 @@
+# K1–K4: prospective replication; the original pilot and split remain immutable.
+id: replication-v1
+hypotheses: [K1, K2, K3, K4]
+pilot: runs/c6/20261005T035943.498204Z
+model: gemma-4-12B-it
+train_tasks: [level1/40_LayerNorm]
+train_seeds: [20261021, 20261022, 20261023]
+evaluation_seeds: [20262001, 20262002, 20262003, 20262004, 20262005, 20262006, 20262007, 20262008]
+input_seed: 20263001
+fresh_checks: 4
+arms: [C, S, SFT]
+max_steps: 40
+evaluation_cadence: 10
+generation_timeout_seconds: 21600
+evaluation_timeout_seconds: 86400
+no_progress_seconds: 1800
+stage_wall_seconds: 604800
+pilot_adapters:
+  C:
+    path: runs/c6/20261005T035943.498204Z/training-C/checkpoints/policy-step-35
+    sha256: 5aa331524cda13c1ad4e80a0b77b3f2eb46763586e9f7567f760de9e5d4762e1
+  S:
+    path: runs/c6/20261005T035943.498204Z/training-S/checkpoints/policy-step-40
+    sha256: e59ee3ede38cae0f9a255c4b87349bbc12d019713a8552afeb7afba6f151540d
+sft:
+  candidates_per_seed: 320
+  tuning_seed: 20261020
+  learning_rates: [0.000005, 0.00001, 0.00002]
+  validation_programs: 32
+  validation_seed: 20264001
+  selection: highest_train_validation_correctness_then_lowest_learning_rate
+  batch_size: 8
+  max_length: 8192
+  max_wall_seconds: 14400
+  max_grad_norm: 1.0
+analysis:
+  seed: 20265001
+  bootstrap_repeats: 10000
+  primary_level: level2
+  primary_comparisons: [[C, base], [S, base], [C, SFT]]
+  familywise_alpha: 0.05
+  multiplicity: bonferroni_task_cluster_intervals
+  speed_thresholds: [1.0, 1.1, 2.0]
+  scope: known_tasks_new_generations_not_new_tasks

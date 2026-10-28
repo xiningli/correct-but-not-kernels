@@ -1,0 +1,74 @@
+{
+  "verified_utc": "2026-10-13T23:33:19.477674+00:00",
+  "status": "complete_development_only",
+  "scope": "6_development_graphs_2_prompts_3_policies_1_draw_first_training_seed",
+  "archive": {
+    "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/transfer-controllers/20261013T200847.197395Z/evidence.tgz",
+    "bytes": 325674,
+    "sha256": "e6c164dde41f80839d280ac1ab76d3956fbef9f936f130b9a78e0907b2dfbd70",
+    "verified_utc": "2026-10-13T20:21:09.929756+00:00",
+    "transfer_returncode": 0
+  },
+  "backup_ack": {
+    "utc": "2026-10-13T20:21:09.929756+00:00",
+    "acknowledged": true
+  },
+  "metrics_sha256": "03af7d36d6def55a9942fc303eed1d23deb09e2d369b0f93c329399549f46481",
+  "report_json_sha256": "85d6a5bc2a4f769d197e1e3a78d4c9fcb08406911dc68a7f8c155e2690814fb0",
+  "report_md_sha256": "727126f3aed32f11009ec0ec0d97f71b9f9ef9679acd56d9b914f58c821525b4",
+  "report_recomputed_exactly": true,
+  "complete_unique_grid_verified": true,
+  "runtime_sources_match_controls_and_archive": true,
+  "elapsed_seconds": 695.2732387036085,
+  "policies": [
+    {
+      "policy": "base",
+      "attempts": 12,
+      "strict_correct": 0,
+      "numerically_correct": 4,
+      "components": {
+        "contract_violation": 4,
+        "crash": 7,
+        "format": 1
+      }
+    },
+    {
+      "policy": "C-20261021",
+      "attempts": 12,
+      "strict_correct": 0,
+      "numerically_correct": 3,
+      "components": {
+        "crash": 6,
+        "contract_violation": 4,
+        "incorrect": 1,
+        "format": 1
+      }
+    },
+    {
+      "policy": "SFT-20261021",
+      "attempts": 12,
+      "strict_correct": 0,
+      "numerically_correct": 1,
+      "components": {
+        "crash": 11,
+        "contract_violation": 1
+      }
+    }
+  ],
+  "components": {
+    "contract_violation": 9,
+    "crash": 24,
+    "format": 2,
+    "incorrect": 1
+  },
+  "formal_test_generation": false,
+  "model_repair_evaluation_run": false,
+  "local_report": "runs/reliability-v2/transfer-development-recovery/20261013T200847.197395Z/extracted/runs/reliability-v2/transfer-controllers/20261013T200847.197395Z/pilot/REPORT.md",
+  "shutdown": {
+    "automatic_shutdown_after_verified_backup_configured": true,
+    "backup_condition_satisfied": true,
+    "shutdown_receipt_obtained": false,
+    "fresh_ssh_result": "ssh: connect to host connect.westb.seetacloud.com port 15577: Connection timed out",
+    "power_and_billing_state": "unverified"
+  }
+}

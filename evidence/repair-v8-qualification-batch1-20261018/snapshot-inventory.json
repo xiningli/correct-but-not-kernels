@@ -1,0 +1,98 @@
+[
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/fla-org--flash-linear-attention-1103-before.json",
+    "sha256": "1c7fe0c12dbc7a38ffc91b27306b0e593701758d97e2e9969a65e5c54f4e5ff7",
+    "files": 690,
+    "commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/fla-org--flash-linear-attention-1103-fixed.json",
+    "sha256": "d3e031129b058da3f85f3a0f5000a51bd1e6bf41f87199e84aa3b4d711cfb099",
+    "files": 690,
+    "commit": "ebd4dd27c0038e73cee514130f8c3efd203cef37"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/flagos-ai--FlagGems-553-before.json",
+    "sha256": "73f2b3cbc6833dea7cdf17535ee4f6bc4ec6aebb17021f1881cc8bc9e5824c92",
+    "files": 625,
+    "commit": "a2892aae441171d55d7472c2b94240023402e5ee"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/flagos-ai--FlagGems-553-fixed.json",
+    "sha256": "602a0c365ab371e87b4fc52d153db1bb3d6cd258274fbd6601b291166edffd2b",
+    "files": 625,
+    "commit": "42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/linkedin--Liger-Kernel-1344-before.json",
+    "sha256": "45c4d27264d60faf6f00ae33658df3517df1891ed6d60615db4ef6fc320e6383",
+    "files": 824,
+    "commit": "f01ffb1f5d3af9df407fc4f1b442f8b3dca15849"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/linkedin--Liger-Kernel-1344-fixed.json",
+    "sha256": "81a31819eea8b1af12461830404e3260113e97fe03fb848c713fb14687e7defd",
+    "files": 824,
+    "commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/linkedin--Liger-Kernel-1376-before.json",
+    "sha256": "5d6131b4d98ec5ccdc3cbadface4626cfdd168d6f73c92b2e9aec3be0d531af6",
+    "files": 824,
+    "commit": "559d33e7b14d81476b295ef41a962937efa74517"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/source-receipts/linkedin--Liger-Kernel-1376-fixed.json",
+    "sha256": "57315f789914ffac62df368c0a0108fa648850e2b474ca3fb21a4ec3b5270d6b",
+    "files": 824,
+    "commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/fla-org--flash-linear-attention-1103-before.json",
+    "sha256": "0c434a4daa219e9096a12e6720379caac0b560928ca441ca650e7b10426dfcb3",
+    "files": 690,
+    "commit": "3c4c54ae7397d37130d7101edd0f4eb596af896d"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/fla-org--flash-linear-attention-1103-fixed.json",
+    "sha256": "13da6a43260fc328c53ed14fa5e3b7e0d05865ec7cfdb119f76c5a99eb9a00c5",
+    "files": 690,
+    "commit": "ebd4dd27c0038e73cee514130f8c3efd203cef37"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/flagos-ai--FlagGems-553-before.json",
+    "sha256": "c60de13a12e40d6b0f94ca4bff505474c2988c9cf6726138faab2091af99db4f",
+    "files": 625,
+    "commit": "a2892aae441171d55d7472c2b94240023402e5ee"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/flagos-ai--FlagGems-553-fixed.json",
+    "sha256": "282bd53ee255843d9c6434062462147ce5654767bde049b7ac101f33db355e6d",
+    "files": 625,
+    "commit": "42fb3dc22b2d8c78eaaf3b3bf76962ab5f3bf291"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1344-before.json",
+    "sha256": "d40b3fb42c4b25e6be13f0d4a4e623ee1338f6aa85a9297560986ee5598da880",
+    "files": 824,
+    "commit": "f01ffb1f5d3af9df407fc4f1b442f8b3dca15849"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1344-fixed.json",
+    "sha256": "f8ec84e532f53d4197408877397a00a2e728adba30311635d3faf10875dedad8",
+    "files": 824,
+    "commit": "39adfeefab06c9a8b596199cb7f9e9d515986d8c"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1376-before.json",
+    "sha256": "576394af14498f6ddc78b6729159067095b2575ef72ec6124d25a662598fc3e3",
+    "files": 824,
+    "commit": "559d33e7b14d81476b295ef41a962937efa74517"
+  },
+  {
+    "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1376-fixed.json",
+    "sha256": "ade3fb31732fdf4e0474a5ef286e5473f4030dbf2c9053378a48432c6f3532b8",
+    "files": 824,
+    "commit": "b5bcace9b1e2e2d974f5917c4a7fa0d53ecbdc46"
+  }
+]

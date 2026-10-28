@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/root/autodl-tmp/repair-v8-pilot-20261019/research/repair_v8/pilot/controls.py", line 151, in <module>
+    main()
+  File "/root/autodl-tmp/repair-v8-pilot-20261019/research/repair_v8/pilot/controls.py", line 147, in main
+    a = p.parse_args(); controls(a.prepared.resolve(), a.out.resolve())
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/repair-v8-pilot-20261019/research/repair_v8/pilot/controls.py", line 95, in controls
+    isolation_controls(prepared, directory / 'isolation')
+  File "/root/autodl-tmp/repair-v8-pilot-20261019/research/repair_v8/pilot/controls.py", line 47, in isolation_controls
+    raise RuntimeError('Isolated Triton smoke failed: ' + normal.log)
+RuntimeError: Isolated Triton smoke failed: /root/autodl-tmp/repair-v8-pilot-20261019/runs/pilot/controls/isolation/normal/worker.log

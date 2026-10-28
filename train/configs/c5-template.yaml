@@ -1,0 +1,23 @@
+# K1–K4: inactive C5 template; fill only after C0–C4 and operator go.
+hypotheses: [K1, K2, K3, K4]
+enabled: false
+model: google/gemma-4-12B-it
+seed: 0
+reward_arm: C
+model_init_kwargs: {dtype: bfloat16}
+sampling: {temperature: 1.0, top_p: 0.95, top_k: 64}
+vllm: {mode: colocate, sleep_mode: true, gpu_memory_utilization: 0.4}
+eval_gpu_memory_utilization: 0.85
+micro_batch: 2
+# K1–K3: defaults inherited where established; null needs C4 evidence.
+kill:
+  saturation_pass_rate: 0.95
+  saturation_steps: 5
+  reward_zero_std_fraction: 0.95
+  reward_mean_for_zero_std: 0.95
+  zero_std_steps: 5
+  kl_max: null
+  median_length_floor: null
+  truncation_fraction_max: null
+  sandbox_violations_max: 0
+  detector_fire_fraction_max: null

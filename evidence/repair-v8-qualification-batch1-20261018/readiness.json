@@ -1,0 +1,48 @@
+{
+  "timestamp_utc": "2026-10-18T20:44:36.233153+00:00",
+  "status": "first_four_CPU_prepared_for_GPU_qualification",
+  "prepared_tasks": [
+    "linkedin/Liger-Kernel#1344",
+    "linkedin/Liger-Kernel#1376",
+    "flagos-ai/FlagGems#553",
+    "fla-org/flash-linear-attention#1103"
+  ],
+  "repositories": 3,
+  "complete_pinned_source_snapshots": 8,
+  "CPU_reference_cases_passed": 26,
+  "original_package_imports_passed": 8,
+  "matched_original_test_counts_per_revision": {
+    "liger_attnres": 27,
+    "liger_groupnorm": 5,
+    "flaggems_addmm": 45,
+    "fla_rwkv7": 4
+  },
+  "unit_and_negative_controls_passed": 7,
+  "archive_relocation_smoke": "pass",
+  "dependency_compatibility": "pass",
+  "GPU_runs": 0,
+  "GPU_qualified_tasks": 0,
+  "formal_eligible_tasks": 0,
+  "models_run": 0,
+  "training_runs": 0,
+  "remote_connected": false,
+  "remote_environment_installed": false,
+  "remaining_development_tasks": [
+    "linkedin/Liger-Kernel#1298",
+    "vllm-project/vllm#15909",
+    "linkedin/Liger-Kernel#1397",
+    "fla-org/flash-linear-attention#1108",
+    "flagos-ai/FlagGems#519",
+    "vllm-project/vllm#33326",
+    "flagos-ai/FlagGems#6727",
+    "flagos-ai/FlagGems#6560"
+  ],
+  "next_action": "Transfer investigator bundle; prepare separate environment; run before/fixed controls on one CUDA GPU with compute-sanitizer. No Gemma until task qualification.",
+  "limits": [
+    "First four development candidates only; remaining eight not yet packaged.",
+    "CPU imports/reference arithmetic/collection do not validate GPU kernels.",
+    "Original suite numbers are collected tests, not passed tests.",
+    "Package contains gold fixes and cannot be exposed to a repair agent.",
+    "Formal hidden tests, matched editing interface, agent execution boundary and model study remain future work."
+  ]
+}

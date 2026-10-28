@@ -1,0 +1,132 @@
+{
+  "status": "complete_backup_and_report_verified",
+  "verified_utc": "2026-10-16T01:20:05.845208+00:00",
+  "scope": "six_development_tasks_one_draw_each_seven_policies_not_confirmatory",
+  "attempts": 84,
+  "archive": {
+    "path": "/root/autodl-tmp/cuda-gemma4-llm/runs/reliability-v2/capability-snapshots/20261015T185011.215170Z/interface-complete.tgz",
+    "bytes": 370741,
+    "sha256": "0629028fadae86b51c878f53995630a91919557c951a8c878f5b77628e3a3209",
+    "utc": "2026-10-16T01:18:36.554979+00:00",
+    "interface_summary": {
+      "full_program": {
+        "attempts": 42,
+        "correct": 1,
+        "components": {
+          "format": 24,
+          "crash": 10,
+          "incorrect": 6,
+          "correct": 1,
+          "contract_violation": 1
+        }
+      },
+      "fixed_host": {
+        "attempts": 42,
+        "correct": 16,
+        "components": {
+          "incorrect": 19,
+          "correct": 16,
+          "crash": 5,
+          "format": 2
+        }
+      }
+    },
+    "decomposition_progress": {
+      "phase": "evaluation",
+      "policy": "base",
+      "task": "level2/2_ConvTranspose2d_BiasAdd_Clamp_Scaling_Clamp_Divide",
+      "scored": 1247,
+      "total": 5600,
+      "utc": "2026-10-16T01:18:29.368760+00:00"
+    }
+  },
+  "report_reproduced_exactly": true,
+  "source_seal_verified": true,
+  "metrics_sha256": "c9f297a4986418ec505c0c8d09e36ecb54571296344992e936d59428aed2aea3",
+  "arms": [
+    {
+      "arm": "C",
+      "condition": "fixed_host",
+      "attempts": 18,
+      "correct": 6,
+      "components": {
+        "incorrect": 9,
+        "correct": 6,
+        "format": 2,
+        "crash": 1
+      }
+    },
+    {
+      "arm": "C",
+      "condition": "full_program",
+      "attempts": 18,
+      "correct": 0,
+      "components": {
+        "format": 11,
+        "crash": 4,
+        "incorrect": 3
+      }
+    },
+    {
+      "arm": "SFT",
+      "condition": "fixed_host",
+      "attempts": 18,
+      "correct": 8,
+      "components": {
+        "incorrect": 8,
+        "correct": 8,
+        "crash": 2
+      }
+    },
+    {
+      "arm": "SFT",
+      "condition": "full_program",
+      "attempts": 18,
+      "correct": 1,
+      "components": {
+        "format": 11,
+        "correct": 1,
+        "crash": 4,
+        "incorrect": 1,
+        "contract_violation": 1
+      }
+    },
+    {
+      "arm": "base",
+      "condition": "fixed_host",
+      "attempts": 6,
+      "correct": 2,
+      "components": {
+        "incorrect": 2,
+        "correct": 2,
+        "crash": 2
+      }
+    },
+    {
+      "arm": "base",
+      "condition": "full_program",
+      "attempts": 6,
+      "correct": 0,
+      "components": {
+        "format": 2,
+        "crash": 2,
+        "incorrect": 2
+      }
+    }
+  ],
+  "format_reasons": {
+    "full_program": {
+      "extractor_no_program": 20,
+      "Both conditions require the identical run_kernel ABI": 3,
+      "full_program requires exactly one ModelNew class": 1
+    },
+    "fixed_host": {
+      "Both conditions require the identical run_kernel ABI": 2
+    }
+  },
+  "limitations": [
+    "Six unique development tasks; repeated policies/seeds are not independent tasks.",
+    "Literal ABI/format requirements reject some full-program outputs before runtime; review before a broad capability/mechanism claim.",
+    "No established RL advantage over base or SFT. Retrospective decomposition is still running."
+  ]
+}

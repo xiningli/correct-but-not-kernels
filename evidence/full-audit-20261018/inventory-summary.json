@@ -1,0 +1,219 @@
+{
+  "files": 106394,
+  "bytes": 46459725839,
+  "by_root": {
+    ".gitignore": {
+      "files": 1,
+      "bytes": 128
+    },
+    "LEDGER.md": {
+      "files": 1,
+      "bytes": 59324
+    },
+    "README.md": {
+      "files": 1,
+      "bytes": 7960
+    },
+    "REPORT.md": {
+      "files": 1,
+      "bytes": 6256
+    },
+    "REPORT_STATUS.md": {
+      "files": 1,
+      "bytes": 119786
+    },
+    "cuda_gemma4_llm.egg-info": {
+      "files": 5,
+      "bytes": 1380
+    },
+    "env": {
+      "files": 13,
+      "bytes": 74752
+    },
+    "eval": {
+      "files": 11,
+      "bytes": 42429
+    },
+    "evidence": {
+      "files": 57,
+      "bytes": 311470
+    },
+    "experiments": {
+      "files": 10,
+      "bytes": 33169
+    },
+    "gold": {
+      "files": 7,
+      "bytes": 2881
+    },
+    "kickoff.md": {
+      "files": 1,
+      "bytes": 19968
+    },
+    "pyproject.toml": {
+      "files": 1,
+      "bytes": 981
+    },
+    "research": {
+      "files": 72,
+      "bytes": 381013
+    },
+    "runs/ACTIVE_RUN.json": {
+      "files": 1,
+      "bytes": 1259
+    },
+    "runs/DIAGNOSTICS_RUN.json": {
+      "files": 1,
+      "bytes": 448
+    },
+    "runs/ITERATIVE_REPAIR_RUN.json": {
+      "files": 1,
+      "bytes": 1259
+    },
+    "runs/analysis": {
+      "files": 13,
+      "bytes": 159475
+    },
+    "runs/autodl-c0": {
+      "files": 61,
+      "bytes": 209900
+    },
+    "runs/autodl-clone-20261006": {
+      "files": 10,
+      "bytes": 77278
+    },
+    "runs/autodl-deploy": {
+      "files": 10,
+      "bytes": 32612
+    },
+    "runs/autodl-phase0": {
+      "files": 240,
+      "bytes": 354235
+    },
+    "runs/autodl-pilot-backup": {
+      "files": 13,
+      "bytes": 7143497860
+    },
+    "runs/autodl-prefetch": {
+      "files": 45,
+      "bytes": 134799
+    },
+    "runs/autodl-westb-20261006": {
+      "files": 188,
+      "bytes": 688826
+    },
+    "runs/autodl-westb-reboot-20261006": {
+      "files": 90002,
+      "bytes": 37787288666
+    },
+    "runs/autonomous": {
+      "files": 2,
+      "bytes": 284
+    },
+    "runs/c4": {
+      "files": 2258,
+      "bytes": 12064908
+    },
+    "runs/c5": {
+      "files": 221,
+      "bytes": 1276951
+    },
+    "runs/c6": {
+      "files": 5301,
+      "bytes": 629625979
+    },
+    "runs/deploy": {
+      "files": 132,
+      "bytes": 673592130
+    },
+    "runs/diagnostics-v5": {
+      "files": 38,
+      "bytes": 70112153
+    },
+    "runs/diagnostics-v6": {
+      "files": 72,
+      "bytes": 1601922
+    },
+    "runs/diagnostics-v6-resume31b": {
+      "files": 51,
+      "bytes": 2676429
+    },
+    "runs/gates": {
+      "files": 29,
+      "bytes": 113001
+    },
+    "runs/inventory": {
+      "files": 3,
+      "bytes": 24304
+    },
+    "runs/preflight": {
+      "files": 11,
+      "bytes": 47740
+    },
+    "runs/recovered-clone-20261006": {
+      "files": 76,
+      "bytes": 286427
+    },
+    "runs/recovered-pilot": {
+      "files": 5353,
+      "bytes": 41046402
+    },
+    "runs/reliability-v2": {
+      "files": 1572,
+      "bytes": 90078914
+    },
+    "runs/replication-v1": {
+      "files": 21,
+      "bytes": 51496
+    },
+    "runs/replication-v1.1": {
+      "files": 21,
+      "bytes": 51733
+    },
+    "runs/scoped-repair-v7": {
+      "files": 2,
+      "bytes": 26959
+    },
+    "runs/setup": {
+      "files": 6,
+      "bytes": 44633
+    },
+    "runs/storage-cleanup-20261017": {
+      "files": 9,
+      "bytes": 62474
+    },
+    "scripts": {
+      "files": 5,
+      "bytes": 8545
+    },
+    "tasks": {
+      "files": 3,
+      "bytes": 2982
+    },
+    "tests": {
+      "files": 21,
+      "bytes": 29534
+    },
+    "third_party": {
+      "files": 382,
+      "bytes": 3246480
+    },
+    "tools": {
+      "files": 29,
+      "bytes": 117519
+    },
+    "train": {
+      "files": 9,
+      "bytes": 27826
+    }
+  },
+  "excluded": [
+    ".git",
+    ".venv",
+    ".cache",
+    "__pycache__",
+    ".pytest_cache",
+    "symlinks",
+    "/mnt/fastdata/cuda-gemma4-llm/runs/full-audit-20261018"
+  ]
+}

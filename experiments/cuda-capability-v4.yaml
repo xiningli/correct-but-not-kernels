@@ -1,0 +1,41 @@
+# Separately versioned follow-up; the v1.1 and v3 evidence remain immutable.
+id: cuda-capability-v4
+status: development_and_retrospective_not_confirmatory
+training_enabled: false
+formal_new_task_generation_enabled: false
+policies: [base, C-20261021, C-20261022, C-20261023, SFT-20261021, SFT-20261022, SFT-20261023]
+decomposition:
+  scope: all_100_previously_observed_level2_tasks
+  samples_per_task: 8
+  source: all_saved_attempts_no_regeneration_or_success_selection
+  inputs: original_reference_model_and_input_seeds_four_checks_original_dtypes
+  endpoints: [initialization_completed, forward_completed, numerical_correct, custom_forward_compliant, strict_correct]
+  missing_runtime_observation: null_not_false
+  denominator: all_attempts_with_unknown_counts_separately
+  initialization: report_separately_forward_contract_does_not_prohibit_reference_weight_initialization
+  interpretation: retrospective_contract_decomposition_not_new_task_generalization
+interface:
+  scope: six_existing_development_graphs_only
+  conditions: [full_program, fixed_host]
+  samples_per_graph: 1
+  implementation: Triton_in_both_conditions
+  abi: same_named_run_kernel_arguments_grid_and_output_specification
+  supplied_host: allocation_metadata_and_launch_only_no_math
+  format_rule: retain_malformed_outputs_as_failures_never_repair_or_regenerate
+  interpretation: development_floor_and_cost_check_not_confirmatory_mechanism_evidence
+sampling: {temperature: 1.0, top_p: 0.95, top_k: 64, max_tokens: 4096}
+seeds: {generation: 2026101501, inputs: 2026101502, analysis: 2026101503}
+controls:
+  require_current_boot_isolation: true
+  bind_all_research_source_hashes: true
+  stop_on_harness_error: true
+operations:
+  report_on_success_or_failure: true
+  backup_sha256_required_for_ack: true
+  shutdown_after_terminal_report_and_backup_window: true
+claims:
+  - No_claim_of_speed_from_profiling_wall_time.
+  - No_claim_of_RL_advantage_from_nonsignificance_or_development_selection.
+  - Shared_base_is_not_three_training_replicates.
+  - Previously_legal_PyTorch_compute_is_not_retroactively_called_cheating.
+  - Formal_interaction_analysis_requires_separate_new_task_review_and_freeze.

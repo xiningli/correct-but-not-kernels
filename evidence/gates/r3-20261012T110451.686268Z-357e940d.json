@@ -1,0 +1,17 @@
+{
+  "gate": "R3",
+  "status": "PASS",
+  "time_utc": "20261012T110451.686268Z",
+  "git": {
+    "sha": "34c750fc4fa738a8fe1af1697cfce615d0139045",
+    "status": ""
+  },
+  "checks": [
+    {
+      "name": "all_nine_training_runs_and_final_evaluations",
+      "status": "PASS"
+    }
+  ],
+  "protocol_sha256": "79921e168a65727135bf7a41c36be9613715cea6a54626ff37a7f84ebfddd69e",
+  "artifacts": "runs/replication-v1.1/confirmation"
+}

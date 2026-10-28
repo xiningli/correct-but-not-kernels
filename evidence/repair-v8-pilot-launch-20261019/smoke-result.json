@@ -1,0 +1,9 @@
+{
+  "component": "sandbox_blocked",
+  "returncode": -31,
+  "elapsed_seconds": 2.7213885486125946,
+  "peak_rss_bytes": 862961664,
+  "peak_gpu_bytes": 691339264,
+  "workdir": "/root/autodl-tmp/repair-v8-pilot-20261019/runs/pilot/controls/isolation/normal/work",
+  "log": "/root/autodl-tmp/repair-v8-pilot-20261019/runs/pilot/controls/isolation/normal/worker.log"
+}

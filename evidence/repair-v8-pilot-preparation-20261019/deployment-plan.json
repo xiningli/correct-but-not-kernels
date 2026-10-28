@@ -1,0 +1,29 @@
+{
+  "status": "ready_for_deployment_and_GPU_validation_not_model_results",
+  "remote_project": "/root/autodl-tmp/repair-v8-pilot-20261019",
+  "bundle_local": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-pilot-20261019/autodl-v8-pilot.tgz",
+  "entry": "bash scripts/repair_v8_pilot_autodl.sh run",
+  "optional_CPU_preflight": "bash scripts/repair_v8_pilot_autodl.sh prepare",
+  "evaluation_python": "/root/autodl-tmp/repair-v8-batch1-20261019T011025Z/runs/repair-v8-qualification-20261018/venv/bin/python",
+  "inference_python": "/root/autodl-tmp/cuda-gemma4-llm/.venv/bin/python",
+  "model": "/root/autodl-tmp/cuda-gemma4-llm/models/gemma-4-31B-it",
+  "GPU": "existing 96 GiB-class RTX PRO 6000",
+  "stages": [
+    "CPU runtime/model/tokenizer check",
+    "fresh isolation/before-fixed/regression/memcheck/negative controls",
+    "paired Gemma repair generation and visible evaluation",
+    "seal selected patches",
+    "hidden/regression/memcheck judging",
+    "report/archive/backup acknowledgement/shutdown"
+  ],
+  "logical_episodes": 24,
+  "max_logical_attempts": 96,
+  "max_physical_generations": 84,
+  "wall_cap_seconds": 43200,
+  "GPU_controls_pending": true,
+  "remote_deployed_this_turn": false,
+  "GPU_runs_this_turn": 0,
+  "training_enabled": false,
+  "formal_tasks": 0,
+  "remaining_scope": "This prepares the first three-task operational pilot. The other eight development candidates, held FlagGems task and formal study remain separate work."
+}

@@ -1,0 +1,7 @@
+{
+  "sha256": "3b214c99c2b122b9a06fdf4f505068fbeb08b043beb3c489f9e7f4e8551379c9",
+  "bytes": 3350188,
+  "members": 229,
+  "local_archive": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-pilot-20261019/runtime-repair-evidence.tgz",
+  "status": "sha256_verified_regular_members_extracted"
+}

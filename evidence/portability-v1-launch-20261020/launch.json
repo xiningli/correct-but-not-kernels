@@ -1,0 +1,16 @@
+{
+  "pid": 270325,
+  "utc": "2026-10-20T08:28:52.362917+00:00",
+  "command": [
+    "/mnt/fastdata/glomergence/.venv/bin/python",
+    "-u",
+    "-m",
+    "research.portability_v1.run",
+    "--prepared",
+    "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/prepared-r3",
+    "--out",
+    "/mnt/fastdata/cuda-gemma4-llm/runs/portability-v1-20261020/run-r3"
+  ],
+  "manifest_sha256": "aebc0fb74ac8192dbcbc6e1dc7e4ab5fe0fad93e6a251df0b3bb8aa62b91f1a3",
+  "host_shutdown": false
+}

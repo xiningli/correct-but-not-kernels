@@ -1,0 +1,14 @@
+{
+  "previous_preparation_sha256": "4b3bf62cb3b9b47d22ee3758bcc90be1b3087f5839d928018d8393e5fdbd55a4",
+  "new_preparation_sha256": "4f86d237ad4dde12682952cd7fb5e944500f7c64b361a50911284bf1127172d0",
+  "tasks_and_assets_unchanged": true,
+  "generation_budgets_and_seeds_unchanged": true,
+  "model_outputs_before_amendment": 0,
+  "public_contract_change": "All arms receive separately calibrated allowed_memcheck_host_ops as well as the existing profile contract. Runtime prompts therefore gain the same additional field.",
+  "CPU_tests": {
+    "passed": 36,
+    "seconds": 5.32
+  },
+  "GPU_revalidation": "pending",
+  "deployment": "local_bundle_only"
+}

@@ -1,0 +1,207 @@
+{
+  "tokenizer_model": "google/gemma-4-31B-it",
+  "tokenizer_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "tokenizer_sha256": "cc8d3a0ce36466ccc1278bf987df5f71db1719b9ca6b4118264f45cb627bfe0f",
+  "wire_format": "compact JSON: files[{path,source}], ensure_ascii=False, add_special_tokens=False",
+  "note": "Screening only. Full prompt, API card, tests and generation framing still require pre-freeze audit. Whole original modules retained.",
+  "tasks": [
+    {
+      "id": "fla-org/flash-linear-attention#1103",
+      "modules": [
+        "fla/ops/rwkv7/channel_mixing.py"
+      ],
+      "before_full_response_tokens": 4116,
+      "fixed_full_response_tokens": 4206,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/fla-org--flash-linear-attention-1103.diff",
+      "actual_merge_parent_diff_sha256": "0627c684723bf5980d2e1ef4007cfff7c8ed438edc13f4ab89399291a8702117"
+    },
+    {
+      "id": "fla-org/flash-linear-attention#1108",
+      "modules": [
+        "fla/ops/gdn2/chunk_intra_token_parallel.py",
+        "fla/ops/kda/chunk_intra_token_parallel.py"
+      ],
+      "before_full_response_tokens": 4554,
+      "fixed_full_response_tokens": 4574,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/fla-org--flash-linear-attention-1108.diff",
+      "actual_merge_parent_diff_sha256": "dd22af29538f448e3360abfa21a3464d2dd5ebafaac48d065434b6afba8fa322"
+    },
+    {
+      "id": "flagos-ai/FlagGems#519",
+      "modules": [
+        "src/flag_gems/ops/sort.py",
+        "src/flag_gems/ops/topk.py"
+      ],
+      "before_full_response_tokens": 5019,
+      "fixed_full_response_tokens": 4939,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-519.diff",
+      "actual_merge_parent_diff_sha256": "6dbeade68381437eb695ab6b5afe42396d20cc07a1ddf5df6a9b55fb5d116395"
+    },
+    {
+      "id": "flagos-ai/FlagGems#553",
+      "modules": [
+        "src/flag_gems/ops/addmm.py"
+      ],
+      "before_full_response_tokens": 1196,
+      "fixed_full_response_tokens": 1303,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-553.diff",
+      "actual_merge_parent_diff_sha256": "0801edf72c9c8115cc57859bd7f29f276f72c39d7ab0fcc7e692266fdbe9c75e"
+    },
+    {
+      "id": "flagos-ai/FlagGems#6560",
+      "modules": [
+        "src/flag_gems/ops/renorm_.py"
+      ],
+      "before_full_response_tokens": 785,
+      "fixed_full_response_tokens": 934,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-6560.diff",
+      "actual_merge_parent_diff_sha256": "b54a9bb2b47cc36caf9e65bf6b68c60fcd9ef58faeedae6f820ec20640261306"
+    },
+    {
+      "id": "flagos-ai/FlagGems#6727",
+      "modules": [
+        "src/flag_gems/ops/_flash_attention_forward.py",
+        "src/flag_gems/ops/_scaled_dot_product_flash_attention.py"
+      ],
+      "before_full_response_tokens": 1087,
+      "fixed_full_response_tokens": 1470,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-6727.diff",
+      "actual_merge_parent_diff_sha256": "40c690a5de563af4c58149e286d311b856a1f09d1a2af16b7f54686545f68d5f"
+    },
+    {
+      "id": "flagos-ai/FlagGems#960",
+      "modules": [
+        "src/flag_gems/ops/index_select.py"
+      ],
+      "before_full_response_tokens": 806,
+      "fixed_full_response_tokens": 818,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/flagos-ai--FlagGems-960.diff",
+      "actual_merge_parent_diff_sha256": "b5788de6f73c8f9a7259a4acfbbcb48075c0182cd06629555a0bfa0e72e33461"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1298",
+      "modules": [
+        "src/liger_kernel/ops/fused_linear_cross_entropy.py"
+      ],
+      "before_full_response_tokens": 5742,
+      "fixed_full_response_tokens": 6609,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1298.diff",
+      "actual_merge_parent_diff_sha256": "f1e916bea09db5e79cd108d51038f45e4a2af926402887d1fcb90c8fe6614b40"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1344",
+      "modules": [
+        "src/liger_kernel/ops/attn_res.py"
+      ],
+      "before_full_response_tokens": 4649,
+      "fixed_full_response_tokens": 4728,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1344.diff",
+      "actual_merge_parent_diff_sha256": "7d9aa75514d09abb47897b8c4e020a1dc3be0f3408167ffee06869168adb985f"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1374",
+      "modules": [
+        "src/liger_kernel/ops/tvd.py"
+      ],
+      "before_full_response_tokens": 2311,
+      "fixed_full_response_tokens": 2362,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1374.diff",
+      "actual_merge_parent_diff_sha256": "314aa53409b84dc9c14709298f9648b680f541ed990795ad4407d3f72928dc8e"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1376",
+      "modules": [
+        "src/liger_kernel/ops/group_norm.py"
+      ],
+      "before_full_response_tokens": 3880,
+      "fixed_full_response_tokens": 3931,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1376.diff",
+      "actual_merge_parent_diff_sha256": "7893bf3816b5aa27627faac4dc2362933d447c853812e1bd89add24e9815bf10"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1397",
+      "modules": [
+        "src/liger_kernel/ops/jsd.py"
+      ],
+      "before_full_response_tokens": 2499,
+      "fixed_full_response_tokens": 2449,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1397.diff",
+      "actual_merge_parent_diff_sha256": "19f1323b05258a6bd634d1900be551975ccd9992cd8d132af47ba4fc9bcdcfd0"
+    },
+    {
+      "id": "linkedin/Liger-Kernel#1433",
+      "modules": [
+        "src/liger_kernel/ops/fused_linear_jsd.py"
+      ],
+      "before_full_response_tokens": 5044,
+      "fixed_full_response_tokens": 5694,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/linkedin--Liger-Kernel-1433.diff",
+      "actual_merge_parent_diff_sha256": "3baa80a40ee715ab5b1f6c7755cc95be20ffbdaa3e5d39a65fa25240a5be9138"
+    },
+    {
+      "id": "vllm-project/vllm#15909",
+      "modules": [
+        "vllm/v1/spec_decode/eagle.py"
+      ],
+      "before_full_response_tokens": 3216,
+      "fixed_full_response_tokens": 3202,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/vllm-project--vllm-15909.diff",
+      "actual_merge_parent_diff_sha256": "bbf8accda74cb3012fe0a1b39c3561930857f2d5a981a9a707d838ab8c3d932a"
+    },
+    {
+      "id": "vllm-project/vllm#33326",
+      "modules": [
+        "vllm/model_executor/layers/fla/ops/fused_recurrent.py"
+      ],
+      "before_full_response_tokens": 4889,
+      "fixed_full_response_tokens": 5057,
+      "before_within_6144": true,
+      "official_fix_within_8192": true,
+      "syntax_parse": "pass_before_and_fixed_no_execution",
+      "actual_merge_parent_diff": "runs/repair-v8-pr-screen-20261018/merge-parent-diffs/vllm-project--vllm-33326.diff",
+      "actual_merge_parent_diff_sha256": "a2f75cae46b43701271c1d629294b88d4e339a1793bfcb49b2c8f904912746de"
+    }
+  ]
+}

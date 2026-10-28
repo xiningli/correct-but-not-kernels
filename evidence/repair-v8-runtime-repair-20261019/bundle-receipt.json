@@ -1,0 +1,12 @@
+{
+  "path": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-pilot-20261019/autodl-v8-pilot-r6.tgz",
+  "sha256": "8c63a401b9c867df7f56c7272c0f39cd06858019a68c7aac3fe137ea052b84b1",
+  "bytes": 20861801,
+  "files_and_symlinks": 2392,
+  "readback_verified": true,
+  "preparation_sha256": "4b3bf62cb3b9b47d22ee3758bcc90be1b3087f5839d928018d8393e5fdbd55a4",
+  "GPU_runs": 0,
+  "model_runs": 0,
+  "contains_gold_control_modules": true,
+  "scope": "development_only_three_previously_qualified_tasks"
+}

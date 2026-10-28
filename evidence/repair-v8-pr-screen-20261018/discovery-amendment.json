@@ -1,0 +1,6 @@
+{
+  "reason": "Old FlagOpen/FlagGems search returned HTTP 422; repository endpoint resolves to current canonical name. No model outcomes used.",
+  "old": "FlagOpen/FlagGems",
+  "canonical": "flagos-ai/FlagGems",
+  "source": "https://api.github.com/repos/FlagOpen/FlagGems"
+}

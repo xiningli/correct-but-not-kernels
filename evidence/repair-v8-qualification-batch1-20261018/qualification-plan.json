@@ -1,0 +1,239 @@
+{
+  "schema": "v8-development-qualification-batch1-v1",
+  "status": "prepared_for_GPU_controls_not_qualified",
+  "tasks": {
+    "liger_attnres": {
+      "pr": "linkedin/Liger-Kernel#1344",
+      "slug": "linkedin--Liger-Kernel-1344",
+      "package": "liger_kernel",
+      "source_subdir": "src",
+      "owner": "liger_kernel.ops.attn_res",
+      "kernel_name": "_attn_res_fwd_kernel",
+      "bug_case": "attnres_40",
+      "cases": [
+        "attnres_40",
+        "attnres_33",
+        "attnres_31",
+        "attnres_32",
+        "attnres_3",
+        "attnres_fp16"
+      ],
+      "preserve_cases": [
+        "attnres_3",
+        "attnres_31",
+        "attnres_32",
+        "attnres_fp16"
+      ],
+      "upstream_tests": [
+        "test/transformers/test_attn_res.py"
+      ],
+      "test_tree": "test",
+      "memcheck_case": "attnres_33",
+      "profile_case": "attnres_3",
+      "public_issue": "Attention residual aggregation must use every input block. For more than 32 blocks its output or gradients disagree with the documented depth-softmax weighted sum. Preserve supported shapes, dtypes and public APIs."
+    },
+    "liger_groupnorm": {
+      "pr": "linkedin/Liger-Kernel#1376",
+      "slug": "linkedin--Liger-Kernel-1376",
+      "package": "liger_kernel",
+      "source_subdir": "src",
+      "owner": "liger_kernel.ops.group_norm",
+      "kernel_name": "_group_norm_forward_kernel",
+      "bug_case": "groupnorm_4d",
+      "cases": [
+        "groupnorm_4d",
+        "groupnorm_5d",
+        "groupnorm_odd",
+        "groupnorm_3d",
+        "groupnorm_one_group",
+        "groupnorm_channel_groups"
+      ],
+      "preserve_cases": [
+        "groupnorm_3d",
+        "groupnorm_one_group",
+        "groupnorm_channel_groups"
+      ],
+      "upstream_tests": [
+        "test/transformers/test_group_norm.py"
+      ],
+      "test_tree": "test",
+      "memcheck_case": "groupnorm_4d",
+      "profile_case": "groupnorm_3d",
+      "public_issue": "LigerGroupNorm forward accepts spatial inputs, but backward on 4D/5D inputs can fail or access invalid memory. Match the public GroupNorm output and input/affine gradients while preserving existing 3D behavior."
+    },
+    "flaggems_addmm": {
+      "pr": "flagos-ai/FlagGems#553",
+      "slug": "flagos-ai--FlagGems-553",
+      "package": "flag_gems",
+      "source_subdir": "src",
+      "owner": "flag_gems.ops.addmm",
+      "kernel_name": "addmm_kernel",
+      "bug_case": "addmm_matrix",
+      "cases": [
+        "addmm_matrix",
+        "addmm_column",
+        "addmm_scalar",
+        "addmm_vector",
+        "addmm_row",
+        "addmm_transpose",
+        "addmm_beta_zero",
+        "addmm_fp16"
+      ],
+      "preserve_cases": [
+        "addmm_vector",
+        "addmm_row",
+        "addmm_beta_zero",
+        "addmm_fp16"
+      ],
+      "upstream_tests": [
+        "tests/test_blas_ops.py",
+        "-k",
+        "addmm or test_accuracy_mm"
+      ],
+      "test_tree": "tests",
+      "memcheck_case": "addmm_column",
+      "profile_case": "addmm_vector",
+      "public_issue": "The registered addmm operator disagrees with torch.addmm when the additive input is a broadcastable matrix. Honor the documented broadcast, alpha and beta contract without breaking vector-bias inputs."
+    },
+    "fla_rwkv7": {
+      "pr": "fla-org/flash-linear-attention#1103",
+      "slug": "fla-org--flash-linear-attention-1103",
+      "package": "fla",
+      "source_subdir": ".",
+      "owner": "fla.ops.rwkv7.channel_mixing",
+      "kernel_name": "rwkv_channel_mixing_pow_and_relu",
+      "bug_case": "rwkv_tail_guard",
+      "cases": [
+        "rwkv_tail_guard",
+        "rwkv_tail_small",
+        "rwkv_tail_aligned",
+        "rwkv_full_odd",
+        "rwkv_full_aligned",
+        "rwkv_full_prev3d"
+      ],
+      "preserve_cases": [
+        "rwkv_tail_aligned",
+        "rwkv_full_aligned"
+      ],
+      "upstream_tests": [
+        "tests/ops/test_rwkv7.py",
+        "-k",
+        "channel_mixing_gradients"
+      ],
+      "test_tree": "tests",
+      "memcheck_case": "rwkv_full_odd",
+      "profile_case": "rwkv_full_aligned",
+      "public_issue": "RWKV7 channel mixing should preserve memory outside its logical tensors for non-tile-multiple sizes, and return the documented outputs and gradients. Preserve both inplace settings and supported previous-state layouts."
+    }
+  },
+  "seeds": [
+    1701,
+    1702,
+    1703
+  ],
+  "executions": [
+    {
+      "task": "liger_attnres",
+      "revision": "before",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/before",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1344-before.json",
+      "manifest_sha256": "d40b3fb42c4b25e6be13f0d4a4e623ee1338f6aa85a9297560986ee5598da880"
+    },
+    {
+      "task": "liger_attnres",
+      "revision": "fixed",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1344/fixed",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1344-fixed.json",
+      "manifest_sha256": "f8ec84e532f53d4197408877397a00a2e728adba30311635d3faf10875dedad8"
+    },
+    {
+      "task": "liger_groupnorm",
+      "revision": "before",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/before",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1376-before.json",
+      "manifest_sha256": "576394af14498f6ddc78b6729159067095b2575ef72ec6124d25a662598fc3e3"
+    },
+    {
+      "task": "liger_groupnorm",
+      "revision": "fixed",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/linkedin--Liger-Kernel-1376/fixed",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/linkedin--Liger-Kernel-1376-fixed.json",
+      "manifest_sha256": "ade3fb31732fdf4e0474a5ef286e5473f4030dbf2c9053378a48432c6f3532b8"
+    },
+    {
+      "task": "flaggems_addmm",
+      "revision": "before",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/before",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/flagos-ai--FlagGems-553-before.json",
+      "manifest_sha256": "c60de13a12e40d6b0f94ca4bff505474c2988c9cf6726138faab2091af99db4f"
+    },
+    {
+      "task": "flaggems_addmm",
+      "revision": "fixed",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/flagos-ai--FlagGems-553/fixed",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/flagos-ai--FlagGems-553-fixed.json",
+      "manifest_sha256": "282bd53ee255843d9c6434062462147ce5654767bde049b7ac101f33db355e6d"
+    },
+    {
+      "task": "fla_rwkv7",
+      "revision": "before",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/before",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/fla-org--flash-linear-attention-1103-before.json",
+      "manifest_sha256": "0c434a4daa219e9096a12e6720379caac0b560928ca441ca650e7b10426dfcb3"
+    },
+    {
+      "task": "fla_rwkv7",
+      "revision": "fixed",
+      "checkout": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution/fla-org--flash-linear-attention-1103/fixed",
+      "manifest": "/mnt/fastdata/cuda-gemma4-llm/runs/repair-v8-qualification-20261018/execution-manifests/fla-org--flash-linear-attention-1103-fixed.json",
+      "manifest_sha256": "13da6a43260fc328c53ed14fa5e3b7e0d05865ec7cfdb119f76c5a99eb9a00c5"
+    }
+  ],
+  "files": [
+    {
+      "path": "research/repair_v8/__init__.py",
+      "sha256": "d081bfc2dc51fbdd4debe8ea34cec02deee596fd3e91538b726719dda998ef05"
+    },
+    {
+      "path": "research/repair_v8/prepare.py",
+      "sha256": "5de68bfde1318a2ddaa461009eced4f514618d1fce68dafc3e01a9fac1e1dd8a"
+    },
+    {
+      "path": "research/repair_v8/cases.py",
+      "sha256": "377b604782df868e46d3a98476d576e9910aecedf6358391916e94fe0e131d0a"
+    },
+    {
+      "path": "research/repair_v8/worker.py",
+      "sha256": "eed24e13947a3ff76afe86676a95c3d8292922e15200ffc526d2a43a8532344d"
+    },
+    {
+      "path": "research/repair_v8/qualify.py",
+      "sha256": "f8eb76541d209178aee9625dfc8eadc4660f81681416beac77543d209b37a5a4"
+    },
+    {
+      "path": "research/repair_v8/pytest_receipt.py",
+      "sha256": "2e12b6361eb417adf181b0498291525aeaa7f54819a8a8143bc0469565147b88"
+    },
+    {
+      "path": "experiments/repair-v8-qualification.lock",
+      "sha256": "babef00961cbda88db55b5e862e59f97b84a78f6707341fb6bdfd3c3f9217d43"
+    }
+  ],
+  "timeout_seconds": {
+    "probe": 600,
+    "upstream_suite": 1800,
+    "memcheck": 1200
+  },
+  "environment": {
+    "python": "3.12",
+    "torch": "2.8.0",
+    "triton": "3.4.0",
+    "cuda_runtime": "12.8"
+  },
+  "gpu_count": 1,
+  "training_enabled": false,
+  "model_evaluation_enabled": false,
+  "skip_policy": "record individually; zero passed tests or any failure/error is not a suite pass",
+  "memcheck_policy": "required for qualification; missing tool is a pending gate, never a pass",
+  "qualification_limit": "Controls validate this development suite only; formal hidden tests, edit-interface parity and generated-code security still not sealed."
+}

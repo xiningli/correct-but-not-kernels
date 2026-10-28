@@ -1,0 +1,21 @@
+{
+  "blocked_at": "trusted isolated Triton smoke",
+  "signal": "SIGSYS",
+  "exact_syscall": "not captured in initial run",
+  "model_outputs": 0,
+  "remote_reboot_required": true,
+  "diagnostic_script": "scripts/repair_v8_pilot_diagnose.py",
+  "next_steps": [
+    "Reopen AutoDL with GPU; no new download needed",
+    "Run trusted smoke under strace with original filter unchanged",
+    "Fix the specific compatibility issue based on trace evidence",
+    "Prepare a new versioned manifest and package; preserve initial failed run",
+    "Rerun all GPU controls before model generation"
+  ],
+  "local_probe": {
+    "torch": "2.11.0+cu130",
+    "triton": "3.6.0",
+    "result": "same seccomp filter with trusted preload and smoke passed",
+    "limitations": "Different runtime; no UID or Landlock emulation. Does not validate remote evaluator."
+  }
+}
